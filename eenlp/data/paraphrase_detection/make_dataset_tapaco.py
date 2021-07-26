@@ -15,8 +15,6 @@ def make_dataset():
 
     df["paraphrase_set_id"] = df["paraphrase_set_id"].astype(int)
 
-    print(df["language"].unique())
-
     languages_to_keep = [
         "be",  # Belarusian
         "bg",  # Bulgarian
@@ -33,14 +31,6 @@ def make_dataset():
         "sl",  # Slovenian
         "sr",  # Serbian
         "uk",  # Ukrainian
-        # "bs",  # Bosnian
-        # "ka",  # Georgian
-        # "kk",  # Kazakh
-        # "lv",  # Latvian
-        # "sk",  # Slovakian / Slovak
-        # "sq",  # Albanian
-        # Moldovan / Moldovian
-        # Montenegrin
     ]
 
     df = df[df["language"].isin(languages_to_keep)]
@@ -48,23 +38,37 @@ def make_dataset():
         df["language"].unique()
     ), "Count of filtered languages doesn't match, probably a typo in 'languages_to_keep'?"
 
-    # paraphrase_set_id = 0 seems to mean "unassigned"
+    # paraphrase_set_id = 0 seems to mean "unassigned".
     df = df[df["paraphrase_set_id"] != 0].copy()
+
+    # We need to generate example pairs somehow.
+    # As of the current version of the code, 50% of the generated examples are true paraphrases (label = 1),
+    # 25% are chosen from the most similar non-paraphrases (by fuzzywuzzy library Levenstein distance) (label = 0),
+    # and 25% is random negative examples (label = 0).
 
     result = []
     np.random.seed(0)
     for language, df_language in tqdm(df.groupby("language"), "language", position=0):
         language_name = pycountry.languages.get(alpha_2=language).name
-
         for paraphrase_set_id, df_set in tqdm(
             df_language.groupby("paraphrase_set_id"), "paraphrase_set_id", position=1
         ):
             df_negatives = df_language[
                 df_language["paraphrase_set_id"] != paraphrase_set_id
             ]
-
             for row in df_set.itertuples():
-                # positive
+                result.append(
+                    {
+                        "sentence1": row.paraphrase,
+                        "sentence2": np.random.choice(
+                            df_set[df_set.index != row.Index]["paraphrase"]
+                        ),
+                        "label": 1,
+                        "lang": language_name,
+                    }
+                )
+
+                # TODO this can sample the same pair twice, consider fixing it
                 result.append(
                     {
                         "sentence1": row.paraphrase,
@@ -77,17 +81,18 @@ def make_dataset():
                 )
 
                 # similar negative
-                similar_negatives = process.extract(
-                    row.paraphrase,
-                    df_negatives["paraphrase"],
-                    limit=10,
-                )
                 result.append(
                     {
                         "sentence1": row.paraphrase,
-                        "sentence2": np.random.choice(
-                            np.array(similar_negatives)[:, 0]
-                        ),
+                        # Fuzzywuzzy run time seems to grow exponentially, so we take a random sample, and look for
+                        # similar sentences only in the smaller sample.
+                        # Probably it would be worth investigating a faster alternative method.
+                        "sentence2": process.extractOne(
+                            row.paraphrase,
+                            df_negatives["paraphrase"].sample(
+                                np.min([256, len(df_negatives)])
+                            ),
+                        )[0],
                         "label": 0,
                         "lang": language_name,
                     }
@@ -103,13 +108,11 @@ def make_dataset():
                     }
                 )
     result = pd.DataFrame(result)
-
     result["source"] = dataset_name
     result["split"] = "train"
 
     output_dir = here(f"data/processed/paraphrase_detection/{dataset_name}", warn=False)
     output_dir.mkdir(parents=True, exist_ok=True)
-
     for lang in sorted(result["lang"].unique()):
         result[result["lang"] == lang].to_json(
             output_dir / f"{lang.lower()}.jsonl",
