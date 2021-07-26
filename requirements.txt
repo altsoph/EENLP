@@ -8,3 +8,5 @@ pyprojroot==0.2.0
 fuzzywuzzy==0.18.0
 pycountry==20.7.3
 tqdm==4.61.2
+pytest==6.2.3
+setuptools==51.1.2
