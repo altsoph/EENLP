@@ -12,7 +12,7 @@ def make_dataset():
 
     result = pd.DataFrame()
     result["sentence1"] = df["sentence1"]
-    result["sentence1"] = df["sentence2"]
+    result["sentence2"] = df["sentence2"]
     result["label"] = df["label"]
     result["lang"] = "English"
     result["source"] = dataset_name

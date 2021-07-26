@@ -11,7 +11,7 @@ def make_dataset():
 
     result = pd.DataFrame()
     result["sentence1"] = df["sentence_A"]
-    result["sentence1"] = df["sentence_B"]
+    result["sentence2"] = df["sentence_B"]
     # TODO document choice of threshold
     result["label"] = (df["relatedness_score"] >= 4).astype(int)
     result["lang"] = "Polish"
