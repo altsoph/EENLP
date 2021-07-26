@@ -43,7 +43,7 @@ def make_dataset():
 
     # We need to generate example pairs somehow.
     # As of the current version of the code, 50% of the generated examples are true paraphrases (label = 1),
-    # 25% are chosen from the most similar non-paraphrases (by fuzzywuzzy library Levenstein distance) (label = 0),
+    # 25% are chosen from the most similar non-paraphrases (by fuzzywuzzy library Levenshtein distance) (label = 0),
     # and 25% is random negative examples (label = 0).
 
     result = []
