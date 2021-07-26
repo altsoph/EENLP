@@ -2,7 +2,7 @@
 
 ## Datasets
 
-- [ ] tapaco
+- [x] tapaco
     - https://huggingface.co/datasets/tapaco
 - [x] arpa
     - https://github.com/ivannikov-lab/arpa-paraphrase-corpus

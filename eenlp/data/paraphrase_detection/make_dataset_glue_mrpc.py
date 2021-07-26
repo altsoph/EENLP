@@ -15,7 +15,7 @@ def make_dataset():
     result["sentence1"] = df["sentence2"]
     result["label"] = df["label"]
     result["lang"] = "English"
-    result["soruce"] = dataset_name
+    result["source"] = dataset_name
     result["split"] = "train"
 
     output_path = here(

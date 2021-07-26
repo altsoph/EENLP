@@ -15,7 +15,7 @@ def make_dataset():
     # TODO document choice of threshold
     result["label"] = (df["score"] >= 4).astype(int)
     result["lang"] = "Romanian"
-    result["soruce"] = dataset_name
+    result["source"] = dataset_name
     result["split"] = "train"
 
     output_path = here(
