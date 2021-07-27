@@ -10,6 +10,8 @@ from pyprojroot import here
 dataset_names = [
     "arpa",
     "glue_mrpc",
+    "glue_qqp",
+    "glue_stsb",
     "klej_cdsc_r",
     "paraphrase_sr",
     "ro_sts",

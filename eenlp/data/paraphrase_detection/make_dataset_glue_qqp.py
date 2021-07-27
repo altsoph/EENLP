@@ -4,14 +4,14 @@ from pyprojroot import here
 
 
 def make_dataset():
-    dataset_name = "glue_mrpc"
+    dataset_name = "glue_qqp"
 
-    dataset = load_dataset("glue", "mrpc")
+    dataset = load_dataset("glue", "qqp")
     df = dataset["train"].to_pandas()
 
     result = pd.DataFrame()
-    result["sentence1"] = df["sentence1"]
-    result["sentence2"] = df["sentence2"]
+    result["sentence1"] = df["question1"]
+    result["sentence2"] = df["question2"]
     result["label"] = df["label"]
     result["lang"] = "English"
     result["source"] = dataset_name

@@ -4,15 +4,16 @@ from pyprojroot import here
 
 
 def make_dataset():
-    dataset_name = "glue_mrpc"
+    dataset_name = "glue_stsb"
 
-    dataset = load_dataset("glue", "mrpc")
+    dataset = load_dataset("glue", "stsb")
     df = dataset["train"].to_pandas()
 
     result = pd.DataFrame()
     result["sentence1"] = df["sentence1"]
     result["sentence2"] = df["sentence2"]
-    result["label"] = df["label"]
+    # TODO document choice of threshold
+    result["label"] = (df["label"] >= 4).astype(int)
     result["lang"] = "English"
     result["source"] = dataset_name
     result["split"] = "train"
