@@ -55,6 +55,11 @@
 | ------------------------------ | ----------- | ------------------- | ------------------------------------------------------------- | --------- | ----- | -------- | ------------------------------------------------------------- | -------- |
 | Albanian News Articles Dataset |             | category prediction | https://www.kaggle.com/gentrexha/kosovo-news-articles-dataset | CC-BY-4.0 | ?     | ?        | https://www.kaggle.com/gentrexha/kosovo-news-articles-dataset |          |
 
+### other
+
+| name | description | task | URL | license | paper | citation | download link | comments |
+| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
+
 ## Armenian
 
 ### NER
@@ -87,6 +92,11 @@
 | Armenian News Texts Dataset |             | category prediction | https://github.com/ispras-texterra/word-embeddings-eval-hy#news-texts-dataset           | ?       | https://arxiv.org/abs/1906.03134 | https://arxiv.org/abs/1906.03134 | https://github.com/ispras-texterra/word-embeddings-eval-hy/tree/master/ilur-news-corpus |          |
 | iLur News Texts Dataset     |             | category prediction | https://github.com/ispras-texterra/word-embeddings-eval-hy/tree/master/ilur-news-corpus |         | https://arxiv.org/abs/1906.03134 | https://arxiv.org/abs/1906.03134 |                                                                                         |          |
 
+### other
+
+| name | description | task | URL | license | paper | citation | download link | comments |
+| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
+
 ## Belarusian
 
 ### NER
@@ -117,6 +127,11 @@
 | ----- | ----------- | -------------- | ---------------------------------- | ------------------------------------------------------ | -------------------------------- | ---------------------------------- | ------------------------------------------------------------------- | -------- |
 | XGLUE |             | multiple tasks | https://microsoft.github.io/XGLUE/ | https://github.com/microsoft/XGLUE/blob/master/LICENSE | https://arxiv.org/abs/2004.01401 | https://microsoft.github.io/XGLUE/ | https://xglue.blob.core.windows.net/xglue/xglue_full_dataset.tar.gz |          |
 
+### other
+
+| name | description | task | URL | license | paper | citation | download link | comments |
+| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
+
 ## Bosnian
 
 ### NER
@@ -141,6 +156,11 @@
 | ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
 
 ### category prediction
+
+| name | description | task | URL | license | paper | citation | download link | comments |
+| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
+
+### other
 
 | name | description | task | URL | license | paper | citation | download link | comments |
 | ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
@@ -174,6 +194,11 @@
 | XL-WSD                |             | WSD  | https://sapienzanlp.github.io/xl-wsd/                               | https://sapienzanlp.github.io/xl-wsd/license/ | https://sapienzanlp.github.io/xl-wsd/assets/paper/xl-wsd-aaai2021.pdf | https://sapienzanlp.github.io/xl-wsd/#cite | https://drive.google.com/file/d/19YTL-Uq95hjiFZfgwEpXRgcYGCR_PQY0/view?usp=sharing |          |
 
 ### category prediction
+
+| name | description | task | URL | license | paper | citation | download link | comments |
+| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
+
+### other
 
 | name | description | task | URL | license | paper | citation | download link | comments |
 | ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
@@ -214,6 +239,11 @@
 | ------------------------------- | ----------- | ------------------- | -------------------------------------------------------- | ------- | ----- | -------- | -------------------------------------------------------- | -------- |
 | 24sata news article archive 1.0 |             | category prediction | https://www.clarin.si/repository/xmlui/handle/11356/1410 | ?       | ?     | ?        | https://www.clarin.si/repository/xmlui/handle/11356/1410 |          |
 
+### other
+
+| name | description | task | URL | license | paper | citation | download link | comments |
+| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
+
 ## Czech
 
 ### NER
@@ -249,6 +279,11 @@
 | -------------------------------------------- | ----------- | ------------------- | ------------------------------------------------- | ------------ | -------------------------------- | ---------------------------------- | ------------------------------------------------- | -------------------------------------------------------------------- |
 | Czech restaurant information dataset for NLG |             | category prediction | https://github.com/UFAL-DSG/cs_restaurant_dataset | CC-BY-SA 4.0 | https://arxiv.org/abs/1910.05298 | https://aclanthology.org/W19-8670/ | https://github.com/UFAL-DSG/cs_restaurant_dataset | intent detection for restaurant reservation, translated from English |
 
+### other
+
+| name | description | task | URL | license | paper | citation | download link | comments |
+| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
+
 ## Estonian
 
 ### NER
@@ -282,6 +317,11 @@
 | ----------------------------- | ----------- | ------------------- | -------------------------------------------------------- | ------- | ----- | -------- | -------------------------------------------------------- | -------- |
 | Ekspress news article archive |             | category prediction | https://www.clarin.si/repository/xmlui/handle/11356/1408 | ?       | ?     | ?        | https://www.clarin.si/repository/xmlui/handle/11356/1408 |          |
 
+### other
+
+| name | description | task | URL | license | paper | citation | download link | comments |
+| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
+
 ## Georgian
 
 ### NER
@@ -305,6 +345,11 @@
 | ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
 
 ### category prediction
+
+| name | description | task | URL | license | paper | citation | download link | comments |
+| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
+
+### other
 
 | name | description | task | URL | license | paper | citation | download link | comments |
 | ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
@@ -345,6 +390,11 @@
 | ----- | ----------- | -------------- | ---------------------------------- | ------------------------------------------------------ | -------------------------------- | ---------------------------------- | ------------------------------------------------------------------- | -------- |
 | XGLUE |             | multiple tasks | https://microsoft.github.io/XGLUE/ | https://github.com/microsoft/XGLUE/blob/master/LICENSE | https://arxiv.org/abs/2004.01401 | https://microsoft.github.io/XGLUE/ | https://xglue.blob.core.windows.net/xglue/xglue_full_dataset.tar.gz |          |
 
+### other
+
+| name | description | task | URL | license | paper | citation | download link | comments |
+| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
+
 ## Kazakh
 
 ### NER
@@ -368,6 +418,11 @@
 | ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
 
 ### category prediction
+
+| name | description | task | URL | license | paper | citation | download link | comments |
+| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
+
+### other
 
 | name | description | task | URL | license | paper | citation | download link | comments |
 | ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
@@ -402,6 +457,11 @@
 | ----------------------------- | ----------- | ------------------- | -------------------------------------------------------- | ------- | ----- | -------- | -------------------------------------------------------- | -------- |
 | Latvian Delfi article archive |             | category prediction | https://www.clarin.si/repository/xmlui/handle/11356/1409 | ?       | ?     | ?        | https://www.clarin.si/repository/xmlui/handle/11356/1409 |          |
 
+### other
+
+| name | description | task | URL | license | paper | citation | download link | comments |
+| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
+
 ## Lithuanian
 
 ### NER
@@ -433,6 +493,11 @@
 | NLP-LT                                            |             | category prediction | https://github.com/minven/nlp-lt                                                     | ?       | ?     | ?        | https://github.com/minven/nlp-lt                                                     |          |
 | Lithuanian financial news dataset (multi-labeled) |             | category prediction | https://www.kaggle.com/pavelstefanovi/lithuanian-financial-news-dataset-multilabeled | ?       | ?     | ?        | https://www.kaggle.com/pavelstefanovi/lithuanian-financial-news-dataset-multilabeled |          |
 
+### other
+
+| name | description | task | URL | license | paper | citation | download link | comments |
+| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
+
 ## Macedonian
 
 ### NER
@@ -457,6 +522,11 @@
 | ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
 
 ### category prediction
+
+| name | description | task | URL | license | paper | citation | download link | comments |
+| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
+
+### other
 
 | name | description | task | URL | license | paper | citation | download link | comments |
 | ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
@@ -490,6 +560,11 @@
 | ------ | ----------- | ----------------------------- | --------------------------------------- | --------------- | ------------------------------------ | -------------------------------- | --------------------------------------------------------------------- | -------- |
 | MOROCO |             | multiple classification tasks | https://github.com/butnaruandrei/MOROCO | CC BY-NC-SA 4.0 | https://arxiv.org/pdf/1901.06543.pdf | https://arxiv.org/abs/1901.06543 | https://github.com/butnaruandrei/MOROCO/archive/refs/heads/master.zip |          |
 
+### other
+
+| name | description | task | URL | license | paper | citation | download link | comments |
+| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
+
 ## Montenegrin
 
 ### NER
@@ -513,6 +588,11 @@
 | ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
 
 ### category prediction
+
+| name | description | task | URL | license | paper | citation | download link | comments |
+| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
+
+### other
 
 | name | description | task | URL | license | paper | citation | download link | comments |
 | ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
@@ -554,6 +634,11 @@
 | Polish Sport Texts Classification Challenge |             | category prediction | https://gonito.net/challenge/sport-text-classification | ?                                                      | ?                                | ?                                  |                                                                     |          |
 | XGLUE                                       |             | multiple tasks      | https://microsoft.github.io/XGLUE/                     | https://github.com/microsoft/XGLUE/blob/master/LICENSE | https://arxiv.org/abs/2004.01401 | https://microsoft.github.io/XGLUE/ | https://xglue.blob.core.windows.net/xglue/xglue_full_dataset.tar.gz |          |
 
+### other
+
+| name | description | task | URL | license | paper | citation | download link | comments |
+| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
+
 ## Romanian
 
 ### NER
@@ -588,6 +673,11 @@
 | name   | description | task                          | URL                                     | license         | paper                                | citation                         | download link                                                         | comments |
 | ------ | ----------- | ----------------------------- | --------------------------------------- | --------------- | ------------------------------------ | -------------------------------- | --------------------------------------------------------------------- | -------- |
 | MOROCO |             | multiple classification tasks | https://github.com/butnaruandrei/MOROCO | CC BY-NC-SA 4.0 | https://arxiv.org/pdf/1901.06543.pdf | https://arxiv.org/abs/1901.06543 | https://github.com/butnaruandrei/MOROCO/archive/refs/heads/master.zip |          |
+
+### other
+
+| name | description | task | URL | license | paper | citation | download link | comments |
+| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
 
 ## Russian
 
@@ -629,6 +719,11 @@
 | Ekspress news article archive                           |             | category prediction | https://www.clarin.si/repository/xmlui/handle/11356/1408 | ?                                                      | ?                                | ?                                  | https://www.clarin.si/repository/xmlui/handle/11356/1408            |          |
 | Latvian Delfi article archive                           |             | category prediction | https://www.clarin.si/repository/xmlui/handle/11356/1409 | ?                                                      | ?                                | ?                                  | https://www.clarin.si/repository/xmlui/handle/11356/1409            |          |
 
+### other
+
+| name | description | task | URL | license | paper | citation | download link | comments |
+| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
+
 ## Serbian
 
 ### NER
@@ -660,6 +755,11 @@
 | ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
 
 ### category prediction
+
+| name | description | task | URL | license | paper | citation | download link | comments |
+| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
+
+### other
 
 | name | description | task | URL | license | paper | citation | download link | comments |
 | ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
@@ -696,6 +796,11 @@
 | ------------------------------ | ----------- | ------------------ | ----------------------------------------------------- | ------- | ---------------------------------- | ---------------------------------- | ----------------------------------------------------- | -------- |
 | Slovak Categorized News Corpus |             | POS, NER, category | https://nlp.kemt.fei.tuke.sk/language/categorizednews | ?       | https://aclanthology.org/L14-1517/ | https://aclanthology.org/L14-1517/ | https://nlp.kemt.fei.tuke.sk/language/categorizednews |          |
 
+### other
+
+| name | description | task | URL | license | paper | citation | download link | comments |
+| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
+
 ## Slovenian
 
 ### NER
@@ -728,6 +833,11 @@
 | name | description | task | URL | license | paper | citation | download link | comments |
 | ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
 
+### other
+
+| name | description | task | URL | license | paper | citation | download link | comments |
+| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
+
 ## Ukrainian
 
 ### NER
@@ -753,6 +863,11 @@
 | ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
 
 ### category prediction
+
+| name | description | task | URL | license | paper | citation | download link | comments |
+| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
+
+### other
 
 | name | description | task | URL | license | paper | citation | download link | comments |
 | ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
