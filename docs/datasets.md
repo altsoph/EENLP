@@ -57,8 +57,9 @@
 
 ### other
 
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
+| name             | description | task    | URL                              | license | paper | citation | download link                                                                                                                  | comments |
+| ---------------- | ----------- | ------- | -------------------------------- | ------- | ----- | -------- | ------------------------------------------------------------------------------------------------------------------------------ | -------- |
+| Albanian wordnet |             | wordnet | http://shachi.org/resources/4040 | GPL     | ?     | ?        | format is broken but still recoverable here view-source:http://web.archive.org/web/20180617134952/http://fjalnet.com/shqip.xml |          |
 
 ## Armenian
 
@@ -94,8 +95,9 @@
 
 ### other
 
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
+| name   | description | task            | URL                                                         | license      | paper | citation                                                               | download link                                               | comments |
+| ------ | ----------- | --------------- | ----------------------------------------------------------- | ------------ | ----- | ---------------------------------------------------------------------- | ----------------------------------------------------------- | -------- |
+| ArmTDP |             | POS, parse tree | https://github.com/UniversalDependencies/UD_Armenian-ArmTDP | CC-BY-SA 4.0 | ?     | https://github.com/UniversalDependencies/UD_Armenian-ArmTDP#references | https://github.com/UniversalDependencies/UD_Armenian-ArmTDP |          |
 
 ## Belarusian
 
@@ -200,8 +202,10 @@
 
 ### other
 
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
+| name                                     | description | task      | URL                                                      | license         | paper                                                 | citation                                 | download link                                                                                             | comments |
+| ---------------------------------------- | ----------- | --------- | -------------------------------------------------------- | --------------- | ----------------------------------------------------- | ---------------------------------------- | --------------------------------------------------------------------------------------------------------- | -------- |
+| ranlp-2019                               |             | fake news | https://github.com/yoandinkov/ranlp-2019                 | GPL 3           | https://arxiv.org/abs/1908.09785                      | https://github.com/yoandinkov/ranlp-2019 | https://github.com/yoandinkov/ranlp-2019                                                                  |          |
+| MULTEXT-East "1984" annotated corpus 4.0 |             | POS       | https://www.clarin.si/repository/xmlui/handle/11356/1043 | CC BY-NC-SA 4.0 | http://nl.ijs.si/ME/Vault/V4/doc/bib/mte-lrec2004.pdf | ?                                        | https://www.clarin.si/repository/xmlui/bitstream/handle/11356/1043/MTE1984-ana.zip?sequence=3&isAllowed=y |          |
 
 ## Croatian
 
@@ -241,8 +245,10 @@
 
 ### other
 
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
+| name    | description | task                  | URL                                                      | license                                                                    | paper                                | citation                             | download link                                            | comments                             |
+| ------- | ----------- | --------------------- | -------------------------------------------------------- | -------------------------------------------------------------------------- | ------------------------------------ | ------------------------------------ | -------------------------------------------------------- | ------------------------------------ |
+| COPA-HR |             | commonsense reasoning | https://www.clarin.si/repository/xmlui/handle/11356/1240 | CC-BY-SA 4.0                                                               | https://arxiv.org/abs/2104.09243     | https://arxiv.org/abs/2104.09243     | https://www.clarin.si/repository/xmlui/handle/11356/1240 | https://www.clarin.si/info/k-centre/ |
+| FRENK   |             | offensive comments    | https://www.clarin.si/repository/xmlui/handle/11356/1433 | https://clarin.si/repository/xmlui/page/licence-aca-id-by-nc-inf-nored-1.0 | https://arxiv.org/pdf/1906.02045.pdf | https://arxiv.org/pdf/1906.02045.pdf | https://www.clarin.si/repository/xmlui/handle/11356/1433 | http://nl.ijs.si/frenk/              |
 
 ## Czech
 
@@ -281,8 +287,14 @@
 
 ### other
 
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
+| name                                     | description | task    | URL                                                                               | license         | paper                                                 | citation                                                                          | download link                                                                                             | comments |
+| ---------------------------------------- | ----------- | ------- | --------------------------------------------------------------------------------- | --------------- | ----------------------------------------------------- | --------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | -------- |
+| MULTEXT-East "1984" annotated corpus 4.0 |             | POS     | https://www.clarin.si/repository/xmlui/handle/11356/1043                          | CC BY-NC-SA 4.0 | http://nl.ijs.si/ME/Vault/V4/doc/bib/mte-lrec2004.pdf | ?                                                                                 | https://www.clarin.si/repository/xmlui/bitstream/handle/11356/1043/MTE1984-ana.zip?sequence=3&isAllowed=y |          |
+| Czech-PDT UD treebank                    |             | POS     | https://github.com/UniversalDependencies/UD_Czech-PDT/blob/master/README.md       | CC BY-NC-SA 3.0 | https://aclanthology.org/C12-1015/                    | https://aclanthology.org/C12-1015/                                                | https://github.com/UniversalDependencies/UD_Czech-PDT                                                     |          |
+| Czech WordNet 1.9 PDT                    |             | wordnet | https://lindat.mff.cuni.cz/repository/xmlui/handle/11858/00-097C-0000-0001-4880-3 | CC BY-NC-SA 3.0 | ?                                                     | https://lindat.mff.cuni.cz/repository/xmlui/handle/11858/00-097C-0000-0001-4880-3 | https://lindat.mff.cuni.cz/repository/xmlui/handle/11858/00-097C-0000-0001-4880-3                         |          |
+| UD_Czech-CAC treebank                    |             | POS     | https://github.com/UniversalDependencies/UD_Czech-CAC/blob/master/README.md       | CC BY-SA 4.0    | https://ufal.mff.cuni.cz/pbml/89/pbml89.pdf           | https://lindat.mff.cuni.cz/repository/xmlui/handle/11372/LRT-1061                 | https://github.com/UniversalDependencies/UD_Czech-CAC                                                     |          |
+| FicTree                                  |             | POS     | https://github.com/UniversalDependencies/UD_Czech-FicTree/blob/master/README.md   | CC BY-NC-SA 4.0 | http://ceur-ws.org/Vol-1885/181.pdf                   | ?                                                                                 | https://github.com/UniversalDependencies/UD_Czech-FicTree                                                 |          |
+| UD_Czech-CLTT treebank                   |             | POS     | https://github.com/UniversalDependencies/UD_Czech-CLTT/blob/master/README.md      | CC BY-SA 4.0    | https://aclanthology.org/L18-1713/                    | https://aclanthology.org/L18-1713/                                                | https://github.com/UniversalDependencies/UD_Czech-CLTT                                                    |          |
 
 ## Estonian
 
@@ -319,8 +331,13 @@
 
 ### other
 
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
+| name                                                   | description | task                                             | URL                                                                                                                                                                | license         | paper                                                 | citation                                                                                                                                     | download link                                                                                                                                | comments |
+| ------------------------------------------------------ | ----------- | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------- | ----------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| MULTEXT-East "1984" annotated corpus 4.0               |             | POS                                              | https://www.clarin.si/repository/xmlui/handle/11356/1043                                                                                                           | CC BY-NC-SA 4.0 | http://nl.ijs.si/ME/Vault/V4/doc/bib/mte-lrec2004.pdf | ?                                                                                                                                            | https://www.clarin.si/repository/xmlui/bitstream/handle/11356/1043/MTE1984-ana.zip?sequence=3&isAllowed=y                                    |          |
+| XCOPA                                                  |             | commonsense reasoning                            | https://github.com/cambridgeltl/xcopa                                                                                                                              | CC-BY-4.0       | https://ducdauge.github.io/files/xcopa.pdf            | https://github.com/cambridgeltl/xcopa                                                                                                        | it is in HF datasets + here https://github.com/cambridgeltl/xcopa                                                                            |          |
+| Corpus of morphologically disambiguated Estonian texts |             | morphologic analysis                             | https://metashare.ut.ee/repository/browse/corpus-of-morphologically-disambiguated-estonian-texts/4b43d8f8463411e2a6e4005056b40024fb0e855467c443a3840a72e0cfd381e4/ | CLARIN ACA - NC | ?                                                     | ?                                                                                                                                            | https://metashare.ut.ee/repository/download/4b43d8f8463411e2a6e4005056b40024fb0e855467c443a3840a72e0cfd381e4/                                |          |
+| Semantically disambiguated corpus of Estonian          |             | semantic, morphosyntactic tagging; lemmatization | https://metashare.ut.ee/repository/browse/semantically-disambiguated-corpus-of-estonian/4e82a472463411e2a6e4005056b400241e1c4a126b5242f49d64822b1984fbe8/          | CLARIN ACA - NC | ?                                                     | ?                                                                                                                                            | https://metashare.ut.ee/repository/download/4e82a472463411e2a6e4005056b400241e1c4a126b5242f49d64822b1984fbe8/                                |          |
+| EstQA Question Answering dataset                       |             | question answering                               | https://metashare.ut.ee/repository/browse/estqa-question-answering-dataset/dabdfdeaa74911eba6e4fa163e9d45471d05c5c43d8e46788aac3c1694c0e4ac/                       | CC BY           | ?                                                     | https://metashare.ut.ee/repository/browse/estqa-question-answering-dataset/dabdfdeaa74911eba6e4fa163e9d45471d05c5c43d8e46788aac3c1694c0e4ac/ | https://metashare.ut.ee/repository/browse/estqa-question-answering-dataset/dabdfdeaa74911eba6e4fa163e9d45471d05c5c43d8e46788aac3c1694c0e4ac/ |          |
 
 ## Georgian
 
@@ -392,8 +409,13 @@
 
 ### other
 
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
+| name                                      | description | task                        | URL                                                                                                                         | license                                  | paper                                                                                                                                                                                                                           | citation                                                 | download link                                                                                                                   | comments                                                                |
+| ----------------------------------------- | ----------- | --------------------------- | --------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| MULTEXT-East "1984" annotated corpus 4.0  |             | POS                         | https://www.clarin.si/repository/xmlui/handle/11356/1043                                                                    | CC BY-NC-SA 4.0                          | http://nl.ijs.si/ME/Vault/V4/doc/bib/mte-lrec2004.pdf                                                                                                                                                                           | ?                                                        | https://www.clarin.si/repository/xmlui/bitstream/handle/11356/1043/MTE1984-ana.zip?sequence=3&isAllowed=y                       |                                                                         |
+| Szeged Corpus                             |             | syntax + morphology         | http://metashare.nytud.hu/repository/browse/szeged-corpus/e2bf6a486c7811e2aa7c68b599c26a069a3f6f3a10d745e08d1db15344df55ea/ | MS - NC - No ReD                         | https://www.researchgate.net/profile/Zoltan-Alexin/publication/252066444_K%27ezzel_annot%27alt_magyar_nyelvi_korpusz_a_Szeged_Korpusz/links/56ec19f708aed740cbb611a1/Kezzel-annotalt-magyar-nyelvi-korpusz-a-Szeged-Korpusz.pdf | https://www.sed.inf.u-szeged.hu/biblio/export/bibtex/586 | ask for access: http://metashare.nytud.hu/repository/download/e2bf6a486c7811e2aa7c68b599c26a069a3f6f3a10d745e08d1db15344df55ea/ |                                                                         |
+| Hungarian National Corpus                 |             | automatically tagged corpus | http://mnsz.nytud.hu/index_eng.html                                                                                         |                                          | http://www.lrec-conf.org/proceedings/lrec2014/pdf/681_Paper.pdf                                                                                                                                                                 |                                                          | need a registration: http://mnsz.nytud.hu/regisztracio_eng.html                                                                 |                                                                         |
+| MAZSOLA                                   |             | syntactic tagging           | http://corpus.nytud.hu/isz/                                                                                                 | ?                                        | http://www.nytud.hu/oszt/korpusz/resources/sb_isz.pdf                                                                                                                                                                           | http://corpus.nytud.hu/isz/                              | http://corpus.nytud.hu/isz/s/mazsola_adatbazis.txt.zip                                                                          | only after registration here http://mnsz.nytud.hu/regisztracio_eng.html |
+| Hungarian Wordnet (HuWN) / Magyar WordNet |             | wordnet                     | https://github.com/mmihaltz/huwn                                                                                            | META-SHARE Commons BY NC ND License v1.0 | http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.148.6139&rep=rep1&type=pdf                                                                                                                                             | https://github.com/mmihaltz/huwn                         | https://github.com/mmihaltz/huwn/raw/master/huwn.xml                                                                            |                                                                         |
 
 ## Kazakh
 
@@ -459,8 +481,9 @@
 
 ### other
 
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
+| name                | description | task | URL                                                                            | license      | paper                                                                                                                                      | citation                                 | download link                                            | comments |
+| ------------------- | ----------- | ---- | ------------------------------------------------------------------------------ | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------- | -------------------------------------------------------- | -------- |
+| Latvian UD Treebank |             | POS  | https://github.com/UniversalDependencies/UD_Latvian-LVTB/blob/master/README.md | CC BY-SA 4.0 | https://www.researchgate.net/publication/327520269_Deriving_Enhanced_Universal_Dependencies_from_a_Hybrid_Dependency-Constituency_Treebank | http://www.ailab.lv/en/publications/408/ | https://github.com/UniversalDependencies/UD_Latvian-LVTB |          |
 
 ## Lithuanian
 
@@ -528,8 +551,9 @@
 
 ### other
 
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
+| name                                     | description | task | URL                                                      | license         | paper                                                 | citation | download link                                                                                             | comments |
+| ---------------------------------------- | ----------- | ---- | -------------------------------------------------------- | --------------- | ----------------------------------------------------- | -------- | --------------------------------------------------------------------------------------------------------- | -------- |
+| MULTEXT-East "1984" annotated corpus 4.0 |             | POS  | https://www.clarin.si/repository/xmlui/handle/11356/1043 | CC BY-NC-SA 4.0 | http://nl.ijs.si/ME/Vault/V4/doc/bib/mte-lrec2004.pdf | ?        | https://www.clarin.si/repository/xmlui/bitstream/handle/11356/1043/MTE1984-ana.zip?sequence=3&isAllowed=y |          |
 
 ## Moldovan/Moldovian
 
@@ -636,8 +660,10 @@
 
 ### other
 
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
+| name                                     | description | task                    | URL                                                      | license         | paper                                                 | citation | download link                                                                                                        | comments |
+| ---------------------------------------- | ----------- | ----------------------- | -------------------------------------------------------- | --------------- | ----------------------------------------------------- | -------- | -------------------------------------------------------------------------------------------------------------------- | -------- |
+| MULTEXT-East "1984" annotated corpus 4.0 |             | POS                     | https://www.clarin.si/repository/xmlui/handle/11356/1043 | CC BY-NC-SA 4.0 | http://nl.ijs.si/ME/Vault/V4/doc/bib/mte-lrec2004.pdf | ?        | https://www.clarin.si/repository/xmlui/bitstream/handle/11356/1043/MTE1984-ana.zip?sequence=3&isAllowed=y            |          |
+| NKJP1M                                   |             | morphosyntactic tagging | http://clip.ipipan.waw.pl/NationalCorpusOfPolish         | GNU GPL 3       | ?                                                     | ?        | http://clip.ipipan.waw.pl/NationalCorpusOfPolish?action=AttachFile&do=view&target=NKJP-PodkorpusMilionowy-1.2.tar.gz |          |
 
 ## Romanian
 
@@ -676,8 +702,10 @@
 
 ### other
 
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
+| name                                     | description | task      | URL                                                      | license                                                    | paper                                                 | citation                                        | download link                                                                                             | comments |
+| ---------------------------------------- | ----------- | --------- | -------------------------------------------------------- | ---------------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------- | --------------------------------------------------------------------------------------------------------- | -------- |
+| MULTEXT-East "1984" annotated corpus 4.0 |             | POS       | https://www.clarin.si/repository/xmlui/handle/11356/1043 | CC BY-NC-SA 4.0                                            | http://nl.ijs.si/ME/Vault/V4/doc/bib/mte-lrec2004.pdf | ?                                               | https://www.clarin.si/repository/xmlui/bitstream/handle/11356/1043/MTE1984-ana.zip?sequence=3&isAllowed=y |          |
+| SaRoCo                                   |             | fake news | https://github.com/MihaelaGaman/SaRoCo                   | https://github.com/MihaelaGaman/SaRoCo/blob/master/LICENSE | https://arxiv.org/abs/2105.06456                      | https://github.com/MihaelaGaman/SaRoCo#citation | https://github.com/MihaelaGaman/SaRoCo                                                                    |          |
 
 ## Russian
 
@@ -721,8 +749,9 @@
 
 ### other
 
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
+| name | description | task | URL                                      | license | paper | citation | download link | comments |
+| ---- | ----------- | ---- | ---------------------------------------- | ------- | ----- | -------- | ------------- | -------- |
+| XNLI |             | NLI  | https://github.com/facebookresearch/XNLI | ?       | ?     | ?        |               |          |
 
 ## Serbian
 
@@ -761,8 +790,9 @@
 
 ### other
 
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
+| name                                     | description | task | URL                                                      | license         | paper                                                 | citation | download link                                                                                             | comments |
+| ---------------------------------------- | ----------- | ---- | -------------------------------------------------------- | --------------- | ----------------------------------------------------- | -------- | --------------------------------------------------------------------------------------------------------- | -------- |
+| MULTEXT-East "1984" annotated corpus 4.0 |             | POS  | https://www.clarin.si/repository/xmlui/handle/11356/1043 | CC BY-NC-SA 4.0 | http://nl.ijs.si/ME/Vault/V4/doc/bib/mte-lrec2004.pdf | ?        | https://www.clarin.si/repository/xmlui/bitstream/handle/11356/1043/MTE1984-ana.zip?sequence=3&isAllowed=y |          |
 
 ## Slovakian/Slovak
 
@@ -798,8 +828,12 @@
 
 ### other
 
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
+| name                                     | description | task    | URL                                                                          | license         | paper                                                       | citation                                                        | download link                                                                                             | comments |
+| ---------------------------------------- | ----------- | ------- | ---------------------------------------------------------------------------- | --------------- | ----------------------------------------------------------- | --------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | -------- |
+| MULTEXT-East "1984" annotated corpus 4.0 |             | POS     | https://www.clarin.si/repository/xmlui/handle/11356/1043                     | CC BY-NC-SA 4.0 | http://nl.ijs.si/ME/Vault/V4/doc/bib/mte-lrec2004.pdf       | ?                                                               | https://www.clarin.si/repository/xmlui/bitstream/handle/11356/1043/MTE1984-ana.zip?sequence=3&isAllowed=y |          |
+| Slovak UD treebank                       |             | POS     | https://github.com/UniversalDependencies/UD_Slovak-SNK/blob/master/README.md | CC BY-SA 4.0    | ?                                                           | https://lindat.mff.cuni.cz/repository/xmlui/handle/11234/1-1822 | https://github.com/UniversalDependencies/UD_Slovak-SNK                                                    |          |
+| Slovak Wordnet                           |             | wordnet | https://korpus.sk/WordNet_en.html                                            | CC BY-SA 3.0    | ?                                                           | ?                                                               | https://korpus.sk/WordNet_en.html                                                                         |          |
+| sloWNet                                  |             | wordnet | http://lojze.lugos.si/darja/research/slownet/                                | CC-BY-SA 4.0    | https://link.springer.com/article/10.1007/s10579-015-9295-6 | https://link.springer.com/article/10.1007/s10579-015-9295-6     | http://hdl.handle.net/11356/1026                                                                          |          |
 
 ## Slovenian
 
@@ -835,8 +869,11 @@
 
 ### other
 
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
+| name                                     | description | task                                      | URL                                                      | license                                                                    | paper                                                           | citation                                                         | download link                                                                                              | comments                |
+| ---------------------------------------- | ----------- | ----------------------------------------- | -------------------------------------------------------- | -------------------------------------------------------------------------- | --------------------------------------------------------------- | ---------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | ----------------------- |
+| MULTEXT-East "1984" annotated corpus 4.0 |             | POS                                       | https://www.clarin.si/repository/xmlui/handle/11356/1043 | CC BY-NC-SA 4.0                                                            | http://nl.ijs.si/ME/Vault/V4/doc/bib/mte-lrec2004.pdf           | ?                                                                | https://www.clarin.si/repository/xmlui/bitstream/handle/11356/1043/MTE1984-ana.zip?sequence=3&isAllowed=y  |                         |
+| FRENK                                    |             | offensive comments                        | https://www.clarin.si/repository/xmlui/handle/11356/1433 | https://clarin.si/repository/xmlui/page/licence-aca-id-by-nc-inf-nored-1.0 | https://arxiv.org/pdf/1906.02045.pdf                            | https://arxiv.org/pdf/1906.02045.pdf                             | https://www.clarin.si/repository/xmlui/handle/11356/1433                                                   | http://nl.ijs.si/frenk/ |
+| jos1M 1.2                                |             | morphosyntactic tagging and lemmatisation | https://www.clarin.si/repository/xmlui/handle/11356/1213 | CC BY-NC 4.0                                                               | http://www.lrec-conf.org/proceedings/lrec2010/pdf/139_Paper.pdf | http://www.lrec-conf.org/proceedings/lrec2010/summaries/139.html | https://www.clarin.si/repository/xmlui/bitstream/handle/11356/1213/jos1M-en.TEI.zip?sequence=1&isAllowed=y |                         |
 
 ## Ukrainian
 
