@@ -1,31 +1,535 @@
 # Models x Languages Matrix
 
-|                                              |       multilingual        |                           |                           |                                 |           several languages           |                                 |                                     |                                      |                                |                single language models                |                                                     |                                                     |                                                  |                                           |
-| -------------------------------------------- | :-----------------------: | :-----------------------: | :-----------------------: | :-----------------------------: | :-----------------------------------: | :-----------------------------: | :---------------------------------: | :----------------------------------: | :----------------------------: | :--------------------------------------------------: | :-------------------------------------------------: | :-------------------------------------------------: | :----------------------------------------------: | :---------------------------------------: |
-|                                              |           mBERT           |           XLM-R           |           LaBSE           |           mDistilBERT           |             CroSloEngual              |             BERTić              |             SlavicBERT              |             LitLat BERT              |             FinEst             |                         BERT                         |                       RoBERTa                       |                     DistilBERT                      |                     Electra                      |                  ALBERT                   |
-| **[Albanian](#albanian)**                    |  [mBERT](#multilingual)   |  [XLM-R](#multilingual)   |  [LaBSE](#multilingual)   |  [mDistilBERT](#multilingual)   |                                       |                                 |                                     |                                      |                                |                                                      |        [AL-RoBERTa](#single-language-models)        |                                                     |                                                  |                                           |
-| **[Armenian](#armenian)**                    | [mBERT](#multilingual-1)  | [XLM-R](#multilingual-1)  | [LaBSE](#multilingual-1)  | [mDistilBERT](#multilingual-1)  |                                       |                                 |                                     |                                      |                                |                                                      |                                                     |                                                     |                                                  |                                           |
-| **[Belarusian](#belarusian)**                | [mBERT](#multilingual-2)  | [XLM-R](#multilingual-2)  | [LaBSE](#multilingual-2)  | [mDistilBERT](#multilingual-2)  |                                       |                                 |                                     |                                      |                                |                                                      |                                                     |                                                     |                                                  |                                           |
-| **[Bosnian](#bosnian)**                      | [mBERT](#multilingual-3)  | [XLM-R](#multilingual-3)  | [LaBSE](#multilingual-3)  | [mDistilBERT](#multilingual-3)  |                                       | [BERTić](#several-languages-3)  |                                     |                                      |                                |                                                      |       [BA-RoBERTa](#single-language-models-3)       |                                                     |                                                  |                                           |
-| **[Bulgarian](#bulgarian)**                  | [mBERT](#multilingual-4)  | [XLM-R](#multilingual-4)  | [LaBSE](#multilingual-4)  | [mDistilBERT](#multilingual-4)  |                                       |                                 | [SlavicBERT](#several-languages-4)  |                                      |                                |                                                      | [RoBERTa-base-bulgarian](#single-language-models-4) |                                                     |                                                  |                                           |
-| **[Croatian](#croatian)**                    | [mBERT](#multilingual-5)  | [XLM-R](#multilingual-5)  | [LaBSE](#multilingual-5)  | [mDistilBERT](#multilingual-5)  | [CroSloEngual](#several-languages-5)  | [BERTić](#several-languages-5)  |                                     |                                      |                                |                                                      |                                                     |                                                     |                                                  |                                           |
-| **[Czech](#czech)**                          | [mBERT](#multilingual-6)  | [XLM-R](#multilingual-6)  | [LaBSE](#multilingual-6)  | [mDistilBERT](#multilingual-6)  |                                       |                                 | [SlavicBERT](#several-languages-6)  |                                      |                                |          [CZERT](#single-language-models-6)          |       [RobeCzech](#single-language-models-6)        |                                                     |                                                  | [Czech ALBERT](#single-language-models-6) |
-| **[Estonian](#estonian)**                    | [mBERT](#multilingual-7)  | [XLM-R](#multilingual-7)  | [LaBSE](#multilingual-7)  | [mDistilBERT](#multilingual-7)  |                                       |                                 |                                     |                                      | [FinEst](#several-languages-7) |         [EstBERT](#single-language-models-7)         |      [est-roberta](#single-language-models-7)       |                                                     |                                                  |                                           |
-| **[Georgian](#georgian)**                    | [mBERT](#multilingual-8)  | [XLM-R](#multilingual-8)  | [LaBSE](#multilingual-8)  | [mDistilBERT](#multilingual-8)  |                                       |                                 |                                     |                                      |                                |                                                      |                                                     |                                                     |                                                  |                                           |
-| **[Hungarian](#hungarian)**                  | [mBERT](#multilingual-9)  | [XLM-R](#multilingual-9)  | [LaBSE](#multilingual-9)  | [mDistilBERT](#multilingual-9)  |                                       |                                 |                                     |                                      |                                |         [huBERT](#single-language-models-9)          |                                                     |                                                     |                                                  |                                           |
-| **[Kazakh](#kazakh)**                        | [mBERT](#multilingual-10) | [XLM-R](#multilingual-10) | [LaBSE](#multilingual-10) | [mDistilBERT](#multilingual-10) |                                       |                                 |                                     |                                      |                                |                                                      |                                                     |                                                     |                                                  |                                           |
-| **[Latvian](#latvian)**                      | [mBERT](#multilingual-11) | [XLM-R](#multilingual-11) | [LaBSE](#multilingual-11) | [mDistilBERT](#multilingual-11) |                                       |                                 |                                     | [LitLat BERT](#several-languages-11) |                                |        [LV-BERT](#single-language-models-11)         |                                                     |                                                     |                                                  |                                           |
-| **[Lithuanian](#lithuanian)**                | [mBERT](#multilingual-12) | [XLM-R](#multilingual-12) | [LaBSE](#multilingual-12) | [mDistilBERT](#multilingual-12) |                                       |                                 |                                     | [LitLat BERT](#several-languages-12) |                                |                                                      |                                                     |                                                     |                                                  |                                           |
-| **[Macedonian](#macedonian)**                | [mBERT](#multilingual-13) | [XLM-R](#multilingual-13) | [LaBSE](#multilingual-13) | [mDistilBERT](#multilingual-13) |                                       |                                 |                                     |                                      |                                |    [Macedonian BERT](#single-language-models-13)     |      [MK-RoBERTa](#single-language-models-13)       | [Macedonian DistilBERT](#single-language-models-13) | [Macedonian Electra](#single-language-models-13) |                                           |
-| **[Moldovan/Moldovian](#moldovanmoldovian)** | [mBERT](#multilingual-14) | [XLM-R](#multilingual-14) | [LaBSE](#multilingual-14) | [mDistilBERT](#multilingual-14) |                                       |                                 |                                     |                                      |                                |                                                      |                                                     |                                                     |                                                  |                                           |
-| **[Montenegrin](#montenegrin)**              | [mBERT](#multilingual-15) | [XLM-R](#multilingual-15) | [LaBSE](#multilingual-15) | [mDistilBERT](#multilingual-15) |                                       | [BERTić](#several-languages-15) |                                     |                                      |                                |                                                      |                                                     |                                                     |                                                  |                                           |
-| **[Polish](#polish)**                        | [mBERT](#multilingual-16) | [XLM-R](#multilingual-16) | [LaBSE](#multilingual-16) | [mDistilBERT](#multilingual-16) |                                       |                                 | [SlavicBERT](#several-languages-16) |                                      |                                |   [Polbert / HerBERT](#single-language-models-16)    |    [Polish RoBERTa](#single-language-models-16)     |                                                     |                                                  |                                           |
-| **[Romanian](#romanian)**                    | [mBERT](#multilingual-17) | [XLM-R](#multilingual-17) | [LaBSE](#multilingual-17) | [mDistilBERT](#multilingual-17) |                                       |                                 |                                     |                                      |                                | [RoBERT / Romanian BERT](#single-language-models-17) |                                                     |  [Romanian DistilBERT](#single-language-models-17)  |                                                  |                                           |
-| **[Russian](#russian)**                      | [mBERT](#multilingual-18) | [XLM-R](#multilingual-18) | [LaBSE](#multilingual-18) | [mDistilBERT](#multilingual-18) |                                       |                                 | [SlavicBERT](#several-languages-18) |                                      |                                |         [RuBERT](#single-language-models-18)         |    [Russian RoBERTa](#single-language-models-18)    |                                                     |                                                  |                                           |
-| **[Serbian](#serbian)**                      | [mBERT](#multilingual-19) | [XLM-R](#multilingual-19) | [LaBSE](#multilingual-19) | [mDistilBERT](#multilingual-19) |                                       | [BERTić](#several-languages-19) |                                     |                                      |                                |                                                      |                                                     |                                                     |                                                  |                                           |
-| **[Slovakian/Slovak](#slovakianslovak)**     | [mBERT](#multilingual-20) | [XLM-R](#multilingual-20) | [LaBSE](#multilingual-20) | [mDistilBERT](#multilingual-20) |                                       |                                 |                                     |                                      |                                |                                                      |                                                     |                                                     |                                                  |                                           |
-| **[Slovenian](#slovenian)**                  | [mBERT](#multilingual-21) | [XLM-R](#multilingual-21) | [LaBSE](#multilingual-21) | [mDistilBERT](#multilingual-21) | [CroSloEngual](#several-languages-21) |                                 |                                     |                                      |                                |                                                      |       [SloBERTa](#single-language-models-21)        |                                                     |                                                  |                                           |
-| **[Ukrainian](#ukrainian)**                  | [mBERT](#multilingual-22) | [XLM-R](#multilingual-22) | [LaBSE](#multilingual-22) | [mDistilBERT](#multilingual-22) |                                       |                                 |                                     |                                      |                                |                                                      |   [ukr-roberta-base](#single-language-models-22)    |                                                     | [Ukrainian Electra](#single-language-models-22)  |                                           |
+<table>
+    <thead>
+        <tr>
+            <th></th>
+            <th align="center" colspan="4">multilingual (transformers)</th>
+            <th align="center" colspan="5">several languages</th>
+            <th align="center" colspan="5">single language models</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td align="center"><strong>mBERT</strong></td>
+            <td align="center"><strong>XLM&#8209;R</strong></td>
+            <td align="center"><strong>LaBSE</strong></td>
+            <td align="center"><strong>mDistilBERT</strong></td>
+            <td align="center"><strong>CroSloEngual</strong></td>
+            <td align="center"><strong>BERTić</strong></td>
+            <td align="center"><strong>SlavicBERT</strong></td>
+            <td align="center"><strong>LitLat BERT</strong></td>
+            <td align="center"><strong>FinEst</strong></td>
+            <td align="center"><strong>BERT</strong></td>
+            <td align="center"><strong>RoBERTa</strong></td>
+            <td align="center"><strong>DistilBERT</strong></td>
+            <td align="center"><strong>Electra</strong></td>
+            <td align="center"><strong>ALBERT</strong></td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <strong><a href="#albanian">Albanian</a></strong>
+            </td>
+            <td align="center"><a href="#multilingual">mBERT</a></td>
+            <td align="center"><a href="#multilingual">XLM-R</a></td>
+            <td align="center"><a href="#multilingual">LaBSE</a></td>
+            <td align="center"><a href="#multilingual">mDistilBERT</a></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center">
+                <a href="#single-language-models">AL-RoBERTa</a>
+            </td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+        </tr>
+        <tr>
+            <td>
+                <strong><a href="#armenian">Armenian</a></strong>
+            </td>
+            <td align="center"><a href="#multilingual-1">mBERT</a></td>
+            <td align="center"><a href="#multilingual-1">XLM-R</a></td>
+            <td align="center"><a href="#multilingual-1">LaBSE</a></td>
+            <td align="center"><a href="#multilingual-1">mDistilBERT</a></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+        </tr>
+        <tr>
+            <td>
+                <strong><a href="#belarusian">Belarusian</a></strong>
+            </td>
+            <td align="center"><a href="#multilingual-2">mBERT</a></td>
+            <td align="center"><a href="#multilingual-2">XLM-R</a></td>
+            <td align="center"><a href="#multilingual-2">LaBSE</a></td>
+            <td align="center"><a href="#multilingual-2">mDistilBERT</a></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+        </tr>
+        <tr>
+            <td>
+                <strong><a href="#bosnian">Bosnian</a></strong>
+            </td>
+            <td align="center"><a href="#multilingual-3">mBERT</a></td>
+            <td align="center"><a href="#multilingual-3">XLM-R</a></td>
+            <td align="center"><a href="#multilingual-3">LaBSE</a></td>
+            <td align="center"><a href="#multilingual-3">mDistilBERT</a></td>
+            <td align="center"></td>
+            <td align="center"><a href="#several-languages-3">BERTić</a></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center">
+                <a href="#single-language-models-3">BA-RoBERTa</a>
+            </td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+        </tr>
+        <tr>
+            <td>
+                <strong><a href="#bulgarian">Bulgarian</a></strong>
+            </td>
+            <td align="center"><a href="#multilingual-4">mBERT</a></td>
+            <td align="center"><a href="#multilingual-4">XLM-R</a></td>
+            <td align="center"><a href="#multilingual-4">LaBSE</a></td>
+            <td align="center"><a href="#multilingual-4">mDistilBERT</a></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center">
+                <a href="#several-languages-4">SlavicBERT</a>
+            </td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center">
+                <a href="#single-language-models-4">RoBERTa-base-bulgarian</a>
+            </td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+        </tr>
+        <tr>
+            <td>
+                <strong><a href="#croatian">Croatian</a></strong>
+            </td>
+            <td align="center"><a href="#multilingual-5">mBERT</a></td>
+            <td align="center"><a href="#multilingual-5">XLM-R</a></td>
+            <td align="center"><a href="#multilingual-5">LaBSE</a></td>
+            <td align="center"><a href="#multilingual-5">mDistilBERT</a></td>
+            <td align="center">
+                <a href="#several-languages-5">CroSloEngual</a>
+            </td>
+            <td align="center"><a href="#several-languages-5">BERTić</a></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+        </tr>
+        <tr>
+            <td>
+                <strong><a href="#czech">Czech</a></strong>
+            </td>
+            <td align="center"><a href="#multilingual-6">mBERT</a></td>
+            <td align="center"><a href="#multilingual-6">XLM-R</a></td>
+            <td align="center"><a href="#multilingual-6">LaBSE</a></td>
+            <td align="center"><a href="#multilingual-6">mDistilBERT</a></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center">
+                <a href="#several-languages-6">SlavicBERT</a>
+            </td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center">
+                <a href="#single-language-models-6">CZERT</a>
+            </td>
+            <td align="center">
+                <a href="#single-language-models-6">RobeCzech</a>
+            </td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center">
+                <a href="#single-language-models-6">Czech ALBERT</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong><a href="#estonian">Estonian</a></strong>
+            </td>
+            <td align="center"><a href="#multilingual-7">mBERT</a></td>
+            <td align="center"><a href="#multilingual-7">XLM-R</a></td>
+            <td align="center"><a href="#multilingual-7">LaBSE</a></td>
+            <td align="center"><a href="#multilingual-7">mDistilBERT</a></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"><a href="#several-languages-7">FinEst</a></td>
+            <td align="center">
+                <a href="#single-language-models-7">EstBERT</a>
+            </td>
+            <td align="center">
+                <a href="#single-language-models-7">est-roberta</a>
+            </td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+        </tr>
+        <tr>
+            <td>
+                <strong><a href="#georgian">Georgian</a></strong>
+            </td>
+            <td align="center"><a href="#multilingual-8">mBERT</a></td>
+            <td align="center"><a href="#multilingual-8">XLM-R</a></td>
+            <td align="center"><a href="#multilingual-8">LaBSE</a></td>
+            <td align="center"><a href="#multilingual-8">mDistilBERT</a></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+        </tr>
+        <tr>
+            <td>
+                <strong><a href="#hungarian">Hungarian</a></strong>
+            </td>
+            <td align="center"><a href="#multilingual-9">mBERT</a></td>
+            <td align="center"><a href="#multilingual-9">XLM-R</a></td>
+            <td align="center"><a href="#multilingual-9">LaBSE</a></td>
+            <td align="center"><a href="#multilingual-9">mDistilBERT</a></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center">
+                <a href="#single-language-models-9">huBERT</a>
+            </td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+        </tr>
+        <tr>
+            <td>
+                <strong><a href="#kazakh">Kazakh</a></strong>
+            </td>
+            <td align="center"><a href="#multilingual-10">mBERT</a></td>
+            <td align="center"><a href="#multilingual-10">XLM-R</a></td>
+            <td align="center"><a href="#multilingual-10">LaBSE</a></td>
+            <td align="center"><a href="#multilingual-10">mDistilBERT</a></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+        </tr>
+        <tr>
+            <td>
+                <strong><a href="#latvian">Latvian</a></strong>
+            </td>
+            <td align="center"><a href="#multilingual-11">mBERT</a></td>
+            <td align="center"><a href="#multilingual-11">XLM-R</a></td>
+            <td align="center"><a href="#multilingual-11">LaBSE</a></td>
+            <td align="center"><a href="#multilingual-11">mDistilBERT</a></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center">
+                <a href="#several-languages-11">LitLat BERT</a>
+            </td>
+            <td align="center"></td>
+            <td align="center">
+                <a href="#single-language-models-11">LV-BERT</a>
+            </td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+        </tr>
+        <tr>
+            <td>
+                <strong><a href="#lithuanian">Lithuanian</a></strong>
+            </td>
+            <td align="center"><a href="#multilingual-12">mBERT</a></td>
+            <td align="center"><a href="#multilingual-12">XLM-R</a></td>
+            <td align="center"><a href="#multilingual-12">LaBSE</a></td>
+            <td align="center"><a href="#multilingual-12">mDistilBERT</a></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center">
+                <a href="#several-languages-12">LitLat BERT</a>
+            </td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+        </tr>
+        <tr>
+            <td>
+                <strong><a href="#macedonian">Macedonian</a></strong>
+            </td>
+            <td align="center"><a href="#multilingual-13">mBERT</a></td>
+            <td align="center"><a href="#multilingual-13">XLM-R</a></td>
+            <td align="center"><a href="#multilingual-13">LaBSE</a></td>
+            <td align="center"><a href="#multilingual-13">mDistilBERT</a></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center">
+                <a href="#single-language-models-13">Macedonian BERT</a>
+            </td>
+            <td align="center">
+                <a href="#single-language-models-13">MK-RoBERTa</a>
+            </td>
+            <td align="center">
+                <a href="#single-language-models-13">Macedonian DistilBERT</a>
+            </td>
+            <td align="center">
+                <a href="#single-language-models-13">Macedonian Electra</a>
+            </td>
+            <td align="center"></td>
+        </tr>
+        <tr>
+            <td>
+                <strong
+                    ><a href="#moldovanmoldovian">Moldovan/Moldovian</a></strong
+                >
+            </td>
+            <td align="center"><a href="#multilingual-14">mBERT</a></td>
+            <td align="center"><a href="#multilingual-14">XLM-R</a></td>
+            <td align="center"><a href="#multilingual-14">LaBSE</a></td>
+            <td align="center"><a href="#multilingual-14">mDistilBERT</a></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+        </tr>
+        <tr>
+            <td>
+                <strong><a href="#montenegrin">Montenegrin</a></strong>
+            </td>
+            <td align="center"><a href="#multilingual-15">mBERT</a></td>
+            <td align="center"><a href="#multilingual-15">XLM-R</a></td>
+            <td align="center"><a href="#multilingual-15">LaBSE</a></td>
+            <td align="center"><a href="#multilingual-15">mDistilBERT</a></td>
+            <td align="center"></td>
+            <td align="center"><a href="#several-languages-15">BERTić</a></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+        </tr>
+        <tr>
+            <td>
+                <strong><a href="#polish">Polish</a></strong>
+            </td>
+            <td align="center"><a href="#multilingual-16">mBERT</a></td>
+            <td align="center"><a href="#multilingual-16">XLM-R</a></td>
+            <td align="center"><a href="#multilingual-16">LaBSE</a></td>
+            <td align="center"><a href="#multilingual-16">mDistilBERT</a></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center">
+                <a href="#several-languages-16">SlavicBERT</a>
+            </td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center">
+                <a href="#single-language-models-16">Polbert / HerBERT</a>
+            </td>
+            <td align="center">
+                <a href="#single-language-models-16">Polish RoBERTa</a>
+            </td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+        </tr>
+        <tr>
+            <td>
+                <strong><a href="#romanian">Romanian</a></strong>
+            </td>
+            <td align="center"><a href="#multilingual-17">mBERT</a></td>
+            <td align="center"><a href="#multilingual-17">XLM-R</a></td>
+            <td align="center"><a href="#multilingual-17">LaBSE</a></td>
+            <td align="center"><a href="#multilingual-17">mDistilBERT</a></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center">
+                <a href="#single-language-models-17">RoBERT / Romanian BERT</a>
+            </td>
+            <td align="center"></td>
+            <td align="center">
+                <a href="#single-language-models-17">Romanian DistilBERT</a>
+            </td>
+            <td align="center"></td>
+            <td align="center"></td>
+        </tr>
+        <tr>
+            <td>
+                <strong><a href="#russian">Russian</a></strong>
+            </td>
+            <td align="center"><a href="#multilingual-18">mBERT</a></td>
+            <td align="center"><a href="#multilingual-18">XLM-R</a></td>
+            <td align="center"><a href="#multilingual-18">LaBSE</a></td>
+            <td align="center"><a href="#multilingual-18">mDistilBERT</a></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center">
+                <a href="#several-languages-18">SlavicBERT</a>
+            </td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center">
+                <a href="#single-language-models-18">RuBERT</a>
+            </td>
+            <td align="center">
+                <a href="#single-language-models-18">Russian RoBERTa</a>
+            </td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+        </tr>
+        <tr>
+            <td>
+                <strong><a href="#serbian">Serbian</a></strong>
+            </td>
+            <td align="center"><a href="#multilingual-19">mBERT</a></td>
+            <td align="center"><a href="#multilingual-19">XLM-R</a></td>
+            <td align="center"><a href="#multilingual-19">LaBSE</a></td>
+            <td align="center"><a href="#multilingual-19">mDistilBERT</a></td>
+            <td align="center"></td>
+            <td align="center"><a href="#several-languages-19">BERTić</a></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+        </tr>
+        <tr>
+            <td>
+                <strong><a href="#slovakianslovak">Slovakian/Slovak</a></strong>
+            </td>
+            <td align="center"><a href="#multilingual-20">mBERT</a></td>
+            <td align="center"><a href="#multilingual-20">XLM-R</a></td>
+            <td align="center"><a href="#multilingual-20">LaBSE</a></td>
+            <td align="center"><a href="#multilingual-20">mDistilBERT</a></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+        </tr>
+        <tr>
+            <td>
+                <strong><a href="#slovenian">Slovenian</a></strong>
+            </td>
+            <td align="center"><a href="#multilingual-21">mBERT</a></td>
+            <td align="center"><a href="#multilingual-21">XLM-R</a></td>
+            <td align="center"><a href="#multilingual-21">LaBSE</a></td>
+            <td align="center"><a href="#multilingual-21">mDistilBERT</a></td>
+            <td align="center">
+                <a href="#several-languages-21">CroSloEngual</a>
+            </td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center">
+                <a href="#single-language-models-21">SloBERTa</a>
+            </td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+        </tr>
+        <tr>
+            <td>
+                <strong><a href="#ukrainian">Ukrainian</a></strong>
+            </td>
+            <td align="center"><a href="#multilingual-22">mBERT</a></td>
+            <td align="center"><a href="#multilingual-22">XLM-R</a></td>
+            <td align="center"><a href="#multilingual-22">LaBSE</a></td>
+            <td align="center"><a href="#multilingual-22">mDistilBERT</a></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center">
+                <a href="#single-language-models-22">ukr-roberta-base</a>
+            </td>
+            <td align="center"></td>
+            <td align="center">
+                <a href="#single-language-models-22">Ukrainian Electra</a>
+            </td>
+            <td align="center"></td>
+        </tr>
+    </tbody>
+</table>
 
 ## Albanian
 
