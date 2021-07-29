@@ -1,30 +1,535 @@
 # Models x Languages Matrix
 
-|                                              |       multilingual        |       multilingual        |       multilingual        |          multilingual           |          several languages           |       several languages        |         several languages          |          several languages           |       several languages        |        single language models         |               single language models                | single language models | single language models |          single language models           |
-| -------------------------------------------- | :-----------------------: | :-----------------------: | :-----------------------: | :-----------------------------: | :----------------------------------: | :----------------------------: | :--------------------------------: | :----------------------------------: | :----------------------------: | :-----------------------------------: | :-------------------------------------------------: | :--------------------: | :--------------------: | :---------------------------------------: |
-| **[Albanian](#albanian)**                    |  [mBERT](#multilingual)   |  [XLM-R](#multilingual)   |  [LaBSE](#multilingual)   |  [mDistilBERT](#multilingual)   |                                      |                                |                                    |                                      |                                |                                       |        [AL-RoBERTa](#single-language-models)        |                        |                        |                                           |
-| **[Armenian](#armenian)**                    | [mBERT](#multilingual-1)  | [XLM-R](#multilingual-1)  | [LaBSE](#multilingual-1)  | [mDistilBERT](#multilingual-1)  |                                      |                                |                                    |                                      |                                |                                       |                                                     |                        |                        |                                           |
-| **[Belarusian](#belarusian)**                | [mBERT](#multilingual-2)  | [XLM-R](#multilingual-2)  | [LaBSE](#multilingual-2)  | [mDistilBERT](#multilingual-2)  |                                      |                                |                                    |                                      |                                |                                       |                                                     |                        |                        |                                           |
-| **[Bosnian](#bosnian)**                      | [mBERT](#multilingual-3)  | [XLM-R](#multilingual-3)  | [LaBSE](#multilingual-3)  | [mDistilBERT](#multilingual-3)  |                                      | [BERTić](#several-languages-3) |                                    |                                      |                                |                                       |       [BA-RoBERTa](#single-language-models-3)       |                        |                        |                                           |
-| **[Bulgarian](#bulgarian)**                  | [mBERT](#multilingual-4)  | [XLM-R](#multilingual-4)  | [LaBSE](#multilingual-4)  | [mDistilBERT](#multilingual-4)  |                                      |                                | [SlavicBERT](#several-languages-4) |                                      |                                |                                       | [RoBERTa-base-bulgarian](#single-language-models-4) |                        |                        |                                           |
-| **[Croatian](#croatian)**                    | [mBERT](#multilingual-5)  | [XLM-R](#multilingual-5)  | [LaBSE](#multilingual-5)  | [mDistilBERT](#multilingual-5)  | [CroSloEngual](#several-languages-5) | [BERTić](#several-languages-5) |                                    |                                      |                                |                                       |                                                     |                        |                        |                                           |
-| **[Czech](#czech)**                          | [mBERT](#multilingual-6)  | [XLM-R](#multilingual-6)  | [LaBSE](#multilingual-6)  | [mDistilBERT](#multilingual-6)  |                                      |                                | [SlavicBERT](#several-languages-6) |                                      |                                |  [CZERT](#single-language-models-6)   |       [RobeCzech](#single-language-models-6)        |                        |                        | [Czech ALBERT](#single-language-models-6) |
-| **[Estonian](#estonian)**                    | [mBERT](#multilingual-7)  | [XLM-R](#multilingual-7)  | [LaBSE](#multilingual-7)  | [mDistilBERT](#multilingual-7)  |                                      |                                |                                    |                                      | [FinEst](#several-languages-7) | [EstBERT](#single-language-models-7)  |      [est-roberta](#single-language-models-7)       |                        |                        |                                           |
-| **[Georgian](#georgian)**                    | [mBERT](#multilingual-8)  | [XLM-R](#multilingual-8)  | [LaBSE](#multilingual-8)  | [mDistilBERT](#multilingual-8)  |                                      |                                |                                    |                                      |                                |                                       |                                                     |                        |                        |                                           |
-| **[Hungarian](#hungarian)**                  | [mBERT](#multilingual-9)  | [XLM-R](#multilingual-9)  | [LaBSE](#multilingual-9)  | [mDistilBERT](#multilingual-9)  |                                      |                                |                                    |                                      |                                |  [huBERT](#single-language-models-9)  |                                                     |                        |                        |                                           |
-| **[Kazakh](#kazakh)**                        | [mBERT](#multilingual-10) | [XLM-R](#multilingual-10) | [LaBSE](#multilingual-10) | [mDistilBERT](#multilingual-10) |                                      |                                |                                    |                                      |                                |                                       |                                                     |                        |                        |                                           |
-| **[Latvian](#latvian)**                      | [mBERT](#multilingual-11) | [XLM-R](#multilingual-11) | [LaBSE](#multilingual-11) | [mDistilBERT](#multilingual-11) |                                      |                                |                                    | [LitLat BERT](#several-languages-11) |                                | [LV-BERT](#single-language-models-11) |                                                     |                        |                        |                                           |
-| **[Lithuanian](#lithuanian)**                | [mBERT](#multilingual-12) | [XLM-R](#multilingual-12) | [LaBSE](#multilingual-12) | [mDistilBERT](#multilingual-12) |                                      |                                |                                    | [LitLat BERT](#several-languages-12) |                                |                                       |                                                     |                        |                        |                                           |
-| **[Macedonian](#macedonian)**                | [mBERT](#multilingual-13) | [XLM-R](#multilingual-13) | [LaBSE](#multilingual-13) | [mDistilBERT](#multilingual-13) |                                      |                                |                                    |                                      |                                |            Macedonian BERT            |                     MK-RoBERTa                      | Macedonian DistilBERT  |   Macedonian Electra   |                                           |
-| **[Moldovan/Moldovian](#moldovanmoldovian)** | [mBERT](#multilingual-14) | [XLM-R](#multilingual-14) | [LaBSE](#multilingual-14) | [mDistilBERT](#multilingual-14) |                                      |                                |                                    |                                      |                                |                                       |                                                     |                        |                        |                                           |
-| **[Montenegrin](#montenegrin)**              | [mBERT](#multilingual-15) | [XLM-R](#multilingual-15) | [LaBSE](#multilingual-15) | [mDistilBERT](#multilingual-15) |                                      |             BERTić             |                                    |                                      |                                |                                       |                                                     |                        |                        |                                           |
-| **[Polish](#polish)**                        | [mBERT](#multilingual-16) | [XLM-R](#multilingual-16) | [LaBSE](#multilingual-16) | [mDistilBERT](#multilingual-16) |                                      |                                |             SlavicBERT             |                                      |                                |           Polbert /HerBERT            |                   Polish RoBERTa                    |                        |                        |                                           |
-| **[Romanian](#romanian)**                    | [mBERT](#multilingual-17) | [XLM-R](#multilingual-17) | [LaBSE](#multilingual-17) | [mDistilBERT](#multilingual-17) |                                      |                                |                                    |                                      |                                |         RoBERT/Romanian BERT          |                                                     |  Romanian DistilBERT   |                        |                                           |
-| **[Russian](#russian)**                      | [mBERT](#multilingual-18) | [XLM-R](#multilingual-18) | [LaBSE](#multilingual-18) | [mDistilBERT](#multilingual-18) |                                      |                                |             SlavicBERT             |                                      |                                |                RuBERT                 |                   Russian RoBERTa                   |                        |                        |                                           |
-| **[Serbian](#serbian)**                      | [mBERT](#multilingual-19) | [XLM-R](#multilingual-19) | [LaBSE](#multilingual-19) | [mDistilBERT](#multilingual-19) |                                      |             BERTić             |                                    |                                      |                                |                                       |                                                     |                        |                        |                                           |
-| **[Slovakian/Slovak](#slovakianslovak)**     | [mBERT](#multilingual-20) | [XLM-R](#multilingual-20) | [LaBSE](#multilingual-20) | [mDistilBERT](#multilingual-20) |                                      |                                |                                    |                                      |                                |                                       |                                                     |                        |                        |                                           |
-| **[Slovenian](#slovenian)**                  | [mBERT](#multilingual-21) | [XLM-R](#multilingual-21) | [LaBSE](#multilingual-21) | [mDistilBERT](#multilingual-21) |             CroSloEngual             |                                |                                    |                                      |                                |                                       |                      SloBERTa                       |                        |                        |                                           |
-| **[Ukrainian](#ukrainian)**                  | [mBERT](#multilingual-22) | [XLM-R](#multilingual-22) | [LaBSE](#multilingual-22) | [mDistilBERT](#multilingual-22) |                                      |                                |                                    |                                      |                                |                                       |                  ukr-roberta-base                   |                        |   Ukrainian Electra    |                                           |
+<table>
+    <thead>
+        <tr>
+            <th></th>
+            <th align="center" colspan="4">multilingual (transformers)</th>
+            <th align="center" colspan="5">several languages</th>
+            <th align="center" colspan="5">single language models</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td align="center"><strong>mBERT</strong></td>
+            <td align="center"><strong>XLM&#8209;R</strong></td>
+            <td align="center"><strong>LaBSE</strong></td>
+            <td align="center"><strong>mDistilBERT</strong></td>
+            <td align="center"><strong>CroSloEngual</strong></td>
+            <td align="center"><strong>BERTić</strong></td>
+            <td align="center"><strong>SlavicBERT</strong></td>
+            <td align="center"><strong>LitLat BERT</strong></td>
+            <td align="center"><strong>FinEst</strong></td>
+            <td align="center"><strong>BERT</strong></td>
+            <td align="center"><strong>RoBERTa</strong></td>
+            <td align="center"><strong>DistilBERT</strong></td>
+            <td align="center"><strong>Electra</strong></td>
+            <td align="center"><strong>ALBERT</strong></td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <strong><a href="#albanian">Albanian</a></strong>
+            </td>
+            <td align="center"><a href="#multilingual">mBERT</a></td>
+            <td align="center"><a href="#multilingual">XLM-R</a></td>
+            <td align="center"><a href="#multilingual">LaBSE</a></td>
+            <td align="center"><a href="#multilingual">mDistilBERT</a></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center">
+                <a href="#single-language-models">AL-RoBERTa</a>
+            </td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+        </tr>
+        <tr>
+            <td>
+                <strong><a href="#armenian">Armenian</a></strong>
+            </td>
+            <td align="center"><a href="#multilingual-1">mBERT</a></td>
+            <td align="center"><a href="#multilingual-1">XLM-R</a></td>
+            <td align="center"><a href="#multilingual-1">LaBSE</a></td>
+            <td align="center"><a href="#multilingual-1">mDistilBERT</a></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+        </tr>
+        <tr>
+            <td>
+                <strong><a href="#belarusian">Belarusian</a></strong>
+            </td>
+            <td align="center"><a href="#multilingual-2">mBERT</a></td>
+            <td align="center"><a href="#multilingual-2">XLM-R</a></td>
+            <td align="center"><a href="#multilingual-2">LaBSE</a></td>
+            <td align="center"><a href="#multilingual-2">mDistilBERT</a></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+        </tr>
+        <tr>
+            <td>
+                <strong><a href="#bosnian">Bosnian</a></strong>
+            </td>
+            <td align="center"><a href="#multilingual-3">mBERT</a></td>
+            <td align="center"><a href="#multilingual-3">XLM-R</a></td>
+            <td align="center"><a href="#multilingual-3">LaBSE</a></td>
+            <td align="center"><a href="#multilingual-3">mDistilBERT</a></td>
+            <td align="center"></td>
+            <td align="center"><a href="#several-languages-3">BERTić</a></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center">
+                <a href="#single-language-models-3">BA-RoBERTa</a>
+            </td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+        </tr>
+        <tr>
+            <td>
+                <strong><a href="#bulgarian">Bulgarian</a></strong>
+            </td>
+            <td align="center"><a href="#multilingual-4">mBERT</a></td>
+            <td align="center"><a href="#multilingual-4">XLM-R</a></td>
+            <td align="center"><a href="#multilingual-4">LaBSE</a></td>
+            <td align="center"><a href="#multilingual-4">mDistilBERT</a></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center">
+                <a href="#several-languages-4">SlavicBERT</a>
+            </td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center">
+                <a href="#single-language-models-4">RoBERTa-base-bulgarian</a>
+            </td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+        </tr>
+        <tr>
+            <td>
+                <strong><a href="#croatian">Croatian</a></strong>
+            </td>
+            <td align="center"><a href="#multilingual-5">mBERT</a></td>
+            <td align="center"><a href="#multilingual-5">XLM-R</a></td>
+            <td align="center"><a href="#multilingual-5">LaBSE</a></td>
+            <td align="center"><a href="#multilingual-5">mDistilBERT</a></td>
+            <td align="center">
+                <a href="#several-languages-5">CroSloEngual</a>
+            </td>
+            <td align="center"><a href="#several-languages-5">BERTić</a></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+        </tr>
+        <tr>
+            <td>
+                <strong><a href="#czech">Czech</a></strong>
+            </td>
+            <td align="center"><a href="#multilingual-6">mBERT</a></td>
+            <td align="center"><a href="#multilingual-6">XLM-R</a></td>
+            <td align="center"><a href="#multilingual-6">LaBSE</a></td>
+            <td align="center"><a href="#multilingual-6">mDistilBERT</a></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center">
+                <a href="#several-languages-6">SlavicBERT</a>
+            </td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center">
+                <a href="#single-language-models-6">CZERT</a>
+            </td>
+            <td align="center">
+                <a href="#single-language-models-6">RobeCzech</a>
+            </td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center">
+                <a href="#single-language-models-6">Czech ALBERT</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong><a href="#estonian">Estonian</a></strong>
+            </td>
+            <td align="center"><a href="#multilingual-7">mBERT</a></td>
+            <td align="center"><a href="#multilingual-7">XLM-R</a></td>
+            <td align="center"><a href="#multilingual-7">LaBSE</a></td>
+            <td align="center"><a href="#multilingual-7">mDistilBERT</a></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"><a href="#several-languages-7">FinEst</a></td>
+            <td align="center">
+                <a href="#single-language-models-7">EstBERT</a>
+            </td>
+            <td align="center">
+                <a href="#single-language-models-7">est-roberta</a>
+            </td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+        </tr>
+        <tr>
+            <td>
+                <strong><a href="#georgian">Georgian</a></strong>
+            </td>
+            <td align="center"><a href="#multilingual-8">mBERT</a></td>
+            <td align="center"><a href="#multilingual-8">XLM-R</a></td>
+            <td align="center"><a href="#multilingual-8">LaBSE</a></td>
+            <td align="center"><a href="#multilingual-8">mDistilBERT</a></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+        </tr>
+        <tr>
+            <td>
+                <strong><a href="#hungarian">Hungarian</a></strong>
+            </td>
+            <td align="center"><a href="#multilingual-9">mBERT</a></td>
+            <td align="center"><a href="#multilingual-9">XLM-R</a></td>
+            <td align="center"><a href="#multilingual-9">LaBSE</a></td>
+            <td align="center"><a href="#multilingual-9">mDistilBERT</a></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center">
+                <a href="#single-language-models-9">huBERT</a>
+            </td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+        </tr>
+        <tr>
+            <td>
+                <strong><a href="#kazakh">Kazakh</a></strong>
+            </td>
+            <td align="center"><a href="#multilingual-10">mBERT</a></td>
+            <td align="center"><a href="#multilingual-10">XLM-R</a></td>
+            <td align="center"><a href="#multilingual-10">LaBSE</a></td>
+            <td align="center"><a href="#multilingual-10">mDistilBERT</a></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+        </tr>
+        <tr>
+            <td>
+                <strong><a href="#latvian">Latvian</a></strong>
+            </td>
+            <td align="center"><a href="#multilingual-11">mBERT</a></td>
+            <td align="center"><a href="#multilingual-11">XLM-R</a></td>
+            <td align="center"><a href="#multilingual-11">LaBSE</a></td>
+            <td align="center"><a href="#multilingual-11">mDistilBERT</a></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center">
+                <a href="#several-languages-11">LitLat BERT</a>
+            </td>
+            <td align="center"></td>
+            <td align="center">
+                <a href="#single-language-models-11">LV-BERT</a>
+            </td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+        </tr>
+        <tr>
+            <td>
+                <strong><a href="#lithuanian">Lithuanian</a></strong>
+            </td>
+            <td align="center"><a href="#multilingual-12">mBERT</a></td>
+            <td align="center"><a href="#multilingual-12">XLM-R</a></td>
+            <td align="center"><a href="#multilingual-12">LaBSE</a></td>
+            <td align="center"><a href="#multilingual-12">mDistilBERT</a></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center">
+                <a href="#several-languages-12">LitLat BERT</a>
+            </td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+        </tr>
+        <tr>
+            <td>
+                <strong><a href="#macedonian">Macedonian</a></strong>
+            </td>
+            <td align="center"><a href="#multilingual-13">mBERT</a></td>
+            <td align="center"><a href="#multilingual-13">XLM-R</a></td>
+            <td align="center"><a href="#multilingual-13">LaBSE</a></td>
+            <td align="center"><a href="#multilingual-13">mDistilBERT</a></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center">
+                <a href="#single-language-models-13">Macedonian BERT</a>
+            </td>
+            <td align="center">
+                <a href="#single-language-models-13">MK-RoBERTa</a>
+            </td>
+            <td align="center">
+                <a href="#single-language-models-13">Macedonian DistilBERT</a>
+            </td>
+            <td align="center">
+                <a href="#single-language-models-13">Macedonian Electra</a>
+            </td>
+            <td align="center"></td>
+        </tr>
+        <tr>
+            <td>
+                <strong
+                    ><a href="#moldovanmoldovian">Moldovan/Moldovian</a></strong
+                >
+            </td>
+            <td align="center"><a href="#multilingual-14">mBERT</a></td>
+            <td align="center"><a href="#multilingual-14">XLM-R</a></td>
+            <td align="center"><a href="#multilingual-14">LaBSE</a></td>
+            <td align="center"><a href="#multilingual-14">mDistilBERT</a></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+        </tr>
+        <tr>
+            <td>
+                <strong><a href="#montenegrin">Montenegrin</a></strong>
+            </td>
+            <td align="center"><a href="#multilingual-15">mBERT</a></td>
+            <td align="center"><a href="#multilingual-15">XLM-R</a></td>
+            <td align="center"><a href="#multilingual-15">LaBSE</a></td>
+            <td align="center"><a href="#multilingual-15">mDistilBERT</a></td>
+            <td align="center"></td>
+            <td align="center"><a href="#several-languages-15">BERTić</a></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+        </tr>
+        <tr>
+            <td>
+                <strong><a href="#polish">Polish</a></strong>
+            </td>
+            <td align="center"><a href="#multilingual-16">mBERT</a></td>
+            <td align="center"><a href="#multilingual-16">XLM-R</a></td>
+            <td align="center"><a href="#multilingual-16">LaBSE</a></td>
+            <td align="center"><a href="#multilingual-16">mDistilBERT</a></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center">
+                <a href="#several-languages-16">SlavicBERT</a>
+            </td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center">
+                <a href="#single-language-models-16">Polbert / HerBERT</a>
+            </td>
+            <td align="center">
+                <a href="#single-language-models-16">Polish RoBERTa</a>
+            </td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+        </tr>
+        <tr>
+            <td>
+                <strong><a href="#romanian">Romanian</a></strong>
+            </td>
+            <td align="center"><a href="#multilingual-17">mBERT</a></td>
+            <td align="center"><a href="#multilingual-17">XLM-R</a></td>
+            <td align="center"><a href="#multilingual-17">LaBSE</a></td>
+            <td align="center"><a href="#multilingual-17">mDistilBERT</a></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center">
+                <a href="#single-language-models-17">RoBERT / Romanian BERT</a>
+            </td>
+            <td align="center"></td>
+            <td align="center">
+                <a href="#single-language-models-17">Romanian DistilBERT</a>
+            </td>
+            <td align="center"></td>
+            <td align="center"></td>
+        </tr>
+        <tr>
+            <td>
+                <strong><a href="#russian">Russian</a></strong>
+            </td>
+            <td align="center"><a href="#multilingual-18">mBERT</a></td>
+            <td align="center"><a href="#multilingual-18">XLM-R</a></td>
+            <td align="center"><a href="#multilingual-18">LaBSE</a></td>
+            <td align="center"><a href="#multilingual-18">mDistilBERT</a></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center">
+                <a href="#several-languages-18">SlavicBERT</a>
+            </td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center">
+                <a href="#single-language-models-18">RuBERT</a>
+            </td>
+            <td align="center">
+                <a href="#single-language-models-18">Russian RoBERTa</a>
+            </td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+        </tr>
+        <tr>
+            <td>
+                <strong><a href="#serbian">Serbian</a></strong>
+            </td>
+            <td align="center"><a href="#multilingual-19">mBERT</a></td>
+            <td align="center"><a href="#multilingual-19">XLM-R</a></td>
+            <td align="center"><a href="#multilingual-19">LaBSE</a></td>
+            <td align="center"><a href="#multilingual-19">mDistilBERT</a></td>
+            <td align="center"></td>
+            <td align="center"><a href="#several-languages-19">BERTić</a></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+        </tr>
+        <tr>
+            <td>
+                <strong><a href="#slovakianslovak">Slovakian/Slovak</a></strong>
+            </td>
+            <td align="center"><a href="#multilingual-20">mBERT</a></td>
+            <td align="center"><a href="#multilingual-20">XLM-R</a></td>
+            <td align="center"><a href="#multilingual-20">LaBSE</a></td>
+            <td align="center"><a href="#multilingual-20">mDistilBERT</a></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+        </tr>
+        <tr>
+            <td>
+                <strong><a href="#slovenian">Slovenian</a></strong>
+            </td>
+            <td align="center"><a href="#multilingual-21">mBERT</a></td>
+            <td align="center"><a href="#multilingual-21">XLM-R</a></td>
+            <td align="center"><a href="#multilingual-21">LaBSE</a></td>
+            <td align="center"><a href="#multilingual-21">mDistilBERT</a></td>
+            <td align="center">
+                <a href="#several-languages-21">CroSloEngual</a>
+            </td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center">
+                <a href="#single-language-models-21">SloBERTa</a>
+            </td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+        </tr>
+        <tr>
+            <td>
+                <strong><a href="#ukrainian">Ukrainian</a></strong>
+            </td>
+            <td align="center"><a href="#multilingual-22">mBERT</a></td>
+            <td align="center"><a href="#multilingual-22">XLM-R</a></td>
+            <td align="center"><a href="#multilingual-22">LaBSE</a></td>
+            <td align="center"><a href="#multilingual-22">mDistilBERT</a></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center">
+                <a href="#single-language-models-22">ukr-roberta-base</a>
+            </td>
+            <td align="center"></td>
+            <td align="center">
+                <a href="#single-language-models-22">Ukrainian Electra</a>
+            </td>
+            <td align="center"></td>
+        </tr>
+    </tbody>
+</table>
 
 ## Albanian
 
@@ -50,8 +555,12 @@
 
 ### other
 
-| name | description | huggingface card | type | paper | citation | case | pre-trained on | comments |
-| ---- | ----------- | ---------------- | ---- | ----- | -------- | ---- | -------------- | -------- |
+| name             | description | huggingface card                                 | type                   | paper                                                        | citation                                                    | case | pre-trained on | comments                               |
+| ---------------- | ----------- | ------------------------------------------------ | ---------------------- | ------------------------------------------------------------ | ----------------------------------------------------------- | ---- | -------------- | -------------------------------------- |
+| MultiFiT         |             | https://nlp.fast.ai/                             | ULMFiT                 | https://aclanthology.org/D19-1572.pdf                        |                                                             |      |                | multilingual ULMFiT                    |
+| subs2vec         |             | https://github.com/jvparidon/subs2vec/           | static word embeddings | https://link.springer.com/article/10.3758/s13428-020-01406-3 |                                                             |      | subtitles      |                                        |
+| fasttext aligned |             | https://fasttext.cc/docs/en/aligned-vectors.html | static word embeddings | https://arxiv.org/abs/1804.07745                             | https://fasttext.cc/docs/en/aligned-vectors.html#references |      |                | original fasttext aligned automaticaly |
+| fasttext         |             | https://fasttext.cc/docs/en/crawl-vectors.html   | static word embeddings |                                                              |                                                             |      | cc + wiki      | original fasttext                      |
 
 ## Armenian
 
@@ -76,8 +585,12 @@
 
 ### other
 
-| name | description | huggingface card | type | paper | citation | case | pre-trained on | comments |
-| ---- | ----------- | ---------------- | ---- | ----- | -------- | ---- | -------------- | -------- |
+| name                                      | description | huggingface card                                           | type                   | paper                                                        | citation | case | pre-trained on | comments            |
+| ----------------------------------------- | ----------- | ---------------------------------------------------------- | ---------------------- | ------------------------------------------------------------ | -------- | ---- | -------------- | ------------------- |
+| MultiFiT                                  |             | https://nlp.fast.ai/                                       | ULMFiT                 | https://aclanthology.org/D19-1572.pdf                        |          |      |                | multilingual ULMFiT |
+| subs2vec                                  |             | https://github.com/jvparidon/subs2vec/                     | static word embeddings | https://link.springer.com/article/10.3758/s13428-020-01406-3 |          |      | subtitles      |                     |
+| fasttext                                  |             | https://fasttext.cc/docs/en/crawl-vectors.html             | static word embeddings |                                                              |          |      | cc + wiki      | original fasttext   |
+| Word Embeddings for the Armenian Language |             | https://github.com/ispras-texterra/word-embeddings-eval-hy | static word embeddings |                                                              |          |      |                |                     |
 
 ## Belarusian
 
@@ -102,8 +615,10 @@
 
 ### other
 
-| name | description | huggingface card | type | paper | citation | case | pre-trained on | comments |
-| ---- | ----------- | ---------------- | ---- | ----- | -------- | ---- | -------------- | -------- |
+| name     | description | huggingface card                               | type                   | paper                                 | citation | case | pre-trained on | comments            |
+| -------- | ----------- | ---------------------------------------------- | ---------------------- | ------------------------------------- | -------- | ---- | -------------- | ------------------- |
+| MultiFiT |             | https://nlp.fast.ai/                           | ULMFiT                 | https://aclanthology.org/D19-1572.pdf |          |      |                | multilingual ULMFiT |
+| fasttext |             | https://fasttext.cc/docs/en/crawl-vectors.html | static word embeddings |                                       |          |      | cc + wiki      | original fasttext   |
 
 ## Bosnian
 
@@ -130,8 +645,12 @@
 
 ### other
 
-| name | description | huggingface card | type | paper | citation | case | pre-trained on | comments |
-| ---- | ----------- | ---------------- | ---- | ----- | -------- | ---- | -------------- | -------- |
+| name             | description | huggingface card                                 | type                   | paper                                                        | citation                                                    | case | pre-trained on | comments                               |
+| ---------------- | ----------- | ------------------------------------------------ | ---------------------- | ------------------------------------------------------------ | ----------------------------------------------------------- | ---- | -------------- | -------------------------------------- |
+| MultiFiT         |             | https://nlp.fast.ai/                             | ULMFiT                 | https://aclanthology.org/D19-1572.pdf                        |                                                             |      |                | multilingual ULMFiT                    |
+| subs2vec         |             | https://github.com/jvparidon/subs2vec/           | static word embeddings | https://link.springer.com/article/10.3758/s13428-020-01406-3 |                                                             |      | subtitles      |                                        |
+| fasttext aligned |             | https://fasttext.cc/docs/en/aligned-vectors.html | static word embeddings | https://arxiv.org/abs/1804.07745                             | https://fasttext.cc/docs/en/aligned-vectors.html#references |      |                | original fasttext aligned automaticaly |
+| fasttext         |             | https://fasttext.cc/docs/en/crawl-vectors.html   | static word embeddings |                                                              |                                                             |      | cc + wiki      | original fasttext                      |
 
 ## Bulgarian
 
@@ -158,8 +677,16 @@
 
 ### other
 
-| name | description | huggingface card | type | paper | citation | case | pre-trained on | comments |
-| ---- | ----------- | ---------------- | ---- | ----- | -------- | ---- | -------------- | -------- |
+| name                                    | description | huggingface card                                                               | type                   | paper                                                        | citation                                                                        | case  | pre-trained on               | comments                               |
+| --------------------------------------- | ----------- | ------------------------------------------------------------------------------ | ---------------------- | ------------------------------------------------------------ | ------------------------------------------------------------------------------- | ----- | ---------------------------- | -------------------------------------- |
+| bert-base-bg-cased                      |             | https://huggingface.co/Geotrend/bert-base-bg-cased                             | DistilBERT             | https://aclanthology.org/2020.sustainlp-1.16.pdf             | https://aclanthology.org/2020.sustainlp-1.16.pdf                                | cased | mBERT distilled to Bulgarian |                                        |
+| Macedonian + Bulgarian BERT             |             | https://huggingface.co/anon-submission-mk/bert-base-macedonian-bulgarian-cased | BERT                   |                                                              |                                                                                 |       |                              |                                        |
+| MultiFiT                                |             | https://nlp.fast.ai/                                                           | ULMFiT                 | https://aclanthology.org/D19-1572.pdf                        |                                                                                 |       |                              | multilingual ULMFiT                    |
+| subs2vec                                |             | https://github.com/jvparidon/subs2vec/                                         | static word embeddings | https://link.springer.com/article/10.3758/s13428-020-01406-3 |                                                                                 |       | subtitles                    |                                        |
+| fasttext aligned                        |             | https://fasttext.cc/docs/en/aligned-vectors.html                               | static word embeddings | https://arxiv.org/abs/1804.07745                             | https://fasttext.cc/docs/en/aligned-vectors.html#references                     |       |                              | original fasttext aligned automaticaly |
+| fasttext aligned supervised             |             | https://github.com/facebookresearch/MUSE#multilingual-word-embeddings          | static word embeddings |                                                              | https://github.com/facebookresearch/MUSE#word-translation-without-parallel-data |       | wiki                         | original fasttext aligned supervised   |
+| fasttext                                |             | https://fasttext.cc/docs/en/crawl-vectors.html                                 | static word embeddings |                                                              |                                                                                 |       | cc + wiki                    | original fasttext                      |
+| ELMo Representations for Many Languages |             | https://github.com/HIT-SCIR/ELMoForManyLangs                                   | ELMo                   |                                                              | https://github.com/HIT-SCIR/ELMoForManyLangs#citation                           |       |                              |                                        |
 
 ## Croatian
 
@@ -186,8 +713,15 @@
 
 ### other
 
-| name | description | huggingface card | type | paper | citation | case | pre-trained on | comments |
-| ---- | ----------- | ---------------- | ---- | ----- | -------- | ---- | -------------- | -------- |
+| name                                       | description | huggingface card                                                      | type                   | paper                                                        | citation                                                                        | case | pre-trained on     | comments                                                              |
+| ------------------------------------------ | ----------- | --------------------------------------------------------------------- | ---------------------- | ------------------------------------------------------------ | ------------------------------------------------------------------------------- | ---- | ------------------ | --------------------------------------------------------------------- |
+| ELMo embeddings models for seven languages |             | --                                                                    | ELMo                   | https://arxiv.org/abs/1911.10049                             | https://arxiv.org/abs/1911.10049                                                | ?    | some local corpora | more details https://www.clarin.si/repository/xmlui/handle/11356/1277 |
+| MultiFiT                                   |             | https://nlp.fast.ai/                                                  | ULMFiT                 | https://aclanthology.org/D19-1572.pdf                        |                                                                                 |      |                    | multilingual ULMFiT                                                   |
+| subs2vec                                   |             | https://github.com/jvparidon/subs2vec/                                | static word embeddings | https://link.springer.com/article/10.3758/s13428-020-01406-3 |                                                                                 |      | subtitles          |                                                                       |
+| fasttext aligned                           |             | https://fasttext.cc/docs/en/aligned-vectors.html                      | static word embeddings | https://arxiv.org/abs/1804.07745                             | https://fasttext.cc/docs/en/aligned-vectors.html#references                     |      |                    | original fasttext aligned automaticaly                                |
+| fasttext aligned supervised                |             | https://github.com/facebookresearch/MUSE#multilingual-word-embeddings | static word embeddings |                                                              | https://github.com/facebookresearch/MUSE#word-translation-without-parallel-data |      | wiki               | original fasttext aligned supervised                                  |
+| fasttext                                   |             | https://fasttext.cc/docs/en/crawl-vectors.html                        | static word embeddings |                                                              |                                                                                 |      | cc + wiki          | original fasttext                                                     |
+| ELMo Representations for Many Languages    |             | https://github.com/HIT-SCIR/ELMoForManyLangs                          | ELMo                   |                                                              | https://github.com/HIT-SCIR/ELMoForManyLangs#citation                           |      |                    |                                                                       |
 
 ## Czech
 
@@ -216,8 +750,14 @@
 
 ### other
 
-| name | description | huggingface card | type | paper | citation | case | pre-trained on | comments |
-| ---- | ----------- | ---------------- | ---- | ----- | -------- | ---- | -------------- | -------- |
+| name                                    | description | huggingface card                                 | type                   | paper                                                        | citation                                                    | case | pre-trained on     | comments                               |
+| --------------------------------------- | ----------- | ------------------------------------------------ | ---------------------- | ------------------------------------------------------------ | ----------------------------------------------------------- | ---- | ------------------ | -------------------------------------- |
+| MultiFiT                                |             | https://nlp.fast.ai/                             | ULMFiT                 | https://aclanthology.org/D19-1572.pdf                        |                                                             |      |                    | multilingual ULMFiT                    |
+| subs2vec                                |             | https://github.com/jvparidon/subs2vec/           | static word embeddings | https://link.springer.com/article/10.3758/s13428-020-01406-3 |                                                             |      | subtitles          |                                        |
+| fasttext aligned                        |             | https://fasttext.cc/docs/en/aligned-vectors.html | static word embeddings | https://arxiv.org/abs/1804.07745                             | https://fasttext.cc/docs/en/aligned-vectors.html#references |      |                    | original fasttext aligned automaticaly |
+| ULMFiT for Czech                        |             | https://github.com/simecek/Czech-ULMFiT          | ULMFiT                 |                                                              |                                                             |      | CSFD movie dataset |                                        |
+| fasttext                                |             | https://fasttext.cc/docs/en/crawl-vectors.html   | static word embeddings |                                                              |                                                             |      | cc + wiki          | original fasttext                      |
+| ELMo Representations for Many Languages |             | https://github.com/HIT-SCIR/ELMoForManyLangs     | ELMo                   |                                                              | https://github.com/HIT-SCIR/ELMoForManyLangs#citation       |      |                    |                                        |
 
 ## Estonian
 
@@ -245,8 +785,16 @@
 
 ### other
 
-| name | description | huggingface card | type | paper | citation | case | pre-trained on | comments |
-| ---- | ----------- | ---------------- | ---- | ----- | -------- | ---- | -------------- | -------- |
+| name                                                    | description | huggingface card                                                      | type                   | paper                                                        | citation                                                                        | case | pre-trained on     | comments                                                              |
+| ------------------------------------------------------- | ----------- | --------------------------------------------------------------------- | ---------------------- | ------------------------------------------------------------ | ------------------------------------------------------------------------------- | ---- | ------------------ | --------------------------------------------------------------------- |
+| ELMo embeddings models for seven languages              |             | --                                                                    | ELMo                   | https://arxiv.org/abs/1911.10049                             | https://arxiv.org/abs/1911.10049                                                | ?    | some local corpora | more details https://www.clarin.si/repository/xmlui/handle/11356/1277 |
+| MultiFiT                                                |             | https://nlp.fast.ai/                                                  | ULMFiT                 | https://aclanthology.org/D19-1572.pdf                        |                                                                                 |      |                    | multilingual ULMFiT                                                   |
+| subs2vec                                                |             | https://github.com/jvparidon/subs2vec/                                | static word embeddings | https://link.springer.com/article/10.3758/s13428-020-01406-3 |                                                                                 |      | subtitles          |                                                                       |
+| fasttext aligned                                        |             | https://fasttext.cc/docs/en/aligned-vectors.html                      | static word embeddings | https://arxiv.org/abs/1804.07745                             | https://fasttext.cc/docs/en/aligned-vectors.html#references                     |      |                    | original fasttext aligned automaticaly                                |
+| fasttext aligned supervised                             |             | https://github.com/facebookresearch/MUSE#multilingual-word-embeddings | static word embeddings |                                                              | https://github.com/facebookresearch/MUSE#word-translation-without-parallel-data |      | wiki               | original fasttext aligned supervised                                  |
+| fasttext                                                |             | https://fasttext.cc/docs/en/crawl-vectors.html                        | static word embeddings |                                                              |                                                                                 |      | cc + wiki          | original fasttext                                                     |
+| ELMo Representations for Many Languages                 |             | https://github.com/HIT-SCIR/ELMoForManyLangs                          | ELMo                   |                                                              | https://github.com/HIT-SCIR/ELMoForManyLangs#citation                           |      |                    |                                                                       |
+| Pretrained word and multi-sense embeddings for Estonian |             | https://github.com/eleriaedmaa/embeddings                             | static word embeddings |                                                              |                                                                                 |      |                    |                                                                       |
 
 ## Georgian
 
@@ -271,8 +819,11 @@
 
 ### other
 
-| name | description | huggingface card | type | paper | citation | case | pre-trained on | comments |
-| ---- | ----------- | ---------------- | ---- | ----- | -------- | ---- | -------------- | -------- |
+| name     | description | huggingface card                               | type                   | paper                                                        | citation | case | pre-trained on | comments            |
+| -------- | ----------- | ---------------------------------------------- | ---------------------- | ------------------------------------------------------------ | -------- | ---- | -------------- | ------------------- |
+| MultiFiT |             | https://nlp.fast.ai/                           | ULMFiT                 | https://aclanthology.org/D19-1572.pdf                        |          |      |                | multilingual ULMFiT |
+| subs2vec |             | https://github.com/jvparidon/subs2vec/         | static word embeddings | https://link.springer.com/article/10.3758/s13428-020-01406-3 |          |      | subtitles      |                     |
+| fasttext |             | https://fasttext.cc/docs/en/crawl-vectors.html | static word embeddings |                                                              |          |      | cc + wiki      | original fasttext   |
 
 ## Hungarian
 
@@ -298,8 +849,14 @@
 
 ### other
 
-| name | description | huggingface card | type | paper | citation | case | pre-trained on | comments |
-| ---- | ----------- | ---------------- | ---- | ----- | -------- | ---- | -------------- | -------- |
+| name                                    | description | huggingface card                                                      | type                   | paper                                                        | citation                                                                        | case | pre-trained on | comments                               |
+| --------------------------------------- | ----------- | --------------------------------------------------------------------- | ---------------------- | ------------------------------------------------------------ | ------------------------------------------------------------------------------- | ---- | -------------- | -------------------------------------- |
+| MultiFiT                                |             | https://nlp.fast.ai/                                                  | ULMFiT                 | https://aclanthology.org/D19-1572.pdf                        |                                                                                 |      |                | multilingual ULMFiT                    |
+| subs2vec                                |             | https://github.com/jvparidon/subs2vec/                                | static word embeddings | https://link.springer.com/article/10.3758/s13428-020-01406-3 |                                                                                 |      | subtitles      |                                        |
+| fasttext aligned                        |             | https://fasttext.cc/docs/en/aligned-vectors.html                      | static word embeddings | https://arxiv.org/abs/1804.07745                             | https://fasttext.cc/docs/en/aligned-vectors.html#references                     |      |                | original fasttext aligned automaticaly |
+| fasttext aligned supervised             |             | https://github.com/facebookresearch/MUSE#multilingual-word-embeddings | static word embeddings |                                                              | https://github.com/facebookresearch/MUSE#word-translation-without-parallel-data |      | wiki           | original fasttext aligned supervised   |
+| fasttext                                |             | https://fasttext.cc/docs/en/crawl-vectors.html                        | static word embeddings |                                                              |                                                                                 |      | cc + wiki      | original fasttext                      |
+| ELMo Representations for Many Languages |             | https://github.com/HIT-SCIR/ELMoForManyLangs                          | ELMo                   |                                                              | https://github.com/HIT-SCIR/ELMoForManyLangs#citation                           |      |                |                                        |
 
 ## Kazakh
 
@@ -324,8 +881,10 @@
 
 ### other
 
-| name | description | huggingface card | type | paper | citation | case | pre-trained on | comments |
-| ---- | ----------- | ---------------- | ---- | ----- | -------- | ---- | -------------- | -------- |
+| name     | description | huggingface card                               | type                   | paper                                 | citation | case | pre-trained on | comments            |
+| -------- | ----------- | ---------------------------------------------- | ---------------------- | ------------------------------------- | -------- | ---- | -------------- | ------------------- |
+| MultiFiT |             | https://nlp.fast.ai/                           | ULMFiT                 | https://aclanthology.org/D19-1572.pdf |          |      |                | multilingual ULMFiT |
+| fasttext |             | https://fasttext.cc/docs/en/crawl-vectors.html | static word embeddings |                                       |          |      | cc + wiki      | original fasttext   |
 
 ## Latvian
 
@@ -352,8 +911,14 @@
 
 ### other
 
-| name | description | huggingface card | type | paper | citation | case | pre-trained on | comments |
-| ---- | ----------- | ---------------- | ---- | ----- | -------- | ---- | -------------- | -------- |
+| name                                       | description | huggingface card                                 | type                   | paper                                                        | citation                                                    | case | pre-trained on     | comments                                                              |
+| ------------------------------------------ | ----------- | ------------------------------------------------ | ---------------------- | ------------------------------------------------------------ | ----------------------------------------------------------- | ---- | ------------------ | --------------------------------------------------------------------- |
+| ELMo embeddings models for seven languages |             | --                                               | ELMo                   | https://arxiv.org/abs/1911.10049                             | https://arxiv.org/abs/1911.10049                            | ?    | some local corpora | more details https://www.clarin.si/repository/xmlui/handle/11356/1277 |
+| MultiFiT                                   |             | https://nlp.fast.ai/                             | ULMFiT                 | https://aclanthology.org/D19-1572.pdf                        |                                                             |      |                    | multilingual ULMFiT                                                   |
+| subs2vec                                   |             | https://github.com/jvparidon/subs2vec/           | static word embeddings | https://link.springer.com/article/10.3758/s13428-020-01406-3 |                                                             |      | subtitles          |                                                                       |
+| fasttext aligned                           |             | https://fasttext.cc/docs/en/aligned-vectors.html | static word embeddings | https://arxiv.org/abs/1804.07745                             | https://fasttext.cc/docs/en/aligned-vectors.html#references |      |                    | original fasttext aligned automaticaly                                |
+| fasttext                                   |             | https://fasttext.cc/docs/en/crawl-vectors.html   | static word embeddings |                                                              |                                                             |      | cc + wiki          | original fasttext                                                     |
+| ELMo Representations for Many Languages    |             | https://github.com/HIT-SCIR/ELMoForManyLangs     | ELMo                   |                                                              | https://github.com/HIT-SCIR/ELMoForManyLangs#citation       |      |                    |                                                                       |
 
 ## Lithuanian
 
@@ -379,8 +944,15 @@
 
 ### other
 
-| name | description | huggingface card | type | paper | citation | case | pre-trained on | comments |
-| ---- | ----------- | ---------------- | ---- | ----- | -------- | ---- | -------------- | -------- |
+| name                                       | description | huggingface card                                                               | type                   | paper                                                        | citation                                                    | case | pre-trained on         | comments                                                                                                                                  |
+| ------------------------------------------ | ----------- | ------------------------------------------------------------------------------ | ---------------------- | ------------------------------------------------------------ | ----------------------------------------------------------- | ---- | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| ELMo embeddings models for seven languages |             | --                                                                             | ELMo                   | https://arxiv.org/abs/1911.10049                             | https://arxiv.org/abs/1911.10049                            | ?    | some local corpora     | more details https://www.clarin.si/repository/xmlui/handle/11356/1277                                                                     |
+| Lithuanian T5 summaries                    |             | https://huggingface.co/LukasStankevicius/t5-base-lithuanian-news-summaries-175 | T5 summaries           |                                                              |                                                             |      |                        | https://www.researchgate.net/publication/351448762_Generating_abstractive_summaries_of_Lithuanian_news_articles_using_a_transformer_model |
+| MultiFiT                                   |             | https://nlp.fast.ai/                                                           | ULMFiT                 | https://aclanthology.org/D19-1572.pdf                        |                                                             |      |                        | multilingual ULMFiT                                                                                                                       |
+| subs2vec                                   |             | https://github.com/jvparidon/subs2vec/                                         | static word embeddings | https://link.springer.com/article/10.3758/s13428-020-01406-3 |                                                             |      | subtitles              |                                                                                                                                           |
+| Lithuanian Word embeddings                 |             | https://clarin.vdu.lt/xmlui/handle/20.500.11821/26                             | static word embeddings |                                                              |                                                             |      | Delfi.lt + StanfordNLP | GloVe                                                                                                                                     |
+| fasttext aligned                           |             | https://fasttext.cc/docs/en/aligned-vectors.html                               | static word embeddings | https://arxiv.org/abs/1804.07745                             | https://fasttext.cc/docs/en/aligned-vectors.html#references |      |                        | original fasttext aligned automaticaly                                                                                                    |
+| fasttext                                   |             | https://fasttext.cc/docs/en/crawl-vectors.html                                 | static word embeddings |                                                              |                                                             |      | cc + wiki              | original fasttext                                                                                                                         |
 
 ## Macedonian
 
@@ -400,13 +972,24 @@
 
 ### single language models
 
-| name | description | huggingface card | type | paper | citation | case | pre-trained on | comments |
-| ---- | ----------- | ---------------- | ---- | ----- | -------- | ---- | -------------- | -------- |
+| name                  | description | huggingface card                                                                  | type       | paper | citation | case  | pre-trained on | comments |
+| --------------------- | ----------- | --------------------------------------------------------------------------------- | ---------- | ----- | -------- | ----- | -------------- | -------- |
+| Macedonian BERT       |             | https://huggingface.co/anon-submission-mk/bert-base-macedonian-cased              | BERT       |       |          |       |                |          |
+| MK-RoBERTa            |             | https://huggingface.co/macedonizer/mk-roberta-base                                | RoBERTa    | ?     | ?        | cased |                |          |
+| Macedonian DistilBERT |             | https://huggingface.co/anon-submission-mk/distilbert-base-macedonian-cased        | DistilBERT |       |          |       |                |          |
+| Macedonian Electra    |             | https://huggingface.co/anon-submission-mk/electra-base-macedonian-cased-generator | Electra    |       |          |       |                |          |
 
 ### other
 
-| name | description | huggingface card | type | paper | citation | case | pre-trained on | comments |
-| ---- | ----------- | ---------------- | ---- | ----- | -------- | ---- | -------------- | -------- |
+| name                        | description | huggingface card                                                               | type                   | paper                                                        | citation                                                                        | case  | pre-trained on | comments                               |
+| --------------------------- | ----------- | ------------------------------------------------------------------------------ | ---------------------- | ------------------------------------------------------------ | ------------------------------------------------------------------------------- | ----- | -------------- | -------------------------------------- |
+| Macedonian + Bulgarian BERT |             | https://huggingface.co/anon-submission-mk/bert-base-macedonian-bulgarian-cased | BERT                   |                                                              |                                                                                 |       |                |                                        |
+| mk-gpt2                     |             | https://huggingface.co/macedonizer/mk-gpt2                                     | GPT2                   | ?                                                            | ?                                                                               | cased |                |                                        |
+| MultiFiT                    |             | https://nlp.fast.ai/                                                           | ULMFiT                 | https://aclanthology.org/D19-1572.pdf                        |                                                                                 |       |                | multilingual ULMFiT                    |
+| subs2vec                    |             | https://github.com/jvparidon/subs2vec/                                         | static word embeddings | https://link.springer.com/article/10.3758/s13428-020-01406-3 |                                                                                 |       | subtitles      |                                        |
+| fasttext aligned            |             | https://fasttext.cc/docs/en/aligned-vectors.html                               | static word embeddings | https://arxiv.org/abs/1804.07745                             | https://fasttext.cc/docs/en/aligned-vectors.html#references                     |       |                | original fasttext aligned automaticaly |
+| fasttext aligned supervised |             | https://github.com/facebookresearch/MUSE#multilingual-word-embeddings          | static word embeddings |                                                              | https://github.com/facebookresearch/MUSE#word-translation-without-parallel-data |       | wiki           | original fasttext aligned supervised   |
+| fasttext                    |             | https://fasttext.cc/docs/en/crawl-vectors.html                                 | static word embeddings |                                                              |                                                                                 |       | cc + wiki      | original fasttext                      |
 
 ## Moldovan/Moldovian
 
@@ -431,8 +1014,10 @@
 
 ### other
 
-| name | description | huggingface card | type | paper | citation | case | pre-trained on | comments |
-| ---- | ----------- | ---------------- | ---- | ----- | -------- | ---- | -------------- | -------- |
+| name     | description | huggingface card                               | type                   | paper                                 | citation | case | pre-trained on | comments            |
+| -------- | ----------- | ---------------------------------------------- | ---------------------- | ------------------------------------- | -------- | ---- | -------------- | ------------------- |
+| MultiFiT |             | https://nlp.fast.ai/                           | ULMFiT                 | https://aclanthology.org/D19-1572.pdf |          |      |                | multilingual ULMFiT |
+| fasttext |             | https://fasttext.cc/docs/en/crawl-vectors.html | static word embeddings |                                       |          |      | cc + wiki      | original fasttext   |
 
 ## Montenegrin
 
@@ -447,8 +1032,9 @@
 
 ### several languages
 
-| name | description | huggingface card | type | paper | citation | case | pre-trained on | comments |
-| ---- | ----------- | ---------------- | ---- | ----- | -------- | ---- | -------------- | -------- |
+| name   | description | huggingface card                           | type            | paper                            | citation                                   | case  | pre-trained on    | comments |
+| ------ | ----------- | ------------------------------------------ | --------------- | -------------------------------- | ------------------------------------------ | ----- | ----------------- | -------- |
+| BERTić |             | https://huggingface.co/classla/bcms-bertic | BERT/Electra(?) | https://arxiv.org/abs/2104.09243 | https://huggingface.co/classla/bcms-bertic | cased | web crawled texts |          |
 
 ### single language models
 
@@ -457,8 +1043,10 @@
 
 ### other
 
-| name | description | huggingface card | type | paper | citation | case | pre-trained on | comments |
-| ---- | ----------- | ---------------- | ---- | ----- | -------- | ---- | -------------- | -------- |
+| name     | description | huggingface card                               | type                   | paper                                 | citation | case | pre-trained on | comments            |
+| -------- | ----------- | ---------------------------------------------- | ---------------------- | ------------------------------------- | -------- | ---- | -------------- | ------------------- |
+| MultiFiT |             | https://nlp.fast.ai/                           | ULMFiT                 | https://aclanthology.org/D19-1572.pdf |          |      |                | multilingual ULMFiT |
+| fasttext |             | https://fasttext.cc/docs/en/crawl-vectors.html | static word embeddings |                                       |          |      | cc + wiki      | original fasttext   |
 
 ## Polish
 
@@ -473,18 +1061,34 @@
 
 ### several languages
 
-| name | description | huggingface card | type | paper | citation | case | pre-trained on | comments |
-| ---- | ----------- | ---------------- | ---- | ----- | -------- | ---- | -------------- | -------- |
+| name       | description | huggingface card                                              | type | paper                              | citation                           | case  | pre-trained on | comments |
+| ---------- | ----------- | ------------------------------------------------------------- | ---- | ---------------------------------- | ---------------------------------- | ----- | -------------- | -------- |
+| SlavicBERT |             | https://huggingface.co/DeepPavlov/bert-base-bg-cs-pl-ru-cased | BERT | https://aclanthology.org/W19-3712/ | https://aclanthology.org/W19-3712/ | cased | news + wiki    |          |
 
 ### single language models
 
-| name | description | huggingface card | type | paper | citation | case | pre-trained on | comments |
-| ---- | ----------- | ---------------- | ---- | ----- | -------- | ---- | -------------- | -------- |
+| name           | description | huggingface card                                          | type    | paper                                    | citation                                                | case  | pre-trained on  | comments                                                                       |
+| -------------- | ----------- | --------------------------------------------------------- | ------- | ---------------------------------------- | ------------------------------------------------------- | ----- | --------------- | ------------------------------------------------------------------------------ |
+| Polbert        |             | https://huggingface.co/dkleczek/bert-base-polish-cased-v1 | BERT    | ?                                        | ?                                                       | both  | cc + wiki + etc | usage examples https://huggingface.co/dkleczek/bert-base-polish-cased-v1#usage |
+| HerBERT        |             | https://huggingface.co/allegro/herbert-base-cased         | BERT    | https://aclanthology.org/2021.bsnlp-1.1/ | https://aclanthology.org/2021.bsnlp-1.1/                | cased | ?               |                                                                                |
+| Polish RoBERTa |             | --                                                        | RoBERTa | https://arxiv.org/abs/2006.04229         | https://github.com/sdadas/polish-roberta#polish-roberta | cased | ?               | github https://github.com/sdadas/polish-roberta                                |
 
 ### other
 
-| name | description | huggingface card | type | paper | citation | case | pre-trained on | comments |
-| ---- | ----------- | ---------------- | ---- | ----- | -------- | ---- | -------------- | -------- |
+| name                                    | description | huggingface card                                                                    | type                   | paper                                                        | citation                                                                        | case | pre-trained on | comments                               |
+| --------------------------------------- | ----------- | ----------------------------------------------------------------------------------- | ---------------------- | ------------------------------------------------------------ | ------------------------------------------------------------------------------- | ---- | -------------- | -------------------------------------- |
+| papuGaPT2                               |             | https://huggingface.co/flax-community/papuGaPT2?text=Najsmaczniejszy+polski+owoc+to | GPT2                   |                                                              |                                                                                 |      |                |                                        |
+| MultiFiT                                |             | https://nlp.fast.ai/                                                                | ULMFiT                 | https://aclanthology.org/D19-1572.pdf                        |                                                                                 |      |                | multilingual ULMFiT                    |
+| subs2vec                                |             | https://github.com/jvparidon/subs2vec/                                              | static word embeddings | https://link.springer.com/article/10.3758/s13428-020-01406-3 |                                                                                 |      | subtitles      |                                        |
+| wikipedia2vec                           |             | https://wikipedia2vec.github.io/wikipedia2vec/pretrained/                           | static word embeddings |                                                              |                                                                                 |      | wiki           |                                        |
+| fasttext aligned                        |             | https://fasttext.cc/docs/en/aligned-vectors.html                                    | static word embeddings | https://arxiv.org/abs/1804.07745                             | https://fasttext.cc/docs/en/aligned-vectors.html#references                     |      |                | original fasttext aligned automaticaly |
+| ELMo Embeddings for Polish              |             | https://clarin-pl.eu/dspace/handle/11321/690                                        | ELMo                   |                                                              |                                                                                 |      | KGR10          |                                        |
+| fasttext aligned supervised             |             | https://github.com/facebookresearch/MUSE#multilingual-word-embeddings               | static word embeddings |                                                              | https://github.com/facebookresearch/MUSE#word-translation-without-parallel-data |      | wiki           | original fasttext aligned supervised   |
+| fasttext                                |             | https://fasttext.cc/docs/en/crawl-vectors.html                                      | static word embeddings |                                                              |                                                                                 |      | cc + wiki      | original fasttext                      |
+| ELMo Representations for Many Languages |             | https://github.com/HIT-SCIR/ELMoForManyLangs                                        | ELMo                   |                                                              | https://github.com/HIT-SCIR/ELMoForManyLangs#citation                           |      |                |                                        |
+| Word Embeddings for Polish              |             | https://clarin-pl.eu/dspace/handle/11321/442                                        | static word embeddings |                                                              |                                                                                 |      |                |                                        |
+| Polish Word embeddings                  |             | https://github.com/sdadas/polish-nlp-resources#word-embeddings-and-language-models  | static word embeddings |                                                              |                                                                                 |      |                |                                        |
+| Polish ELMo                             |             | https://github.com/sdadas/polish-nlp-resources#elmo                                 | ELMo                   |                                                              |                                                                                 |      |                |                                        |
 
 ## Romanian
 
@@ -504,13 +1108,24 @@
 
 ### single language models
 
-| name | description | huggingface card | type | paper | citation | case | pre-trained on | comments |
-| ---- | ----------- | ---------------- | ---- | ----- | -------- | ---- | -------------- | -------- |
+| name                | description | huggingface card                                                    | type       | paper                                          | citation                                                                      | case  | pre-trained on | comments                                                         |
+| ------------------- | ----------- | ------------------------------------------------------------------- | ---------- | ---------------------------------------------- | ----------------------------------------------------------------------------- | ----- | -------------- | ---------------------------------------------------------------- |
+| RoBERT              |             | https://huggingface.co/readerbench/RoBERT-base                      | BERT       | https://aclanthology.org/2020.coling-main.581/ | https://huggingface.co/readerbench/RoBERT-base#bibtex-entry-and-citation-info |       |                |                                                                  |
+| Romanian BERT       |             | https://huggingface.co/dumitrescustefan/bert-base-romanian-cased-v1 | BERT       | https://arxiv.org/abs/2009.08712               | https://github.com/dumitrescustefan/Romanian-Transformers#cite                | both  | ?              | github https://github.com/dumitrescustefan/Romanian-Transformers |
+| Romanian DistilBERT |             | https://huggingface.co/racai/distilbert-base-romanian-cased         | DistilBERT | ?                                              | https://github.com/racai-ai/Romanian-DistilBERT#citation                      | cased | ?              | github https://github.com/racai-ai/Romanian-DistilBERT           |
 
 ### other
 
-| name | description | huggingface card | type | paper | citation | case | pre-trained on | comments |
-| ---- | ----------- | ---------------- | ---- | ----- | -------- | ---- | -------------- | -------- |
+| name                                    | description | huggingface card                                                      | type                   | paper                                                        | citation                                                                        | case | pre-trained on | comments                               |
+| --------------------------------------- | ----------- | --------------------------------------------------------------------- | ---------------------- | ------------------------------------------------------------ | ------------------------------------------------------------------------------- | ---- | -------------- | -------------------------------------- |
+| Romanian GPT2                           |             | https://huggingface.co/mihaitensor/romanian-gpt2                      | GPT2                   |                                                              |                                                                                 |      |                |                                        |
+| MultiFiT                                |             | https://nlp.fast.ai/                                                  | ULMFiT                 | https://aclanthology.org/D19-1572.pdf                        |                                                                                 |      |                | multilingual ULMFiT                    |
+| subs2vec                                |             | https://github.com/jvparidon/subs2vec/                                | static word embeddings | https://link.springer.com/article/10.3758/s13428-020-01406-3 |                                                                                 |      | subtitles      |                                        |
+| fasttext aligned                        |             | https://fasttext.cc/docs/en/aligned-vectors.html                      | static word embeddings | https://arxiv.org/abs/1804.07745                             | https://fasttext.cc/docs/en/aligned-vectors.html#references                     |      |                | original fasttext aligned automaticaly |
+| fasttext aligned supervised             |             | https://github.com/facebookresearch/MUSE#multilingual-word-embeddings | static word embeddings |                                                              | https://github.com/facebookresearch/MUSE#word-translation-without-parallel-data |      | wiki           | original fasttext aligned supervised   |
+| fasttext                                |             | https://fasttext.cc/docs/en/crawl-vectors.html                        | static word embeddings |                                                              |                                                                                 |      | cc + wiki      | original fasttext                      |
+| ELMo Representations for Many Languages |             | https://github.com/HIT-SCIR/ELMoForManyLangs                          | ELMo                   |                                                              | https://github.com/HIT-SCIR/ELMoForManyLangs#citation                           |      |                |                                        |
+| Romanian static embeddings              |             | https://github.com/senisioi/ro_resources                              | static word embeddings |                                                              |                                                                                 |      |                |                                        |
 
 ## Russian
 
@@ -525,18 +1140,35 @@
 
 ### several languages
 
-| name | description | huggingface card | type | paper | citation | case | pre-trained on | comments |
-| ---- | ----------- | ---------------- | ---- | ----- | -------- | ---- | -------------- | -------- |
+| name       | description | huggingface card                                              | type | paper                              | citation                           | case  | pre-trained on | comments |
+| ---------- | ----------- | ------------------------------------------------------------- | ---- | ---------------------------------- | ---------------------------------- | ----- | -------------- | -------- |
+| SlavicBERT |             | https://huggingface.co/DeepPavlov/bert-base-bg-cs-pl-ru-cased | BERT | https://aclanthology.org/W19-3712/ | https://aclanthology.org/W19-3712/ | cased | news + wiki    |          |
 
 ### single language models
 
-| name | description | huggingface card | type | paper | citation | case | pre-trained on | comments |
-| ---- | ----------- | ---------------- | ---- | ----- | -------- | ---- | -------------- | -------- |
+| name            | description | huggingface card                                       | type    | paper                            | citation                         | case  | pre-trained on | comments                                                           |
+| --------------- | ----------- | ------------------------------------------------------ | ------- | -------------------------------- | -------------------------------- | ----- | -------------- | ------------------------------------------------------------------ |
+| RuBERT          |             | https://huggingface.co/DeepPavlov/rubert-base-cased    | BERT    | https://arxiv.org/abs/1905.07213 | https://arxiv.org/abs/1905.07213 | cased | ?              | also: https://huggingface.co/DeepPavlov/rubert-base-cased-sentence |
+| Russian RoBERTa |             | https://huggingface.co/blinoff/roberta-base-russian-v0 | RoBERTa |                                  |                                  |       |                |                                                                    |
 
 ### other
 
-| name | description | huggingface card | type | paper | citation | case | pre-trained on | comments |
-| ---- | ----------- | ---------------- | ---- | ----- | -------- | ---- | -------------- | -------- |
+| name                                    | description | huggingface card                                                              | type                   | paper                                                        | citation                                                                        | case | pre-trained on | comments                                    |
+| --------------------------------------- | ----------- | ----------------------------------------------------------------------------- | ---------------------- | ------------------------------------------------------------ | ------------------------------------------------------------------------------- | ---- | -------------- | ------------------------------------------- |
+| ru-gpts                                 |             |                                                                               | GPT2                   |                                                              |                                                                                 |      |                | https://github.com/sberbank-ai/ru-gpts      |
+| ru_transformers                         |             |                                                                               | GPT2                   |                                                              |                                                                                 |      |                | https://github.com/mgrankin/ru_transformers |
+| MultiFiT                                |             | https://nlp.fast.ai/                                                          | ULMFiT                 | https://aclanthology.org/D19-1572.pdf                        |                                                                                 |      |                | multilingual ULMFiT                         |
+| subs2vec                                |             | https://github.com/jvparidon/subs2vec/                                        | static word embeddings | https://link.springer.com/article/10.3758/s13428-020-01406-3 |                                                                                 |      | subtitles      |                                             |
+| wikipedia2vec                           |             | https://wikipedia2vec.github.io/wikipedia2vec/pretrained/                     | static word embeddings |                                                              |                                                                                 |      | wiki           |                                             |
+| fasttext aligned                        |             | https://fasttext.cc/docs/en/aligned-vectors.html                              | static word embeddings | https://arxiv.org/abs/1804.07745                             | https://fasttext.cc/docs/en/aligned-vectors.html#references                     |      |                | original fasttext aligned automaticaly      |
+| fasttext aligned supervised             |             | https://github.com/facebookresearch/MUSE#multilingual-word-embeddings         | static word embeddings |                                                              | https://github.com/facebookresearch/MUSE#word-translation-without-parallel-data |      | wiki           | original fasttext aligned supervised        |
+| fasttext                                |             | https://fasttext.cc/docs/en/crawl-vectors.html                                | static word embeddings |                                                              |                                                                                 |      | cc + wiki      | original fasttext                           |
+| ELMo Representations for Many Languages |             | https://github.com/HIT-SCIR/ELMoForManyLangs                                  | ELMo                   |                                                              | https://github.com/HIT-SCIR/ELMoForManyLangs#citation                           |      |                |                                             |
+| Russian language ELMo embeddings model  |             | http://docs.deeppavlov.ai/en/master/features/pretrained_vectors.html#elmo     | ELMo                   |                                                              |                                                                                 |      |                |                                             |
+| Russian fasttext from DeepPavlov        |             | http://docs.deeppavlov.ai/en/master/features/pretrained_vectors.html#fasttext | static word embeddings |                                                              |                                                                                 |      |                |                                             |
+| Russian fasttext from natasha project   |             | https://github.com/natasha/navec                                              | static word embeddings |                                                              |                                                                                 |      |                |                                             |
+| RuVectores static                       |             | https://rusvectores.org/en/models/                                            | static word embeddings |                                                              |                                                                                 |      |                |                                             |
+| RuVectores ELMo                         |             | https://rusvectores.org/en/models/                                            | ELMo                   |                                                              |                                                                                 |      |                |                                             |
 
 ## Serbian
 
@@ -551,8 +1183,9 @@
 
 ### several languages
 
-| name | description | huggingface card | type | paper | citation | case | pre-trained on | comments |
-| ---- | ----------- | ---------------- | ---- | ----- | -------- | ---- | -------------- | -------- |
+| name   | description | huggingface card                           | type            | paper                            | citation                                   | case  | pre-trained on    | comments |
+| ------ | ----------- | ------------------------------------------ | --------------- | -------------------------------- | ------------------------------------------ | ----- | ----------------- | -------- |
+| BERTić |             | https://huggingface.co/classla/bcms-bertic | BERT/Electra(?) | https://arxiv.org/abs/2104.09243 | https://huggingface.co/classla/bcms-bertic | cased | web crawled texts |          |
 
 ### single language models
 
@@ -561,8 +1194,12 @@
 
 ### other
 
-| name | description | huggingface card | type | paper | citation | case | pre-trained on | comments |
-| ---- | ----------- | ---------------- | ---- | ----- | -------- | ---- | -------------- | -------- |
+| name             | description | huggingface card                               | type                   | paper                                                        | citation | case | pre-trained on | comments            |
+| ---------------- | ----------- | ---------------------------------------------- | ---------------------- | ------------------------------------------------------------ | -------- | ---- | -------------- | ------------------- |
+| MultiFiT         |             | https://nlp.fast.ai/                           | ULMFiT                 | https://aclanthology.org/D19-1572.pdf                        |          |      |                | multilingual ULMFiT |
+| subs2vec         |             | https://github.com/jvparidon/subs2vec/         | static word embeddings | https://link.springer.com/article/10.3758/s13428-020-01406-3 |          |      | subtitles      |                     |
+| ULMFIT - Serbian |             | https://forums.fast.ai/t/ulmfit-serbian/40316  | ULMFiT                 |                                                              |          |      | wiki           | unfinished?         |
+| fasttext         |             | https://fasttext.cc/docs/en/crawl-vectors.html | static word embeddings |                                                              |          |      | cc + wiki      | original fasttext   |
 
 ## Slovakian/Slovak
 
@@ -587,8 +1224,14 @@
 
 ### other
 
-| name | description | huggingface card | type | paper | citation | case | pre-trained on | comments |
-| ---- | ----------- | ---------------- | ---- | ----- | -------- | ---- | -------------- | -------- |
+| name                                    | description | huggingface card                                                      | type                   | paper                                                        | citation                                                                        | case | pre-trained on | comments                               |
+| --------------------------------------- | ----------- | --------------------------------------------------------------------- | ---------------------- | ------------------------------------------------------------ | ------------------------------------------------------------------------------- | ---- | -------------- | -------------------------------------- |
+| MultiFiT                                |             | https://nlp.fast.ai/                                                  | ULMFiT                 | https://aclanthology.org/D19-1572.pdf                        |                                                                                 |      |                | multilingual ULMFiT                    |
+| subs2vec                                |             | https://github.com/jvparidon/subs2vec/                                | static word embeddings | https://link.springer.com/article/10.3758/s13428-020-01406-3 |                                                                                 |      | subtitles      |                                        |
+| fasttext aligned                        |             | https://fasttext.cc/docs/en/aligned-vectors.html                      | static word embeddings | https://arxiv.org/abs/1804.07745                             | https://fasttext.cc/docs/en/aligned-vectors.html#references                     |      |                | original fasttext aligned automaticaly |
+| fasttext aligned supervised             |             | https://github.com/facebookresearch/MUSE#multilingual-word-embeddings | static word embeddings |                                                              | https://github.com/facebookresearch/MUSE#word-translation-without-parallel-data |      | wiki           | original fasttext aligned supervised   |
+| fasttext                                |             | https://fasttext.cc/docs/en/crawl-vectors.html                        | static word embeddings |                                                              |                                                                                 |      | cc + wiki      | original fasttext                      |
+| ELMo Representations for Many Languages |             | https://github.com/HIT-SCIR/ELMoForManyLangs                          | ELMo                   |                                                              | https://github.com/HIT-SCIR/ELMoForManyLangs#citation                           |      |                |                                        |
 
 ## Slovenian
 
@@ -603,18 +1246,28 @@
 
 ### several languages
 
-| name | description | huggingface card | type | paper | citation | case | pre-trained on | comments |
-| ---- | ----------- | ---------------- | ---- | ----- | -------- | ---- | -------------- | -------- |
+| name         | description | huggingface card                                  | type | paper                            | citation                         | case      | pre-trained on | comments                         |
+| ------------ | ----------- | ------------------------------------------------- | ---- | -------------------------------- | -------------------------------- | --------- | -------------- | -------------------------------- |
+| CroSloEngual |             | https://huggingface.co/EMBEDDIA/crosloengual-bert | BERT | https://arxiv.org/abs/2006.07890 | https://arxiv.org/abs/2006.07890 | cased (?) | ?              | project site http://embeddia.eu/ |
 
 ### single language models
 
-| name | description | huggingface card | type | paper | citation | case | pre-trained on | comments |
-| ---- | ----------- | ---------------- | ---- | ----- | -------- | ---- | -------------- | -------- |
+| name     | description | huggingface card                         | type    | paper | citation | case  | pre-trained on            | comments                                                   |
+| -------- | ----------- | ---------------------------------------- | ------- | ----- | -------- | ----- | ------------------------- | ---------------------------------------------------------- |
+| SloBERTa |             | https://huggingface.co/EMBEDDIA/sloberta | RoBERTa | ?     | ?        | cased | several Slovenian corpora | more details https://github.com/clarinsi/Slovene-BERT-Tool |
 
 ### other
 
-| name | description | huggingface card | type | paper | citation | case | pre-trained on | comments |
-| ---- | ----------- | ---------------- | ---- | ----- | -------- | ---- | -------------- | -------- |
+| name                                       | description | huggingface card                                                      | type                   | paper                                                        | citation                                                                        | case | pre-trained on     | comments                                                              |
+| ------------------------------------------ | ----------- | --------------------------------------------------------------------- | ---------------------- | ------------------------------------------------------------ | ------------------------------------------------------------------------------- | ---- | ------------------ | --------------------------------------------------------------------- |
+| ELMo embeddings models for seven languages |             | --                                                                    | ELMo                   | https://arxiv.org/abs/1911.10049                             | https://arxiv.org/abs/1911.10049                                                | ?    | some local corpora | more details https://www.clarin.si/repository/xmlui/handle/11356/1277 |
+| MultiFiT                                   |             | https://nlp.fast.ai/                                                  | ULMFiT                 | https://aclanthology.org/D19-1572.pdf                        |                                                                                 |      |                    | multilingual ULMFiT                                                   |
+| subs2vec                                   |             | https://github.com/jvparidon/subs2vec/                                | static word embeddings | https://link.springer.com/article/10.3758/s13428-020-01406-3 |                                                                                 |      | subtitles          |                                                                       |
+| fasttext aligned                           |             | https://fasttext.cc/docs/en/aligned-vectors.html                      | static word embeddings | https://arxiv.org/abs/1804.07745                             | https://fasttext.cc/docs/en/aligned-vectors.html#references                     |      |                    | original fasttext aligned automaticaly                                |
+| fasttext aligned supervised                |             | https://github.com/facebookresearch/MUSE#multilingual-word-embeddings | static word embeddings |                                                              | https://github.com/facebookresearch/MUSE#word-translation-without-parallel-data |      | wiki               | original fasttext aligned supervised                                  |
+| fasttext                                   |             | https://fasttext.cc/docs/en/crawl-vectors.html                        | static word embeddings |                                                              |                                                                                 |      | cc + wiki          | original fasttext                                                     |
+| ELMo Representations for Many Languages    |             | https://github.com/HIT-SCIR/ELMoForManyLangs                          | ELMo                   |                                                              | https://github.com/HIT-SCIR/ELMoForManyLangs#citation                           |      |                    |                                                                       |
+| Slovenské sémantické vektory pre word2vec  |             | https://github.com/essential-data/word2vec-sk                         | static word embeddings |                                                              |                                                                                 |      |                    |                                                                       |
 
 ## Ukrainian
 
@@ -634,10 +1287,20 @@
 
 ### single language models
 
-| name | description | huggingface card | type | paper | citation | case | pre-trained on | comments |
-| ---- | ----------- | ---------------- | ---- | ----- | -------- | ---- | -------------- | -------- |
+| name              | description | huggingface card                                                    | type    | paper | citation | case | pre-trained on | comments                                                                                                      |
+| ----------------- | ----------- | ------------------------------------------------------------------- | ------- | ----- | -------- | ---- | -------------- | ------------------------------------------------------------------------------------------------------------- |
+| ukr-roberta-base  |             | https://huggingface.co/youscan/ukr-roberta-base                     | RoBERTa | ?     | ?        | ?    | wiki + oscar   | github: https://github.com/youscan/language-models + descr: https://youscan.io/blog/ukrainian-language-model/ |
+| Ukrainian Electra |             | https://huggingface.co/dbmdz/electra-base-ukrainian-cased-generator | Electra | ?     | ?        | ?    | wiki + oscar   | github https://github.com/stefan-it/ukrainian-electra                                                         |
 
 ### other
 
-| name | description | huggingface card | type | paper | citation | case | pre-trained on | comments |
-| ---- | ----------- | ---------------- | ---- | ----- | -------- | ---- | -------------- | -------- |
+| name                                    | description | huggingface card                                                      | type                   | paper                                                        | citation                                                                        | case  | pre-trained on               | comments                               |
+| --------------------------------------- | ----------- | --------------------------------------------------------------------- | ---------------------- | ------------------------------------------------------------ | ------------------------------------------------------------------------------- | ----- | ---------------------------- | -------------------------------------- |
+| bert-base-uk-cased                      |             | https://huggingface.co/Geotrend/bert-base-uk-cased                    | DistilBERT             | https://aclanthology.org/2020.sustainlp-1.16.pdf             | https://aclanthology.org/2020.sustainlp-1.16.pdf                                | cased | mBERT distilled to Ukrainian |                                        |
+| MultiFiT                                |             | https://nlp.fast.ai/                                                  | ULMFiT                 | https://aclanthology.org/D19-1572.pdf                        |                                                                                 |       |                              | multilingual ULMFiT                    |
+| subs2vec                                |             | https://github.com/jvparidon/subs2vec/                                | static word embeddings | https://link.springer.com/article/10.3758/s13428-020-01406-3 |                                                                                 |       | subtitles                    |                                        |
+| fasttext aligned                        |             | https://fasttext.cc/docs/en/aligned-vectors.html                      | static word embeddings | https://arxiv.org/abs/1804.07745                             | https://fasttext.cc/docs/en/aligned-vectors.html#references                     |       |                              | original fasttext aligned automaticaly |
+| fasttext aligned supervised             |             | https://github.com/facebookresearch/MUSE#multilingual-word-embeddings | static word embeddings |                                                              | https://github.com/facebookresearch/MUSE#word-translation-without-parallel-data |       | wiki                         | original fasttext aligned supervised   |
+| fasttext                                |             | https://fasttext.cc/docs/en/crawl-vectors.html                        | static word embeddings |                                                              |                                                                                 |       | cc + wiki                    | original fasttext                      |
+| ELMo Representations for Many Languages |             | https://github.com/HIT-SCIR/ELMoForManyLangs                          | ELMo                   |                                                              | https://github.com/HIT-SCIR/ELMoForManyLangs#citation                           |       |                              |                                        |
+| Ukrainian word embeddings               |             | https://lang.org.ua/en/models/                                        | static word embeddings |                                                              |                                                                                 |       |                              |                                        |
