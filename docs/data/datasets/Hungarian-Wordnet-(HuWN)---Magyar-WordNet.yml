@@ -1,0 +1,13 @@
+name: Hungarian Wordnet (HuWN) / Magyar WordNet
+description: ''
+category:
+  - other
+languages:
+  - Hungarian
+task: wordnet
+URL: https://github.com/mmihaltz/huwn
+license: META-SHARE Commons BY NC ND License v1.0
+paper: http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.148.6139&rep=rep1&type=pdf
+citation: https://github.com/mmihaltz/huwn
+download link: https://github.com/mmihaltz/huwn/raw/master/huwn.xml
+comments: ''

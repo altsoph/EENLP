@@ -1,0 +1,13 @@
+name: ArmTDP
+description: ''
+category:
+  - other
+languages:
+  - Armenian
+task: POS, parse tree
+URL: https://github.com/UniversalDependencies/UD_Armenian-ArmTDP
+license: CC-BY-SA 4.0
+paper: '?'
+citation: https://github.com/UniversalDependencies/UD_Armenian-ArmTDP#references
+download link: https://github.com/UniversalDependencies/UD_Armenian-ArmTDP
+comments: ''

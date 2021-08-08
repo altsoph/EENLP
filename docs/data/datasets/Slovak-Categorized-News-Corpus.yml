@@ -1,0 +1,14 @@
+name: Slovak Categorized News Corpus
+description: ''
+category:
+  - category
+  - ner
+languages:
+  - Slovakian/Slovak
+task: POS, NER, category
+URL: https://nlp.kemt.fei.tuke.sk/language/categorizednews
+license: '?'
+paper: https://aclanthology.org/L14-1517/
+citation: https://aclanthology.org/L14-1517/
+download link: https://nlp.kemt.fei.tuke.sk/language/categorizednews
+comments: ''

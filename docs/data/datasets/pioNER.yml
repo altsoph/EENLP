@@ -1,0 +1,13 @@
+name: pioNER
+description: ''
+category:
+  - ner
+languages:
+  - Armenian
+task: NER
+URL: https://github.com/ispras-texterra/pioner
+license: '?'
+paper: '?'
+citation: '?'
+download link: https://github.com/ispras-texterra/pioner
+comments: ''

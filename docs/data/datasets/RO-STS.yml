@@ -1,0 +1,13 @@
+name: RO-STS
+description: ''
+category:
+  - paraphrase
+languages:
+  - Romanian
+task: paraphrase detection
+URL: https://github.com/dumitrescustefan/RO-STS
+license: '?'
+paper: '?'
+citation: '?'
+download link: ''
+comments: ''

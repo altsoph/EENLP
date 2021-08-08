@@ -1,0 +1,13 @@
+name: Sentiment Analysis in Russian
+description: ''
+category:
+  - sentiment
+languages:
+  - Russian
+task: sentiment
+URL: https://www.kaggle.com/c/sentiment-analysis-in-russian
+license: '?'
+paper: '?'
+citation: '?'
+download link: https://www.kaggle.com/c/sentiment-analysis-in-russian
+comments: ''

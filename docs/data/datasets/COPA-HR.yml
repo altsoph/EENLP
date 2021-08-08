@@ -1,0 +1,13 @@
+name: COPA-HR
+description: ''
+category:
+  - other
+languages:
+  - Croatian
+task: commonsense reasoning
+URL: https://www.clarin.si/repository/xmlui/handle/11356/1240
+license: CC-BY-SA 4.0
+paper: https://arxiv.org/abs/2104.09243
+citation: https://arxiv.org/abs/2104.09243
+download link: https://www.clarin.si/repository/xmlui/handle/11356/1240
+comments: https://www.clarin.si/info/k-centre/

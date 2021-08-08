@@ -1,0 +1,13 @@
+name: Albanian wordnet
+description: ''
+category:
+  - other
+languages:
+  - Albanian
+task: wordnet
+URL: http://shachi.org/resources/4040
+license: GPL
+paper: '?'
+citation: '?'
+download link: format is broken but still recoverable here view-source:http://web.archive.org/web/20180617134952/http://fjalnet.com/shqip.xml
+comments: ''

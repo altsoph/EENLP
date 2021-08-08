@@ -1,0 +1,13 @@
+name: Armenian News Texts Dataset
+description: ''
+category:
+  - category
+languages:
+  - Armenian
+task: category prediction
+URL: https://github.com/ispras-texterra/word-embeddings-eval-hy#news-texts-dataset
+license: '?'
+paper: https://arxiv.org/abs/1906.03134
+citation: https://arxiv.org/abs/1906.03134
+download link: https://github.com/ispras-texterra/word-embeddings-eval-hy/tree/master/ilur-news-corpus
+comments: ''

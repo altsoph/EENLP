@@ -1,8 +1,7 @@
+import mdformat
 import pandas as pd
 import yaml
 from pyprojroot import here
-
-from eenlp.docs.temp_generate_yamls import columns
 
 languages = [
     "Albanian",
@@ -48,6 +47,18 @@ category_captions = {
     "other": "other",
 }
 
+columns = [
+    "name",
+    "description",
+    "task",
+    "URL",
+    "license",
+    "paper",
+    "citation",
+    "download link",
+    "comments",
+]
+
 if __name__ == "__main__":
     df = []
     for dataset in here("docs/data/datasets/").glob("*.yml"):
@@ -64,10 +75,10 @@ if __name__ == "__main__":
         )
         f.write("| - | :-: | :-: | :-: | :-: | :-: |\n")
         for i, language in enumerate(languages):
-            f.write(f"| **[{language}](#{language.lower().replace('/', '')})** | ")
+            f.write(f"| **[{language}](#{language.lower().replace('/', '')})** |")
             for category in categories:
                 if category == "other":
-                    break
+                    continue
                 dff = df[(df["languages"] == language) & (df["category"] == category)]
                 if len(dff):
                     f.write(
@@ -94,3 +105,5 @@ if __name__ == "__main__":
                         f.write(f" {row[column]} |")
                     f.write("\n")
                 f.write("\n")
+
+    mdformat.file(here("docs/datasets.md"), extensions={"gfm"})

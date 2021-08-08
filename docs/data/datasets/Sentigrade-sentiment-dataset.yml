@@ -1,0 +1,13 @@
+name: Sentigrade sentiment dataset
+description: ''
+category:
+  - sentiment
+languages:
+  - Slovakian/Slovak
+task: sentiment
+URL: https://sentigrade.fiit.stuba.sk/data
+license: '?'
+paper: '?'
+citation: '?'
+download link: https://sentigrade.fiit.stuba.sk/data
+comments: from Facebook, not so big

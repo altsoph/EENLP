@@ -1,0 +1,13 @@
+name: "\u010CSFD (Czech Film Database)"
+description: ''
+category:
+  - sentiment
+languages:
+  - Czech
+task: sentiment
+URL: https://github.com/kysely/sentiment-analysis-czech
+license: CC BY-NC-SA 3.1
+paper: https://aclanthology.org/W13-1609/
+citation: http://liks.fav.zcu.cz/sentiment/
+download link: http://liks.fav.zcu.cz/sentiment/
+comments: ''

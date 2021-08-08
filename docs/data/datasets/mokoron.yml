@@ -1,0 +1,13 @@
+name: mokoron
+description: ''
+category:
+  - sentiment
+languages:
+  - Russian
+task: sentiment
+URL: http://study.mokoron.com/
+license: '?'
+paper: '?'
+citation: '?'
+download link: http://study.mokoron.com/
+comments: ''

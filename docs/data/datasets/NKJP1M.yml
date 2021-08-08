@@ -1,0 +1,13 @@
+name: NKJP1M
+description: ''
+category:
+  - other
+languages:
+  - Polish
+task: morphosyntactic tagging
+URL: http://clip.ipipan.waw.pl/NationalCorpusOfPolish
+license: GNU GPL 3
+paper: '?'
+citation: '?'
+download link: http://clip.ipipan.waw.pl/NationalCorpusOfPolish?action=AttachFile&do=view&target=NKJP-PodkorpusMilionowy-1.2.tar.gz
+comments: ''

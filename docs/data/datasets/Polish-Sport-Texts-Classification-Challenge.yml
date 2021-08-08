@@ -1,0 +1,13 @@
+name: Polish Sport Texts Classification Challenge
+description: ''
+category:
+  - category
+languages:
+  - Polish
+task: category prediction
+URL: https://gonito.net/challenge/sport-text-classification
+license: '?'
+paper: '?'
+citation: '?'
+download link: ''
+comments: ''

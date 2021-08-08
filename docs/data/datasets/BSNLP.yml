@@ -1,0 +1,16 @@
+name: BSNLP
+description: ''
+category:
+  - ner
+languages:
+  - Bulgarian
+  - Czech
+  - Polish
+  - Russian
+task: NER
+URL: http://bsnlp.cs.helsinki.fi/bsnlp-2019/shared_task.html
+license: '?'
+paper: '?'
+citation: http://bsnlp.cs.helsinki.fi/bsnlp-2019/shared_task.html
+download link: 'need to ask for access: http://bsnlp.cs.helsinki.fi/bsnlp-2019/shared_task.html'
+comments: ''

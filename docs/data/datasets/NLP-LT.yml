@@ -1,0 +1,13 @@
+name: NLP-LT
+description: ''
+category:
+  - category
+languages:
+  - Lithuanian
+task: category prediction
+URL: https://github.com/minven/nlp-lt
+license: '?'
+paper: '?'
+citation: '?'
+download link: https://github.com/minven/nlp-lt
+comments: ''

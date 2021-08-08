@@ -1,0 +1,13 @@
+name: Romanian lexical sample @ Semeval 3
+description: ''
+category:
+  - wsd
+languages:
+  - Romanian
+task: WSD
+URL: https://web.eecs.umich.edu/~mihalcea/senseval/senseval3/data.html
+license: '?'
+paper: '?'
+citation: '?'
+download link: ''
+comments: ''

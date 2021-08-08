@@ -1,0 +1,13 @@
+name: ranlp-2019
+description: ''
+category:
+  - other
+languages:
+  - Bulgarian
+task: fake news
+URL: https://github.com/yoandinkov/ranlp-2019
+license: GPL 3
+paper: https://arxiv.org/abs/1908.09785
+citation: https://github.com/yoandinkov/ranlp-2019
+download link: https://github.com/yoandinkov/ranlp-2019
+comments: ''

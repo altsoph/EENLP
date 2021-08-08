@@ -1,0 +1,13 @@
+name: Lithuanian financial news dataset and bigrams
+description: ''
+category:
+  - sentiment
+languages:
+  - Lithuanian
+task: sentiment
+URL: https://www.kaggle.com/rokastrimaitis/lithuanian-financial-news-dataset-and-bigrams
+license: CC0 1.0
+paper: '?'
+citation: '?'
+download link: https://www.kaggle.com/rokastrimaitis/lithuanian-financial-news-dataset-and-bigrams
+comments: ''

@@ -1,0 +1,26 @@
+name: TaPaCo
+description: ''
+category:
+  - paraphrase
+languages:
+  - Armenian
+  - Belarusian
+  - Bulgarian
+  - Croatian
+  - Czech
+  - Estonian
+  - Hungarian
+  - Lithuanian
+  - Macedonian
+  - Moldovan/Moldovian
+  - Polish
+  - Romanian
+  - Russian
+  - Serbian
+task: paraphrase detection
+URL: https://zenodo.org/record/3707949#.YPMTcpgzYuU
+license: '?'
+paper: '?'
+citation: '?'
+download link: https://huggingface.co/datasets/tapaco
+comments: ''

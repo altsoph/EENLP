@@ -1,0 +1,14 @@
+name: MultiEmo
+description: ''
+category:
+  - sentiment
+languages:
+  - Polish
+  - Russian
+task: sentiment
+URL: https://github.com/CLARIN-PL/multiemo
+license: MIT
+paper: '?'
+citation: '?'
+download link: https://clarin-pl.eu/dspace/handle/11321/798
+comments: ''

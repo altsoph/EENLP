@@ -1,0 +1,13 @@
+name: SETimes.SR
+description: ''
+category:
+  - ner
+languages:
+  - Serbian
+task: NER
+URL: https://reldi.spur.uzh.ch/blog/serbian-annotated-corpus-setimes-sr/
+license: CC-BY-SA 4.0
+paper: https://www.aclweb.org/old_anthology/W/W17/W17-1407.pdf
+citation: https://reldi.spur.uzh.ch/blog/serbian-annotated-corpus-setimes-sr/
+download link: https://reldi.spur.uzh.ch/blog/serbian-annotated-corpus-setimes-sr/
+comments: ''

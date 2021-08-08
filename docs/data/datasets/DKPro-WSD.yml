@@ -1,0 +1,15 @@
+name: DKPro WSD
+description: ''
+category:
+  - wsd
+languages:
+  - Czech
+  - Estonian
+  - Romanian
+task: WSD
+URL: https://dkpro.github.io/dkpro-wsd/corpora/
+license: '?'
+paper: '?'
+citation: '?'
+download link: https://dkpro.github.io/dkpro-wsd/corpora/
+comments: ''

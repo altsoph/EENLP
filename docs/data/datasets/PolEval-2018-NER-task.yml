@@ -1,0 +1,13 @@
+name: PolEval 2018 NER task
+description: ''
+category:
+  - ner
+languages:
+  - Polish
+task: NER
+URL: https://gonito.net/challenge/poleval-2018-ner
+license: '?'
+paper: '?'
+citation: '?'
+download link: ''
+comments: ''

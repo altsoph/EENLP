@@ -1,0 +1,13 @@
+name: paraphrase.sr
+description: ''
+category:
+  - paraphrase
+languages:
+  - Serbian
+task: paraphrase detection
+URL: https://vukbatanovic.github.io/paraphrase.sr/
+license: CC BY-NC-SA 4.0
+paper: https://www.sciencedirect.com/science/article/abs/pii/S0167923613000614
+citation: https://vukbatanovic.github.io/paraphrase.sr/
+download link: https://github.com/vukbatanovic/paraphrase.sr
+comments: ''

@@ -1,0 +1,16 @@
+name: XGLUE
+description: ''
+category:
+  - category
+languages:
+  - Belarusian
+  - Hungarian
+  - Polish
+  - Russian
+task: multiple tasks
+URL: https://microsoft.github.io/XGLUE/
+license: https://github.com/microsoft/XGLUE/blob/master/LICENSE
+paper: https://arxiv.org/abs/2004.01401
+citation: https://microsoft.github.io/XGLUE/
+download link: https://xglue.blob.core.windows.net/xglue/xglue_full_dataset.tar.gz
+comments: ''

@@ -1,0 +1,22 @@
+name: Twitter sentiment for 15 European languages
+description: ''
+category:
+  - sentiment
+languages:
+  - Albanian
+  - Bosnian
+  - Bulgarian
+  - Croatian
+  - Hungarian
+  - Polish
+  - Russian
+  - Serbian
+  - Slovakian/Slovak
+  - Slovenian
+task: sentiment
+URL: https://www.clarin.si/repository/xmlui/handle/11356/1054
+license: CC BY-NC-SA 4.0
+paper: https://arxiv.org/abs/1602.07563
+citation: https://www.clarin.si/repository/xmlui/handle/11356/1054
+download link: https://www.clarin.si/repository/xmlui/handle/11356/1054
+comments: ''

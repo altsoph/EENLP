@@ -11,9 +11,82 @@
     },
     "description": {
       "type": "string"
+    },
+    "category": {
+      "type": "array",
+      "description": "Category of the dataset, currently only 6 are allowed. This may change in the future. See https://github.com/altsoph/EENLP/blob/main/docs/categories.md",
+      "items": {
+        "enum": [
+          "ner",
+          "sentiment",
+          "paraphrase",
+          "wsd",
+          "category",
+          "other"
+        ]
+      }
+    },
+    "languages": {
+      "type": "array",
+      "description": "Languages.",
+      "items": {
+        "enum": [
+          "Albanian",
+          "Armenian",
+          "Belarusian",
+          "Bosnian",
+          "Bulgarian",
+          "Croatian",
+          "Czech",
+          "Estonian",
+          "Georgian",
+          "Hungarian",
+          "Kazakh",
+          "Latvian",
+          "Lithuanian",
+          "Macedonian",
+          "Moldovan",
+          "Moldovan/Moldovian",
+          "Moldovian",
+          "Montenegrin",
+          "Polish",
+          "Romanian",
+          "Russian",
+          "Serbian",
+          "Slovak",
+          "Slovakian",
+          "Slovakian/Slovak",
+          "Slovenian",
+          "Ukrainian"
+        ]
+      }
+    },
+    "task": {
+      "type": "string"
+    },
+    "URL": {
+      "type": "string"
+    },
+    "license": {
+      "type": "string"
+    },
+    "paper": {
+      "type": "string"
+    },
+    "citation": {
+      "type": "string"
+    },
+    "download link": {
+      "type": "string"
+    },
+    "comments": {
+      "type": "string"
     }
   },
   "required": [
-    "name"
-  ]
+    "name",
+    "category",
+    "languages"
+  ],
+  "additionalProperties": false
 }

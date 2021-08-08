@@ -1,0 +1,17 @@
+name: XL-WSD
+description: ''
+category:
+  - wsd
+languages:
+  - Bulgarian
+  - Croatian
+  - Estonian
+  - Hungarian
+  - Slovenian
+task: WSD
+URL: https://sapienzanlp.github.io/xl-wsd/
+license: https://sapienzanlp.github.io/xl-wsd/license/
+paper: https://sapienzanlp.github.io/xl-wsd/assets/paper/xl-wsd-aaai2021.pdf
+citation: https://sapienzanlp.github.io/xl-wsd/#cite
+download link: https://drive.google.com/file/d/19YTL-Uq95hjiFZfgwEpXRgcYGCR_PQY0/view?usp=sharing
+comments: ''

@@ -1,0 +1,13 @@
+name: Paraphraser
+description: ''
+category:
+  - paraphrase
+languages:
+  - Russian
+task: paraphrase detection
+URL: http://paraphraser.ru/
+license: '?'
+paper: '?'
+citation: '?'
+download link: ''
+comments: ''

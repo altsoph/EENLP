@@ -1,0 +1,13 @@
+name: RussianSuperGLUE
+description: ''
+category:
+  - wsd
+languages:
+  - Russian
+task: multiple semantic tasks
+URL: https://russiansuperglue.com/
+license: multiple
+paper: https://arxiv.org/abs/2010.15925
+citation: https://russiansuperglue.com/
+download link: https://russiansuperglue.com/tasks/
+comments: ''

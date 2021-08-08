@@ -1,0 +1,13 @@
+name: sloWNet
+description: ''
+category:
+  - other
+languages:
+  - Slovakian/Slovak
+task: wordnet
+URL: http://lojze.lugos.si/darja/research/slownet/
+license: CC-BY-SA 4.0
+paper: https://link.springer.com/article/10.1007/s10579-015-9295-6
+citation: https://link.springer.com/article/10.1007/s10579-015-9295-6
+download link: http://hdl.handle.net/11356/1026
+comments: ''
