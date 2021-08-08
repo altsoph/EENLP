@@ -1,910 +1,266 @@
-# Datasets x Languages Matrix
-
-|                                              | NER<br>(named-entity recognition) | sentiment analysis |     paraphrase detection      | WSD<br>(word-sense disambiguation) |     category prediction      |
-| -------------------------------------------- | :-------------------------------: | :----------------: | :---------------------------: | :--------------------------------: | :--------------------------: |
-| **[Albanian](#albanian)**                    |                                   |  [1](#sentiment)   |                               |                                    |  [1](#category-prediction)   |
-| **[Armenian](#armenian)**                    |            [1](#ner-1)            |                    | [2](#paraphrase-detection-1)  |                                    | [2](#category-prediction-1)  |
-| **[Belarusian](#belarusian)**                |            [1](#ner-2)            |                    | [1](#paraphrase-detection-2)  |                                    | [1](#category-prediction-2)  |
-| **[Bosnian](#bosnian)**                      |                                   | [1](#sentiment-3)  |                               |                                    |                              |
-| **[Bulgarian](#bulgarian)**                  |            [1](#ner-4)            | [1](#sentiment-4)  | [1](#paraphrase-detection-4)  |            [3](#wsd-4)             |                              |
-| **[Croatian](#croatian)**                    |            [2](#ner-5)            | [2](#sentiment-5)  | [1](#paraphrase-detection-5)  |            [3](#wsd-5)             | [1](#category-prediction-5)  |
-| **[Czech](#czech)**                          |            [1](#ner-6)            | [3](#sentiment-6)  | [1](#paraphrase-detection-6)  |            [2](#wsd-6)             | [1](#category-prediction-6)  |
-| **[Estonian](#estonian)**                    |            [1](#ner-7)            |                    | [1](#paraphrase-detection-7)  |            [3](#wsd-7)             | [1](#category-prediction-7)  |
-| **[Georgian](#georgian)**                    |                                   |                    |                               |                                    |                              |
-| **[Hungarian](#hungarian)**                  |            [1](#ner-9)            | [3](#sentiment-9)  | [1](#paraphrase-detection-9)  |            [3](#wsd-9)             | [1](#category-prediction-9)  |
-| **[Kazakh](#kazakh)**                        |                                   |                    |                               |                                    |                              |
-| **[Latvian](#latvian)**                      |                                   | [2](#sentiment-11) |                               |                                    | [1](#category-prediction-11) |
-| **[Lithuanian](#lithuanian)**                |                                   | [1](#sentiment-12) | [1](#paraphrase-detection-12) |                                    | [2](#category-prediction-12) |
-| **[Macedonian](#macedonian)**                |                                   |                    | [1](#paraphrase-detection-13) |                                    |                              |
-| **[Moldovan/Moldovian](#moldovanmoldovian)** |                                   |                    | [1](#paraphrase-detection-14) |                                    | [1](#category-prediction-14) |
-| **[Montenegrin](#montenegrin)**              |                                   |                    |                               |                                    |                              |
-| **[Polish](#polish)**                        |           [3](#ner-16)            | [3](#sentiment-16) | [2](#paraphrase-detection-16) |                                    | [2](#category-prediction-16) |
-| **[Romanian](#romanian)**                    |           [2](#ner-17)            | [1](#sentiment-17) | [2](#paraphrase-detection-17) |            [2](#wsd-17)            | [1](#category-prediction-17) |
-| **[Russian](#russian)**                      |           [1](#ner-18)            | [5](#sentiment-18) | [2](#paraphrase-detection-18) |            [1](#wsd-18)            | [4](#category-prediction-18) |
-| **[Serbian](#serbian)**                      |           [2](#ner-19)            | [3](#sentiment-19) | [3](#paraphrase-detection-19) |                                    |                              |
-| **[Slovakian/Slovak](#slovakianslovak)**     |           [2](#ner-20)            | [2](#sentiment-20) |                               |                                    | [1](#category-prediction-20) |
-| **[Slovenian](#slovenian)**                  |                                   | [3](#sentiment-21) |                               |            [2](#wsd-21)            |                              |
-| **[Ukrainian](#ukrainian)**                  |           [2](#ner-22)            |                    |                               |                                    |                              |
-
-## Albanian
-
-### NER
-
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
-
-### sentiment
-
-| name                                        | description | task      | URL                                                      | license         | paper                            | citation                                                 | download link                                            | comments |
-| ------------------------------------------- | ----------- | --------- | -------------------------------------------------------- | --------------- | -------------------------------- | -------------------------------------------------------- | -------------------------------------------------------- | -------- |
-| Twitter sentiment for 15 European languages |             | sentiment | https://www.clarin.si/repository/xmlui/handle/11356/1054 | CC BY-NC-SA 4.0 | https://arxiv.org/abs/1602.07563 | https://www.clarin.si/repository/xmlui/handle/11356/1054 | https://www.clarin.si/repository/xmlui/handle/11356/1054 |          |
-
-### paraphrase detection
-
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
-
-### WSD
-
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
-
-### category prediction
-
-| name                           | description | task                | URL                                                           | license   | paper | citation | download link                                                 | comments |
-| ------------------------------ | ----------- | ------------------- | ------------------------------------------------------------- | --------- | ----- | -------- | ------------------------------------------------------------- | -------- |
-| Albanian News Articles Dataset |             | category prediction | https://www.kaggle.com/gentrexha/kosovo-news-articles-dataset | CC-BY-4.0 | ?     | ?        | https://www.kaggle.com/gentrexha/kosovo-news-articles-dataset |          |
-
-### other
-
-| name             | description | task    | URL                              | license | paper | citation | download link                                                                                                                  | comments |
-| ---------------- | ----------- | ------- | -------------------------------- | ------- | ----- | -------- | ------------------------------------------------------------------------------------------------------------------------------ | -------- |
-| Albanian wordnet |             | wordnet | http://shachi.org/resources/4040 | GPL     | ?     | ?        | format is broken but still recoverable here view-source:http://web.archive.org/web/20180617134952/http://fjalnet.com/shqip.xml |          |
-
-## Armenian
-
-### NER
-
-| name   | description | task | URL                                       | license | paper | citation | download link                             | comments |
-| ------ | ----------- | ---- | ----------------------------------------- | ------- | ----- | -------- | ----------------------------------------- | -------- |
-| pioNER |             | NER  | https://github.com/ispras-texterra/pioner | ?       | ?     | ?        | https://github.com/ispras-texterra/pioner |          |
-
-### sentiment
-
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
-
-### paraphrase detection
-
-| name                                 | description | task                 | URL                                                     | license    | paper                            | citation                         | download link                                           | comments |
-| ------------------------------------ | ----------- | -------------------- | ------------------------------------------------------- | ---------- | -------------------------------- | -------------------------------- | ------------------------------------------------------- | -------- |
-| Armenian Paraphrase Detection Corpus |             | paraphrase detection | https://github.com/ivannikov-lab/arpa-paraphrase-corpus | Apache-2.0 | https://arxiv.org/abs/2009.12615 | https://arxiv.org/abs/2009.12615 | https://github.com/ivannikov-lab/arpa-paraphrase-corpus |          |
-| TaPaCo                               |             | paraphrase detection | https://zenodo.org/record/3707949#.YPMTcpgzYuU          | ?          | ?                                | ?                                | https://huggingface.co/datasets/tapaco                  |          |
-
-### WSD
-
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
-
-### category prediction
-
-| name                        | description | task                | URL                                                                                     | license | paper                            | citation                         | download link                                                                           | comments |
-| --------------------------- | ----------- | ------------------- | --------------------------------------------------------------------------------------- | ------- | -------------------------------- | -------------------------------- | --------------------------------------------------------------------------------------- | -------- |
-| Armenian News Texts Dataset |             | category prediction | https://github.com/ispras-texterra/word-embeddings-eval-hy#news-texts-dataset           | ?       | https://arxiv.org/abs/1906.03134 | https://arxiv.org/abs/1906.03134 | https://github.com/ispras-texterra/word-embeddings-eval-hy/tree/master/ilur-news-corpus |          |
-| iLur News Texts Dataset     |             | category prediction | https://github.com/ispras-texterra/word-embeddings-eval-hy/tree/master/ilur-news-corpus |         | https://arxiv.org/abs/1906.03134 | https://arxiv.org/abs/1906.03134 |                                                                                         |          |
-
-### other
-
-| name   | description | task            | URL                                                         | license      | paper | citation                                                               | download link                                               | comments |
-| ------ | ----------- | --------------- | ----------------------------------------------------------- | ------------ | ----- | ---------------------------------------------------------------------- | ----------------------------------------------------------- | -------- |
-| ArmTDP |             | POS, parse tree | https://github.com/UniversalDependencies/UD_Armenian-ArmTDP | CC-BY-SA 4.0 | ?     | https://github.com/UniversalDependencies/UD_Armenian-ArmTDP#references | https://github.com/UniversalDependencies/UD_Armenian-ArmTDP |          |
-
-## Belarusian
-
-### NER
-
-| name                   | description | task     | URL                                                        | license      | paper | citation | download link                                              | comments             |
-| ---------------------- | ----------- | -------- | ---------------------------------------------------------- | ------------ | ----- | -------- | ---------------------------------------------------------- | -------------------- |
-| Belarusian UD treebank |             | POS, NER | https://github.com/UniversalDependencies/UD_Belarusian-HSE | CC BY-SA 4.0 | ?     | ?        | https://github.com/UniversalDependencies/UD_Belarusian-HSE | not very big dataset |
-
-### sentiment
-
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
-
-### paraphrase detection
-
-| name   | description | task                 | URL                                            | license | paper | citation | download link                          | comments |
-| ------ | ----------- | -------------------- | ---------------------------------------------- | ------- | ----- | -------- | -------------------------------------- | -------- |
-| TaPaCo |             | paraphrase detection | https://zenodo.org/record/3707949#.YPMTcpgzYuU | ?       | ?     | ?        | https://huggingface.co/datasets/tapaco |          |
-
-### WSD
-
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
-
-### category prediction
-
-| name  | description | task           | URL                                | license                                                | paper                            | citation                           | download link                                                       | comments |
-| ----- | ----------- | -------------- | ---------------------------------- | ------------------------------------------------------ | -------------------------------- | ---------------------------------- | ------------------------------------------------------------------- | -------- |
-| XGLUE |             | multiple tasks | https://microsoft.github.io/XGLUE/ | https://github.com/microsoft/XGLUE/blob/master/LICENSE | https://arxiv.org/abs/2004.01401 | https://microsoft.github.io/XGLUE/ | https://xglue.blob.core.windows.net/xglue/xglue_full_dataset.tar.gz |          |
-
-### other
-
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
-
-## Bosnian
-
-### NER
-
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
-
-### sentiment
-
-| name                                        | description | task      | URL                                                      | license         | paper                            | citation                                                 | download link                                            | comments |
-| ------------------------------------------- | ----------- | --------- | -------------------------------------------------------- | --------------- | -------------------------------- | -------------------------------------------------------- | -------------------------------------------------------- | -------- |
-| Twitter sentiment for 15 European languages |             | sentiment | https://www.clarin.si/repository/xmlui/handle/11356/1054 | CC BY-NC-SA 4.0 | https://arxiv.org/abs/1602.07563 | https://www.clarin.si/repository/xmlui/handle/11356/1054 | https://www.clarin.si/repository/xmlui/handle/11356/1054 |          |
-
-### paraphrase detection
-
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
-
-### WSD
-
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
-
-### category prediction
-
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
-
-### other
-
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
-
-## Bulgarian
-
-### NER
-
-| name  | description | task | URL                                                     | license | paper | citation                                                | download link                                                                   | comments |
-| ----- | ----------- | ---- | ------------------------------------------------------- | ------- | ----- | ------------------------------------------------------- | ------------------------------------------------------------------------------- | -------- |
-| BSNLP |             | NER  | http://bsnlp.cs.helsinki.fi/bsnlp-2019/shared_task.html | ?       | ?     | http://bsnlp.cs.helsinki.fi/bsnlp-2019/shared_task.html | need to ask for access: http://bsnlp.cs.helsinki.fi/bsnlp-2019/shared_task.html |          |
-
-### sentiment
-
-| name                                        | description | task      | URL                                                      | license         | paper                            | citation                                                 | download link                                            | comments |
-| ------------------------------------------- | ----------- | --------- | -------------------------------------------------------- | --------------- | -------------------------------- | -------------------------------------------------------- | -------------------------------------------------------- | -------- |
-| Twitter sentiment for 15 European languages |             | sentiment | https://www.clarin.si/repository/xmlui/handle/11356/1054 | CC BY-NC-SA 4.0 | https://arxiv.org/abs/1602.07563 | https://www.clarin.si/repository/xmlui/handle/11356/1054 | https://www.clarin.si/repository/xmlui/handle/11356/1054 |          |
-
-### paraphrase detection
-
-| name   | description | task                 | URL                                            | license | paper | citation | download link                          | comments |
-| ------ | ----------- | -------------------- | ---------------------------------------------- | ------- | ----- | -------- | -------------------------------------- | -------- |
-| TaPaCo |             | paraphrase detection | https://zenodo.org/record/3707949#.YPMTcpgzYuU | ?       | ?     | ?        | https://huggingface.co/datasets/tapaco |          |
-
-### WSD
-
-| name                  | description | task | URL                                                                 | license                                       | paper                                                                 | citation                                   | download link                                                                      | comments |
-| --------------------- | ----------- | ---- | ------------------------------------------------------------------- | --------------------------------------------- | --------------------------------------------------------------------- | ------------------------------------------ | ---------------------------------------------------------------------------------- | -------- |
-| QTLeap WSD/NED corpus |             | WSD  | http://b2find.eudat.eu/dataset/159a5572-715e-5b90-b597-bffa3e9580d9 | ?                                             | https://aclanthology.org/L16-1483.pdf                                 | https://aclanthology.org/L16-1483.pdf      | http://qtleap.eu/resources/                                                        |          |
-| XL-WSD                |             | WSD  | https://sapienzanlp.github.io/xl-wsd/                               | https://sapienzanlp.github.io/xl-wsd/license/ | https://sapienzanlp.github.io/xl-wsd/assets/paper/xl-wsd-aaai2021.pdf | https://sapienzanlp.github.io/xl-wsd/#cite | https://drive.google.com/file/d/19YTL-Uq95hjiFZfgwEpXRgcYGCR_PQY0/view?usp=sharing |          |
-| XL-WiC                |             | WSD  | https://pilehvar.github.io/xlwic/                                   | CC-BY-NC 4.0                                  | https://arxiv.org/abs/2010.06478                                      | https://arxiv.org/abs/2010.06478           | https://pilehvar.github.io/xlwic/                                                  |          |
-
-### category prediction
-
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
-
-### other
-
-| name                                     | description | task      | URL                                                      | license         | paper                                                 | citation                                 | download link                                                                                             | comments |
-| ---------------------------------------- | ----------- | --------- | -------------------------------------------------------- | --------------- | ----------------------------------------------------- | ---------------------------------------- | --------------------------------------------------------------------------------------------------------- | -------- |
-| MULTEXT-East "1984" annotated corpus 4.0 |             | POS       | https://www.clarin.si/repository/xmlui/handle/11356/1043 | CC BY-NC-SA 4.0 | http://nl.ijs.si/ME/Vault/V4/doc/bib/mte-lrec2004.pdf | ?                                        | https://www.clarin.si/repository/xmlui/bitstream/handle/11356/1043/MTE1984-ana.zip?sequence=3&isAllowed=y |          |
-| ranlp-2019                               |             | fake news | https://github.com/yoandinkov/ranlp-2019                 | GPL 3           | https://arxiv.org/abs/1908.09785                      | https://github.com/yoandinkov/ranlp-2019 | https://github.com/yoandinkov/ranlp-2019                                                                  |          |
-
-## Croatian
-
-### NER
-
-| name                | description | task | URL                                                      | license      | paper                                                      | citation                                                         | download link                                            | comments                             |
-| ------------------- | ----------- | ---- | -------------------------------------------------------- | ------------ | ---------------------------------------------------------- | ---------------------------------------------------------------- | -------------------------------------------------------- | ------------------------------------ |
-| ReLDI-NormTagNER-hr |             | NER  | https://www.clarin.si/repository/xmlui/handle/11356/1241 | CC-BY-SA 4.0 | https://revije.ff.uni-lj.si/slovenscina2/article/view/7007 | https://revije.ff.uni-lj.si/slovenscina2/article/view/7007       | https://www.clarin.si/repository/xmlui/handle/11356/1241 |                                      |
-| hr500k              |             | NER  | https://www.clarin.si/repository/xmlui/handle/11356/1183 | CC-BY-SA 4.0 | https://aclanthology.org/L16-1676.pdf                      | http://www.lrec-conf.org/proceedings/lrec2016/summaries/340.html | https://www.clarin.si/repository/xmlui/handle/11356/1183 | https://github.com/reldi-data/hr500k |
-
-### sentiment
-
-| name                                         | description | task      | URL                                                      | license         | paper                                     | citation                                                 | download link                                            | comments                                                     |
-| -------------------------------------------- | ----------- | --------- | -------------------------------------------------------- | --------------- | ----------------------------------------- | -------------------------------------------------------- | -------------------------------------------------------- | ------------------------------------------------------------ |
-| Sentiment Annotated Dataset of Croatian News |             | sentiment | https://www.clarin.si/repository/xmlui/handle/11356/1342 | CC-BY-SA 4.0    | https://www.mdpi.com/2076-3417/10/17/5993 | https://www.mdpi.com/2076-3417/10/17/5993                | https://www.clarin.si/repository/xmlui/handle/11356/1342 | ! a relevant paper https://www.mdpi.com/2076-3417/10/17/5993 |
-| Twitter sentiment for 15 European languages  |             | sentiment | https://www.clarin.si/repository/xmlui/handle/11356/1054 | CC BY-NC-SA 4.0 | https://arxiv.org/abs/1602.07563          | https://www.clarin.si/repository/xmlui/handle/11356/1054 | https://www.clarin.si/repository/xmlui/handle/11356/1054 |                                                              |
-
-### paraphrase detection
-
-| name   | description | task                 | URL                                            | license | paper | citation | download link                          | comments |
-| ------ | ----------- | -------------------- | ---------------------------------------------- | ------- | ----- | -------- | -------------------------------------- | -------- |
-| TaPaCo |             | paraphrase detection | https://zenodo.org/record/3707949#.YPMTcpgzYuU | ?       | ?     | ?        | https://huggingface.co/datasets/tapaco |          |
-
-### WSD
-
-| name     | description | task | URL                                   | license                                       | paper                                                                 | citation                                   | download link                                                                      | comments |
-| -------- | ----------- | ---- | ------------------------------------- | --------------------------------------------- | --------------------------------------------------------------------- | ------------------------------------------ | ---------------------------------------------------------------------------------- | -------- |
-| Cro36WSD |             | WSD  | https://takelab.fer.hr/data/cro36wsd/ | ?                                             | https://aclanthology.org/L16-1267.pdf                                 | https://aclanthology.org/L16-1267.pdf      | https://takelab.fer.hr/data/cro36wsd/                                              |          |
-| XL-WSD   |             | WSD  | https://sapienzanlp.github.io/xl-wsd/ | https://sapienzanlp.github.io/xl-wsd/license/ | https://sapienzanlp.github.io/xl-wsd/assets/paper/xl-wsd-aaai2021.pdf | https://sapienzanlp.github.io/xl-wsd/#cite | https://drive.google.com/file/d/19YTL-Uq95hjiFZfgwEpXRgcYGCR_PQY0/view?usp=sharing |          |
-| XL-WiC   |             | WSD  | https://pilehvar.github.io/xlwic/     | CC-BY-NC 4.0                                  | https://arxiv.org/abs/2010.06478                                      | https://arxiv.org/abs/2010.06478           | https://pilehvar.github.io/xlwic/                                                  |          |
-
-### category prediction
-
-| name                            | description | task                | URL                                                      | license | paper | citation | download link                                            | comments |
-| ------------------------------- | ----------- | ------------------- | -------------------------------------------------------- | ------- | ----- | -------- | -------------------------------------------------------- | -------- |
-| 24sata news article archive 1.0 |             | category prediction | https://www.clarin.si/repository/xmlui/handle/11356/1410 | ?       | ?     | ?        | https://www.clarin.si/repository/xmlui/handle/11356/1410 |          |
-
-### other
-
-| name    | description | task                  | URL                                                      | license                                                                    | paper                                | citation                             | download link                                            | comments                             |
-| ------- | ----------- | --------------------- | -------------------------------------------------------- | -------------------------------------------------------------------------- | ------------------------------------ | ------------------------------------ | -------------------------------------------------------- | ------------------------------------ |
-| COPA-HR |             | commonsense reasoning | https://www.clarin.si/repository/xmlui/handle/11356/1240 | CC-BY-SA 4.0                                                               | https://arxiv.org/abs/2104.09243     | https://arxiv.org/abs/2104.09243     | https://www.clarin.si/repository/xmlui/handle/11356/1240 | https://www.clarin.si/info/k-centre/ |
-| FRENK   |             | offensive comments    | https://www.clarin.si/repository/xmlui/handle/11356/1433 | https://clarin.si/repository/xmlui/page/licence-aca-id-by-nc-inf-nored-1.0 | https://arxiv.org/pdf/1906.02045.pdf | https://arxiv.org/pdf/1906.02045.pdf | https://www.clarin.si/repository/xmlui/handle/11356/1433 | http://nl.ijs.si/frenk/              |
-
-## Czech
-
-### NER
-
-| name  | description | task | URL                                                     | license | paper | citation                                                | download link                                                                   | comments |
-| ----- | ----------- | ---- | ------------------------------------------------------- | ------- | ----- | ------------------------------------------------------- | ------------------------------------------------------------------------------- | -------- |
-| BSNLP |             | NER  | http://bsnlp.cs.helsinki.fi/bsnlp-2019/shared_task.html | ?       | ?     | http://bsnlp.cs.helsinki.fi/bsnlp-2019/shared_task.html | need to ask for access: http://bsnlp.cs.helsinki.fi/bsnlp-2019/shared_task.html |          |
-
-### sentiment
-
-| name                                              | description | task      | URL                                                | license         | paper                              | citation                          | download link                     | comments |
-| ------------------------------------------------- | ----------- | --------- | -------------------------------------------------- | --------------- | ---------------------------------- | --------------------------------- | --------------------------------- | -------- |
-| Czech Facebook dataset                            |             | sentiment | https://github.com/kysely/sentiment-analysis-czech | CC BY-NC-SA 3.0 | https://aclanthology.org/W13-1609/ | http://liks.fav.zcu.cz/sentiment/ | http://liks.fav.zcu.cz/sentiment/ |          |
-| MALL.CZ (largest all-round e-commerce in Czechia) |             | sentiment | https://github.com/kysely/sentiment-analysis-czech | CC BY-NC-SA 3.2 | https://aclanthology.org/W13-1609/ | http://liks.fav.zcu.cz/sentiment/ | http://liks.fav.zcu.cz/sentiment/ |          |
-| ČSFD (Czech Film Database)                        |             | sentiment | https://github.com/kysely/sentiment-analysis-czech | CC BY-NC-SA 3.1 | https://aclanthology.org/W13-1609/ | http://liks.fav.zcu.cz/sentiment/ | http://liks.fav.zcu.cz/sentiment/ |          |
-
-### paraphrase detection
-
-| name   | description | task                 | URL                                            | license | paper | citation | download link                          | comments |
-| ------ | ----------- | -------------------- | ---------------------------------------------- | ------- | ----- | -------- | -------------------------------------- | -------- |
-| TaPaCo |             | paraphrase detection | https://zenodo.org/record/3707949#.YPMTcpgzYuU | ?       | ?     | ?        | https://huggingface.co/datasets/tapaco |          |
-
-### WSD
-
-| name                  | description | task | URL                                                                 | license | paper                                 | citation                              | download link                              | comments |
-| --------------------- | ----------- | ---- | ------------------------------------------------------------------- | ------- | ------------------------------------- | ------------------------------------- | ------------------------------------------ | -------- |
-| DKPro WSD             |             | WSD  | https://dkpro.github.io/dkpro-wsd/corpora/                          | ?       | ?                                     | ?                                     | https://dkpro.github.io/dkpro-wsd/corpora/ |          |
-| QTLeap WSD/NED corpus |             | WSD  | http://b2find.eudat.eu/dataset/159a5572-715e-5b90-b597-bffa3e9580d9 | ?       | https://aclanthology.org/L16-1483.pdf | https://aclanthology.org/L16-1483.pdf | http://qtleap.eu/resources/                |          |
-
-### category prediction
-
-| name                                         | description | task                | URL                                               | license      | paper                            | citation                           | download link                                     | comments                                                             |
-| -------------------------------------------- | ----------- | ------------------- | ------------------------------------------------- | ------------ | -------------------------------- | ---------------------------------- | ------------------------------------------------- | -------------------------------------------------------------------- |
-| Czech restaurant information dataset for NLG |             | category prediction | https://github.com/UFAL-DSG/cs_restaurant_dataset | CC-BY-SA 4.0 | https://arxiv.org/abs/1910.05298 | https://aclanthology.org/W19-8670/ | https://github.com/UFAL-DSG/cs_restaurant_dataset | intent detection for restaurant reservation, translated from English |
-
-### other
-
-| name                                     | description | task    | URL                                                                               | license         | paper                                                 | citation                                                                          | download link                                                                                             | comments |
-| ---------------------------------------- | ----------- | ------- | --------------------------------------------------------------------------------- | --------------- | ----------------------------------------------------- | --------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | -------- |
-| Czech WordNet 1.9 PDT                    |             | wordnet | https://lindat.mff.cuni.cz/repository/xmlui/handle/11858/00-097C-0000-0001-4880-3 | CC BY-NC-SA 3.0 | ?                                                     | https://lindat.mff.cuni.cz/repository/xmlui/handle/11858/00-097C-0000-0001-4880-3 | https://lindat.mff.cuni.cz/repository/xmlui/handle/11858/00-097C-0000-0001-4880-3                         |          |
-| Czech-PDT UD treebank                    |             | POS     | https://github.com/UniversalDependencies/UD_Czech-PDT/blob/master/README.md       | CC BY-NC-SA 3.0 | https://aclanthology.org/C12-1015/                    | https://aclanthology.org/C12-1015/                                                | https://github.com/UniversalDependencies/UD_Czech-PDT                                                     |          |
-| FicTree                                  |             | POS     | https://github.com/UniversalDependencies/UD_Czech-FicTree/blob/master/README.md   | CC BY-NC-SA 4.0 | http://ceur-ws.org/Vol-1885/181.pdf                   | ?                                                                                 | https://github.com/UniversalDependencies/UD_Czech-FicTree                                                 |          |
-| MULTEXT-East "1984" annotated corpus 4.0 |             | POS     | https://www.clarin.si/repository/xmlui/handle/11356/1043                          | CC BY-NC-SA 4.0 | http://nl.ijs.si/ME/Vault/V4/doc/bib/mte-lrec2004.pdf | ?                                                                                 | https://www.clarin.si/repository/xmlui/bitstream/handle/11356/1043/MTE1984-ana.zip?sequence=3&isAllowed=y |          |
-| UD_Czech-CAC treebank                    |             | POS     | https://github.com/UniversalDependencies/UD_Czech-CAC/blob/master/README.md       | CC BY-SA 4.0    | https://ufal.mff.cuni.cz/pbml/89/pbml89.pdf           | https://lindat.mff.cuni.cz/repository/xmlui/handle/11372/LRT-1061                 | https://github.com/UniversalDependencies/UD_Czech-CAC                                                     |          |
-| UD_Czech-CLTT treebank                   |             | POS     | https://github.com/UniversalDependencies/UD_Czech-CLTT/blob/master/README.md      | CC BY-SA 4.0    | https://aclanthology.org/L18-1713/                    | https://aclanthology.org/L18-1713/                                                | https://github.com/UniversalDependencies/UD_Czech-CLTT                                                    |          |
-
-## Estonian
-
-### NER
-
-| name                | description | task | URL                                                                                                                             | license      | paper | citation | download link                                                                                                 | comments |
-| ------------------- | ----------- | ---- | ------------------------------------------------------------------------------------------------------------------------------- | ------------ | ----- | -------- | ------------------------------------------------------------------------------------------------------------- | -------- |
-| Estonian NER corpus |             | NER  | https://metashare.ut.ee/repository/browse/estonian-ner-corpus/88d030c0acde11e2a6e4005056b40024f1def472ed254e77a8952e1003d9f81e/ | CC - BY - NC | ?     | ?        | https://metashare.ut.ee/repository/download/88d030c0acde11e2a6e4005056b40024f1def472ed254e77a8952e1003d9f81e/ |          |
-
-### sentiment
-
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
-
-### paraphrase detection
-
-| name   | description | task                 | URL                                            | license | paper | citation | download link                          | comments |
-| ------ | ----------- | -------------------- | ---------------------------------------------- | ------- | ----- | -------- | -------------------------------------- | -------- |
-| TaPaCo |             | paraphrase detection | https://zenodo.org/record/3707949#.YPMTcpgzYuU | ?       | ?     | ?        | https://huggingface.co/datasets/tapaco |          |
-
-### WSD
-
-| name      | description | task | URL                                        | license                                       | paper                                                                 | citation                                   | download link                                                                      | comments |
-| --------- | ----------- | ---- | ------------------------------------------ | --------------------------------------------- | --------------------------------------------------------------------- | ------------------------------------------ | ---------------------------------------------------------------------------------- | -------- |
-| DKPro WSD |             | WSD  | https://dkpro.github.io/dkpro-wsd/corpora/ | ?                                             | ?                                                                     | ?                                          | https://dkpro.github.io/dkpro-wsd/corpora/                                         |          |
-| XL-WSD    |             | WSD  | https://sapienzanlp.github.io/xl-wsd/      | https://sapienzanlp.github.io/xl-wsd/license/ | https://sapienzanlp.github.io/xl-wsd/assets/paper/xl-wsd-aaai2021.pdf | https://sapienzanlp.github.io/xl-wsd/#cite | https://drive.google.com/file/d/19YTL-Uq95hjiFZfgwEpXRgcYGCR_PQY0/view?usp=sharing |          |
-| XL-WiC    |             | WSD  | https://pilehvar.github.io/xlwic/          | CC-BY-NC 4.0                                  | https://arxiv.org/abs/2010.06478                                      | https://arxiv.org/abs/2010.06478           | https://pilehvar.github.io/xlwic/                                                  |          |
-
-### category prediction
-
-| name                          | description | task                | URL                                                      | license | paper | citation | download link                                            | comments |
-| ----------------------------- | ----------- | ------------------- | -------------------------------------------------------- | ------- | ----- | -------- | -------------------------------------------------------- | -------- |
-| Ekspress news article archive |             | category prediction | https://www.clarin.si/repository/xmlui/handle/11356/1408 | ?       | ?     | ?        | https://www.clarin.si/repository/xmlui/handle/11356/1408 |          |
-
-### other
-
-| name                                                   | description | task                                             | URL                                                                                                                                                                | license         | paper                                                 | citation                                                                                                                                     | download link                                                                                                                                | comments |
-| ------------------------------------------------------ | ----------- | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------- | ----------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
-| Corpus of morphologically disambiguated Estonian texts |             | morphologic analysis                             | https://metashare.ut.ee/repository/browse/corpus-of-morphologically-disambiguated-estonian-texts/4b43d8f8463411e2a6e4005056b40024fb0e855467c443a3840a72e0cfd381e4/ | CLARIN ACA - NC | ?                                                     | ?                                                                                                                                            | https://metashare.ut.ee/repository/download/4b43d8f8463411e2a6e4005056b40024fb0e855467c443a3840a72e0cfd381e4/                                |          |
-| EstQA Question Answering dataset                       |             | question answering                               | https://metashare.ut.ee/repository/browse/estqa-question-answering-dataset/dabdfdeaa74911eba6e4fa163e9d45471d05c5c43d8e46788aac3c1694c0e4ac/                       | CC BY           | ?                                                     | https://metashare.ut.ee/repository/browse/estqa-question-answering-dataset/dabdfdeaa74911eba6e4fa163e9d45471d05c5c43d8e46788aac3c1694c0e4ac/ | https://metashare.ut.ee/repository/browse/estqa-question-answering-dataset/dabdfdeaa74911eba6e4fa163e9d45471d05c5c43d8e46788aac3c1694c0e4ac/ |          |
-| MULTEXT-East "1984" annotated corpus 4.0               |             | POS                                              | https://www.clarin.si/repository/xmlui/handle/11356/1043                                                                                                           | CC BY-NC-SA 4.0 | http://nl.ijs.si/ME/Vault/V4/doc/bib/mte-lrec2004.pdf | ?                                                                                                                                            | https://www.clarin.si/repository/xmlui/bitstream/handle/11356/1043/MTE1984-ana.zip?sequence=3&isAllowed=y                                    |          |
-| Semantically disambiguated corpus of Estonian          |             | semantic, morphosyntactic tagging; lemmatization | https://metashare.ut.ee/repository/browse/semantically-disambiguated-corpus-of-estonian/4e82a472463411e2a6e4005056b400241e1c4a126b5242f49d64822b1984fbe8/          | CLARIN ACA - NC | ?                                                     | ?                                                                                                                                            | https://metashare.ut.ee/repository/download/4e82a472463411e2a6e4005056b400241e1c4a126b5242f49d64822b1984fbe8/                                |          |
-| XCOPA                                                  |             | commonsense reasoning                            | https://github.com/cambridgeltl/xcopa                                                                                                                              | CC-BY-4.0       | https://ducdauge.github.io/files/xcopa.pdf            | https://github.com/cambridgeltl/xcopa                                                                                                        | it is in HF datasets + here https://github.com/cambridgeltl/xcopa                                                                            |          |
-
-## Georgian
-
-### NER
-
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
-
-### sentiment
-
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
-
-### paraphrase detection
-
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
-
-### WSD
-
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
-
-### category prediction
-
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
-
-### other
-
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
-
-## Hungarian
-
-### NER
-
-| name               | description | task | URL                                  | license      | paper             | citation | download link | comments |
-| ------------------ | ----------- | ---- | ------------------------------------ | ------------ | ----------------- | -------- | ------------- | -------- |
-| NYTK NerKor corpus |             | NER  | https://github.com/nytud/NYTK-NerKor | CC-BY-SA 4.0 | not published yet |          |               |          |
-
-### sentiment
-
-| name                                          | description | task           | URL                                                      | license         | paper                                           | citation                                                 | download link                                                               | comments |
-| --------------------------------------------- | ----------- | -------------- | -------------------------------------------------------- | --------------- | ----------------------------------------------- | -------------------------------------------------------- | --------------------------------------------------------------------------- | -------- |
-| Hungarian sentiment corpus (HuSent)           |             | sentiment      | https://rgai.inf.u-szeged.hu/node/363                    | -               | https://aclanthology.org/L16-1459/              | https://aclanthology.org/L16-1459/                       | https://rgai.inf.u-szeged.hu/sites/rgai.inf.u-szeged.hu/files/divany_UJ.zip |          |
-| The Hungarian forum corpus for Opinion Mining |             | opinion mining | https://rgai.inf.u-szeged.hu/node/165                    | ?               | http://www.inf.u-szeged.hu/~rfarkas/dmiipOM.pdf | https://rgai.inf.u-szeged.hu/node/165                    | https://rgai.inf.u-szeged.hu/sites/rgai.inf.u-szeged.hu/files/forum.zip     |          |
-| Twitter sentiment for 15 European languages   |             | sentiment      | https://www.clarin.si/repository/xmlui/handle/11356/1054 | CC BY-NC-SA 4.0 | https://arxiv.org/abs/1602.07563                | https://www.clarin.si/repository/xmlui/handle/11356/1054 | https://www.clarin.si/repository/xmlui/handle/11356/1054                    |          |
-
-### paraphrase detection
-
-| name   | description | task                 | URL                                            | license | paper | citation | download link                          | comments |
-| ------ | ----------- | -------------------- | ---------------------------------------------- | ------- | ----- | -------- | -------------------------------------- | -------- |
-| TaPaCo |             | paraphrase detection | https://zenodo.org/record/3707949#.YPMTcpgzYuU | ?       | ?     | ?        | https://huggingface.co/datasets/tapaco |          |
-
-### WSD
-
-| name                                      | description | task | URL                                   | license                                       | paper                                                                 | citation                                                    | download link                                                                      | comments |
-| ----------------------------------------- | ----------- | ---- | ------------------------------------- | --------------------------------------------- | --------------------------------------------------------------------- | ----------------------------------------------------------- | ---------------------------------------------------------------------------------- | -------- |
-| Hungarian word sense disambiguated corpus |             | WSD  | https://rgai.inf.u-szeged.hu/node/161 | -                                             | http://www.lrec-conf.org/proceedings/lrec2008/pdf/847_paper.pdf       | https://aclanthology.org/L08-1609/                          | https://rgai.inf.u-szeged.hu/sites/rgai.inf.u-szeged.hu/files/huwsd.zip            |          |
-| XL-WSD                                    |             | WSD  | https://sapienzanlp.github.io/xl-wsd/ | https://sapienzanlp.github.io/xl-wsd/license/ | https://sapienzanlp.github.io/xl-wsd/assets/paper/xl-wsd-aaai2021.pdf | https://sapienzanlp.github.io/xl-wsd/#cite                  | https://drive.google.com/file/d/19YTL-Uq95hjiFZfgwEpXRgcYGCR_PQY0/view?usp=sharing |          |
-| huWSDdata                                 |             | WSD  | https://github.com/begab/huWSDdata    | ?                                             | http://www.inf.u-szeged.hu/~berendg/docs/publ/mszny_wsd.pdf           | http://www.inf.u-szeged.hu/~berendg/docs/publ/mszny_wsd.pdf | https://github.com/begab/huWSDdata/blob/master/hun_wsd.txt                         |          |
-
-### category prediction
-
-| name  | description | task           | URL                                | license                                                | paper                            | citation                           | download link                                                       | comments |
-| ----- | ----------- | -------------- | ---------------------------------- | ------------------------------------------------------ | -------------------------------- | ---------------------------------- | ------------------------------------------------------------------- | -------- |
-| XGLUE |             | multiple tasks | https://microsoft.github.io/XGLUE/ | https://github.com/microsoft/XGLUE/blob/master/LICENSE | https://arxiv.org/abs/2004.01401 | https://microsoft.github.io/XGLUE/ | https://xglue.blob.core.windows.net/xglue/xglue_full_dataset.tar.gz |          |
-
-### other
-
-| name                                      | description | task                        | URL                                                                                                                         | license                                  | paper                                                                                                                                                                                                                       | citation                                                 | download link                                                                                                                   | comments                                                                |
-| ----------------------------------------- | ----------- | --------------------------- | --------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| Hungarian National Corpus                 |             | automatically tagged corpus | http://mnsz.nytud.hu/index_eng.html                                                                                         |                                          | http://www.lrec-conf.org/proceedings/lrec2014/pdf/681_Paper.pdf                                                                                                                                                             |                                                          | need a registration: http://mnsz.nytud.hu/regisztracio_eng.html                                                                 |                                                                         |
-| Hungarian Wordnet (HuWN) / Magyar WordNet |             | wordnet                     | https://github.com/mmihaltz/huwn                                                                                            | META-SHARE Commons BY NC ND License v1.0 | http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.148.6139&rep=rep1&type=pdf                                                                                                                                         | https://github.com/mmihaltz/huwn                         | https://github.com/mmihaltz/huwn/raw/master/huwn.xml                                                                            |                                                                         |
-| MAZSOLA                                   |             | syntactic tagging           | http://corpus.nytud.hu/isz/                                                                                                 | ?                                        | http://www.nytud.hu/oszt/korpusz/resources/sb_isz.pdf                                                                                                                                                                       | http://corpus.nytud.hu/isz/                              | http://corpus.nytud.hu/isz/s/mazsola_adatbazis.txt.zip                                                                          | only after registration here http://mnsz.nytud.hu/regisztracio_eng.html |
-| MULTEXT-East "1984" annotated corpus 4.0  |             | POS                         | https://www.clarin.si/repository/xmlui/handle/11356/1043                                                                    | CC BY-NC-SA 4.0                          | http://nl.ijs.si/ME/Vault/V4/doc/bib/mte-lrec2004.pdf                                                                                                                                                                       | ?                                                        | https://www.clarin.si/repository/xmlui/bitstream/handle/11356/1043/MTE1984-ana.zip?sequence=3&isAllowed=y                       |                                                                         |
-| Szeged Corpus                             |             | syntax + morphology         | http://metashare.nytud.hu/repository/browse/szeged-corpus/e2bf6a486c7811e2aa7c68b599c26a069a3f6f3a10d745e08d1db15344df55ea/ | MS - NC - No ReD                         | https://www.researchgate.net/profile/Zoltan-Alexin/publication/252066444_K'ezzel_annot'alt_magyar_nyelvi_korpusz_a_Szeged_Korpusz/links/56ec19f708aed740cbb611a1/Kezzel-annotalt-magyar-nyelvi-korpusz-a-Szeged-Korpusz.pdf | https://www.sed.inf.u-szeged.hu/biblio/export/bibtex/586 | ask for access: http://metashare.nytud.hu/repository/download/e2bf6a486c7811e2aa7c68b599c26a069a3f6f3a10d745e08d1db15344df55ea/ |                                                                         |
-
-## Kazakh
-
-### NER
-
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
-
-### sentiment
-
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
-
-### paraphrase detection
-
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
-
-### WSD
-
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
-
-### category prediction
-
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
-
-### other
-
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
-
-## Latvian
-
-### NER
-
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
-
-### sentiment
-
-| name                           | description | task                  | URL                                                      | license | paper                            | citation                                                 | download link                                            | comments |
-| ------------------------------ | ----------- | --------------------- | -------------------------------------------------------- | ------- | -------------------------------- | -------------------------------------------------------- | -------------------------------------------------------- | -------- |
-| Latvian Twitter Eater Corpus   |             | sentiment + some more | https://github.com/Usprogis/Latvian-Twitter-Eater-Corpus | MIT     | https://arxiv.org/abs/2007.05194 | https://github.com/Usprogis/Latvian-Twitter-Eater-Corpus | https://github.com/Usprogis/Latvian-Twitter-Eater-Corpus |          |
-| latvian-tweet-sentiment-corpus |             | sentiment             | https://github.com/FnTm/latvian-tweet-sentiment-corpus   | MIT     | ?                                | ?                                                        | https://github.com/FnTm/latvian-tweet-sentiment-corpus   |          |
-
-### paraphrase detection
-
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
-
-### WSD
-
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
-
-### category prediction
-
-| name                          | description | task                | URL                                                      | license | paper | citation | download link                                            | comments |
-| ----------------------------- | ----------- | ------------------- | -------------------------------------------------------- | ------- | ----- | -------- | -------------------------------------------------------- | -------- |
-| Latvian Delfi article archive |             | category prediction | https://www.clarin.si/repository/xmlui/handle/11356/1409 | ?       | ?     | ?        | https://www.clarin.si/repository/xmlui/handle/11356/1409 |          |
-
-### other
-
-| name                | description | task | URL                                                                            | license      | paper                                                                                                                                      | citation                                 | download link                                            | comments |
-| ------------------- | ----------- | ---- | ------------------------------------------------------------------------------ | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------- | -------------------------------------------------------- | -------- |
-| Latvian UD Treebank |             | POS  | https://github.com/UniversalDependencies/UD_Latvian-LVTB/blob/master/README.md | CC BY-SA 4.0 | https://www.researchgate.net/publication/327520269_Deriving_Enhanced_Universal_Dependencies_from_a_Hybrid_Dependency-Constituency_Treebank | http://www.ailab.lv/en/publications/408/ | https://github.com/UniversalDependencies/UD_Latvian-LVTB |          |
-
-## Lithuanian
-
-### NER
-
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
-
-### sentiment
-
-| name                                          | description | task      | URL                                                                                 | license | paper | citation | download link                                                                       | comments |
-| --------------------------------------------- | ----------- | --------- | ----------------------------------------------------------------------------------- | ------- | ----- | -------- | ----------------------------------------------------------------------------------- | -------- |
-| Lithuanian financial news dataset and bigrams |             | sentiment | https://www.kaggle.com/rokastrimaitis/lithuanian-financial-news-dataset-and-bigrams | CC0 1.0 | ?     | ?        | https://www.kaggle.com/rokastrimaitis/lithuanian-financial-news-dataset-and-bigrams |          |
-
-### paraphrase detection
-
-| name   | description | task                 | URL                                            | license | paper | citation | download link                          | comments |
-| ------ | ----------- | -------------------- | ---------------------------------------------- | ------- | ----- | -------- | -------------------------------------- | -------- |
-| TaPaCo |             | paraphrase detection | https://zenodo.org/record/3707949#.YPMTcpgzYuU | ?       | ?     | ?        | https://huggingface.co/datasets/tapaco |          |
-
-### WSD
-
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
-
-### category prediction
-
-| name                                              | description | task                | URL                                                                                  | license | paper | citation | download link                                                                        | comments |
-| ------------------------------------------------- | ----------- | ------------------- | ------------------------------------------------------------------------------------ | ------- | ----- | -------- | ------------------------------------------------------------------------------------ | -------- |
-| Lithuanian financial news dataset (multi-labeled) |             | category prediction | https://www.kaggle.com/pavelstefanovi/lithuanian-financial-news-dataset-multilabeled | ?       | ?     | ?        | https://www.kaggle.com/pavelstefanovi/lithuanian-financial-news-dataset-multilabeled |          |
-| NLP-LT                                            |             | category prediction | https://github.com/minven/nlp-lt                                                     | ?       | ?     | ?        | https://github.com/minven/nlp-lt                                                     |          |
-
-### other
-
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
-
-## Macedonian
-
-### NER
-
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
-
-### sentiment
-
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
-
-### paraphrase detection
-
-| name   | description | task                 | URL                                            | license | paper | citation | download link                          | comments |
-| ------ | ----------- | -------------------- | ---------------------------------------------- | ------- | ----- | -------- | -------------------------------------- | -------- |
-| TaPaCo |             | paraphrase detection | https://zenodo.org/record/3707949#.YPMTcpgzYuU | ?       | ?     | ?        | https://huggingface.co/datasets/tapaco |          |
-
-### WSD
-
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
-
-### category prediction
-
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
-
-### other
-
-| name                                     | description | task | URL                                                      | license         | paper                                                 | citation | download link                                                                                             | comments |
-| ---------------------------------------- | ----------- | ---- | -------------------------------------------------------- | --------------- | ----------------------------------------------------- | -------- | --------------------------------------------------------------------------------------------------------- | -------- |
-| MULTEXT-East "1984" annotated corpus 4.0 |             | POS  | https://www.clarin.si/repository/xmlui/handle/11356/1043 | CC BY-NC-SA 4.0 | http://nl.ijs.si/ME/Vault/V4/doc/bib/mte-lrec2004.pdf | ?        | https://www.clarin.si/repository/xmlui/bitstream/handle/11356/1043/MTE1984-ana.zip?sequence=3&isAllowed=y |          |
-
-## Moldovan/Moldovian
-
-### NER
-
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
-
-### sentiment
-
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
-
-### paraphrase detection
-
-| name   | description | task                 | URL                                            | license | paper | citation | download link                          | comments |
-| ------ | ----------- | -------------------- | ---------------------------------------------- | ------- | ----- | -------- | -------------------------------------- | -------- |
-| TaPaCo |             | paraphrase detection | https://zenodo.org/record/3707949#.YPMTcpgzYuU | ?       | ?     | ?        | https://huggingface.co/datasets/tapaco |          |
-
-### WSD
-
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
-
-### category prediction
-
-| name   | description | task                          | URL                                     | license         | paper                                | citation                         | download link                                                         | comments |
-| ------ | ----------- | ----------------------------- | --------------------------------------- | --------------- | ------------------------------------ | -------------------------------- | --------------------------------------------------------------------- | -------- |
-| MOROCO |             | multiple classification tasks | https://github.com/butnaruandrei/MOROCO | CC BY-NC-SA 4.0 | https://arxiv.org/pdf/1901.06543.pdf | https://arxiv.org/abs/1901.06543 | https://github.com/butnaruandrei/MOROCO/archive/refs/heads/master.zip |          |
-
-### other
-
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
-
-## Montenegrin
-
-### NER
-
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
-
-### sentiment
-
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
-
-### paraphrase detection
-
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
-
-### WSD
-
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
-
-### category prediction
-
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
-
-### other
-
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
-
-## Polish
-
-### NER
-
-| name                  | description | task                    | URL                                                     | license  | paper                            | citation                                                | download link                                                                   | comments |
-| --------------------- | ----------- | ----------------------- | ------------------------------------------------------- | -------- | -------------------------------- | ------------------------------------------------------- | ------------------------------------------------------------------------------- | -------- |
-| BSNLP                 |             | NER                     | http://bsnlp.cs.helsinki.fi/bsnlp-2019/shared_task.html | ?        | ?                                | http://bsnlp.cs.helsinki.fi/bsnlp-2019/shared_task.html | need to ask for access: http://bsnlp.cs.helsinki.fi/bsnlp-2019/shared_task.html |          |
-| KLEJ                  |             | multiple semantic tasks | https://klejbenchmark.com/                              | multiple | https://arxiv.org/abs/2005.00630 | https://klejbenchmark.com/tasks/                        | https://klejbenchmark.com/tasks/                                                |          |
-| PolEval 2018 NER task |             | NER                     | https://gonito.net/challenge/poleval-2018-ner           | ?        | ?                                | ?                                                       |                                                                                 |          |
-
-### sentiment
-
-| name                                        | description | task                    | URL                                                      | license         | paper                            | citation                                                 | download link                                            | comments |
-| ------------------------------------------- | ----------- | ----------------------- | -------------------------------------------------------- | --------------- | -------------------------------- | -------------------------------------------------------- | -------------------------------------------------------- | -------- |
-| KLEJ                                        |             | multiple semantic tasks | https://klejbenchmark.com/                               | multiple        | https://arxiv.org/abs/2005.00630 | https://klejbenchmark.com/tasks/                         | https://klejbenchmark.com/tasks/                         |          |
-| MultiEmo                                    |             | sentiment               | https://github.com/CLARIN-PL/multiemo                    | MIT             | ?                                | ?                                                        | https://clarin-pl.eu/dspace/handle/11321/798             |          |
-| Twitter sentiment for 15 European languages |             | sentiment               | https://www.clarin.si/repository/xmlui/handle/11356/1054 | CC BY-NC-SA 4.0 | https://arxiv.org/abs/1602.07563 | https://www.clarin.si/repository/xmlui/handle/11356/1054 | https://www.clarin.si/repository/xmlui/handle/11356/1054 |          |
-
-### paraphrase detection
-
-| name   | description | task                    | URL                                            | license  | paper                            | citation                         | download link                          | comments |
-| ------ | ----------- | ----------------------- | ---------------------------------------------- | -------- | -------------------------------- | -------------------------------- | -------------------------------------- | -------- |
-| KLEJ   |             | multiple semantic tasks | https://klejbenchmark.com/                     | multiple | https://arxiv.org/abs/2005.00630 | https://klejbenchmark.com/tasks/ | https://klejbenchmark.com/tasks/       |          |
-| TaPaCo |             | paraphrase detection    | https://zenodo.org/record/3707949#.YPMTcpgzYuU | ?        | ?                                | ?                                | https://huggingface.co/datasets/tapaco |          |
-
-### WSD
-
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
-
-### category prediction
-
-| name                                        | description | task                | URL                                                    | license                                                | paper                            | citation                           | download link                                                       | comments |
-| ------------------------------------------- | ----------- | ------------------- | ------------------------------------------------------ | ------------------------------------------------------ | -------------------------------- | ---------------------------------- | ------------------------------------------------------------------- | -------- |
-| Polish Sport Texts Classification Challenge |             | category prediction | https://gonito.net/challenge/sport-text-classification | ?                                                      | ?                                | ?                                  |                                                                     |          |
-| XGLUE                                       |             | multiple tasks      | https://microsoft.github.io/XGLUE/                     | https://github.com/microsoft/XGLUE/blob/master/LICENSE | https://arxiv.org/abs/2004.01401 | https://microsoft.github.io/XGLUE/ | https://xglue.blob.core.windows.net/xglue/xglue_full_dataset.tar.gz |          |
-
-### other
-
-| name                                     | description | task                    | URL                                                      | license         | paper                                                 | citation | download link                                                                                                        | comments |
-| ---------------------------------------- | ----------- | ----------------------- | -------------------------------------------------------- | --------------- | ----------------------------------------------------- | -------- | -------------------------------------------------------------------------------------------------------------------- | -------- |
-| MULTEXT-East "1984" annotated corpus 4.0 |             | POS                     | https://www.clarin.si/repository/xmlui/handle/11356/1043 | CC BY-NC-SA 4.0 | http://nl.ijs.si/ME/Vault/V4/doc/bib/mte-lrec2004.pdf | ?        | https://www.clarin.si/repository/xmlui/bitstream/handle/11356/1043/MTE1984-ana.zip?sequence=3&isAllowed=y            |          |
-| NKJP1M                                   |             | morphosyntactic tagging | http://clip.ipipan.waw.pl/NationalCorpusOfPolish         | GNU GPL 3       | ?                                                     | ?        | http://clip.ipipan.waw.pl/NationalCorpusOfPolish?action=AttachFile&do=view&target=NKJP-PodkorpusMilionowy-1.2.tar.gz |          |
-
-## Romanian
-
-### NER
-
-| name  | description | task                    | URL                                       | license  | paper                                       | citation                                                  | download link                             | comments |
-| ----- | ----------- | ----------------------- | ----------------------------------------- | -------- | ------------------------------------------- | --------------------------------------------------------- | ----------------------------------------- | -------- |
-| LiRo  |             | multiple semantic tasks | https://lirobenchmark.github.io/          | multiple | https://openreview.net/forum?id=JH61CD7afTv | https://github.com/LiroBenchmark/LiroBenchmark.github.io/ | https://lirobenchmark.github.io/datasets  |          |
-| RONEC |             | NER                     | https://github.com/dumitrescustefan/ronec | MIT      | https://arxiv.org/abs/1909.01247            | https://github.com/dumitrescustefan/ronec#cite            | https://github.com/dumitrescustefan/ronec |          |
-
-### sentiment
-
-| name | description | task                    | URL                              | license  | paper                                       | citation                                                  | download link                            | comments |
-| ---- | ----------- | ----------------------- | -------------------------------- | -------- | ------------------------------------------- | --------------------------------------------------------- | ---------------------------------------- | -------- |
-| LiRo |             | multiple semantic tasks | https://lirobenchmark.github.io/ | multiple | https://openreview.net/forum?id=JH61CD7afTv | https://github.com/LiroBenchmark/LiroBenchmark.github.io/ | https://lirobenchmark.github.io/datasets |          |
-
-### paraphrase detection
-
-| name   | description | task                 | URL                                            | license | paper | citation | download link                          | comments |
-| ------ | ----------- | -------------------- | ---------------------------------------------- | ------- | ----- | -------- | -------------------------------------- | -------- |
-| RO-STS |             | paraphrase detection | https://github.com/dumitrescustefan/RO-STS     | ?       | ?     | ?        |                                        |          |
-| TaPaCo |             | paraphrase detection | https://zenodo.org/record/3707949#.YPMTcpgzYuU | ?       | ?     | ?        | https://huggingface.co/datasets/tapaco |          |
-
-### WSD
-
-| name                                | description | task | URL                                                               | license | paper | citation | download link                              | comments |
-| ----------------------------------- | ----------- | ---- | ----------------------------------------------------------------- | ------- | ----- | -------- | ------------------------------------------ | -------- |
-| DKPro WSD                           |             | WSD  | https://dkpro.github.io/dkpro-wsd/corpora/                        | ?       | ?     | ?        | https://dkpro.github.io/dkpro-wsd/corpora/ |          |
-| Romanian lexical sample @ Semeval 3 |             | WSD  | https://web.eecs.umich.edu/~mihalcea/senseval/senseval3/data.html | ?       | ?     | ?        |                                            |          |
-
-### category prediction
-
-| name   | description | task                          | URL                                     | license         | paper                                | citation                         | download link                                                         | comments |
-| ------ | ----------- | ----------------------------- | --------------------------------------- | --------------- | ------------------------------------ | -------------------------------- | --------------------------------------------------------------------- | -------- |
-| MOROCO |             | multiple classification tasks | https://github.com/butnaruandrei/MOROCO | CC BY-NC-SA 4.0 | https://arxiv.org/pdf/1901.06543.pdf | https://arxiv.org/abs/1901.06543 | https://github.com/butnaruandrei/MOROCO/archive/refs/heads/master.zip |          |
-
-### other
-
-| name                                     | description | task      | URL                                                      | license                                                    | paper                                                 | citation                                        | download link                                                                                             | comments |
-| ---------------------------------------- | ----------- | --------- | -------------------------------------------------------- | ---------------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------- | --------------------------------------------------------------------------------------------------------- | -------- |
-| MULTEXT-East "1984" annotated corpus 4.0 |             | POS       | https://www.clarin.si/repository/xmlui/handle/11356/1043 | CC BY-NC-SA 4.0                                            | http://nl.ijs.si/ME/Vault/V4/doc/bib/mte-lrec2004.pdf | ?                                               | https://www.clarin.si/repository/xmlui/bitstream/handle/11356/1043/MTE1984-ana.zip?sequence=3&isAllowed=y |          |
-| SaRoCo                                   |             | fake news | https://github.com/MihaelaGaman/SaRoCo                   | https://github.com/MihaelaGaman/SaRoCo/blob/master/LICENSE | https://arxiv.org/abs/2105.06456                      | https://github.com/MihaelaGaman/SaRoCo#citation | https://github.com/MihaelaGaman/SaRoCo                                                                    |          |
-
-## Russian
-
-### NER
-
-| name  | description | task | URL                                                     | license | paper | citation                                                | download link                                                                   | comments |
-| ----- | ----------- | ---- | ------------------------------------------------------- | ------- | ----- | ------------------------------------------------------- | ------------------------------------------------------------------------------- | -------- |
-| BSNLP |             | NER  | http://bsnlp.cs.helsinki.fi/bsnlp-2019/shared_task.html | ?       | ?     | http://bsnlp.cs.helsinki.fi/bsnlp-2019/shared_task.html | need to ask for access: http://bsnlp.cs.helsinki.fi/bsnlp-2019/shared_task.html |          |
-
-### sentiment
-
-| name                                        | description | task      | URL                                                      | license         | paper                            | citation                                                 | download link                                            | comments |
-| ------------------------------------------- | ----------- | --------- | -------------------------------------------------------- | --------------- | -------------------------------- | -------------------------------------------------------- | -------------------------------------------------------- | -------- |
-| MultiEmo                                    |             | sentiment | https://github.com/CLARIN-PL/multiemo                    | MIT             | ?                                | ?                                                        | https://clarin-pl.eu/dspace/handle/11321/798             |          |
-| RuSentiment                                 |             | sentiment | https://text-machine.cs.uml.edu/projects/rusentiment/    | ?               | ?                                | ?                                                        |                                                          |          |
-| Sentiment Analysis in Russian               |             | sentiment | https://www.kaggle.com/c/sentiment-analysis-in-russian   | ?               | ?                                | ?                                                        | https://www.kaggle.com/c/sentiment-analysis-in-russian   |          |
-| Twitter sentiment for 15 European languages |             | sentiment | https://www.clarin.si/repository/xmlui/handle/11356/1054 | CC BY-NC-SA 4.0 | https://arxiv.org/abs/1602.07563 | https://www.clarin.si/repository/xmlui/handle/11356/1054 | https://www.clarin.si/repository/xmlui/handle/11356/1054 |          |
-| mokoron                                     |             | sentiment | http://study.mokoron.com/                                | ?               | ?                                | ?                                                        | http://study.mokoron.com/                                |          |
-
-### paraphrase detection
-
-| name        | description | task                 | URL                                            | license | paper | citation | download link                          | comments |
-| ----------- | ----------- | -------------------- | ---------------------------------------------- | ------- | ----- | -------- | -------------------------------------- | -------- |
-| Paraphraser |             | paraphrase detection | http://paraphraser.ru/                         | ?       | ?     | ?        |                                        |          |
-| TaPaCo      |             | paraphrase detection | https://zenodo.org/record/3707949#.YPMTcpgzYuU | ?       | ?     | ?        | https://huggingface.co/datasets/tapaco |          |
-
-### WSD
-
-| name             | description | task                    | URL                           | license  | paper                            | citation                      | download link                       | comments |
-| ---------------- | ----------- | ----------------------- | ----------------------------- | -------- | -------------------------------- | ----------------------------- | ----------------------------------- | -------- |
-| RussianSuperGLUE |             | multiple semantic tasks | https://russiansuperglue.com/ | multiple | https://arxiv.org/abs/2010.15925 | https://russiansuperglue.com/ | https://russiansuperglue.com/tasks/ |          |
-
-### category prediction
-
-| name                                                    | description | task                | URL                                                      | license                                                | paper                            | citation                           | download link                                                       | comments |
-| ------------------------------------------------------- | ----------- | ------------------- | -------------------------------------------------------- | ------------------------------------------------------ | -------------------------------- | ---------------------------------- | ------------------------------------------------------------------- | -------- |
-| Corpus of Russian news articles collected from Lenta.Ru |             | category prediction | https://github.com/yutkin/Lenta.Ru-News-Dataset          | ?                                                      | ?                                | ?                                  | https://github.com/yutkin/Lenta.Ru-News-Dataset                     |          |
-| Ekspress news article archive                           |             | category prediction | https://www.clarin.si/repository/xmlui/handle/11356/1408 | ?                                                      | ?                                | ?                                  | https://www.clarin.si/repository/xmlui/handle/11356/1408            |          |
-| Latvian Delfi article archive                           |             | category prediction | https://www.clarin.si/repository/xmlui/handle/11356/1409 | ?                                                      | ?                                | ?                                  | https://www.clarin.si/repository/xmlui/handle/11356/1409            |          |
-| XGLUE                                                   |             | multiple tasks      | https://microsoft.github.io/XGLUE/                       | https://github.com/microsoft/XGLUE/blob/master/LICENSE | https://arxiv.org/abs/2004.01401 | https://microsoft.github.io/XGLUE/ | https://xglue.blob.core.windows.net/xglue/xglue_full_dataset.tar.gz |          |
-
-### other
-
-| name | description | task | URL                                      | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | ---------------------------------------- | ------- | ----- | -------- | ------------- | -------- |
-| XNLI |             | NLI  | https://github.com/facebookresearch/XNLI | ?       | ?     | ?        |               |          |
-
-## Serbian
-
-### NER
-
-| name                | description | task | URL                                                                 | license      | paper                                                      | citation                                                            | download link                                                       | comments |
-| ------------------- | ----------- | ---- | ------------------------------------------------------------------- | ------------ | ---------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- | -------- |
-| ReLDI-NormTagNER-sr |             | NER  | https://www.clarin.si/repository/xmlui/handle/11356/1240            | CC-BY-SA 4.0 | https://revije.ff.uni-lj.si/slovenscina2/article/view/7007 | https://revije.ff.uni-lj.si/slovenscina2/article/view/7007          | https://www.clarin.si/repository/xmlui/handle/11356/1240            |          |
-| SETimes.SR          |             | NER  | https://reldi.spur.uzh.ch/blog/serbian-annotated-corpus-setimes-sr/ | CC-BY-SA 4.0 | https://www.aclweb.org/old_anthology/W/W17/W17-1407.pdf    | https://reldi.spur.uzh.ch/blog/serbian-annotated-corpus-setimes-sr/ | https://reldi.spur.uzh.ch/blog/serbian-annotated-corpus-setimes-sr/ |          |
-
-### sentiment
-
-| name                                        | description | task      | URL                                                      | license         | paper                                                           | citation                                                    | download link                                            | comments |
-| ------------------------------------------- | ----------- | --------- | -------------------------------------------------------- | --------------- | --------------------------------------------------------------- | ----------------------------------------------------------- | -------------------------------------------------------- | -------- |
-| SentiComments.SR                            |             | sentiment | https://github.com/vukbatanovic/SentiComments.SR         | CC BY-NC-SA 4.0 | https://github.com/vukbatanovic/SentiComments.SR#references     | https://github.com/vukbatanovic/SentiComments.SR#references | https://github.com/vukbatanovic/SentiComments.SR         |          |
-| SerbMR                                      |             | sentiment | http://vukbatanovic.github.io/SerbMR/                    | CC BY-NC-SA 4.0 | http://www.lrec-conf.org/proceedings/lrec2016/pdf/284_Paper.pdf | ?                                                           | https://github.com/vukbatanovic/SerbMR                   |          |
-| Twitter sentiment for 15 European languages |             | sentiment | https://www.clarin.si/repository/xmlui/handle/11356/1054 | CC BY-NC-SA 4.0 | https://arxiv.org/abs/1602.07563                                | https://www.clarin.si/repository/xmlui/handle/11356/1054    | https://www.clarin.si/repository/xmlui/handle/11356/1054 |          |
-
-### paraphrase detection
-
-| name          | description | task                 | URL                                            | license         | paper                                                                   | citation                                      | download link                                 | comments                   |
-| ------------- | ----------- | -------------------- | ---------------------------------------------- | --------------- | ----------------------------------------------------------------------- | --------------------------------------------- | --------------------------------------------- | -------------------------- |
-| STS.news.sr   |             | paraphrase detection | https://vukbatanovic.github.io/STS.news.sr/    | CC BY-NC-SA 4.0 | http://www.lrec-conf.org/proceedings/lrec2018/pdf/442.pdf               | https://vukbatanovic.github.io/STS.news.sr/   | https://github.com/vukbatanovic/STS.news.sr   | (subset of paraphrase.sr?) |
-| TaPaCo        |             | paraphrase detection | https://zenodo.org/record/3707949#.YPMTcpgzYuU | ?               | ?                                                                       | ?                                             | https://huggingface.co/datasets/tapaco        |                            |
-| paraphrase.sr |             | paraphrase detection | https://vukbatanovic.github.io/paraphrase.sr/  | CC BY-NC-SA 4.0 | https://www.sciencedirect.com/science/article/abs/pii/S0167923613000614 | https://vukbatanovic.github.io/paraphrase.sr/ | https://github.com/vukbatanovic/paraphrase.sr |                            |
-
-### WSD
-
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
-
-### category prediction
-
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
-
-### other
-
-| name                                     | description | task | URL                                                      | license         | paper                                                 | citation | download link                                                                                             | comments |
-| ---------------------------------------- | ----------- | ---- | -------------------------------------------------------- | --------------- | ----------------------------------------------------- | -------- | --------------------------------------------------------------------------------------------------------- | -------- |
-| MULTEXT-East "1984" annotated corpus 4.0 |             | POS  | https://www.clarin.si/repository/xmlui/handle/11356/1043 | CC BY-NC-SA 4.0 | http://nl.ijs.si/ME/Vault/V4/doc/bib/mte-lrec2004.pdf | ?        | https://www.clarin.si/repository/xmlui/bitstream/handle/11356/1043/MTE1984-ana.zip?sequence=3&isAllowed=y |          |
-
-## Slovakian/Slovak
-
-### NER
-
-| name                           | description | task                    | URL                                                   | license | paper                                                                           | citation                           | download link                                                  | comments |
-| ------------------------------ | ----------- | ----------------------- | ----------------------------------------------------- | ------- | ------------------------------------------------------------------------------- | ---------------------------------- | -------------------------------------------------------------- | -------- |
-| Slovak Categorized News Corpus |             | POS, NER, category      | https://nlp.kemt.fei.tuke.sk/language/categorizednews | ?       | https://aclanthology.org/L14-1517/                                              | https://aclanthology.org/L14-1517/ | https://nlp.kemt.fei.tuke.sk/language/categorizednews          |          |
-| Slovak Web Discussion Corpus   |             | NER, category, spelling | https://nlp.kemt.fei.tuke.sk/language/webdiscussion   | ?       | https://www.researchgate.net/publication/290042999_Slovak_Web_Discussion_Corpus |                                    | https://link.springer.com/chapter/10.1007/978-3-319-10888-9_45 |          |
-
-### sentiment
-
-| name                                        | description | task      | URL                                                      | license         | paper                            | citation                                                 | download link                                            | comments                  |
-| ------------------------------------------- | ----------- | --------- | -------------------------------------------------------- | --------------- | -------------------------------- | -------------------------------------------------------- | -------------------------------------------------------- | ------------------------- |
-| Sentigrade sentiment dataset                |             | sentiment | https://sentigrade.fiit.stuba.sk/data                    | ?               | ?                                | ?                                                        | https://sentigrade.fiit.stuba.sk/data                    | from Facebook, not so big |
-| Twitter sentiment for 15 European languages |             | sentiment | https://www.clarin.si/repository/xmlui/handle/11356/1054 | CC BY-NC-SA 4.0 | https://arxiv.org/abs/1602.07563 | https://www.clarin.si/repository/xmlui/handle/11356/1054 | https://www.clarin.si/repository/xmlui/handle/11356/1054 |                           |
-
-### paraphrase detection
-
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
-
-### WSD
-
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
-
-### category prediction
-
-| name                           | description | task               | URL                                                   | license | paper                              | citation                           | download link                                         | comments |
-| ------------------------------ | ----------- | ------------------ | ----------------------------------------------------- | ------- | ---------------------------------- | ---------------------------------- | ----------------------------------------------------- | -------- |
-| Slovak Categorized News Corpus |             | POS, NER, category | https://nlp.kemt.fei.tuke.sk/language/categorizednews | ?       | https://aclanthology.org/L14-1517/ | https://aclanthology.org/L14-1517/ | https://nlp.kemt.fei.tuke.sk/language/categorizednews |          |
-
-### other
-
-| name                                     | description | task    | URL                                                                          | license         | paper                                                       | citation                                                        | download link                                                                                             | comments |
-| ---------------------------------------- | ----------- | ------- | ---------------------------------------------------------------------------- | --------------- | ----------------------------------------------------------- | --------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | -------- |
-| MULTEXT-East "1984" annotated corpus 4.0 |             | POS     | https://www.clarin.si/repository/xmlui/handle/11356/1043                     | CC BY-NC-SA 4.0 | http://nl.ijs.si/ME/Vault/V4/doc/bib/mte-lrec2004.pdf       | ?                                                               | https://www.clarin.si/repository/xmlui/bitstream/handle/11356/1043/MTE1984-ana.zip?sequence=3&isAllowed=y |          |
-| Slovak UD treebank                       |             | POS     | https://github.com/UniversalDependencies/UD_Slovak-SNK/blob/master/README.md | CC BY-SA 4.0    | ?                                                           | https://lindat.mff.cuni.cz/repository/xmlui/handle/11234/1-1822 | https://github.com/UniversalDependencies/UD_Slovak-SNK                                                    |          |
-| Slovak Wordnet                           |             | wordnet | https://korpus.sk/WordNet_en.html                                            | CC BY-SA 3.0    | ?                                                           | ?                                                               | https://korpus.sk/WordNet_en.html                                                                         |          |
-| sloWNet                                  |             | wordnet | http://lojze.lugos.si/darja/research/slownet/                                | CC-BY-SA 4.0    | https://link.springer.com/article/10.1007/s10579-015-9295-6 | https://link.springer.com/article/10.1007/s10579-015-9295-6     | http://hdl.handle.net/11356/1026                                                                          |          |
-
-## Slovenian
-
-### NER
-
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
-
-### sentiment
-
-| name                                        | description | task                    | URL                                                                                          | license         | paper                                                                                                                     | citation                                                                                                                  | download link                                                                                | comments |
-| ------------------------------------------- | ----------- | ----------------------- | -------------------------------------------------------------------------------------------- | --------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- | -------- |
-| SentiCoref                                  |             | NER + coref + sentiment | https://www.clarin.si/repository/xmlui/handle/11356/1285                                     | CC-BY-4.0       | ?                                                                                                                         | ?                                                                                                                         | https://www.clarin.si/repository/xmlui/handle/11356/1285                                     |          |
-| SentiNews 1.0                               |             | sentiment analysis      | https://github.com/19Joey85/Sentiment-annotated-news-corpus-and-sentiment-lexicon-in-Slovene | CC BY-SA 4.0    | https://www.researchgate.net/publication/322961832_Annotated_news_corpora_and_a_lexicon_for_sentiment_analysis_in_Slovene | https://www.researchgate.net/publication/322961832_Annotated_news_corpora_and_a_lexicon_for_sentiment_analysis_in_Slovene | https://github.com/19Joey85/Sentiment-annotated-news-corpus-and-sentiment-lexicon-in-Slovene |          |
-| Twitter sentiment for 15 European languages |             | sentiment               | https://www.clarin.si/repository/xmlui/handle/11356/1054                                     | CC BY-NC-SA 4.0 | https://arxiv.org/abs/1602.07563                                                                                          | https://www.clarin.si/repository/xmlui/handle/11356/1054                                                                  | https://www.clarin.si/repository/xmlui/handle/11356/1054                                     |          |
-
-### paraphrase detection
-
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
-
-### WSD
-
-| name                             | description | task                    | URL                                                      | license                                       | paper                                                                 | citation                                   | download link                                                                      | comments                              |
-| -------------------------------- | ----------- | ----------------------- | -------------------------------------------------------- | --------------------------------------------- | --------------------------------------------------------------------- | ------------------------------------------ | ---------------------------------------------------------------------------------- | ------------------------------------- |
-| Slovene translation of SuperGLUE |             | multiple semantic tasks | https://www.clarin.si/repository/xmlui/handle/11356/1380 | CC-BY-4.0                                     | ?                                                                     | ?                                          | https://www.clarin.si/repository/xmlui/handle/11356/1380                           | https://github.com/clarinsi/SuperGLUE |
-| XL-WSD                           |             | WSD                     | https://sapienzanlp.github.io/xl-wsd/                    | https://sapienzanlp.github.io/xl-wsd/license/ | https://sapienzanlp.github.io/xl-wsd/assets/paper/xl-wsd-aaai2021.pdf | https://sapienzanlp.github.io/xl-wsd/#cite | https://drive.google.com/file/d/19YTL-Uq95hjiFZfgwEpXRgcYGCR_PQY0/view?usp=sharing |                                       |
-
-### category prediction
-
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
-
-### other
-
-| name                                     | description | task                                      | URL                                                      | license                                                                    | paper                                                           | citation                                                         | download link                                                                                              | comments                |
-| ---------------------------------------- | ----------- | ----------------------------------------- | -------------------------------------------------------- | -------------------------------------------------------------------------- | --------------------------------------------------------------- | ---------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | ----------------------- |
-| FRENK                                    |             | offensive comments                        | https://www.clarin.si/repository/xmlui/handle/11356/1433 | https://clarin.si/repository/xmlui/page/licence-aca-id-by-nc-inf-nored-1.0 | https://arxiv.org/pdf/1906.02045.pdf                            | https://arxiv.org/pdf/1906.02045.pdf                             | https://www.clarin.si/repository/xmlui/handle/11356/1433                                                   | http://nl.ijs.si/frenk/ |
-| MULTEXT-East "1984" annotated corpus 4.0 |             | POS                                       | https://www.clarin.si/repository/xmlui/handle/11356/1043 | CC BY-NC-SA 4.0                                                            | http://nl.ijs.si/ME/Vault/V4/doc/bib/mte-lrec2004.pdf           | ?                                                                | https://www.clarin.si/repository/xmlui/bitstream/handle/11356/1043/MTE1984-ana.zip?sequence=3&isAllowed=y  |                         |
-| jos1M 1.2                                |             | morphosyntactic tagging and lemmatisation | https://www.clarin.si/repository/xmlui/handle/11356/1213 | CC BY-NC 4.0                                                               | http://www.lrec-conf.org/proceedings/lrec2010/pdf/139_Paper.pdf | http://www.lrec-conf.org/proceedings/lrec2010/summaries/139.html | https://www.clarin.si/repository/xmlui/bitstream/handle/11356/1213/jos1M-en.TEI.zip?sequence=1&isAllowed=y |                         |
-
-## Ukrainian
-
-### NER
-
-| name                       | description | task | URL                                       | license      | paper | citation | download link                             | comments |
-| -------------------------- | ----------- | ---- | ----------------------------------------- | ------------ | ----- | -------- | ----------------------------------------- | -------- |
-| NER for ukrainian language |             | NER  | https://github.com/nazarii-piontko/ner-ua | ?            | ?     | ?        | https://github.com/nazarii-piontko/ner-ua |          |
-| Ukrainian NER              |             | NER  | https://lang.org.ua/en/corpora/#anchor1   | CC-BY-SA 4.0 | ?     | ?        | https://lang.org.ua/en/corpora/#anchor1   |          |
-
-### sentiment
-
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
-
-### paraphrase detection
-
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
-
-### WSD
-
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
-
-### category prediction
-
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
-
-### other
-
-| name | description | task | URL | license | paper | citation | download link | comments |
-| ---- | ----------- | ---- | --- | ------- | ----- | -------- | ------------- | -------- |
+# Datasets
+
+|                                                  | NER<br>(named-entity recognition) |        sentiment analysis        |        paraphrase detection         | WSD<br>(word-sense disambiguation) |        category prediction        |
+| ------------------------------------------------ | :-------------------------------: | :------------------------------: | :---------------------------------: | :--------------------------------: | :-------------------------------: |
+| **[🇦🇱 Albanian](#-albanian)**                    |                                   |     [1](#albanian-sentiment)     |                                     |                                    |      [1](#albanian-category)      |
+| **[🇦🇲 Armenian](#-armenian)**                    |        [1](#armenian-ner)         |                                  |      [2](#armenian-paraphrase)      |                                    |      [2](#armenian-category)      |
+| **[🇧🇾 Belarusian](#-belarusian)**                |       [1](#belarusian-ner)        |                                  |     [1](#belarusian-paraphrase)     |                                    |     [1](#belarusian-category)     |
+| **[🇧🇦 Bosnian](#-bosnian)**                      |                                   |     [1](#bosnian-sentiment)      |                                     |                                    |                                   |
+| **[🇧🇬 Bulgarian](#-bulgarian)**                  |        [1](#bulgarian-ner)        |    [1](#bulgarian-sentiment)     |     [1](#bulgarian-paraphrase)      |        [3](#bulgarian-wsd)         |                                   |
+| **[🇭🇷 Croatian](#-croatian)**                    |        [2](#croatian-ner)         |     [2](#croatian-sentiment)     |      [1](#croatian-paraphrase)      |         [3](#croatian-wsd)         |      [1](#croatian-category)      |
+| **[🇨🇿 Czech](#-czech)**                          |          [1](#czech-ner)          |      [3](#czech-sentiment)       |       [1](#czech-paraphrase)        |          [2](#czech-wsd)           |       [1](#czech-category)        |
+| **[🇪🇪 Estonian](#-estonian)**                    |        [1](#estonian-ner)         |                                  |      [1](#estonian-paraphrase)      |         [3](#estonian-wsd)         |      [1](#estonian-category)      |
+| **[🇬🇪 Georgian](#-georgian)**                    |                                   |                                  |                                     |                                    |                                   |
+| **[🇭🇺 Hungarian](#-hungarian)**                  |        [1](#hungarian-ner)        |    [3](#hungarian-sentiment)     |     [1](#hungarian-paraphrase)      |        [3](#hungarian-wsd)         |     [1](#hungarian-category)      |
+| **[🇰🇿 Kazakh](#-kazakh)**                        |                                   |                                  |                                     |                                    |                                   |
+| **[🇱🇻 Latvian](#-latvian)**                      |                                   |     [2](#latvian-sentiment)      |                                     |                                    |      [1](#latvian-category)       |
+| **[🇱🇹 Lithuanian](#-lithuanian)**                |                                   |    [1](#lithuanian-sentiment)    |     [1](#lithuanian-paraphrase)     |                                    |     [2](#lithuanian-category)     |
+| **[🇲🇰 Macedonian](#-macedonian)**                |                                   |                                  |     [1](#macedonian-paraphrase)     |                                    |                                   |
+| **[🇲🇩 Moldovan/Moldovian](#-moldovanmoldovian)** |                                   |                                  | [1](#moldovan/moldovian-paraphrase) |                                    | [1](#moldovan/moldovian-category) |
+| **[🇲🇪 Montenegrin](#-montenegrin)**              |                                   |                                  |                                     |                                    |                                   |
+| **[🇵🇱 Polish](#-polish)**                        |         [3](#polish-ner)          |      [3](#polish-sentiment)      |       [2](#polish-paraphrase)       |                                    |       [2](#polish-category)       |
+| **[🇷🇴 Romanian](#-romanian)**                    |        [2](#romanian-ner)         |     [1](#romanian-sentiment)     |      [2](#romanian-paraphrase)      |         [2](#romanian-wsd)         |      [1](#romanian-category)      |
+| **[🇷🇺 Russian](#-russian)**                      |         [1](#russian-ner)         |     [5](#russian-sentiment)      |      [2](#russian-paraphrase)       |         [1](#russian-wsd)          |      [4](#russian-category)       |
+| **[🇷🇸 Serbian](#-serbian)**                      |         [2](#serbian-ner)         |     [3](#serbian-sentiment)      |      [3](#serbian-paraphrase)       |                                    |                                   |
+| **[🇸🇰 Slovakian/Slovak](#-slovakianslovak)**     |    [2](#slovakian/slovak-ner)     | [2](#slovakian/slovak-sentiment) |                                     |                                    |  [1](#slovakian/slovak-category)  |
+| **[🇸🇮 Slovenian](#-slovenian)**                  |                                   |    [3](#slovenian-sentiment)     |                                     |        [2](#slovenian-wsd)         |                                   |
+| **[🇺🇦 Ukrainian](#-ukrainian)**                  |        [2](#ukrainian-ner)        |                                  |                                     |                                    |                                   |
+
+## 🇦🇱 Albanian
+
+<table width="100%"><thead><tr><th width="66%">name</th><th width="33%">description</th><th>task</th><th>category</th><th>languages</th><th>links</th></tr></thead><tbody><tr><td id="albanian-sentiment"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1054">Twitter sentiment for 15 European languages</a></td><td></td><td>sentiment</td><td><ul><li title="sentiment">😄</li></ul></td><td><span title="Albanian">🇦🇱</span> <span title="Bosnian">🇧🇦</span> <span title="Bulgarian">🇧🇬</span> <span title="Croatian">🇭🇷</span> <span title="Hungarian">🇭🇺</span> <span title="Polish">🇵🇱</span> <span title="Russian">🇷🇺</span> <span title="Serbian">🇷🇸</span> <span title="Slovakian/Slovak">🇸🇰</span> <span title="Slovenian">🇸🇮</span> </td><td><ul><li title="url"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1054">🌐</a></li><li title="paper"><a href="https://arxiv.org/abs/1602.07563">📄</a></li><li title="citation"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1054">❞</a></li><li title="download link"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1054">⬇️</a></li></ul></td></tr>
+<tr><td id="albanian-category"><a href="https://www.kaggle.com/gentrexha/kosovo-news-articles-dataset">Albanian News Articles Dataset</a></td><td></td><td>category prediction</td><td><ul><li title="category">📰</li></ul></td><td><span title="Albanian">🇦🇱</span> </td><td><ul><li title="url"><a href="https://www.kaggle.com/gentrexha/kosovo-news-articles-dataset">🌐</a></li><li title="download link"><a href="https://www.kaggle.com/gentrexha/kosovo-news-articles-dataset">⬇️</a></li></ul></td></tr>
+<tr><td id="albanian-other"><a href="http://shachi.org/resources/4040">Albanian wordnet</a></td><td></td><td>wordnet</td><td><ul><li title="other">🦦</li></ul></td><td><span title="Albanian">🇦🇱</span> </td><td><ul><li title="url"><a href="http://shachi.org/resources/4040">🌐</a></li><li title="download link"><a href="format is broken but still recoverable here view-source:http://web.archive.org/web/20180617134952/http://fjalnet.com/shqip.xml">⬇️</a></li></ul></td></tr>
+</tbody></table>
+
+## 🇦🇲 Armenian
+
+<table width="100%"><thead><tr><th width="66%">name</th><th width="33%">description</th><th>task</th><th>category</th><th>languages</th><th>links</th></tr></thead><tbody><tr><td id="armenian-ner"><a href="https://github.com/ispras-texterra/pioner">pioNER</a></td><td></td><td>NER</td><td><ul><li title="ner">📛</li></ul></td><td><span title="Armenian">🇦🇲</span> </td><td><ul><li title="url"><a href="https://github.com/ispras-texterra/pioner">🌐</a></li><li title="download link"><a href="https://github.com/ispras-texterra/pioner">⬇️</a></li></ul></td></tr>
+<tr><td id="armenian-paraphrase"><a href="https://github.com/ivannikov-lab/arpa-paraphrase-corpus">Armenian Paraphrase Detection Corpus</a></td><td></td><td>paraphrase detection</td><td><ul><li title="paraphrase">💬</li></ul></td><td><span title="Armenian">🇦🇲</span> </td><td><ul><li title="url"><a href="https://github.com/ivannikov-lab/arpa-paraphrase-corpus">🌐</a></li><li title="paper"><a href="https://arxiv.org/abs/2009.12615">📄</a></li><li title="citation"><a href="https://arxiv.org/abs/2009.12615">❞</a></li><li title="download link"><a href="https://github.com/ivannikov-lab/arpa-paraphrase-corpus">⬇️</a></li></ul></td></tr>
+<tr><td><a href="https://zenodo.org/record/3707949#.YPMTcpgzYuU">TaPaCo</a></td><td></td><td>paraphrase detection</td><td><ul><li title="paraphrase">💬</li></ul></td><td><span title="Armenian">🇦🇲</span> <span title="Belarusian">🇧🇾</span> <span title="Bulgarian">🇧🇬</span> <span title="Croatian">🇭🇷</span> <span title="Czech">🇨🇿</span> <span title="Estonian">🇪🇪</span> <span title="Hungarian">🇭🇺</span> <span title="Lithuanian">🇱🇹</span> <span title="Macedonian">🇲🇰</span> <span title="Moldovan/Moldovian">🇲🇩</span> <span title="Polish">🇵🇱</span> <span title="Romanian">🇷🇴</span> <span title="Russian">🇷🇺</span> <span title="Serbian">🇷🇸</span> </td><td><ul><li title="url"><a href="https://zenodo.org/record/3707949#.YPMTcpgzYuU">🌐</a></li><li title="download link"><a href="https://huggingface.co/datasets/tapaco">⬇️</a></li><li><a title="huggingface dataset" href="https://huggingface.co/datasets/tapaco">🤗️</a> <a title="preview" href="https://huggingface.co/datasets/viewer/?dataset=tapaco">🤗️</a></li></ul></td></tr>
+<tr><td id="armenian-category"><a href="https://github.com/ispras-texterra/word-embeddings-eval-hy#news-texts-dataset">Armenian News Texts Dataset</a></td><td></td><td>category prediction</td><td><ul><li title="category">📰</li></ul></td><td><span title="Armenian">🇦🇲</span> </td><td><ul><li title="url"><a href="https://github.com/ispras-texterra/word-embeddings-eval-hy#news-texts-dataset">🌐</a></li><li title="paper"><a href="https://arxiv.org/abs/1906.03134">📄</a></li><li title="citation"><a href="https://arxiv.org/abs/1906.03134">❞</a></li><li title="download link"><a href="https://github.com/ispras-texterra/word-embeddings-eval-hy/tree/master/ilur-news-corpus">⬇️</a></li></ul></td></tr>
+<tr><td><a href="https://github.com/ispras-texterra/word-embeddings-eval-hy/tree/master/ilur-news-corpus">iLur News Texts Dataset</a></td><td></td><td>category prediction</td><td><ul><li title="category">📰</li></ul></td><td><span title="Armenian">🇦🇲</span> </td><td><ul><li title="url"><a href="https://github.com/ispras-texterra/word-embeddings-eval-hy/tree/master/ilur-news-corpus">🌐</a></li><li title="paper"><a href="https://arxiv.org/abs/1906.03134">📄</a></li><li title="citation"><a href="https://arxiv.org/abs/1906.03134">❞</a></li></ul></td></tr>
+<tr><td id="armenian-other"><a href="https://github.com/UniversalDependencies/UD_Armenian-ArmTDP">ArmTDP</a></td><td></td><td>POS, parse tree</td><td><ul><li title="other">🦦</li></ul></td><td><span title="Armenian">🇦🇲</span> </td><td><ul><li title="url"><a href="https://github.com/UniversalDependencies/UD_Armenian-ArmTDP">🌐</a></li><li title="citation"><a href="https://github.com/UniversalDependencies/UD_Armenian-ArmTDP#references">❞</a></li><li title="download link"><a href="https://github.com/UniversalDependencies/UD_Armenian-ArmTDP">⬇️</a></li></ul></td></tr>
+</tbody></table>
+
+## 🇧🇾 Belarusian
+
+<table width="100%"><thead><tr><th width="66%">name</th><th width="33%">description</th><th>task</th><th>category</th><th>languages</th><th>links</th></tr></thead><tbody><tr><td id="belarusian-ner"><a href="https://github.com/UniversalDependencies/UD_Belarusian-HSE">Belarusian UD treebank</a></td><td></td><td>POS, NER</td><td><ul><li title="ner">📛</li></ul></td><td><span title="Belarusian">🇧🇾</span> </td><td><ul><li title="url"><a href="https://github.com/UniversalDependencies/UD_Belarusian-HSE">🌐</a></li><li title="download link"><a href="https://github.com/UniversalDependencies/UD_Belarusian-HSE">⬇️</a></li></ul></td></tr>
+<tr><td id="belarusian-paraphrase"><a href="https://zenodo.org/record/3707949#.YPMTcpgzYuU">TaPaCo</a></td><td></td><td>paraphrase detection</td><td><ul><li title="paraphrase">💬</li></ul></td><td><span title="Armenian">🇦🇲</span> <span title="Belarusian">🇧🇾</span> <span title="Bulgarian">🇧🇬</span> <span title="Croatian">🇭🇷</span> <span title="Czech">🇨🇿</span> <span title="Estonian">🇪🇪</span> <span title="Hungarian">🇭🇺</span> <span title="Lithuanian">🇱🇹</span> <span title="Macedonian">🇲🇰</span> <span title="Moldovan/Moldovian">🇲🇩</span> <span title="Polish">🇵🇱</span> <span title="Romanian">🇷🇴</span> <span title="Russian">🇷🇺</span> <span title="Serbian">🇷🇸</span> </td><td><ul><li title="url"><a href="https://zenodo.org/record/3707949#.YPMTcpgzYuU">🌐</a></li><li title="download link"><a href="https://huggingface.co/datasets/tapaco">⬇️</a></li><li><a title="huggingface dataset" href="https://huggingface.co/datasets/tapaco">🤗️</a> <a title="preview" href="https://huggingface.co/datasets/viewer/?dataset=tapaco">🤗️</a></li></ul></td></tr>
+<tr><td id="belarusian-category"><a href="https://microsoft.github.io/XGLUE/">XGLUE</a></td><td></td><td>multiple tasks</td><td><ul><li title="category">📰</li></ul></td><td><span title="Belarusian">🇧🇾</span> <span title="Hungarian">🇭🇺</span> <span title="Polish">🇵🇱</span> <span title="Russian">🇷🇺</span> </td><td><ul><li title="url"><a href="https://microsoft.github.io/XGLUE/">🌐</a></li><li title="paper"><a href="https://arxiv.org/abs/2004.01401">📄</a></li><li title="citation"><a href="https://microsoft.github.io/XGLUE/">❞</a></li><li title="download link"><a href="https://xglue.blob.core.windows.net/xglue/xglue_full_dataset.tar.gz">⬇️</a></li></ul></td></tr>
+</tbody></table>
+
+## 🇧🇦 Bosnian
+
+<table width="100%"><thead><tr><th width="66%">name</th><th width="33%">description</th><th>task</th><th>category</th><th>languages</th><th>links</th></tr></thead><tbody><tr><td id="bosnian-sentiment"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1054">Twitter sentiment for 15 European languages</a></td><td></td><td>sentiment</td><td><ul><li title="sentiment">😄</li></ul></td><td><span title="Albanian">🇦🇱</span> <span title="Bosnian">🇧🇦</span> <span title="Bulgarian">🇧🇬</span> <span title="Croatian">🇭🇷</span> <span title="Hungarian">🇭🇺</span> <span title="Polish">🇵🇱</span> <span title="Russian">🇷🇺</span> <span title="Serbian">🇷🇸</span> <span title="Slovakian/Slovak">🇸🇰</span> <span title="Slovenian">🇸🇮</span> </td><td><ul><li title="url"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1054">🌐</a></li><li title="paper"><a href="https://arxiv.org/abs/1602.07563">📄</a></li><li title="citation"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1054">❞</a></li><li title="download link"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1054">⬇️</a></li></ul></td></tr>
+</tbody></table>
+
+## 🇧🇬 Bulgarian
+
+<table width="100%"><thead><tr><th width="66%">name</th><th width="33%">description</th><th>task</th><th>category</th><th>languages</th><th>links</th></tr></thead><tbody><tr><td id="bulgarian-ner"><a href="http://bsnlp.cs.helsinki.fi/bsnlp-2019/shared_task.html">BSNLP</a></td><td></td><td>NER</td><td><ul><li title="ner">📛</li></ul></td><td><span title="Bulgarian">🇧🇬</span> <span title="Czech">🇨🇿</span> <span title="Polish">🇵🇱</span> <span title="Russian">🇷🇺</span> </td><td><ul><li title="url"><a href="http://bsnlp.cs.helsinki.fi/bsnlp-2019/shared_task.html">🌐</a></li><li title="citation"><a href="http://bsnlp.cs.helsinki.fi/bsnlp-2019/shared_task.html">❞</a></li><li title="download link"><a href="need to ask for access: http://bsnlp.cs.helsinki.fi/bsnlp-2019/shared_task.html">⬇️</a></li></ul></td></tr>
+<tr><td id="bulgarian-sentiment"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1054">Twitter sentiment for 15 European languages</a></td><td></td><td>sentiment</td><td><ul><li title="sentiment">😄</li></ul></td><td><span title="Albanian">🇦🇱</span> <span title="Bosnian">🇧🇦</span> <span title="Bulgarian">🇧🇬</span> <span title="Croatian">🇭🇷</span> <span title="Hungarian">🇭🇺</span> <span title="Polish">🇵🇱</span> <span title="Russian">🇷🇺</span> <span title="Serbian">🇷🇸</span> <span title="Slovakian/Slovak">🇸🇰</span> <span title="Slovenian">🇸🇮</span> </td><td><ul><li title="url"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1054">🌐</a></li><li title="paper"><a href="https://arxiv.org/abs/1602.07563">📄</a></li><li title="citation"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1054">❞</a></li><li title="download link"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1054">⬇️</a></li></ul></td></tr>
+<tr><td id="bulgarian-paraphrase"><a href="https://zenodo.org/record/3707949#.YPMTcpgzYuU">TaPaCo</a></td><td></td><td>paraphrase detection</td><td><ul><li title="paraphrase">💬</li></ul></td><td><span title="Armenian">🇦🇲</span> <span title="Belarusian">🇧🇾</span> <span title="Bulgarian">🇧🇬</span> <span title="Croatian">🇭🇷</span> <span title="Czech">🇨🇿</span> <span title="Estonian">🇪🇪</span> <span title="Hungarian">🇭🇺</span> <span title="Lithuanian">🇱🇹</span> <span title="Macedonian">🇲🇰</span> <span title="Moldovan/Moldovian">🇲🇩</span> <span title="Polish">🇵🇱</span> <span title="Romanian">🇷🇴</span> <span title="Russian">🇷🇺</span> <span title="Serbian">🇷🇸</span> </td><td><ul><li title="url"><a href="https://zenodo.org/record/3707949#.YPMTcpgzYuU">🌐</a></li><li title="download link"><a href="https://huggingface.co/datasets/tapaco">⬇️</a></li><li><a title="huggingface dataset" href="https://huggingface.co/datasets/tapaco">🤗️</a> <a title="preview" href="https://huggingface.co/datasets/viewer/?dataset=tapaco">🤗️</a></li></ul></td></tr>
+<tr><td id="bulgarian-wsd"><a href="http://b2find.eudat.eu/dataset/159a5572-715e-5b90-b597-bffa3e9580d9">QTLeap WSD/NED corpus</a></td><td></td><td>WSD</td><td><ul><li title="wsd">🐁🖱</li></ul></td><td><span title="Bulgarian">🇧🇬</span> <span title="Czech">🇨🇿</span> </td><td><ul><li title="url"><a href="http://b2find.eudat.eu/dataset/159a5572-715e-5b90-b597-bffa3e9580d9">🌐</a></li><li title="paper"><a href="https://aclanthology.org/L16-1483.pdf">📄</a></li><li title="citation"><a href="https://aclanthology.org/L16-1483.pdf">❞</a></li><li title="download link"><a href="http://qtleap.eu/resources/">⬇️</a></li></ul></td></tr>
+<tr><td><a href="https://sapienzanlp.github.io/xl-wsd/">XL-WSD</a></td><td></td><td>WSD</td><td><ul><li title="wsd">🐁🖱</li></ul></td><td><span title="Bulgarian">🇧🇬</span> <span title="Croatian">🇭🇷</span> <span title="Estonian">🇪🇪</span> <span title="Hungarian">🇭🇺</span> <span title="Slovenian">🇸🇮</span> </td><td><ul><li title="url"><a href="https://sapienzanlp.github.io/xl-wsd/">🌐</a></li><li title="paper"><a href="https://sapienzanlp.github.io/xl-wsd/assets/paper/xl-wsd-aaai2021.pdf">📄</a></li><li title="citation"><a href="https://sapienzanlp.github.io/xl-wsd/#cite">❞</a></li><li title="download link"><a href="https://drive.google.com/file/d/19YTL-Uq95hjiFZfgwEpXRgcYGCR_PQY0/view?usp=sharing">⬇️</a></li></ul></td></tr>
+<tr><td><a href="https://pilehvar.github.io/xlwic/">XL-WiC</a></td><td></td><td>WSD</td><td><ul><li title="wsd">🐁🖱</li></ul></td><td><span title="Bulgarian">🇧🇬</span> <span title="Croatian">🇭🇷</span> <span title="Estonian">🇪🇪</span> </td><td><ul><li title="url"><a href="https://pilehvar.github.io/xlwic/">🌐</a></li><li title="paper"><a href="https://arxiv.org/abs/2010.06478">📄</a></li><li title="citation"><a href="https://arxiv.org/abs/2010.06478">❞</a></li><li title="download link"><a href="https://pilehvar.github.io/xlwic/">⬇️</a></li></ul></td></tr>
+<tr><td id="bulgarian-other"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1043">MULTEXT-East "1984" annotated corpus 4.0</a></td><td></td><td>POS</td><td><ul><li title="other">🦦</li></ul></td><td><span title="Bulgarian">🇧🇬</span> <span title="Czech">🇨🇿</span> <span title="Estonian">🇪🇪</span> <span title="Hungarian">🇭🇺</span> <span title="Macedonian">🇲🇰</span> <span title="Polish">🇵🇱</span> <span title="Romanian">🇷🇴</span> <span title="Serbian">🇷🇸</span> <span title="Slovakian/Slovak">🇸🇰</span> <span title="Slovenian">🇸🇮</span> </td><td><ul><li title="url"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1043">🌐</a></li><li title="paper"><a href="http://nl.ijs.si/ME/Vault/V4/doc/bib/mte-lrec2004.pdf">📄</a></li><li title="download link"><a href="https://www.clarin.si/repository/xmlui/bitstream/handle/11356/1043/MTE1984-ana.zip?sequence=3&isAllowed=y">⬇️</a></li></ul></td></tr>
+<tr><td><a href="https://github.com/yoandinkov/ranlp-2019">ranlp-2019</a></td><td></td><td>fake news</td><td><ul><li title="other">🦦</li></ul></td><td><span title="Bulgarian">🇧🇬</span> </td><td><ul><li title="url"><a href="https://github.com/yoandinkov/ranlp-2019">🌐</a></li><li title="paper"><a href="https://arxiv.org/abs/1908.09785">📄</a></li><li title="citation"><a href="https://github.com/yoandinkov/ranlp-2019">❞</a></li><li title="download link"><a href="https://github.com/yoandinkov/ranlp-2019">⬇️</a></li></ul></td></tr>
+</tbody></table>
+
+## 🇭🇷 Croatian
+
+<table width="100%"><thead><tr><th width="66%">name</th><th width="33%">description</th><th>task</th><th>category</th><th>languages</th><th>links</th></tr></thead><tbody><tr><td id="croatian-ner"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1241">ReLDI-NormTagNER-hr</a></td><td></td><td>NER</td><td><ul><li title="ner">📛</li></ul></td><td><span title="Croatian">🇭🇷</span> </td><td><ul><li title="url"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1241">🌐</a></li><li title="paper"><a href="https://revije.ff.uni-lj.si/slovenscina2/article/view/7007">📄</a></li><li title="citation"><a href="https://revije.ff.uni-lj.si/slovenscina2/article/view/7007">❞</a></li><li title="download link"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1241">⬇️</a></li></ul></td></tr>
+<tr><td><a href="https://www.clarin.si/repository/xmlui/handle/11356/1183">hr500k</a></td><td></td><td>NER</td><td><ul><li title="ner">📛</li></ul></td><td><span title="Croatian">🇭🇷</span> </td><td><ul><li title="url"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1183">🌐</a></li><li title="paper"><a href="https://aclanthology.org/L16-1676.pdf">📄</a></li><li title="citation"><a href="http://www.lrec-conf.org/proceedings/lrec2016/summaries/340.html">❞</a></li><li title="download link"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1183">⬇️</a></li></ul></td></tr>
+<tr><td id="croatian-sentiment"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1342">Sentiment Annotated Dataset of Croatian News</a></td><td></td><td>sentiment</td><td><ul><li title="sentiment">😄</li></ul></td><td><span title="Croatian">🇭🇷</span> </td><td><ul><li title="url"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1342">🌐</a></li><li title="paper"><a href="https://www.mdpi.com/2076-3417/10/17/5993">📄</a></li><li title="citation"><a href="https://www.mdpi.com/2076-3417/10/17/5993">❞</a></li><li title="download link"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1342">⬇️</a></li></ul></td></tr>
+<tr><td><a href="https://www.clarin.si/repository/xmlui/handle/11356/1054">Twitter sentiment for 15 European languages</a></td><td></td><td>sentiment</td><td><ul><li title="sentiment">😄</li></ul></td><td><span title="Albanian">🇦🇱</span> <span title="Bosnian">🇧🇦</span> <span title="Bulgarian">🇧🇬</span> <span title="Croatian">🇭🇷</span> <span title="Hungarian">🇭🇺</span> <span title="Polish">🇵🇱</span> <span title="Russian">🇷🇺</span> <span title="Serbian">🇷🇸</span> <span title="Slovakian/Slovak">🇸🇰</span> <span title="Slovenian">🇸🇮</span> </td><td><ul><li title="url"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1054">🌐</a></li><li title="paper"><a href="https://arxiv.org/abs/1602.07563">📄</a></li><li title="citation"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1054">❞</a></li><li title="download link"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1054">⬇️</a></li></ul></td></tr>
+<tr><td id="croatian-paraphrase"><a href="https://zenodo.org/record/3707949#.YPMTcpgzYuU">TaPaCo</a></td><td></td><td>paraphrase detection</td><td><ul><li title="paraphrase">💬</li></ul></td><td><span title="Armenian">🇦🇲</span> <span title="Belarusian">🇧🇾</span> <span title="Bulgarian">🇧🇬</span> <span title="Croatian">🇭🇷</span> <span title="Czech">🇨🇿</span> <span title="Estonian">🇪🇪</span> <span title="Hungarian">🇭🇺</span> <span title="Lithuanian">🇱🇹</span> <span title="Macedonian">🇲🇰</span> <span title="Moldovan/Moldovian">🇲🇩</span> <span title="Polish">🇵🇱</span> <span title="Romanian">🇷🇴</span> <span title="Russian">🇷🇺</span> <span title="Serbian">🇷🇸</span> </td><td><ul><li title="url"><a href="https://zenodo.org/record/3707949#.YPMTcpgzYuU">🌐</a></li><li title="download link"><a href="https://huggingface.co/datasets/tapaco">⬇️</a></li><li><a title="huggingface dataset" href="https://huggingface.co/datasets/tapaco">🤗️</a> <a title="preview" href="https://huggingface.co/datasets/viewer/?dataset=tapaco">🤗️</a></li></ul></td></tr>
+<tr><td id="croatian-wsd"><a href="https://takelab.fer.hr/data/cro36wsd/">Cro36WSD</a></td><td></td><td>WSD</td><td><ul><li title="wsd">🐁🖱</li></ul></td><td><span title="Croatian">🇭🇷</span> </td><td><ul><li title="url"><a href="https://takelab.fer.hr/data/cro36wsd/">🌐</a></li><li title="paper"><a href="https://aclanthology.org/L16-1267.pdf">📄</a></li><li title="citation"><a href="https://aclanthology.org/L16-1267.pdf">❞</a></li><li title="download link"><a href="https://takelab.fer.hr/data/cro36wsd/">⬇️</a></li></ul></td></tr>
+<tr><td><a href="https://sapienzanlp.github.io/xl-wsd/">XL-WSD</a></td><td></td><td>WSD</td><td><ul><li title="wsd">🐁🖱</li></ul></td><td><span title="Bulgarian">🇧🇬</span> <span title="Croatian">🇭🇷</span> <span title="Estonian">🇪🇪</span> <span title="Hungarian">🇭🇺</span> <span title="Slovenian">🇸🇮</span> </td><td><ul><li title="url"><a href="https://sapienzanlp.github.io/xl-wsd/">🌐</a></li><li title="paper"><a href="https://sapienzanlp.github.io/xl-wsd/assets/paper/xl-wsd-aaai2021.pdf">📄</a></li><li title="citation"><a href="https://sapienzanlp.github.io/xl-wsd/#cite">❞</a></li><li title="download link"><a href="https://drive.google.com/file/d/19YTL-Uq95hjiFZfgwEpXRgcYGCR_PQY0/view?usp=sharing">⬇️</a></li></ul></td></tr>
+<tr><td><a href="https://pilehvar.github.io/xlwic/">XL-WiC</a></td><td></td><td>WSD</td><td><ul><li title="wsd">🐁🖱</li></ul></td><td><span title="Bulgarian">🇧🇬</span> <span title="Croatian">🇭🇷</span> <span title="Estonian">🇪🇪</span> </td><td><ul><li title="url"><a href="https://pilehvar.github.io/xlwic/">🌐</a></li><li title="paper"><a href="https://arxiv.org/abs/2010.06478">📄</a></li><li title="citation"><a href="https://arxiv.org/abs/2010.06478">❞</a></li><li title="download link"><a href="https://pilehvar.github.io/xlwic/">⬇️</a></li></ul></td></tr>
+<tr><td id="croatian-category"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1410">24sata news article archive 1.0</a></td><td></td><td>category prediction</td><td><ul><li title="category">📰</li></ul></td><td><span title="Croatian">🇭🇷</span> </td><td><ul><li title="url"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1410">🌐</a></li><li title="download link"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1410">⬇️</a></li></ul></td></tr>
+<tr><td id="croatian-other"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1240">COPA-HR</a></td><td></td><td>commonsense reasoning</td><td><ul><li title="other">🦦</li></ul></td><td><span title="Croatian">🇭🇷</span> </td><td><ul><li title="url"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1240">🌐</a></li><li title="paper"><a href="https://arxiv.org/abs/2104.09243">📄</a></li><li title="citation"><a href="https://arxiv.org/abs/2104.09243">❞</a></li><li title="download link"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1240">⬇️</a></li></ul></td></tr>
+<tr><td><a href="https://www.clarin.si/repository/xmlui/handle/11356/1433">FRENK</a></td><td></td><td>offensive comments</td><td><ul><li title="other">🦦</li></ul></td><td><span title="Croatian">🇭🇷</span> <span title="Slovenian">🇸🇮</span> </td><td><ul><li title="url"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1433">🌐</a></li><li title="paper"><a href="https://arxiv.org/pdf/1906.02045.pdf">📄</a></li><li title="citation"><a href="https://arxiv.org/pdf/1906.02045.pdf">❞</a></li><li title="download link"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1433">⬇️</a></li></ul></td></tr>
+</tbody></table>
+
+## 🇨🇿 Czech
+
+<table width="100%"><thead><tr><th width="66%">name</th><th width="33%">description</th><th>task</th><th>category</th><th>languages</th><th>links</th></tr></thead><tbody><tr><td id="czech-ner"><a href="http://bsnlp.cs.helsinki.fi/bsnlp-2019/shared_task.html">BSNLP</a></td><td></td><td>NER</td><td><ul><li title="ner">📛</li></ul></td><td><span title="Bulgarian">🇧🇬</span> <span title="Czech">🇨🇿</span> <span title="Polish">🇵🇱</span> <span title="Russian">🇷🇺</span> </td><td><ul><li title="url"><a href="http://bsnlp.cs.helsinki.fi/bsnlp-2019/shared_task.html">🌐</a></li><li title="citation"><a href="http://bsnlp.cs.helsinki.fi/bsnlp-2019/shared_task.html">❞</a></li><li title="download link"><a href="need to ask for access: http://bsnlp.cs.helsinki.fi/bsnlp-2019/shared_task.html">⬇️</a></li></ul></td></tr>
+<tr><td id="czech-sentiment"><a href="https://github.com/kysely/sentiment-analysis-czech">Czech Facebook dataset</a></td><td></td><td>sentiment</td><td><ul><li title="sentiment">😄</li></ul></td><td><span title="Czech">🇨🇿</span> </td><td><ul><li title="url"><a href="https://github.com/kysely/sentiment-analysis-czech">🌐</a></li><li title="paper"><a href="https://aclanthology.org/W13-1609/">📄</a></li><li title="citation"><a href="http://liks.fav.zcu.cz/sentiment/">❞</a></li><li title="download link"><a href="http://liks.fav.zcu.cz/sentiment/">⬇️</a></li></ul></td></tr>
+<tr><td><a href="https://github.com/kysely/sentiment-analysis-czech">MALL.CZ (largest all-round e-commerce in Czechia)</a></td><td></td><td>sentiment</td><td><ul><li title="sentiment">😄</li></ul></td><td><span title="Czech">🇨🇿</span> </td><td><ul><li title="url"><a href="https://github.com/kysely/sentiment-analysis-czech">🌐</a></li><li title="paper"><a href="https://aclanthology.org/W13-1609/">📄</a></li><li title="citation"><a href="http://liks.fav.zcu.cz/sentiment/">❞</a></li><li title="download link"><a href="http://liks.fav.zcu.cz/sentiment/">⬇️</a></li></ul></td></tr>
+<tr><td><a href="https://github.com/kysely/sentiment-analysis-czech">ČSFD (Czech Film Database)</a></td><td></td><td>sentiment</td><td><ul><li title="sentiment">😄</li></ul></td><td><span title="Czech">🇨🇿</span> </td><td><ul><li title="url"><a href="https://github.com/kysely/sentiment-analysis-czech">🌐</a></li><li title="paper"><a href="https://aclanthology.org/W13-1609/">📄</a></li><li title="citation"><a href="http://liks.fav.zcu.cz/sentiment/">❞</a></li><li title="download link"><a href="http://liks.fav.zcu.cz/sentiment/">⬇️</a></li></ul></td></tr>
+<tr><td id="czech-paraphrase"><a href="https://zenodo.org/record/3707949#.YPMTcpgzYuU">TaPaCo</a></td><td></td><td>paraphrase detection</td><td><ul><li title="paraphrase">💬</li></ul></td><td><span title="Armenian">🇦🇲</span> <span title="Belarusian">🇧🇾</span> <span title="Bulgarian">🇧🇬</span> <span title="Croatian">🇭🇷</span> <span title="Czech">🇨🇿</span> <span title="Estonian">🇪🇪</span> <span title="Hungarian">🇭🇺</span> <span title="Lithuanian">🇱🇹</span> <span title="Macedonian">🇲🇰</span> <span title="Moldovan/Moldovian">🇲🇩</span> <span title="Polish">🇵🇱</span> <span title="Romanian">🇷🇴</span> <span title="Russian">🇷🇺</span> <span title="Serbian">🇷🇸</span> </td><td><ul><li title="url"><a href="https://zenodo.org/record/3707949#.YPMTcpgzYuU">🌐</a></li><li title="download link"><a href="https://huggingface.co/datasets/tapaco">⬇️</a></li><li><a title="huggingface dataset" href="https://huggingface.co/datasets/tapaco">🤗️</a> <a title="preview" href="https://huggingface.co/datasets/viewer/?dataset=tapaco">🤗️</a></li></ul></td></tr>
+<tr><td id="czech-wsd"><a href="https://dkpro.github.io/dkpro-wsd/corpora/">DKPro WSD</a></td><td></td><td>WSD</td><td><ul><li title="wsd">🐁🖱</li></ul></td><td><span title="Czech">🇨🇿</span> <span title="Estonian">🇪🇪</span> <span title="Romanian">🇷🇴</span> </td><td><ul><li title="url"><a href="https://dkpro.github.io/dkpro-wsd/corpora/">🌐</a></li><li title="download link"><a href="https://dkpro.github.io/dkpro-wsd/corpora/">⬇️</a></li></ul></td></tr>
+<tr><td><a href="http://b2find.eudat.eu/dataset/159a5572-715e-5b90-b597-bffa3e9580d9">QTLeap WSD/NED corpus</a></td><td></td><td>WSD</td><td><ul><li title="wsd">🐁🖱</li></ul></td><td><span title="Bulgarian">🇧🇬</span> <span title="Czech">🇨🇿</span> </td><td><ul><li title="url"><a href="http://b2find.eudat.eu/dataset/159a5572-715e-5b90-b597-bffa3e9580d9">🌐</a></li><li title="paper"><a href="https://aclanthology.org/L16-1483.pdf">📄</a></li><li title="citation"><a href="https://aclanthology.org/L16-1483.pdf">❞</a></li><li title="download link"><a href="http://qtleap.eu/resources/">⬇️</a></li></ul></td></tr>
+<tr><td id="czech-category"><a href="https://github.com/UFAL-DSG/cs_restaurant_dataset">Czech restaurant information dataset for NLG</a></td><td></td><td>category prediction</td><td><ul><li title="category">📰</li></ul></td><td><span title="Czech">🇨🇿</span> </td><td><ul><li title="url"><a href="https://github.com/UFAL-DSG/cs_restaurant_dataset">🌐</a></li><li title="paper"><a href="https://arxiv.org/abs/1910.05298">📄</a></li><li title="citation"><a href="https://aclanthology.org/W19-8670/">❞</a></li><li title="download link"><a href="https://github.com/UFAL-DSG/cs_restaurant_dataset">⬇️</a></li></ul></td></tr>
+<tr><td id="czech-other"><a href="https://lindat.mff.cuni.cz/repository/xmlui/handle/11858/00-097C-0000-0001-4880-3">Czech WordNet 1.9 PDT</a></td><td></td><td>wordnet</td><td><ul><li title="other">🦦</li></ul></td><td><span title="Czech">🇨🇿</span> </td><td><ul><li title="url"><a href="https://lindat.mff.cuni.cz/repository/xmlui/handle/11858/00-097C-0000-0001-4880-3">🌐</a></li><li title="citation"><a href="https://lindat.mff.cuni.cz/repository/xmlui/handle/11858/00-097C-0000-0001-4880-3">❞</a></li><li title="download link"><a href="https://lindat.mff.cuni.cz/repository/xmlui/handle/11858/00-097C-0000-0001-4880-3">⬇️</a></li></ul></td></tr>
+<tr><td><a href="https://github.com/UniversalDependencies/UD_Czech-PDT/blob/master/README.md">Czech-PDT UD treebank</a></td><td></td><td>POS</td><td><ul><li title="other">🦦</li></ul></td><td><span title="Czech">🇨🇿</span> </td><td><ul><li title="url"><a href="https://github.com/UniversalDependencies/UD_Czech-PDT/blob/master/README.md">🌐</a></li><li title="paper"><a href="https://aclanthology.org/C12-1015/">📄</a></li><li title="citation"><a href="https://aclanthology.org/C12-1015/">❞</a></li><li title="download link"><a href="https://github.com/UniversalDependencies/UD_Czech-PDT">⬇️</a></li></ul></td></tr>
+<tr><td><a href="https://github.com/UniversalDependencies/UD_Czech-FicTree/blob/master/README.md">FicTree</a></td><td></td><td>POS</td><td><ul><li title="other">🦦</li></ul></td><td><span title="Czech">🇨🇿</span> </td><td><ul><li title="url"><a href="https://github.com/UniversalDependencies/UD_Czech-FicTree/blob/master/README.md">🌐</a></li><li title="paper"><a href="http://ceur-ws.org/Vol-1885/181.pdf">📄</a></li><li title="download link"><a href="https://github.com/UniversalDependencies/UD_Czech-FicTree">⬇️</a></li></ul></td></tr>
+<tr><td><a href="https://www.clarin.si/repository/xmlui/handle/11356/1043">MULTEXT-East "1984" annotated corpus 4.0</a></td><td></td><td>POS</td><td><ul><li title="other">🦦</li></ul></td><td><span title="Bulgarian">🇧🇬</span> <span title="Czech">🇨🇿</span> <span title="Estonian">🇪🇪</span> <span title="Hungarian">🇭🇺</span> <span title="Macedonian">🇲🇰</span> <span title="Polish">🇵🇱</span> <span title="Romanian">🇷🇴</span> <span title="Serbian">🇷🇸</span> <span title="Slovakian/Slovak">🇸🇰</span> <span title="Slovenian">🇸🇮</span> </td><td><ul><li title="url"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1043">🌐</a></li><li title="paper"><a href="http://nl.ijs.si/ME/Vault/V4/doc/bib/mte-lrec2004.pdf">📄</a></li><li title="download link"><a href="https://www.clarin.si/repository/xmlui/bitstream/handle/11356/1043/MTE1984-ana.zip?sequence=3&isAllowed=y">⬇️</a></li></ul></td></tr>
+<tr><td><a href="https://github.com/UniversalDependencies/UD_Czech-CAC/blob/master/README.md">UD_Czech-CAC treebank</a></td><td></td><td>POS</td><td><ul><li title="other">🦦</li></ul></td><td><span title="Czech">🇨🇿</span> </td><td><ul><li title="url"><a href="https://github.com/UniversalDependencies/UD_Czech-CAC/blob/master/README.md">🌐</a></li><li title="paper"><a href="https://ufal.mff.cuni.cz/pbml/89/pbml89.pdf">📄</a></li><li title="citation"><a href="https://lindat.mff.cuni.cz/repository/xmlui/handle/11372/LRT-1061">❞</a></li><li title="download link"><a href="https://github.com/UniversalDependencies/UD_Czech-CAC">⬇️</a></li></ul></td></tr>
+<tr><td><a href="https://github.com/UniversalDependencies/UD_Czech-CLTT/blob/master/README.md">UD_Czech-CLTT treebank</a></td><td></td><td>POS</td><td><ul><li title="other">🦦</li></ul></td><td><span title="Czech">🇨🇿</span> </td><td><ul><li title="url"><a href="https://github.com/UniversalDependencies/UD_Czech-CLTT/blob/master/README.md">🌐</a></li><li title="paper"><a href="https://aclanthology.org/L18-1713/">📄</a></li><li title="citation"><a href="https://aclanthology.org/L18-1713/">❞</a></li><li title="download link"><a href="https://github.com/UniversalDependencies/UD_Czech-CLTT">⬇️</a></li></ul></td></tr>
+</tbody></table>
+
+## 🇪🇪 Estonian
+
+<table width="100%"><thead><tr><th width="66%">name</th><th width="33%">description</th><th>task</th><th>category</th><th>languages</th><th>links</th></tr></thead><tbody><tr><td id="estonian-ner"><a href="https://metashare.ut.ee/repository/browse/estonian-ner-corpus/88d030c0acde11e2a6e4005056b40024f1def472ed254e77a8952e1003d9f81e/">Estonian NER corpus</a></td><td></td><td>NER</td><td><ul><li title="ner">📛</li></ul></td><td><span title="Estonian">🇪🇪</span> </td><td><ul><li title="url"><a href="https://metashare.ut.ee/repository/browse/estonian-ner-corpus/88d030c0acde11e2a6e4005056b40024f1def472ed254e77a8952e1003d9f81e/">🌐</a></li><li title="download link"><a href="https://metashare.ut.ee/repository/download/88d030c0acde11e2a6e4005056b40024f1def472ed254e77a8952e1003d9f81e/">⬇️</a></li></ul></td></tr>
+<tr><td id="estonian-paraphrase"><a href="https://zenodo.org/record/3707949#.YPMTcpgzYuU">TaPaCo</a></td><td></td><td>paraphrase detection</td><td><ul><li title="paraphrase">💬</li></ul></td><td><span title="Armenian">🇦🇲</span> <span title="Belarusian">🇧🇾</span> <span title="Bulgarian">🇧🇬</span> <span title="Croatian">🇭🇷</span> <span title="Czech">🇨🇿</span> <span title="Estonian">🇪🇪</span> <span title="Hungarian">🇭🇺</span> <span title="Lithuanian">🇱🇹</span> <span title="Macedonian">🇲🇰</span> <span title="Moldovan/Moldovian">🇲🇩</span> <span title="Polish">🇵🇱</span> <span title="Romanian">🇷🇴</span> <span title="Russian">🇷🇺</span> <span title="Serbian">🇷🇸</span> </td><td><ul><li title="url"><a href="https://zenodo.org/record/3707949#.YPMTcpgzYuU">🌐</a></li><li title="download link"><a href="https://huggingface.co/datasets/tapaco">⬇️</a></li><li><a title="huggingface dataset" href="https://huggingface.co/datasets/tapaco">🤗️</a> <a title="preview" href="https://huggingface.co/datasets/viewer/?dataset=tapaco">🤗️</a></li></ul></td></tr>
+<tr><td id="estonian-wsd"><a href="https://dkpro.github.io/dkpro-wsd/corpora/">DKPro WSD</a></td><td></td><td>WSD</td><td><ul><li title="wsd">🐁🖱</li></ul></td><td><span title="Czech">🇨🇿</span> <span title="Estonian">🇪🇪</span> <span title="Romanian">🇷🇴</span> </td><td><ul><li title="url"><a href="https://dkpro.github.io/dkpro-wsd/corpora/">🌐</a></li><li title="download link"><a href="https://dkpro.github.io/dkpro-wsd/corpora/">⬇️</a></li></ul></td></tr>
+<tr><td><a href="https://sapienzanlp.github.io/xl-wsd/">XL-WSD</a></td><td></td><td>WSD</td><td><ul><li title="wsd">🐁🖱</li></ul></td><td><span title="Bulgarian">🇧🇬</span> <span title="Croatian">🇭🇷</span> <span title="Estonian">🇪🇪</span> <span title="Hungarian">🇭🇺</span> <span title="Slovenian">🇸🇮</span> </td><td><ul><li title="url"><a href="https://sapienzanlp.github.io/xl-wsd/">🌐</a></li><li title="paper"><a href="https://sapienzanlp.github.io/xl-wsd/assets/paper/xl-wsd-aaai2021.pdf">📄</a></li><li title="citation"><a href="https://sapienzanlp.github.io/xl-wsd/#cite">❞</a></li><li title="download link"><a href="https://drive.google.com/file/d/19YTL-Uq95hjiFZfgwEpXRgcYGCR_PQY0/view?usp=sharing">⬇️</a></li></ul></td></tr>
+<tr><td><a href="https://pilehvar.github.io/xlwic/">XL-WiC</a></td><td></td><td>WSD</td><td><ul><li title="wsd">🐁🖱</li></ul></td><td><span title="Bulgarian">🇧🇬</span> <span title="Croatian">🇭🇷</span> <span title="Estonian">🇪🇪</span> </td><td><ul><li title="url"><a href="https://pilehvar.github.io/xlwic/">🌐</a></li><li title="paper"><a href="https://arxiv.org/abs/2010.06478">📄</a></li><li title="citation"><a href="https://arxiv.org/abs/2010.06478">❞</a></li><li title="download link"><a href="https://pilehvar.github.io/xlwic/">⬇️</a></li></ul></td></tr>
+<tr><td id="estonian-category"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1408">Ekspress news article archive</a></td><td></td><td>category prediction</td><td><ul><li title="category">📰</li></ul></td><td><span title="Estonian">🇪🇪</span> <span title="Russian">🇷🇺</span> </td><td><ul><li title="url"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1408">🌐</a></li><li title="download link"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1408">⬇️</a></li></ul></td></tr>
+<tr><td id="estonian-other"><a href="https://metashare.ut.ee/repository/browse/corpus-of-morphologically-disambiguated-estonian-texts/4b43d8f8463411e2a6e4005056b40024fb0e855467c443a3840a72e0cfd381e4/">Corpus of morphologically disambiguated Estonian texts</a></td><td></td><td>morphologic analysis</td><td><ul><li title="other">🦦</li></ul></td><td><span title="Estonian">🇪🇪</span> </td><td><ul><li title="url"><a href="https://metashare.ut.ee/repository/browse/corpus-of-morphologically-disambiguated-estonian-texts/4b43d8f8463411e2a6e4005056b40024fb0e855467c443a3840a72e0cfd381e4/">🌐</a></li><li title="download link"><a href="https://metashare.ut.ee/repository/download/4b43d8f8463411e2a6e4005056b40024fb0e855467c443a3840a72e0cfd381e4/">⬇️</a></li></ul></td></tr>
+<tr><td><a href="https://metashare.ut.ee/repository/browse/estqa-question-answering-dataset/dabdfdeaa74911eba6e4fa163e9d45471d05c5c43d8e46788aac3c1694c0e4ac/">EstQA Question Answering dataset</a></td><td></td><td>question answering</td><td><ul><li title="other">🦦</li></ul></td><td><span title="Estonian">🇪🇪</span> </td><td><ul><li title="url"><a href="https://metashare.ut.ee/repository/browse/estqa-question-answering-dataset/dabdfdeaa74911eba6e4fa163e9d45471d05c5c43d8e46788aac3c1694c0e4ac/">🌐</a></li><li title="citation"><a href="https://metashare.ut.ee/repository/browse/estqa-question-answering-dataset/dabdfdeaa74911eba6e4fa163e9d45471d05c5c43d8e46788aac3c1694c0e4ac/">❞</a></li><li title="download link"><a href="https://metashare.ut.ee/repository/browse/estqa-question-answering-dataset/dabdfdeaa74911eba6e4fa163e9d45471d05c5c43d8e46788aac3c1694c0e4ac/">⬇️</a></li></ul></td></tr>
+<tr><td><a href="https://www.clarin.si/repository/xmlui/handle/11356/1043">MULTEXT-East "1984" annotated corpus 4.0</a></td><td></td><td>POS</td><td><ul><li title="other">🦦</li></ul></td><td><span title="Bulgarian">🇧🇬</span> <span title="Czech">🇨🇿</span> <span title="Estonian">🇪🇪</span> <span title="Hungarian">🇭🇺</span> <span title="Macedonian">🇲🇰</span> <span title="Polish">🇵🇱</span> <span title="Romanian">🇷🇴</span> <span title="Serbian">🇷🇸</span> <span title="Slovakian/Slovak">🇸🇰</span> <span title="Slovenian">🇸🇮</span> </td><td><ul><li title="url"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1043">🌐</a></li><li title="paper"><a href="http://nl.ijs.si/ME/Vault/V4/doc/bib/mte-lrec2004.pdf">📄</a></li><li title="download link"><a href="https://www.clarin.si/repository/xmlui/bitstream/handle/11356/1043/MTE1984-ana.zip?sequence=3&isAllowed=y">⬇️</a></li></ul></td></tr>
+<tr><td><a href="https://metashare.ut.ee/repository/browse/semantically-disambiguated-corpus-of-estonian/4e82a472463411e2a6e4005056b400241e1c4a126b5242f49d64822b1984fbe8/">Semantically disambiguated corpus of Estonian</a></td><td></td><td>semantic, morphosyntactic tagging; lemmatization</td><td><ul><li title="other">🦦</li></ul></td><td><span title="Estonian">🇪🇪</span> </td><td><ul><li title="url"><a href="https://metashare.ut.ee/repository/browse/semantically-disambiguated-corpus-of-estonian/4e82a472463411e2a6e4005056b400241e1c4a126b5242f49d64822b1984fbe8/">🌐</a></li><li title="download link"><a href="https://metashare.ut.ee/repository/download/4e82a472463411e2a6e4005056b400241e1c4a126b5242f49d64822b1984fbe8/">⬇️</a></li></ul></td></tr>
+<tr><td><a href="https://github.com/cambridgeltl/xcopa">XCOPA</a></td><td></td><td>commonsense reasoning</td><td><ul><li title="other">🦦</li></ul></td><td><span title="Estonian">🇪🇪</span> </td><td><ul><li title="url"><a href="https://github.com/cambridgeltl/xcopa">🌐</a></li><li title="paper"><a href="https://ducdauge.github.io/files/xcopa.pdf">📄</a></li><li title="citation"><a href="https://github.com/cambridgeltl/xcopa">❞</a></li><li title="download link"><a href="it is in HF datasets + here https://github.com/cambridgeltl/xcopa">⬇️</a></li></ul></td></tr>
+</tbody></table>
+
+## 🇬🇪 Georgian
+
+<table width="100%"><thead><tr><th width="66%">name</th><th width="33%">description</th><th>task</th><th>category</th><th>languages</th><th>links</th></tr></thead><tbody></tbody></table>
+
+## 🇭🇺 Hungarian
+
+<table width="100%"><thead><tr><th width="66%">name</th><th width="33%">description</th><th>task</th><th>category</th><th>languages</th><th>links</th></tr></thead><tbody><tr><td id="hungarian-ner"><a href="https://github.com/nytud/NYTK-NerKor">NYTK NerKor corpus</a></td><td></td><td>NER</td><td><ul><li title="ner">📛</li></ul></td><td><span title="Hungarian">🇭🇺</span> </td><td><ul><li title="url"><a href="https://github.com/nytud/NYTK-NerKor">🌐</a></li><li title="paper"><a href="not published yet">📄</a></li></ul></td></tr>
+<tr><td id="hungarian-sentiment"><a href="https://rgai.inf.u-szeged.hu/node/363">Hungarian sentiment corpus (HuSent)</a></td><td></td><td>sentiment</td><td><ul><li title="sentiment">😄</li></ul></td><td><span title="Hungarian">🇭🇺</span> </td><td><ul><li title="url"><a href="https://rgai.inf.u-szeged.hu/node/363">🌐</a></li><li title="paper"><a href="https://aclanthology.org/L16-1459/">📄</a></li><li title="citation"><a href="https://aclanthology.org/L16-1459/#">❞</a></li><li title="download link"><a href="https://rgai.inf.u-szeged.hu/sites/rgai.inf.u-szeged.hu/files/divany_UJ.zip">⬇️</a></li></ul></td></tr>
+<tr><td><a href="https://rgai.inf.u-szeged.hu/node/165">The Hungarian forum corpus for Opinion Mining</a></td><td></td><td>opinion mining</td><td><ul><li title="sentiment">😄</li></ul></td><td><span title="Hungarian">🇭🇺</span> </td><td><ul><li title="url"><a href="https://rgai.inf.u-szeged.hu/node/165">🌐</a></li><li title="paper"><a href="http://www.inf.u-szeged.hu/~rfarkas/dmiipOM.pdf">📄</a></li><li title="citation"><a href="https://rgai.inf.u-szeged.hu/node/165">❞</a></li><li title="download link"><a href="https://rgai.inf.u-szeged.hu/sites/rgai.inf.u-szeged.hu/files/forum.zip">⬇️</a></li></ul></td></tr>
+<tr><td><a href="https://www.clarin.si/repository/xmlui/handle/11356/1054">Twitter sentiment for 15 European languages</a></td><td></td><td>sentiment</td><td><ul><li title="sentiment">😄</li></ul></td><td><span title="Albanian">🇦🇱</span> <span title="Bosnian">🇧🇦</span> <span title="Bulgarian">🇧🇬</span> <span title="Croatian">🇭🇷</span> <span title="Hungarian">🇭🇺</span> <span title="Polish">🇵🇱</span> <span title="Russian">🇷🇺</span> <span title="Serbian">🇷🇸</span> <span title="Slovakian/Slovak">🇸🇰</span> <span title="Slovenian">🇸🇮</span> </td><td><ul><li title="url"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1054">🌐</a></li><li title="paper"><a href="https://arxiv.org/abs/1602.07563">📄</a></li><li title="citation"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1054">❞</a></li><li title="download link"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1054">⬇️</a></li></ul></td></tr>
+<tr><td id="hungarian-paraphrase"><a href="https://zenodo.org/record/3707949#.YPMTcpgzYuU">TaPaCo</a></td><td></td><td>paraphrase detection</td><td><ul><li title="paraphrase">💬</li></ul></td><td><span title="Armenian">🇦🇲</span> <span title="Belarusian">🇧🇾</span> <span title="Bulgarian">🇧🇬</span> <span title="Croatian">🇭🇷</span> <span title="Czech">🇨🇿</span> <span title="Estonian">🇪🇪</span> <span title="Hungarian">🇭🇺</span> <span title="Lithuanian">🇱🇹</span> <span title="Macedonian">🇲🇰</span> <span title="Moldovan/Moldovian">🇲🇩</span> <span title="Polish">🇵🇱</span> <span title="Romanian">🇷🇴</span> <span title="Russian">🇷🇺</span> <span title="Serbian">🇷🇸</span> </td><td><ul><li title="url"><a href="https://zenodo.org/record/3707949#.YPMTcpgzYuU">🌐</a></li><li title="download link"><a href="https://huggingface.co/datasets/tapaco">⬇️</a></li><li><a title="huggingface dataset" href="https://huggingface.co/datasets/tapaco">🤗️</a> <a title="preview" href="https://huggingface.co/datasets/viewer/?dataset=tapaco">🤗️</a></li></ul></td></tr>
+<tr><td id="hungarian-wsd"><a href="https://rgai.inf.u-szeged.hu/node/161">Hungarian word sense disambiguated corpus</a></td><td></td><td>WSD</td><td><ul><li title="wsd">🐁🖱</li></ul></td><td><span title="Hungarian">🇭🇺</span> </td><td><ul><li title="url"><a href="https://rgai.inf.u-szeged.hu/node/161">🌐</a></li><li title="paper"><a href="http://www.lrec-conf.org/proceedings/lrec2008/pdf/847_paper.pdf">📄</a></li><li title="citation"><a href="https://aclanthology.org/L08-1609/#">❞</a></li><li title="download link"><a href="https://rgai.inf.u-szeged.hu/sites/rgai.inf.u-szeged.hu/files/huwsd.zip">⬇️</a></li></ul></td></tr>
+<tr><td><a href="https://sapienzanlp.github.io/xl-wsd/">XL-WSD</a></td><td></td><td>WSD</td><td><ul><li title="wsd">🐁🖱</li></ul></td><td><span title="Bulgarian">🇧🇬</span> <span title="Croatian">🇭🇷</span> <span title="Estonian">🇪🇪</span> <span title="Hungarian">🇭🇺</span> <span title="Slovenian">🇸🇮</span> </td><td><ul><li title="url"><a href="https://sapienzanlp.github.io/xl-wsd/">🌐</a></li><li title="paper"><a href="https://sapienzanlp.github.io/xl-wsd/assets/paper/xl-wsd-aaai2021.pdf">📄</a></li><li title="citation"><a href="https://sapienzanlp.github.io/xl-wsd/#cite">❞</a></li><li title="download link"><a href="https://drive.google.com/file/d/19YTL-Uq95hjiFZfgwEpXRgcYGCR_PQY0/view?usp=sharing">⬇️</a></li></ul></td></tr>
+<tr><td><a href="https://github.com/begab/huWSDdata">huWSDdata</a></td><td></td><td>WSD</td><td><ul><li title="wsd">🐁🖱</li></ul></td><td><span title="Hungarian">🇭🇺</span> </td><td><ul><li title="url"><a href="https://github.com/begab/huWSDdata">🌐</a></li><li title="paper"><a href="http://www.inf.u-szeged.hu/~berendg/docs/publ/mszny_wsd.pdf">📄</a></li><li title="citation"><a href="http://www.inf.u-szeged.hu/~berendg/docs/publ/mszny_wsd.pdf">❞</a></li><li title="download link"><a href="https://github.com/begab/huWSDdata/blob/master/hun_wsd.txt">⬇️</a></li></ul></td></tr>
+<tr><td id="hungarian-category"><a href="https://microsoft.github.io/XGLUE/">XGLUE</a></td><td></td><td>multiple tasks</td><td><ul><li title="category">📰</li></ul></td><td><span title="Belarusian">🇧🇾</span> <span title="Hungarian">🇭🇺</span> <span title="Polish">🇵🇱</span> <span title="Russian">🇷🇺</span> </td><td><ul><li title="url"><a href="https://microsoft.github.io/XGLUE/">🌐</a></li><li title="paper"><a href="https://arxiv.org/abs/2004.01401">📄</a></li><li title="citation"><a href="https://microsoft.github.io/XGLUE/">❞</a></li><li title="download link"><a href="https://xglue.blob.core.windows.net/xglue/xglue_full_dataset.tar.gz">⬇️</a></li></ul></td></tr>
+<tr><td id="hungarian-other"><a href="http://mnsz.nytud.hu/index_eng.html">Hungarian National Corpus</a></td><td></td><td>automatically tagged corpus</td><td><ul><li title="other">🦦</li></ul></td><td><span title="Hungarian">🇭🇺</span> </td><td><ul><li title="url"><a href="http://mnsz.nytud.hu/index_eng.html">🌐</a></li><li title="paper"><a href="http://www.lrec-conf.org/proceedings/lrec2014/pdf/681_Paper.pdf">📄</a></li><li title="download link"><a href="need a registration: http://mnsz.nytud.hu/regisztracio_eng.html">⬇️</a></li></ul></td></tr>
+<tr><td><a href="https://github.com/mmihaltz/huwn">Hungarian Wordnet (HuWN) / Magyar WordNet</a></td><td></td><td>wordnet</td><td><ul><li title="other">🦦</li></ul></td><td><span title="Hungarian">🇭🇺</span> </td><td><ul><li title="url"><a href="https://github.com/mmihaltz/huwn">🌐</a></li><li title="paper"><a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.148.6139&rep=rep1&type=pdf">📄</a></li><li title="citation"><a href="https://github.com/mmihaltz/huwn">❞</a></li><li title="download link"><a href="https://github.com/mmihaltz/huwn/raw/master/huwn.xml">⬇️</a></li></ul></td></tr>
+<tr><td><a href="http://corpus.nytud.hu/isz/">MAZSOLA</a></td><td></td><td>syntactic tagging</td><td><ul><li title="other">🦦</li></ul></td><td><span title="Hungarian">🇭🇺</span> </td><td><ul><li title="url"><a href="http://corpus.nytud.hu/isz/">🌐</a></li><li title="paper"><a href="http://www.nytud.hu/oszt/korpusz/resources/sb_isz.pdf">📄</a></li><li title="citation"><a href="http://corpus.nytud.hu/isz/">❞</a></li><li title="download link"><a href="http://corpus.nytud.hu/isz/s/mazsola_adatbazis.txt.zip">⬇️</a></li></ul></td></tr>
+<tr><td><a href="https://www.clarin.si/repository/xmlui/handle/11356/1043">MULTEXT-East "1984" annotated corpus 4.0</a></td><td></td><td>POS</td><td><ul><li title="other">🦦</li></ul></td><td><span title="Bulgarian">🇧🇬</span> <span title="Czech">🇨🇿</span> <span title="Estonian">🇪🇪</span> <span title="Hungarian">🇭🇺</span> <span title="Macedonian">🇲🇰</span> <span title="Polish">🇵🇱</span> <span title="Romanian">🇷🇴</span> <span title="Serbian">🇷🇸</span> <span title="Slovakian/Slovak">🇸🇰</span> <span title="Slovenian">🇸🇮</span> </td><td><ul><li title="url"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1043">🌐</a></li><li title="paper"><a href="http://nl.ijs.si/ME/Vault/V4/doc/bib/mte-lrec2004.pdf">📄</a></li><li title="download link"><a href="https://www.clarin.si/repository/xmlui/bitstream/handle/11356/1043/MTE1984-ana.zip?sequence=3&isAllowed=y">⬇️</a></li></ul></td></tr>
+<tr><td><a href="http://metashare.nytud.hu/repository/browse/szeged-corpus/e2bf6a486c7811e2aa7c68b599c26a069a3f6f3a10d745e08d1db15344df55ea/">Szeged Corpus</a></td><td></td><td>syntax + morphology</td><td><ul><li title="other">🦦</li></ul></td><td><span title="Hungarian">🇭🇺</span> </td><td><ul><li title="url"><a href="http://metashare.nytud.hu/repository/browse/szeged-corpus/e2bf6a486c7811e2aa7c68b599c26a069a3f6f3a10d745e08d1db15344df55ea/">🌐</a></li><li title="paper"><a href="https://www.researchgate.net/profile/Zoltan-Alexin/publication/252066444_K%27ezzel_annot%27alt_magyar_nyelvi_korpusz_a_Szeged_Korpusz/links/56ec19f708aed740cbb611a1/Kezzel-annotalt-magyar-nyelvi-korpusz-a-Szeged-Korpusz.pdf">📄</a></li><li title="citation"><a href="https://www.sed.inf.u-szeged.hu/biblio/export/bibtex/586">❞</a></li><li title="download link"><a href="ask for access: http://metashare.nytud.hu/repository/download/e2bf6a486c7811e2aa7c68b599c26a069a3f6f3a10d745e08d1db15344df55ea/">⬇️</a></li></ul></td></tr>
+</tbody></table>
+
+## 🇰🇿 Kazakh
+
+<table width="100%"><thead><tr><th width="66%">name</th><th width="33%">description</th><th>task</th><th>category</th><th>languages</th><th>links</th></tr></thead><tbody></tbody></table>
+
+## 🇱🇻 Latvian
+
+<table width="100%"><thead><tr><th width="66%">name</th><th width="33%">description</th><th>task</th><th>category</th><th>languages</th><th>links</th></tr></thead><tbody><tr><td id="latvian-sentiment"><a href="https://github.com/Usprogis/Latvian-Twitter-Eater-Corpus">Latvian Twitter Eater Corpus</a></td><td></td><td>sentiment + some more</td><td><ul><li title="sentiment">😄</li></ul></td><td><span title="Latvian">🇱🇻</span> </td><td><ul><li title="url"><a href="https://github.com/Usprogis/Latvian-Twitter-Eater-Corpus">🌐</a></li><li title="paper"><a href="https://arxiv.org/abs/2007.05194">📄</a></li><li title="citation"><a href="https://github.com/Usprogis/Latvian-Twitter-Eater-Corpus">❞</a></li><li title="download link"><a href="https://github.com/Usprogis/Latvian-Twitter-Eater-Corpus">⬇️</a></li></ul></td></tr>
+<tr><td><a href="https://github.com/FnTm/latvian-tweet-sentiment-corpus">latvian-tweet-sentiment-corpus</a></td><td></td><td>sentiment</td><td><ul><li title="sentiment">😄</li></ul></td><td><span title="Latvian">🇱🇻</span> </td><td><ul><li title="url"><a href="https://github.com/FnTm/latvian-tweet-sentiment-corpus">🌐</a></li><li title="download link"><a href="https://github.com/FnTm/latvian-tweet-sentiment-corpus">⬇️</a></li></ul></td></tr>
+<tr><td id="latvian-category"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1409">Latvian Delfi article archive</a></td><td></td><td>category prediction</td><td><ul><li title="category">📰</li></ul></td><td><span title="Latvian">🇱🇻</span> <span title="Russian">🇷🇺</span> </td><td><ul><li title="url"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1409">🌐</a></li><li title="download link"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1409">⬇️</a></li></ul></td></tr>
+<tr><td id="latvian-other"><a href="https://github.com/UniversalDependencies/UD_Latvian-LVTB/blob/master/README.md">Latvian UD Treebank</a></td><td></td><td>POS</td><td><ul><li title="other">🦦</li></ul></td><td><span title="Latvian">🇱🇻</span> </td><td><ul><li title="url"><a href="https://github.com/UniversalDependencies/UD_Latvian-LVTB/blob/master/README.md">🌐</a></li><li title="paper"><a href="https://www.researchgate.net/publication/327520269_Deriving_Enhanced_Universal_Dependencies_from_a_Hybrid_Dependency-Constituency_Treebank">📄</a></li><li title="citation"><a href="http://www.ailab.lv/en/publications/408/">❞</a></li><li title="download link"><a href="https://github.com/UniversalDependencies/UD_Latvian-LVTB">⬇️</a></li></ul></td></tr>
+</tbody></table>
+
+## 🇱🇹 Lithuanian
+
+<table width="100%"><thead><tr><th width="66%">name</th><th width="33%">description</th><th>task</th><th>category</th><th>languages</th><th>links</th></tr></thead><tbody><tr><td id="lithuanian-sentiment"><a href="https://www.kaggle.com/rokastrimaitis/lithuanian-financial-news-dataset-and-bigrams">Lithuanian financial news dataset and bigrams</a></td><td></td><td>sentiment</td><td><ul><li title="sentiment">😄</li></ul></td><td><span title="Lithuanian">🇱🇹</span> </td><td><ul><li title="url"><a href="https://www.kaggle.com/rokastrimaitis/lithuanian-financial-news-dataset-and-bigrams">🌐</a></li><li title="download link"><a href="https://www.kaggle.com/rokastrimaitis/lithuanian-financial-news-dataset-and-bigrams">⬇️</a></li></ul></td></tr>
+<tr><td id="lithuanian-paraphrase"><a href="https://zenodo.org/record/3707949#.YPMTcpgzYuU">TaPaCo</a></td><td></td><td>paraphrase detection</td><td><ul><li title="paraphrase">💬</li></ul></td><td><span title="Armenian">🇦🇲</span> <span title="Belarusian">🇧🇾</span> <span title="Bulgarian">🇧🇬</span> <span title="Croatian">🇭🇷</span> <span title="Czech">🇨🇿</span> <span title="Estonian">🇪🇪</span> <span title="Hungarian">🇭🇺</span> <span title="Lithuanian">🇱🇹</span> <span title="Macedonian">🇲🇰</span> <span title="Moldovan/Moldovian">🇲🇩</span> <span title="Polish">🇵🇱</span> <span title="Romanian">🇷🇴</span> <span title="Russian">🇷🇺</span> <span title="Serbian">🇷🇸</span> </td><td><ul><li title="url"><a href="https://zenodo.org/record/3707949#.YPMTcpgzYuU">🌐</a></li><li title="download link"><a href="https://huggingface.co/datasets/tapaco">⬇️</a></li><li><a title="huggingface dataset" href="https://huggingface.co/datasets/tapaco">🤗️</a> <a title="preview" href="https://huggingface.co/datasets/viewer/?dataset=tapaco">🤗️</a></li></ul></td></tr>
+<tr><td id="lithuanian-category"><a href="https://www.kaggle.com/pavelstefanovi/lithuanian-financial-news-dataset-multilabeled">Lithuanian financial news dataset (multi-labeled)</a></td><td></td><td>category prediction</td><td><ul><li title="category">📰</li></ul></td><td><span title="Lithuanian">🇱🇹</span> </td><td><ul><li title="url"><a href="https://www.kaggle.com/pavelstefanovi/lithuanian-financial-news-dataset-multilabeled">🌐</a></li><li title="download link"><a href="https://www.kaggle.com/pavelstefanovi/lithuanian-financial-news-dataset-multilabeled">⬇️</a></li></ul></td></tr>
+<tr><td><a href="https://github.com/minven/nlp-lt">NLP-LT</a></td><td></td><td>category prediction</td><td><ul><li title="category">📰</li></ul></td><td><span title="Lithuanian">🇱🇹</span> </td><td><ul><li title="url"><a href="https://github.com/minven/nlp-lt">🌐</a></li><li title="download link"><a href="https://github.com/minven/nlp-lt">⬇️</a></li></ul></td></tr>
+</tbody></table>
+
+## 🇲🇰 Macedonian
+
+<table width="100%"><thead><tr><th width="66%">name</th><th width="33%">description</th><th>task</th><th>category</th><th>languages</th><th>links</th></tr></thead><tbody><tr><td id="macedonian-paraphrase"><a href="https://zenodo.org/record/3707949#.YPMTcpgzYuU">TaPaCo</a></td><td></td><td>paraphrase detection</td><td><ul><li title="paraphrase">💬</li></ul></td><td><span title="Armenian">🇦🇲</span> <span title="Belarusian">🇧🇾</span> <span title="Bulgarian">🇧🇬</span> <span title="Croatian">🇭🇷</span> <span title="Czech">🇨🇿</span> <span title="Estonian">🇪🇪</span> <span title="Hungarian">🇭🇺</span> <span title="Lithuanian">🇱🇹</span> <span title="Macedonian">🇲🇰</span> <span title="Moldovan/Moldovian">🇲🇩</span> <span title="Polish">🇵🇱</span> <span title="Romanian">🇷🇴</span> <span title="Russian">🇷🇺</span> <span title="Serbian">🇷🇸</span> </td><td><ul><li title="url"><a href="https://zenodo.org/record/3707949#.YPMTcpgzYuU">🌐</a></li><li title="download link"><a href="https://huggingface.co/datasets/tapaco">⬇️</a></li><li><a title="huggingface dataset" href="https://huggingface.co/datasets/tapaco">🤗️</a> <a title="preview" href="https://huggingface.co/datasets/viewer/?dataset=tapaco">🤗️</a></li></ul></td></tr>
+<tr><td id="macedonian-other"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1043">MULTEXT-East "1984" annotated corpus 4.0</a></td><td></td><td>POS</td><td><ul><li title="other">🦦</li></ul></td><td><span title="Bulgarian">🇧🇬</span> <span title="Czech">🇨🇿</span> <span title="Estonian">🇪🇪</span> <span title="Hungarian">🇭🇺</span> <span title="Macedonian">🇲🇰</span> <span title="Polish">🇵🇱</span> <span title="Romanian">🇷🇴</span> <span title="Serbian">🇷🇸</span> <span title="Slovakian/Slovak">🇸🇰</span> <span title="Slovenian">🇸🇮</span> </td><td><ul><li title="url"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1043">🌐</a></li><li title="paper"><a href="http://nl.ijs.si/ME/Vault/V4/doc/bib/mte-lrec2004.pdf">📄</a></li><li title="download link"><a href="https://www.clarin.si/repository/xmlui/bitstream/handle/11356/1043/MTE1984-ana.zip?sequence=3&isAllowed=y">⬇️</a></li></ul></td></tr>
+</tbody></table>
+
+## 🇲🇩 Moldovan/Moldovian
+
+<table width="100%"><thead><tr><th width="66%">name</th><th width="33%">description</th><th>task</th><th>category</th><th>languages</th><th>links</th></tr></thead><tbody><tr><td id="moldovan/moldovian-paraphrase"><a href="https://zenodo.org/record/3707949#.YPMTcpgzYuU">TaPaCo</a></td><td></td><td>paraphrase detection</td><td><ul><li title="paraphrase">💬</li></ul></td><td><span title="Armenian">🇦🇲</span> <span title="Belarusian">🇧🇾</span> <span title="Bulgarian">🇧🇬</span> <span title="Croatian">🇭🇷</span> <span title="Czech">🇨🇿</span> <span title="Estonian">🇪🇪</span> <span title="Hungarian">🇭🇺</span> <span title="Lithuanian">🇱🇹</span> <span title="Macedonian">🇲🇰</span> <span title="Moldovan/Moldovian">🇲🇩</span> <span title="Polish">🇵🇱</span> <span title="Romanian">🇷🇴</span> <span title="Russian">🇷🇺</span> <span title="Serbian">🇷🇸</span> </td><td><ul><li title="url"><a href="https://zenodo.org/record/3707949#.YPMTcpgzYuU">🌐</a></li><li title="download link"><a href="https://huggingface.co/datasets/tapaco">⬇️</a></li><li><a title="huggingface dataset" href="https://huggingface.co/datasets/tapaco">🤗️</a> <a title="preview" href="https://huggingface.co/datasets/viewer/?dataset=tapaco">🤗️</a></li></ul></td></tr>
+<tr><td id="moldovan/moldovian-category"><a href="https://github.com/butnaruandrei/MOROCO">MOROCO</a></td><td></td><td>multiple classification tasks</td><td><ul><li title="category">📰</li></ul></td><td><span title="Moldovan/Moldovian">🇲🇩</span> <span title="Romanian">🇷🇴</span> </td><td><ul><li title="url"><a href="https://github.com/butnaruandrei/MOROCO">🌐</a></li><li title="paper"><a href="https://arxiv.org/pdf/1901.06543.pdf">📄</a></li><li title="citation"><a href="https://arxiv.org/abs/1901.06543">❞</a></li><li title="download link"><a href="https://github.com/butnaruandrei/MOROCO/archive/refs/heads/master.zip">⬇️</a></li></ul></td></tr>
+</tbody></table>
+
+## 🇲🇪 Montenegrin
+
+<table width="100%"><thead><tr><th width="66%">name</th><th width="33%">description</th><th>task</th><th>category</th><th>languages</th><th>links</th></tr></thead><tbody></tbody></table>
+
+## 🇵🇱 Polish
+
+<table width="100%"><thead><tr><th width="66%">name</th><th width="33%">description</th><th>task</th><th>category</th><th>languages</th><th>links</th></tr></thead><tbody><tr><td id="polish-ner"><a href="http://bsnlp.cs.helsinki.fi/bsnlp-2019/shared_task.html">BSNLP</a></td><td></td><td>NER</td><td><ul><li title="ner">📛</li></ul></td><td><span title="Bulgarian">🇧🇬</span> <span title="Czech">🇨🇿</span> <span title="Polish">🇵🇱</span> <span title="Russian">🇷🇺</span> </td><td><ul><li title="url"><a href="http://bsnlp.cs.helsinki.fi/bsnlp-2019/shared_task.html">🌐</a></li><li title="citation"><a href="http://bsnlp.cs.helsinki.fi/bsnlp-2019/shared_task.html">❞</a></li><li title="download link"><a href="need to ask for access: http://bsnlp.cs.helsinki.fi/bsnlp-2019/shared_task.html">⬇️</a></li></ul></td></tr>
+<tr><td><a href="https://klejbenchmark.com/">KLEJ</a></td><td></td><td>multiple semantic tasks</td><td><ul><li title="ner">📛</li></ul></td><td><span title="Polish">🇵🇱</span> </td><td><ul><li title="url"><a href="https://klejbenchmark.com/">🌐</a></li><li title="paper"><a href="https://arxiv.org/abs/2005.00630">📄</a></li><li title="citation"><a href="https://klejbenchmark.com/tasks/">❞</a></li><li title="download link"><a href="https://klejbenchmark.com/tasks/">⬇️</a></li></ul></td></tr>
+<tr><td><a href="https://gonito.net/challenge/poleval-2018-ner">PolEval 2018 NER task</a></td><td></td><td>NER</td><td><ul><li title="ner">📛</li></ul></td><td><span title="Polish">🇵🇱</span> </td><td><ul><li title="url"><a href="https://gonito.net/challenge/poleval-2018-ner">🌐</a></li></ul></td></tr>
+<tr><td id="polish-sentiment"><a href="https://klejbenchmark.com/">KLEJ</a></td><td></td><td>multiple semantic tasks</td><td><ul><li title="sentiment">😄</li></ul></td><td><span title="Polish">🇵🇱</span> </td><td><ul><li title="url"><a href="https://klejbenchmark.com/">🌐</a></li><li title="paper"><a href="https://arxiv.org/abs/2005.00630">📄</a></li><li title="citation"><a href="https://klejbenchmark.com/tasks/">❞</a></li><li title="download link"><a href="https://klejbenchmark.com/tasks/">⬇️</a></li></ul></td></tr>
+<tr><td><a href="https://github.com/CLARIN-PL/multiemo">MultiEmo</a></td><td></td><td>sentiment</td><td><ul><li title="sentiment">😄</li></ul></td><td><span title="Polish">🇵🇱</span> <span title="Russian">🇷🇺</span> </td><td><ul><li title="url"><a href="https://github.com/CLARIN-PL/multiemo">🌐</a></li><li title="download link"><a href="https://clarin-pl.eu/dspace/handle/11321/798">⬇️</a></li></ul></td></tr>
+<tr><td><a href="https://www.clarin.si/repository/xmlui/handle/11356/1054">Twitter sentiment for 15 European languages</a></td><td></td><td>sentiment</td><td><ul><li title="sentiment">😄</li></ul></td><td><span title="Albanian">🇦🇱</span> <span title="Bosnian">🇧🇦</span> <span title="Bulgarian">🇧🇬</span> <span title="Croatian">🇭🇷</span> <span title="Hungarian">🇭🇺</span> <span title="Polish">🇵🇱</span> <span title="Russian">🇷🇺</span> <span title="Serbian">🇷🇸</span> <span title="Slovakian/Slovak">🇸🇰</span> <span title="Slovenian">🇸🇮</span> </td><td><ul><li title="url"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1054">🌐</a></li><li title="paper"><a href="https://arxiv.org/abs/1602.07563">📄</a></li><li title="citation"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1054">❞</a></li><li title="download link"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1054">⬇️</a></li></ul></td></tr>
+<tr><td id="polish-paraphrase"><a href="https://klejbenchmark.com/">KLEJ</a></td><td></td><td>multiple semantic tasks</td><td><ul><li title="paraphrase">💬</li></ul></td><td><span title="Polish">🇵🇱</span> </td><td><ul><li title="url"><a href="https://klejbenchmark.com/">🌐</a></li><li title="paper"><a href="https://arxiv.org/abs/2005.00630">📄</a></li><li title="citation"><a href="https://klejbenchmark.com/tasks/">❞</a></li><li title="download link"><a href="https://klejbenchmark.com/tasks/">⬇️</a></li></ul></td></tr>
+<tr><td><a href="https://zenodo.org/record/3707949#.YPMTcpgzYuU">TaPaCo</a></td><td></td><td>paraphrase detection</td><td><ul><li title="paraphrase">💬</li></ul></td><td><span title="Armenian">🇦🇲</span> <span title="Belarusian">🇧🇾</span> <span title="Bulgarian">🇧🇬</span> <span title="Croatian">🇭🇷</span> <span title="Czech">🇨🇿</span> <span title="Estonian">🇪🇪</span> <span title="Hungarian">🇭🇺</span> <span title="Lithuanian">🇱🇹</span> <span title="Macedonian">🇲🇰</span> <span title="Moldovan/Moldovian">🇲🇩</span> <span title="Polish">🇵🇱</span> <span title="Romanian">🇷🇴</span> <span title="Russian">🇷🇺</span> <span title="Serbian">🇷🇸</span> </td><td><ul><li title="url"><a href="https://zenodo.org/record/3707949#.YPMTcpgzYuU">🌐</a></li><li title="download link"><a href="https://huggingface.co/datasets/tapaco">⬇️</a></li><li><a title="huggingface dataset" href="https://huggingface.co/datasets/tapaco">🤗️</a> <a title="preview" href="https://huggingface.co/datasets/viewer/?dataset=tapaco">🤗️</a></li></ul></td></tr>
+<tr><td id="polish-category"><a href="https://gonito.net/challenge/sport-text-classification">Polish Sport Texts Classification Challenge</a></td><td></td><td>category prediction</td><td><ul><li title="category">📰</li></ul></td><td><span title="Polish">🇵🇱</span> </td><td><ul><li title="url"><a href="https://gonito.net/challenge/sport-text-classification">🌐</a></li></ul></td></tr>
+<tr><td><a href="https://microsoft.github.io/XGLUE/">XGLUE</a></td><td></td><td>multiple tasks</td><td><ul><li title="category">📰</li></ul></td><td><span title="Belarusian">🇧🇾</span> <span title="Hungarian">🇭🇺</span> <span title="Polish">🇵🇱</span> <span title="Russian">🇷🇺</span> </td><td><ul><li title="url"><a href="https://microsoft.github.io/XGLUE/">🌐</a></li><li title="paper"><a href="https://arxiv.org/abs/2004.01401">📄</a></li><li title="citation"><a href="https://microsoft.github.io/XGLUE/">❞</a></li><li title="download link"><a href="https://xglue.blob.core.windows.net/xglue/xglue_full_dataset.tar.gz">⬇️</a></li></ul></td></tr>
+<tr><td id="polish-other"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1043">MULTEXT-East "1984" annotated corpus 4.0</a></td><td></td><td>POS</td><td><ul><li title="other">🦦</li></ul></td><td><span title="Bulgarian">🇧🇬</span> <span title="Czech">🇨🇿</span> <span title="Estonian">🇪🇪</span> <span title="Hungarian">🇭🇺</span> <span title="Macedonian">🇲🇰</span> <span title="Polish">🇵🇱</span> <span title="Romanian">🇷🇴</span> <span title="Serbian">🇷🇸</span> <span title="Slovakian/Slovak">🇸🇰</span> <span title="Slovenian">🇸🇮</span> </td><td><ul><li title="url"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1043">🌐</a></li><li title="paper"><a href="http://nl.ijs.si/ME/Vault/V4/doc/bib/mte-lrec2004.pdf">📄</a></li><li title="download link"><a href="https://www.clarin.si/repository/xmlui/bitstream/handle/11356/1043/MTE1984-ana.zip?sequence=3&isAllowed=y">⬇️</a></li></ul></td></tr>
+<tr><td><a href="http://clip.ipipan.waw.pl/NationalCorpusOfPolish">NKJP1M</a></td><td></td><td>morphosyntactic tagging</td><td><ul><li title="other">🦦</li></ul></td><td><span title="Polish">🇵🇱</span> </td><td><ul><li title="url"><a href="http://clip.ipipan.waw.pl/NationalCorpusOfPolish">🌐</a></li><li title="download link"><a href="http://clip.ipipan.waw.pl/NationalCorpusOfPolish?action=AttachFile&do=view&target=NKJP-PodkorpusMilionowy-1.2.tar.gz">⬇️</a></li></ul></td></tr>
+</tbody></table>
+
+## 🇷🇴 Romanian
+
+<table width="100%"><thead><tr><th width="66%">name</th><th width="33%">description</th><th>task</th><th>category</th><th>languages</th><th>links</th></tr></thead><tbody><tr><td id="romanian-ner"><a href="https://lirobenchmark.github.io/">LiRo</a></td><td></td><td>multiple semantic tasks</td><td><ul><li title="ner">📛</li></ul></td><td><span title="Romanian">🇷🇴</span> </td><td><ul><li title="url"><a href="https://lirobenchmark.github.io/">🌐</a></li><li title="paper"><a href="https://openreview.net/forum?id=JH61CD7afTv">📄</a></li><li title="citation"><a href="https://github.com/LiroBenchmark/LiroBenchmark.github.io/">❞</a></li><li title="download link"><a href="https://lirobenchmark.github.io/datasets">⬇️</a></li></ul></td></tr>
+<tr><td><a href="https://github.com/dumitrescustefan/ronec">RONEC</a></td><td></td><td>NER</td><td><ul><li title="ner">📛</li></ul></td><td><span title="Romanian">🇷🇴</span> </td><td><ul><li title="url"><a href="https://github.com/dumitrescustefan/ronec">🌐</a></li><li title="paper"><a href="https://arxiv.org/abs/1909.01247">📄</a></li><li title="citation"><a href="https://github.com/dumitrescustefan/ronec#cite">❞</a></li><li title="download link"><a href="https://github.com/dumitrescustefan/ronec">⬇️</a></li></ul></td></tr>
+<tr><td id="romanian-sentiment"><a href="https://lirobenchmark.github.io/">LiRo</a></td><td></td><td>multiple semantic tasks</td><td><ul><li title="sentiment">😄</li></ul></td><td><span title="Romanian">🇷🇴</span> </td><td><ul><li title="url"><a href="https://lirobenchmark.github.io/">🌐</a></li><li title="paper"><a href="https://openreview.net/forum?id=JH61CD7afTv">📄</a></li><li title="citation"><a href="https://github.com/LiroBenchmark/LiroBenchmark.github.io/">❞</a></li><li title="download link"><a href="https://lirobenchmark.github.io/datasets">⬇️</a></li></ul></td></tr>
+<tr><td id="romanian-paraphrase"><a href="https://github.com/dumitrescustefan/RO-STS">RO-STS</a></td><td></td><td>paraphrase detection</td><td><ul><li title="paraphrase">💬</li></ul></td><td><span title="Romanian">🇷🇴</span> </td><td><ul><li title="url"><a href="https://github.com/dumitrescustefan/RO-STS">🌐</a></li></ul></td></tr>
+<tr><td><a href="https://zenodo.org/record/3707949#.YPMTcpgzYuU">TaPaCo</a></td><td></td><td>paraphrase detection</td><td><ul><li title="paraphrase">💬</li></ul></td><td><span title="Armenian">🇦🇲</span> <span title="Belarusian">🇧🇾</span> <span title="Bulgarian">🇧🇬</span> <span title="Croatian">🇭🇷</span> <span title="Czech">🇨🇿</span> <span title="Estonian">🇪🇪</span> <span title="Hungarian">🇭🇺</span> <span title="Lithuanian">🇱🇹</span> <span title="Macedonian">🇲🇰</span> <span title="Moldovan/Moldovian">🇲🇩</span> <span title="Polish">🇵🇱</span> <span title="Romanian">🇷🇴</span> <span title="Russian">🇷🇺</span> <span title="Serbian">🇷🇸</span> </td><td><ul><li title="url"><a href="https://zenodo.org/record/3707949#.YPMTcpgzYuU">🌐</a></li><li title="download link"><a href="https://huggingface.co/datasets/tapaco">⬇️</a></li><li><a title="huggingface dataset" href="https://huggingface.co/datasets/tapaco">🤗️</a> <a title="preview" href="https://huggingface.co/datasets/viewer/?dataset=tapaco">🤗️</a></li></ul></td></tr>
+<tr><td id="romanian-wsd"><a href="https://dkpro.github.io/dkpro-wsd/corpora/">DKPro WSD</a></td><td></td><td>WSD</td><td><ul><li title="wsd">🐁🖱</li></ul></td><td><span title="Czech">🇨🇿</span> <span title="Estonian">🇪🇪</span> <span title="Romanian">🇷🇴</span> </td><td><ul><li title="url"><a href="https://dkpro.github.io/dkpro-wsd/corpora/">🌐</a></li><li title="download link"><a href="https://dkpro.github.io/dkpro-wsd/corpora/">⬇️</a></li></ul></td></tr>
+<tr><td><a href="https://web.eecs.umich.edu/~mihalcea/senseval/senseval3/data.html">Romanian lexical sample @ Semeval 3</a></td><td></td><td>WSD</td><td><ul><li title="wsd">🐁🖱</li></ul></td><td><span title="Romanian">🇷🇴</span> </td><td><ul><li title="url"><a href="https://web.eecs.umich.edu/~mihalcea/senseval/senseval3/data.html">🌐</a></li></ul></td></tr>
+<tr><td id="romanian-category"><a href="https://github.com/butnaruandrei/MOROCO">MOROCO</a></td><td></td><td>multiple classification tasks</td><td><ul><li title="category">📰</li></ul></td><td><span title="Moldovan/Moldovian">🇲🇩</span> <span title="Romanian">🇷🇴</span> </td><td><ul><li title="url"><a href="https://github.com/butnaruandrei/MOROCO">🌐</a></li><li title="paper"><a href="https://arxiv.org/pdf/1901.06543.pdf">📄</a></li><li title="citation"><a href="https://arxiv.org/abs/1901.06543">❞</a></li><li title="download link"><a href="https://github.com/butnaruandrei/MOROCO/archive/refs/heads/master.zip">⬇️</a></li></ul></td></tr>
+<tr><td id="romanian-other"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1043">MULTEXT-East "1984" annotated corpus 4.0</a></td><td></td><td>POS</td><td><ul><li title="other">🦦</li></ul></td><td><span title="Bulgarian">🇧🇬</span> <span title="Czech">🇨🇿</span> <span title="Estonian">🇪🇪</span> <span title="Hungarian">🇭🇺</span> <span title="Macedonian">🇲🇰</span> <span title="Polish">🇵🇱</span> <span title="Romanian">🇷🇴</span> <span title="Serbian">🇷🇸</span> <span title="Slovakian/Slovak">🇸🇰</span> <span title="Slovenian">🇸🇮</span> </td><td><ul><li title="url"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1043">🌐</a></li><li title="paper"><a href="http://nl.ijs.si/ME/Vault/V4/doc/bib/mte-lrec2004.pdf">📄</a></li><li title="download link"><a href="https://www.clarin.si/repository/xmlui/bitstream/handle/11356/1043/MTE1984-ana.zip?sequence=3&isAllowed=y">⬇️</a></li></ul></td></tr>
+<tr><td><a href="https://github.com/MihaelaGaman/SaRoCo">SaRoCo</a></td><td></td><td>fake news</td><td><ul><li title="other">🦦</li></ul></td><td><span title="Romanian">🇷🇴</span> </td><td><ul><li title="url"><a href="https://github.com/MihaelaGaman/SaRoCo">🌐</a></li><li title="paper"><a href="https://arxiv.org/abs/2105.06456">📄</a></li><li title="citation"><a href="https://github.com/MihaelaGaman/SaRoCo#citation">❞</a></li><li title="download link"><a href="https://github.com/MihaelaGaman/SaRoCo">⬇️</a></li></ul></td></tr>
+</tbody></table>
+
+## 🇷🇺 Russian
+
+<table width="100%"><thead><tr><th width="66%">name</th><th width="33%">description</th><th>task</th><th>category</th><th>languages</th><th>links</th></tr></thead><tbody><tr><td id="russian-ner"><a href="http://bsnlp.cs.helsinki.fi/bsnlp-2019/shared_task.html">BSNLP</a></td><td></td><td>NER</td><td><ul><li title="ner">📛</li></ul></td><td><span title="Bulgarian">🇧🇬</span> <span title="Czech">🇨🇿</span> <span title="Polish">🇵🇱</span> <span title="Russian">🇷🇺</span> </td><td><ul><li title="url"><a href="http://bsnlp.cs.helsinki.fi/bsnlp-2019/shared_task.html">🌐</a></li><li title="citation"><a href="http://bsnlp.cs.helsinki.fi/bsnlp-2019/shared_task.html">❞</a></li><li title="download link"><a href="need to ask for access: http://bsnlp.cs.helsinki.fi/bsnlp-2019/shared_task.html">⬇️</a></li></ul></td></tr>
+<tr><td id="russian-sentiment"><a href="https://github.com/CLARIN-PL/multiemo">MultiEmo</a></td><td></td><td>sentiment</td><td><ul><li title="sentiment">😄</li></ul></td><td><span title="Polish">🇵🇱</span> <span title="Russian">🇷🇺</span> </td><td><ul><li title="url"><a href="https://github.com/CLARIN-PL/multiemo">🌐</a></li><li title="download link"><a href="https://clarin-pl.eu/dspace/handle/11321/798">⬇️</a></li></ul></td></tr>
+<tr><td><a href="https://text-machine.cs.uml.edu/projects/rusentiment/">RuSentiment</a></td><td></td><td>sentiment</td><td><ul><li title="sentiment">😄</li></ul></td><td><span title="Russian">🇷🇺</span> </td><td><ul><li title="url"><a href="https://text-machine.cs.uml.edu/projects/rusentiment/">🌐</a></li></ul></td></tr>
+<tr><td><a href="https://www.kaggle.com/c/sentiment-analysis-in-russian">Sentiment Analysis in Russian</a></td><td></td><td>sentiment</td><td><ul><li title="sentiment">😄</li></ul></td><td><span title="Russian">🇷🇺</span> </td><td><ul><li title="url"><a href="https://www.kaggle.com/c/sentiment-analysis-in-russian">🌐</a></li><li title="download link"><a href="https://www.kaggle.com/c/sentiment-analysis-in-russian">⬇️</a></li></ul></td></tr>
+<tr><td><a href="https://www.clarin.si/repository/xmlui/handle/11356/1054">Twitter sentiment for 15 European languages</a></td><td></td><td>sentiment</td><td><ul><li title="sentiment">😄</li></ul></td><td><span title="Albanian">🇦🇱</span> <span title="Bosnian">🇧🇦</span> <span title="Bulgarian">🇧🇬</span> <span title="Croatian">🇭🇷</span> <span title="Hungarian">🇭🇺</span> <span title="Polish">🇵🇱</span> <span title="Russian">🇷🇺</span> <span title="Serbian">🇷🇸</span> <span title="Slovakian/Slovak">🇸🇰</span> <span title="Slovenian">🇸🇮</span> </td><td><ul><li title="url"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1054">🌐</a></li><li title="paper"><a href="https://arxiv.org/abs/1602.07563">📄</a></li><li title="citation"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1054">❞</a></li><li title="download link"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1054">⬇️</a></li></ul></td></tr>
+<tr><td><a href="http://study.mokoron.com/">mokoron</a></td><td></td><td>sentiment</td><td><ul><li title="sentiment">😄</li></ul></td><td><span title="Russian">🇷🇺</span> </td><td><ul><li title="url"><a href="http://study.mokoron.com/">🌐</a></li><li title="download link"><a href="http://study.mokoron.com/">⬇️</a></li></ul></td></tr>
+<tr><td id="russian-paraphrase"><a href="http://paraphraser.ru/">Paraphraser</a></td><td></td><td>paraphrase detection</td><td><ul><li title="paraphrase">💬</li></ul></td><td><span title="Russian">🇷🇺</span> </td><td><ul><li title="url"><a href="http://paraphraser.ru/">🌐</a></li></ul></td></tr>
+<tr><td><a href="https://zenodo.org/record/3707949#.YPMTcpgzYuU">TaPaCo</a></td><td></td><td>paraphrase detection</td><td><ul><li title="paraphrase">💬</li></ul></td><td><span title="Armenian">🇦🇲</span> <span title="Belarusian">🇧🇾</span> <span title="Bulgarian">🇧🇬</span> <span title="Croatian">🇭🇷</span> <span title="Czech">🇨🇿</span> <span title="Estonian">🇪🇪</span> <span title="Hungarian">🇭🇺</span> <span title="Lithuanian">🇱🇹</span> <span title="Macedonian">🇲🇰</span> <span title="Moldovan/Moldovian">🇲🇩</span> <span title="Polish">🇵🇱</span> <span title="Romanian">🇷🇴</span> <span title="Russian">🇷🇺</span> <span title="Serbian">🇷🇸</span> </td><td><ul><li title="url"><a href="https://zenodo.org/record/3707949#.YPMTcpgzYuU">🌐</a></li><li title="download link"><a href="https://huggingface.co/datasets/tapaco">⬇️</a></li><li><a title="huggingface dataset" href="https://huggingface.co/datasets/tapaco">🤗️</a> <a title="preview" href="https://huggingface.co/datasets/viewer/?dataset=tapaco">🤗️</a></li></ul></td></tr>
+<tr><td id="russian-wsd"><a href="https://russiansuperglue.com/">RussianSuperGLUE</a></td><td></td><td>multiple semantic tasks</td><td><ul><li title="wsd">🐁🖱</li></ul></td><td><span title="Russian">🇷🇺</span> </td><td><ul><li title="url"><a href="https://russiansuperglue.com/">🌐</a></li><li title="paper"><a href="https://arxiv.org/abs/2010.15925">📄</a></li><li title="citation"><a href="https://russiansuperglue.com/">❞</a></li><li title="download link"><a href="https://russiansuperglue.com/tasks/">⬇️</a></li></ul></td></tr>
+<tr><td id="russian-category"><a href="https://github.com/yutkin/Lenta.Ru-News-Dataset">Corpus of Russian news articles collected from Lenta.Ru</a></td><td></td><td>category prediction</td><td><ul><li title="category">📰</li></ul></td><td><span title="Russian">🇷🇺</span> </td><td><ul><li title="url"><a href="https://github.com/yutkin/Lenta.Ru-News-Dataset">🌐</a></li><li title="download link"><a href="https://github.com/yutkin/Lenta.Ru-News-Dataset">⬇️</a></li></ul></td></tr>
+<tr><td><a href="https://www.clarin.si/repository/xmlui/handle/11356/1408">Ekspress news article archive</a></td><td></td><td>category prediction</td><td><ul><li title="category">📰</li></ul></td><td><span title="Estonian">🇪🇪</span> <span title="Russian">🇷🇺</span> </td><td><ul><li title="url"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1408">🌐</a></li><li title="download link"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1408">⬇️</a></li></ul></td></tr>
+<tr><td><a href="https://www.clarin.si/repository/xmlui/handle/11356/1409">Latvian Delfi article archive</a></td><td></td><td>category prediction</td><td><ul><li title="category">📰</li></ul></td><td><span title="Latvian">🇱🇻</span> <span title="Russian">🇷🇺</span> </td><td><ul><li title="url"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1409">🌐</a></li><li title="download link"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1409">⬇️</a></li></ul></td></tr>
+<tr><td><a href="https://microsoft.github.io/XGLUE/">XGLUE</a></td><td></td><td>multiple tasks</td><td><ul><li title="category">📰</li></ul></td><td><span title="Belarusian">🇧🇾</span> <span title="Hungarian">🇭🇺</span> <span title="Polish">🇵🇱</span> <span title="Russian">🇷🇺</span> </td><td><ul><li title="url"><a href="https://microsoft.github.io/XGLUE/">🌐</a></li><li title="paper"><a href="https://arxiv.org/abs/2004.01401">📄</a></li><li title="citation"><a href="https://microsoft.github.io/XGLUE/">❞</a></li><li title="download link"><a href="https://xglue.blob.core.windows.net/xglue/xglue_full_dataset.tar.gz">⬇️</a></li></ul></td></tr>
+<tr><td id="russian-other"><a href="https://github.com/facebookresearch/XNLI">XNLI</a></td><td></td><td>NLI</td><td><ul><li title="other">🦦</li></ul></td><td><span title="Russian">🇷🇺</span> </td><td><ul><li title="url"><a href="https://github.com/facebookresearch/XNLI">🌐</a></li></ul></td></tr>
+</tbody></table>
+
+## 🇷🇸 Serbian
+
+<table width="100%"><thead><tr><th width="66%">name</th><th width="33%">description</th><th>task</th><th>category</th><th>languages</th><th>links</th></tr></thead><tbody><tr><td id="serbian-ner"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1240">ReLDI-NormTagNER-sr</a></td><td></td><td>NER</td><td><ul><li title="ner">📛</li></ul></td><td><span title="Serbian">🇷🇸</span> </td><td><ul><li title="url"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1240">🌐</a></li><li title="paper"><a href="https://revije.ff.uni-lj.si/slovenscina2/article/view/7007">📄</a></li><li title="citation"><a href="https://revije.ff.uni-lj.si/slovenscina2/article/view/7007">❞</a></li><li title="download link"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1240">⬇️</a></li></ul></td></tr>
+<tr><td><a href="https://reldi.spur.uzh.ch/blog/serbian-annotated-corpus-setimes-sr/">SETimes.SR</a></td><td></td><td>NER</td><td><ul><li title="ner">📛</li></ul></td><td><span title="Serbian">🇷🇸</span> </td><td><ul><li title="url"><a href="https://reldi.spur.uzh.ch/blog/serbian-annotated-corpus-setimes-sr/">🌐</a></li><li title="paper"><a href="https://www.aclweb.org/old_anthology/W/W17/W17-1407.pdf">📄</a></li><li title="citation"><a href="https://reldi.spur.uzh.ch/blog/serbian-annotated-corpus-setimes-sr/">❞</a></li><li title="download link"><a href="https://reldi.spur.uzh.ch/blog/serbian-annotated-corpus-setimes-sr/">⬇️</a></li></ul></td></tr>
+<tr><td id="serbian-sentiment"><a href="https://github.com/vukbatanovic/SentiComments.SR">SentiComments.SR</a></td><td></td><td>sentiment</td><td><ul><li title="sentiment">😄</li></ul></td><td><span title="Serbian">🇷🇸</span> </td><td><ul><li title="url"><a href="https://github.com/vukbatanovic/SentiComments.SR">🌐</a></li><li title="paper"><a href="https://github.com/vukbatanovic/SentiComments.SR#references">📄</a></li><li title="citation"><a href="https://github.com/vukbatanovic/SentiComments.SR#references">❞</a></li><li title="download link"><a href="https://github.com/vukbatanovic/SentiComments.SR">⬇️</a></li></ul></td></tr>
+<tr><td><a href="http://vukbatanovic.github.io/SerbMR/">SerbMR</a></td><td></td><td>sentiment</td><td><ul><li title="sentiment">😄</li></ul></td><td><span title="Serbian">🇷🇸</span> </td><td><ul><li title="url"><a href="http://vukbatanovic.github.io/SerbMR/">🌐</a></li><li title="paper"><a href="http://www.lrec-conf.org/proceedings/lrec2016/pdf/284_Paper.pdf">📄</a></li><li title="download link"><a href="https://github.com/vukbatanovic/SerbMR">⬇️</a></li></ul></td></tr>
+<tr><td><a href="https://www.clarin.si/repository/xmlui/handle/11356/1054">Twitter sentiment for 15 European languages</a></td><td></td><td>sentiment</td><td><ul><li title="sentiment">😄</li></ul></td><td><span title="Albanian">🇦🇱</span> <span title="Bosnian">🇧🇦</span> <span title="Bulgarian">🇧🇬</span> <span title="Croatian">🇭🇷</span> <span title="Hungarian">🇭🇺</span> <span title="Polish">🇵🇱</span> <span title="Russian">🇷🇺</span> <span title="Serbian">🇷🇸</span> <span title="Slovakian/Slovak">🇸🇰</span> <span title="Slovenian">🇸🇮</span> </td><td><ul><li title="url"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1054">🌐</a></li><li title="paper"><a href="https://arxiv.org/abs/1602.07563">📄</a></li><li title="citation"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1054">❞</a></li><li title="download link"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1054">⬇️</a></li></ul></td></tr>
+<tr><td id="serbian-paraphrase"><a href="https://vukbatanovic.github.io/STS.news.sr/">STS.news.sr</a></td><td></td><td>paraphrase detection</td><td><ul><li title="paraphrase">💬</li></ul></td><td><span title="Serbian">🇷🇸</span> </td><td><ul><li title="url"><a href="https://vukbatanovic.github.io/STS.news.sr/">🌐</a></li><li title="paper"><a href="http://www.lrec-conf.org/proceedings/lrec2018/pdf/442.pdf">📄</a></li><li title="citation"><a href="https://vukbatanovic.github.io/STS.news.sr/">❞</a></li><li title="download link"><a href="https://github.com/vukbatanovic/STS.news.sr">⬇️</a></li></ul></td></tr>
+<tr><td><a href="https://zenodo.org/record/3707949#.YPMTcpgzYuU">TaPaCo</a></td><td></td><td>paraphrase detection</td><td><ul><li title="paraphrase">💬</li></ul></td><td><span title="Armenian">🇦🇲</span> <span title="Belarusian">🇧🇾</span> <span title="Bulgarian">🇧🇬</span> <span title="Croatian">🇭🇷</span> <span title="Czech">🇨🇿</span> <span title="Estonian">🇪🇪</span> <span title="Hungarian">🇭🇺</span> <span title="Lithuanian">🇱🇹</span> <span title="Macedonian">🇲🇰</span> <span title="Moldovan/Moldovian">🇲🇩</span> <span title="Polish">🇵🇱</span> <span title="Romanian">🇷🇴</span> <span title="Russian">🇷🇺</span> <span title="Serbian">🇷🇸</span> </td><td><ul><li title="url"><a href="https://zenodo.org/record/3707949#.YPMTcpgzYuU">🌐</a></li><li title="download link"><a href="https://huggingface.co/datasets/tapaco">⬇️</a></li><li><a title="huggingface dataset" href="https://huggingface.co/datasets/tapaco">🤗️</a> <a title="preview" href="https://huggingface.co/datasets/viewer/?dataset=tapaco">🤗️</a></li></ul></td></tr>
+<tr><td><a href="https://vukbatanovic.github.io/paraphrase.sr/">paraphrase.sr</a></td><td></td><td>paraphrase detection</td><td><ul><li title="paraphrase">💬</li></ul></td><td><span title="Serbian">🇷🇸</span> </td><td><ul><li title="url"><a href="https://vukbatanovic.github.io/paraphrase.sr/">🌐</a></li><li title="paper"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0167923613000614">📄</a></li><li title="citation"><a href="https://vukbatanovic.github.io/paraphrase.sr/">❞</a></li><li title="download link"><a href="https://github.com/vukbatanovic/paraphrase.sr">⬇️</a></li></ul></td></tr>
+<tr><td id="serbian-other"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1043">MULTEXT-East "1984" annotated corpus 4.0</a></td><td></td><td>POS</td><td><ul><li title="other">🦦</li></ul></td><td><span title="Bulgarian">🇧🇬</span> <span title="Czech">🇨🇿</span> <span title="Estonian">🇪🇪</span> <span title="Hungarian">🇭🇺</span> <span title="Macedonian">🇲🇰</span> <span title="Polish">🇵🇱</span> <span title="Romanian">🇷🇴</span> <span title="Serbian">🇷🇸</span> <span title="Slovakian/Slovak">🇸🇰</span> <span title="Slovenian">🇸🇮</span> </td><td><ul><li title="url"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1043">🌐</a></li><li title="paper"><a href="http://nl.ijs.si/ME/Vault/V4/doc/bib/mte-lrec2004.pdf">📄</a></li><li title="download link"><a href="https://www.clarin.si/repository/xmlui/bitstream/handle/11356/1043/MTE1984-ana.zip?sequence=3&isAllowed=y">⬇️</a></li></ul></td></tr>
+</tbody></table>
+
+## 🇸🇰 Slovakian/Slovak
+
+<table width="100%"><thead><tr><th width="66%">name</th><th width="33%">description</th><th>task</th><th>category</th><th>languages</th><th>links</th></tr></thead><tbody><tr><td id="slovakian/slovak-ner"><a href="https://nlp.kemt.fei.tuke.sk/language/categorizednews">Slovak Categorized News Corpus</a></td><td></td><td>POS, NER, category</td><td><ul><li title="ner">📛</li></ul></td><td><span title="Slovakian/Slovak">🇸🇰</span> </td><td><ul><li title="url"><a href="https://nlp.kemt.fei.tuke.sk/language/categorizednews">🌐</a></li><li title="paper"><a href="https://aclanthology.org/L14-1517/">📄</a></li><li title="citation"><a href="https://aclanthology.org/L14-1517/">❞</a></li><li title="download link"><a href="https://nlp.kemt.fei.tuke.sk/language/categorizednews">⬇️</a></li></ul></td></tr>
+<tr><td><a href="https://nlp.kemt.fei.tuke.sk/language/webdiscussion">Slovak Web Discussion Corpus</a></td><td></td><td>NER, category, spelling</td><td><ul><li title="ner">📛</li></ul></td><td><span title="Slovakian/Slovak">🇸🇰</span> </td><td><ul><li title="url"><a href="https://nlp.kemt.fei.tuke.sk/language/webdiscussion">🌐</a></li><li title="paper"><a href="https://www.researchgate.net/publication/290042999_Slovak_Web_Discussion_Corpus">📄</a></li><li title="download link"><a href="https://link.springer.com/chapter/10.1007/978-3-319-10888-9_45">⬇️</a></li></ul></td></tr>
+<tr><td id="slovakian/slovak-sentiment"><a href="https://sentigrade.fiit.stuba.sk/data">Sentigrade sentiment dataset</a></td><td></td><td>sentiment</td><td><ul><li title="sentiment">😄</li></ul></td><td><span title="Slovakian/Slovak">🇸🇰</span> </td><td><ul><li title="url"><a href="https://sentigrade.fiit.stuba.sk/data">🌐</a></li><li title="download link"><a href="https://sentigrade.fiit.stuba.sk/data">⬇️</a></li></ul></td></tr>
+<tr><td><a href="https://www.clarin.si/repository/xmlui/handle/11356/1054">Twitter sentiment for 15 European languages</a></td><td></td><td>sentiment</td><td><ul><li title="sentiment">😄</li></ul></td><td><span title="Albanian">🇦🇱</span> <span title="Bosnian">🇧🇦</span> <span title="Bulgarian">🇧🇬</span> <span title="Croatian">🇭🇷</span> <span title="Hungarian">🇭🇺</span> <span title="Polish">🇵🇱</span> <span title="Russian">🇷🇺</span> <span title="Serbian">🇷🇸</span> <span title="Slovakian/Slovak">🇸🇰</span> <span title="Slovenian">🇸🇮</span> </td><td><ul><li title="url"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1054">🌐</a></li><li title="paper"><a href="https://arxiv.org/abs/1602.07563">📄</a></li><li title="citation"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1054">❞</a></li><li title="download link"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1054">⬇️</a></li></ul></td></tr>
+<tr><td id="slovakian/slovak-category"><a href="https://nlp.kemt.fei.tuke.sk/language/categorizednews">Slovak Categorized News Corpus</a></td><td></td><td>POS, NER, category</td><td><ul><li title="category">📰</li></ul></td><td><span title="Slovakian/Slovak">🇸🇰</span> </td><td><ul><li title="url"><a href="https://nlp.kemt.fei.tuke.sk/language/categorizednews">🌐</a></li><li title="paper"><a href="https://aclanthology.org/L14-1517/">📄</a></li><li title="citation"><a href="https://aclanthology.org/L14-1517/">❞</a></li><li title="download link"><a href="https://nlp.kemt.fei.tuke.sk/language/categorizednews">⬇️</a></li></ul></td></tr>
+<tr><td id="slovakian/slovak-other"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1043">MULTEXT-East "1984" annotated corpus 4.0</a></td><td></td><td>POS</td><td><ul><li title="other">🦦</li></ul></td><td><span title="Bulgarian">🇧🇬</span> <span title="Czech">🇨🇿</span> <span title="Estonian">🇪🇪</span> <span title="Hungarian">🇭🇺</span> <span title="Macedonian">🇲🇰</span> <span title="Polish">🇵🇱</span> <span title="Romanian">🇷🇴</span> <span title="Serbian">🇷🇸</span> <span title="Slovakian/Slovak">🇸🇰</span> <span title="Slovenian">🇸🇮</span> </td><td><ul><li title="url"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1043">🌐</a></li><li title="paper"><a href="http://nl.ijs.si/ME/Vault/V4/doc/bib/mte-lrec2004.pdf">📄</a></li><li title="download link"><a href="https://www.clarin.si/repository/xmlui/bitstream/handle/11356/1043/MTE1984-ana.zip?sequence=3&isAllowed=y">⬇️</a></li></ul></td></tr>
+<tr><td><a href="https://github.com/UniversalDependencies/UD_Slovak-SNK/blob/master/README.md">Slovak UD treebank</a></td><td></td><td>POS</td><td><ul><li title="other">🦦</li></ul></td><td><span title="Slovakian/Slovak">🇸🇰</span> </td><td><ul><li title="url"><a href="https://github.com/UniversalDependencies/UD_Slovak-SNK/blob/master/README.md">🌐</a></li><li title="citation"><a href="https://lindat.mff.cuni.cz/repository/xmlui/handle/11234/1-1822">❞</a></li><li title="download link"><a href="https://github.com/UniversalDependencies/UD_Slovak-SNK">⬇️</a></li></ul></td></tr>
+<tr><td><a href="https://korpus.sk/WordNet_en.html">Slovak Wordnet</a></td><td></td><td>wordnet</td><td><ul><li title="other">🦦</li></ul></td><td><span title="Slovakian/Slovak">🇸🇰</span> </td><td><ul><li title="url"><a href="https://korpus.sk/WordNet_en.html">🌐</a></li><li title="download link"><a href="https://korpus.sk/WordNet_en.html">⬇️</a></li></ul></td></tr>
+<tr><td><a href="http://lojze.lugos.si/darja/research/slownet/">sloWNet</a></td><td></td><td>wordnet</td><td><ul><li title="other">🦦</li></ul></td><td><span title="Slovakian/Slovak">🇸🇰</span> </td><td><ul><li title="url"><a href="http://lojze.lugos.si/darja/research/slownet/">🌐</a></li><li title="paper"><a href="https://link.springer.com/article/10.1007/s10579-015-9295-6">📄</a></li><li title="citation"><a href="https://link.springer.com/article/10.1007/s10579-015-9295-6">❞</a></li><li title="download link"><a href="http://hdl.handle.net/11356/1026">⬇️</a></li></ul></td></tr>
+</tbody></table>
+
+## 🇸🇮 Slovenian
+
+<table width="100%"><thead><tr><th width="66%">name</th><th width="33%">description</th><th>task</th><th>category</th><th>languages</th><th>links</th></tr></thead><tbody><tr><td id="slovenian-sentiment"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1285">SentiCoref</a></td><td></td><td>NER + coref + sentiment</td><td><ul><li title="sentiment">😄</li></ul></td><td><span title="Slovenian">🇸🇮</span> </td><td><ul><li title="url"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1285">🌐</a></li><li title="download link"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1285">⬇️</a></li></ul></td></tr>
+<tr><td><a href="https://github.com/19Joey85/Sentiment-annotated-news-corpus-and-sentiment-lexicon-in-Slovene">SentiNews 1.0</a></td><td></td><td>sentiment analysis</td><td><ul><li title="sentiment">😄</li></ul></td><td><span title="Slovenian">🇸🇮</span> </td><td><ul><li title="url"><a href="https://github.com/19Joey85/Sentiment-annotated-news-corpus-and-sentiment-lexicon-in-Slovene">🌐</a></li><li title="paper"><a href="https://www.researchgate.net/publication/322961832_Annotated_news_corpora_and_a_lexicon_for_sentiment_analysis_in_Slovene">📄</a></li><li title="citation"><a href="https://www.researchgate.net/publication/322961832_Annotated_news_corpora_and_a_lexicon_for_sentiment_analysis_in_Slovene">❞</a></li><li title="download link"><a href="https://github.com/19Joey85/Sentiment-annotated-news-corpus-and-sentiment-lexicon-in-Slovene">⬇️</a></li></ul></td></tr>
+<tr><td><a href="https://www.clarin.si/repository/xmlui/handle/11356/1054">Twitter sentiment for 15 European languages</a></td><td></td><td>sentiment</td><td><ul><li title="sentiment">😄</li></ul></td><td><span title="Albanian">🇦🇱</span> <span title="Bosnian">🇧🇦</span> <span title="Bulgarian">🇧🇬</span> <span title="Croatian">🇭🇷</span> <span title="Hungarian">🇭🇺</span> <span title="Polish">🇵🇱</span> <span title="Russian">🇷🇺</span> <span title="Serbian">🇷🇸</span> <span title="Slovakian/Slovak">🇸🇰</span> <span title="Slovenian">🇸🇮</span> </td><td><ul><li title="url"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1054">🌐</a></li><li title="paper"><a href="https://arxiv.org/abs/1602.07563">📄</a></li><li title="citation"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1054">❞</a></li><li title="download link"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1054">⬇️</a></li></ul></td></tr>
+<tr><td id="slovenian-wsd"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1380">Slovene translation of SuperGLUE</a></td><td></td><td>multiple semantic tasks</td><td><ul><li title="wsd">🐁🖱</li></ul></td><td><span title="Slovenian">🇸🇮</span> </td><td><ul><li title="url"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1380">🌐</a></li><li title="download link"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1380">⬇️</a></li></ul></td></tr>
+<tr><td><a href="https://sapienzanlp.github.io/xl-wsd/">XL-WSD</a></td><td></td><td>WSD</td><td><ul><li title="wsd">🐁🖱</li></ul></td><td><span title="Bulgarian">🇧🇬</span> <span title="Croatian">🇭🇷</span> <span title="Estonian">🇪🇪</span> <span title="Hungarian">🇭🇺</span> <span title="Slovenian">🇸🇮</span> </td><td><ul><li title="url"><a href="https://sapienzanlp.github.io/xl-wsd/">🌐</a></li><li title="paper"><a href="https://sapienzanlp.github.io/xl-wsd/assets/paper/xl-wsd-aaai2021.pdf">📄</a></li><li title="citation"><a href="https://sapienzanlp.github.io/xl-wsd/#cite">❞</a></li><li title="download link"><a href="https://drive.google.com/file/d/19YTL-Uq95hjiFZfgwEpXRgcYGCR_PQY0/view?usp=sharing">⬇️</a></li></ul></td></tr>
+<tr><td id="slovenian-other"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1433">FRENK</a></td><td></td><td>offensive comments</td><td><ul><li title="other">🦦</li></ul></td><td><span title="Croatian">🇭🇷</span> <span title="Slovenian">🇸🇮</span> </td><td><ul><li title="url"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1433">🌐</a></li><li title="paper"><a href="https://arxiv.org/pdf/1906.02045.pdf">📄</a></li><li title="citation"><a href="https://arxiv.org/pdf/1906.02045.pdf">❞</a></li><li title="download link"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1433">⬇️</a></li></ul></td></tr>
+<tr><td><a href="https://www.clarin.si/repository/xmlui/handle/11356/1043">MULTEXT-East "1984" annotated corpus 4.0</a></td><td></td><td>POS</td><td><ul><li title="other">🦦</li></ul></td><td><span title="Bulgarian">🇧🇬</span> <span title="Czech">🇨🇿</span> <span title="Estonian">🇪🇪</span> <span title="Hungarian">🇭🇺</span> <span title="Macedonian">🇲🇰</span> <span title="Polish">🇵🇱</span> <span title="Romanian">🇷🇴</span> <span title="Serbian">🇷🇸</span> <span title="Slovakian/Slovak">🇸🇰</span> <span title="Slovenian">🇸🇮</span> </td><td><ul><li title="url"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1043">🌐</a></li><li title="paper"><a href="http://nl.ijs.si/ME/Vault/V4/doc/bib/mte-lrec2004.pdf">📄</a></li><li title="download link"><a href="https://www.clarin.si/repository/xmlui/bitstream/handle/11356/1043/MTE1984-ana.zip?sequence=3&isAllowed=y">⬇️</a></li></ul></td></tr>
+<tr><td><a href="https://www.clarin.si/repository/xmlui/handle/11356/1213">jos1M 1.2</a></td><td></td><td>morphosyntactic tagging and lemmatisation</td><td><ul><li title="other">🦦</li></ul></td><td><span title="Slovenian">🇸🇮</span> </td><td><ul><li title="url"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1213">🌐</a></li><li title="paper"><a href="http://www.lrec-conf.org/proceedings/lrec2010/pdf/139_Paper.pdf">📄</a></li><li title="citation"><a href="http://www.lrec-conf.org/proceedings/lrec2010/summaries/139.html">❞</a></li><li title="download link"><a href="https://www.clarin.si/repository/xmlui/bitstream/handle/11356/1213/jos1M-en.TEI.zip?sequence=1&isAllowed=y">⬇️</a></li></ul></td></tr>
+</tbody></table>
+
+## 🇺🇦 Ukrainian
+
+<table width="100%"><thead><tr><th width="66%">name</th><th width="33%">description</th><th>task</th><th>category</th><th>languages</th><th>links</th></tr></thead><tbody><tr><td id="ukrainian-ner"><a href="https://github.com/nazarii-piontko/ner-ua">NER for ukrainian language</a></td><td></td><td>NER</td><td><ul><li title="ner">📛</li></ul></td><td><span title="Ukrainian">🇺🇦</span> </td><td><ul><li title="url"><a href="https://github.com/nazarii-piontko/ner-ua">🌐</a></li><li title="download link"><a href="https://github.com/nazarii-piontko/ner-ua">⬇️</a></li></ul></td></tr>
+<tr><td><a href="https://lang.org.ua/en/corpora/#anchor1">Ukrainian NER</a></td><td></td><td>NER</td><td><ul><li title="ner">📛</li></ul></td><td><span title="Ukrainian">🇺🇦</span> </td><td><ul><li title="url"><a href="https://lang.org.ua/en/corpora/#anchor1">🌐</a></li><li title="download link"><a href="https://lang.org.ua/en/corpora/#anchor1">⬇️</a></li></ul></td></tr>
+</tbody></table>

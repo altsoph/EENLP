@@ -1,4 +1,4 @@
-# Models x Languages Matrix
+# Models
 
 <table>
     <thead>

@@ -81,6 +81,9 @@
     },
     "comments": {
       "type": "string"
+    },
+    "huggingface": {
+      "type": "string"
     }
   },
   "required": [
