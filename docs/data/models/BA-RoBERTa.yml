@@ -1,0 +1,12 @@
+name: BA-RoBERTa
+description: ''
+category: single-language
+languages:
+  - Bosnian
+type: RoBERTa
+huggingface: https://huggingface.co/macedonizer/ba-roberta-base
+paper: '?'
+citation: '?'
+cased: cased
+pre-trained on: ''
+comments: ''

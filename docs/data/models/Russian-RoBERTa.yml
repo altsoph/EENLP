@@ -1,0 +1,12 @@
+name: Russian RoBERTa
+description: ''
+category: single-language
+languages:
+  - Russian
+type: RoBERTa
+huggingface: https://huggingface.co/blinoff/roberta-base-russian-v0
+paper: ''
+citation: ''
+cased: ''
+pre-trained on: ''
+comments: ''

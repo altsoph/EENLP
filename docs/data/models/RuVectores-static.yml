@@ -1,0 +1,12 @@
+name: RuVectores static
+description: ''
+category: other
+languages:
+  - Russian
+type: static word embeddings
+huggingface: https://rusvectores.org/en/models/
+paper: ''
+citation: ''
+cased: ''
+pre-trained on: ''
+comments: ''

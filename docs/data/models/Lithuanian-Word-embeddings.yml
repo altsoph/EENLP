@@ -1,0 +1,12 @@
+name: Lithuanian Word embeddings
+description: ''
+category: other
+languages:
+  - Lithuanian
+type: static word embeddings
+huggingface: https://clarin.vdu.lt/xmlui/handle/20.500.11821/26
+paper: ''
+citation: ''
+cased: ''
+pre-trained on: Delfi.lt + StanfordNLP
+comments: GloVe

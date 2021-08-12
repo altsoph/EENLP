@@ -1,0 +1,12 @@
+name: Romanian GPT2
+description: ''
+category: other
+languages:
+  - Romanian
+type: GPT2
+huggingface: https://huggingface.co/mihaitensor/romanian-gpt2
+paper: ''
+citation: ''
+cased: ''
+pre-trained on: ''
+comments: ''

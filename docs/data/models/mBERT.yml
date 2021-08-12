@@ -1,0 +1,34 @@
+name: mBERT
+description: ''
+category: multilingual-global
+languages:
+  - Albanian
+  - Armenian
+  - Belarusian
+  - Bosnian
+  - Bulgarian
+  - Croatian
+  - Czech
+  - Estonian
+  - Georgian
+  - Hungarian
+  - Kazakh
+  - Latvian
+  - Lithuanian
+  - Macedonian
+  - Moldovan/Moldovian
+  - Montenegrin
+  - Polish
+  - Romanian
+  - Russian
+  - Serbian
+  - Slovakian/Slovak
+  - Slovenian
+  - Ukrainian
+type: BERT
+huggingface: https://huggingface.co/bert-base-multilingual-cased
+paper: https://arxiv.org/abs/1810.04805
+citation: https://arxiv.org/abs/1810.04805
+cased: both
+pre-trained on: multilingual, wiki
+comments: ''

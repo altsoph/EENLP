@@ -1,0 +1,12 @@
+name: HerBERT
+description: ''
+category: single-language
+languages:
+  - Polish
+type: BERT
+huggingface: https://huggingface.co/allegro/herbert-base-cased
+paper: https://aclanthology.org/2021.bsnlp-1.1/
+citation: https://aclanthology.org/2021.bsnlp-1.1/
+cased: cased
+pre-trained on: '?'
+comments: ''

@@ -1,0 +1,15 @@
+name: SlavicBERT
+description: ''
+category: multilingual-local
+languages:
+  - Bulgarian
+  - Czech
+  - Polish
+  - Russian
+type: BERT
+huggingface: https://huggingface.co/DeepPavlov/bert-base-bg-cs-pl-ru-cased
+paper: https://aclanthology.org/W19-3712/
+citation: https://aclanthology.org/W19-3712/
+cased: cased
+pre-trained on: news + wiki
+comments: ''

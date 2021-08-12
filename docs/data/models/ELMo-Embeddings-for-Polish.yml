@@ -1,0 +1,12 @@
+name: ELMo Embeddings for Polish
+description: ''
+category: other
+languages:
+  - Polish
+type: ELMo
+huggingface: https://clarin-pl.eu/dspace/handle/11321/690
+paper: ''
+citation: ''
+cased: ''
+pre-trained on: KGR10
+comments: ''

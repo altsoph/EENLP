@@ -1,0 +1,12 @@
+name: RoBERTa-base-bulgarian
+description: ''
+category: single-language
+languages:
+  - Bulgarian
+type: RoBERTa
+huggingface: https://huggingface.co/iarfmoose/roberta-base-bulgarian
+paper: '?'
+citation: '?'
+cased: '?'
+pre-trained on: news + wiki + oscar
+comments: smaller version https://huggingface.co/iarfmoose/roberta-small-bulgarian

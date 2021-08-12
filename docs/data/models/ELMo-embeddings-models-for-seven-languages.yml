@@ -1,0 +1,16 @@
+name: ELMo embeddings models for seven languages
+description: ''
+category: other
+languages:
+  - Croatian
+  - Estonian
+  - Latvian
+  - Lithuanian
+  - Slovenian
+type: ELMo
+huggingface: --
+paper: https://arxiv.org/abs/1911.10049
+citation: https://arxiv.org/abs/1911.10049
+cased: '?'
+pre-trained on: some local corpora
+comments: more details https://www.clarin.si/repository/xmlui/handle/11356/1277

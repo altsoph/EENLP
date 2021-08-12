@@ -1,0 +1,12 @@
+name: CZERT
+description: ''
+category: single-language
+languages:
+  - Czech
+type: BERT
+huggingface: --
+paper: https://arxiv.org/abs/2103.13031
+citation: https://github.com/kiv-air/Czert#how-should-i-cite-czert
+cased: ''
+pre-trained on: '?'
+comments: 'github: https://github.com/kiv-air/Czert'

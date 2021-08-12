@@ -1,0 +1,12 @@
+name: papuGaPT2
+description: ''
+category: other
+languages:
+  - Polish
+type: GPT2
+huggingface: https://huggingface.co/flax-community/papuGaPT2?text=Najsmaczniejszy+polski+owoc+to
+paper: ''
+citation: ''
+cased: ''
+pre-trained on: ''
+comments: ''

@@ -1,0 +1,12 @@
+name: RuBERT
+description: ''
+category: single-language
+languages:
+  - Russian
+type: BERT
+huggingface: https://huggingface.co/DeepPavlov/rubert-base-cased
+paper: https://arxiv.org/abs/1905.07213
+citation: https://arxiv.org/abs/1905.07213
+cased: cased
+pre-trained on: '?'
+comments: 'also: https://huggingface.co/DeepPavlov/rubert-base-cased-sentence'

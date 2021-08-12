@@ -1,0 +1,12 @@
+name: Word Embeddings for the Armenian Language
+description: ''
+category: other
+languages:
+  - Armenian
+type: static word embeddings
+huggingface: https://github.com/ispras-texterra/word-embeddings-eval-hy
+paper: ''
+citation: ''
+cased: ''
+pre-trained on: ''
+comments: ''

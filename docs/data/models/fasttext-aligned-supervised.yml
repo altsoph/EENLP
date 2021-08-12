@@ -1,0 +1,22 @@
+name: fasttext aligned supervised
+description: ''
+category: other
+languages:
+  - Bulgarian
+  - Croatian
+  - Estonian
+  - Hungarian
+  - Macedonian
+  - Polish
+  - Romanian
+  - Russian
+  - Slovakian/Slovak
+  - Slovenian
+  - Ukrainian
+type: static word embeddings
+huggingface: https://github.com/facebookresearch/MUSE#multilingual-word-embeddings
+paper: ''
+citation: https://github.com/facebookresearch/MUSE#word-translation-without-parallel-data
+cased: ''
+pre-trained on: wiki
+comments: original fasttext aligned supervised

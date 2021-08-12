@@ -1,0 +1,12 @@
+name: huBERT
+description: ''
+category: single-language
+languages:
+  - Hungarian
+type: BERT
+huggingface: https://huggingface.co/SZTAKI-HLT/hubert-base-cc
+paper: https://hlt.bme.hu/media/pdf/huBERT.pdf
+citation: https://huggingface.co/SZTAKI-HLT/hubert-base-cc#bibtex-entry-and-citation-info
+cased: cased
+pre-trained on: common crawl + wiki
+comments: ''
