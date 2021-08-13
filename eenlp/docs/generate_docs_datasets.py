@@ -3,31 +3,7 @@ import pandas as pd
 import yaml
 from pyprojroot import here
 
-languages = [
-    "Albanian",
-    "Armenian",
-    "Belarusian",
-    "Bosnian",
-    "Bulgarian",
-    "Croatian",
-    "Czech",
-    "Estonian",
-    "Georgian",
-    "Hungarian",
-    "Kazakh",
-    "Latvian",
-    "Lithuanian",
-    "Macedonian",
-    "Moldovan/Moldovian",
-    "Montenegrin",
-    "Polish",
-    "Romanian",
-    "Russian",
-    "Serbian",
-    "Slovakian/Slovak",
-    "Slovenian",
-    "Ukrainian",
-]
+from eenlp.docs.generate_docs_models import languages
 
 categories = [
     "ner",
@@ -56,32 +32,6 @@ columns = [
     "links",
 ]
 
-flags = {
-    "Albanian": "🇦🇱",
-    "Armenian": "🇦🇲",
-    "Belarusian": "🇧🇾",
-    "Bosnian": "🇧🇦",
-    "Bulgarian": "🇧🇬",
-    "Croatian": "🇭🇷",
-    "Czech": "🇨🇿",
-    "Estonian": "🇪🇪",
-    "Georgian": "🇬🇪",
-    "Hungarian": "🇭🇺",
-    "Kazakh": "🇰🇿",
-    "Latvian": "🇱🇻",
-    "Lithuanian": "🇱🇹",
-    "Macedonian": "🇲🇰",
-    "Moldovan/Moldovian": "🇲🇩",
-    "Montenegrin": "🇲🇪",
-    "Polish": "🇵🇱",
-    "Romanian": "🇷🇴",
-    "Russian": "🇷🇺",
-    "Serbian": "🇷🇸",
-    "Slovakian/Slovak": "🇸🇰",
-    "Slovenian": "🇸🇮",
-    "Ukrainian": "🇺🇦",
-}
-
 category_icons = {
     "ner": "📛",
     "sentiment": "😄",
@@ -100,15 +50,18 @@ if __name__ == "__main__":
     df = df.explode("category").explode("languages")
 
     with open(here("docs/datasets.md"), "w") as f:
-        f.write("# Datasets x Languages Matrix\n\n")
+        f.write("# Datasets\n\n")
 
         f.write(
             "| | NER<br>(named-entity recognition) | sentiment analysis | paraphrase detection | WSD<br>(word-sense disambiguation) | category prediction |\n"
         )
         f.write("| - | :-: | :-: | :-: | :-: | :-: |\n")
         for i, language in enumerate(languages):
+            emoji_name = language["emoji_name"]
+            language = language["name"]
+
             f.write(
-                f"| **[{flags[language]}&nbsp;{language}](#-{language.lower().replace('/', '')})** |"
+                f"| **[:{emoji_name}:&nbsp;{language}](#{emoji_name}-{language.lower().replace('/', '')})** |"
             )
             for category in categories:
                 if category == "other":
@@ -121,8 +74,10 @@ if __name__ == "__main__":
         f.write("\n")
 
         for language in languages:
-            # lang_stuff = pycountry.countries.search_fuzzy(language)
-            f.write(f"## {flags[language]} {language}\n\n")
+            emoji_name = language["emoji_name"]
+            language = language["name"]
+
+            f.write(f"## :{emoji_name}: {language}\n\n")
 
             f.write(
                 f'<table width="100%"><thead><tr>'
@@ -130,13 +85,11 @@ if __name__ == "__main__":
                 f'<th width="33%">description</th>'
                 f"<th>task</th>"
                 f"<th>category</th>"
-                f'<th>languages</th>'
+                f"<th>languages</th>"
                 f"<th>links</th>"
                 f"</tr></thead><tbody>"
             )
             for category in categories:
-                # f.write(f"### {category_captions[category]}\n\n")
-                # f.write(f"| {' | '.join(columns)} |\n|{'-|' * len(columns)}\n")
                 dff = df[
                     (df["languages"] == language) & (df["category"] == category)
                 ].sort_values("name")
@@ -157,7 +110,9 @@ if __name__ == "__main__":
                             for x in sorted(
                                 df[(df["name"] == row["name"])]["languages"].unique()
                             ):
-                                f.write(f'<span title="{x}">{flags[x]}</span> ')
+                                f.write(
+                                    f'<span title="{x}">:{next(y["emoji_name"] for y in languages if y["name"] == x)}:</span> '
+                                )
                             f.write("</td>")
                         elif column == "links":
                             f.write("<td><ul>")

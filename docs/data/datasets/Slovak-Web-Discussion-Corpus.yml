@@ -3,7 +3,7 @@ description: ''
 category:
   - ner
 languages:
-  - Slovakian/Slovak
+  - Slovakian
 task: NER, category, spelling
 URL: https://nlp.kemt.fei.tuke.sk/language/webdiscussion
 license: '?'

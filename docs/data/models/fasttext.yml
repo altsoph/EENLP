@@ -16,13 +16,13 @@ languages:
   - Latvian
   - Lithuanian
   - Macedonian
-  - Moldovan/Moldovian
+  - Moldovan
   - Montenegrin
   - Polish
   - Romanian
   - Russian
   - Serbian
-  - Slovakian/Slovak
+  - Slovakian
   - Slovenian
   - Ukrainian
 type: static word embeddings

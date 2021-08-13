@@ -3,7 +3,7 @@ description: ''
 category:
   - category
 languages:
-  - Moldovan/Moldovian
+  - Moldovan
   - Romanian
 task: multiple classification tasks
 URL: https://github.com/butnaruandrei/MOROCO

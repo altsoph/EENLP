@@ -3,7 +3,7 @@ description: ''
 category:
   - sentiment
 languages:
-  - Slovakian/Slovak
+  - Slovakian
 task: sentiment
 URL: https://sentigrade.fiit.stuba.sk/data
 license: '?'

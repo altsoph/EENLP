@@ -1,5 +1,7 @@
 # Dataset Categories
 
+// TODO delete this page
+
 The content of this repo as of now focuses on a subset of sequence classification tasks (and a fixed set of Eastern
 European languages). This may change in the future.
 

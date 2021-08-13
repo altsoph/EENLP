@@ -18,7 +18,7 @@ languages:
   - Romanian
   - Russian
   - Serbian
-  - Slovakian/Slovak
+  - Slovakian
   - Slovenian
   - Ukrainian
 type: static word embeddings

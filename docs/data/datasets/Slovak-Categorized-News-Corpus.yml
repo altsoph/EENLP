@@ -4,7 +4,7 @@ category:
   - category
   - ner
 languages:
-  - Slovakian/Slovak
+  - Slovakian
 task: POS, NER, category
 URL: https://nlp.kemt.fei.tuke.sk/language/categorizednews
 license: '?'
