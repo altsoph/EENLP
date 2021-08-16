@@ -1,10 +1,10 @@
 name: mokoron
 description: ''
-category:
-  - sentiment
 languages:
   - Russian
 task: sentiment
+tasks:
+  - sentiment-analysis
 URL: http://study.mokoron.com/
 license: '?'
 paper: '?'

@@ -1,10 +1,10 @@
 name: Sentigrade sentiment dataset
 description: ''
-category:
-  - sentiment
 languages:
   - Slovakian
 task: sentiment
+tasks:
+  - sentiment-analysis
 URL: https://sentigrade.fiit.stuba.sk/data
 license: '?'
 paper: '?'

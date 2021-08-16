@@ -1,7 +1,5 @@
 name: XL-WSD
 description: ''
-category:
-  - wsd
 languages:
   - Bulgarian
   - Croatian
@@ -9,6 +7,8 @@ languages:
   - Hungarian
   - Slovenian
 task: WSD
+tasks:
+  - word-sense-disambiguation
 URL: https://sapienzanlp.github.io/xl-wsd/
 license: https://sapienzanlp.github.io/xl-wsd/license/
 paper: https://sapienzanlp.github.io/xl-wsd/assets/paper/xl-wsd-aaai2021.pdf

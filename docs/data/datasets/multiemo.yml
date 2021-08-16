@@ -1,11 +1,11 @@
 name: MultiEmo
 description: ''
-category:
-  - sentiment
 languages:
   - Polish
   - Russian
 task: sentiment
+tasks:
+  - sentiment-analysis
 URL: https://github.com/CLARIN-PL/multiemo
 license: MIT
 paper: '?'

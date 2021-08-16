@@ -1,10 +1,10 @@
 name: FicTree
 description: ''
-category:
-  - other
 languages:
   - Czech
 task: POS
+tasks:
+  - part-of-speech-tagging
 URL: https://github.com/UniversalDependencies/UD_Czech-FicTree/blob/master/README.md
 license: CC BY-NC-SA 4.0
 paper: http://ceur-ws.org/Vol-1885/181.pdf

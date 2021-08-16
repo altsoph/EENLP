@@ -1,10 +1,10 @@
 name: huWSDdata
 description: ''
-category:
-  - wsd
 languages:
   - Hungarian
 task: WSD
+tasks:
+  - word-sense-disambiguation
 URL: https://github.com/begab/huWSDdata
 license: '?'
 paper: http://www.inf.u-szeged.hu/~berendg/docs/publ/mszny_wsd.pdf

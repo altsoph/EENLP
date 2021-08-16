@@ -1,10 +1,10 @@
 name: ReLDI-NormTagNER-sr
 description: ''
-category:
-  - ner
 languages:
   - Serbian
 task: NER
+tasks:
+  - named-entity-recognition-ner
 URL: https://www.clarin.si/repository/xmlui/handle/11356/1240
 license: CC-BY-SA 4.0
 paper: https://revije.ff.uni-lj.si/slovenscina2/article/view/7007

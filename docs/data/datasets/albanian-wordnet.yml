@@ -1,10 +1,10 @@
 name: Albanian wordnet
 description: ''
-category:
-  - other
 languages:
   - Albanian
 task: wordnet
+tasks:
+  - wordnet
 URL: http://shachi.org/resources/4040
 license: GPL
 paper: '?'

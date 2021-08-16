@@ -1,10 +1,10 @@
 name: Armenian Paraphrase Detection Corpus
 description: ''
-category:
-  - paraphrase
 languages:
   - Armenian
 task: paraphrase detection
+tasks:
+  - paraphrase-identification
 URL: https://github.com/ivannikov-lab/arpa-paraphrase-corpus
 license: Apache-2.0
 paper: https://arxiv.org/abs/2009.12615

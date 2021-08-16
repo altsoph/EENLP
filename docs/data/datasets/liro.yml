@@ -1,11 +1,12 @@
 name: LiRo
 description: ''
-category:
-  - ner
-  - sentiment
 languages:
   - Romanian
 task: multiple semantic tasks
+tasks:
+  - multiple semantic tasks
+  - named-entity-recognition-ner
+  - sentiment-analysis
 URL: https://lirobenchmark.github.io/
 license: multiple
 paper: https://openreview.net/forum?id=JH61CD7afTv

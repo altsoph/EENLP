@@ -1,10 +1,10 @@
 name: RuSentiment
 description: ''
-category:
-  - sentiment
 languages:
   - Russian
 task: sentiment
+tasks:
+  - sentiment-analysis
 URL: https://text-machine.cs.uml.edu/projects/rusentiment/
 license: '?'
 paper: '?'

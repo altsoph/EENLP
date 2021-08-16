@@ -1,10 +1,10 @@
 name: XNLI
 description: ''
-category:
-  - other
 languages:
   - Russian
 task: NLI
+tasks:
+  - NLI
 URL: https://github.com/facebookresearch/XNLI
 license: '?'
 paper: '?'

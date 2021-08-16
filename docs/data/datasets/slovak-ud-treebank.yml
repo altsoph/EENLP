@@ -1,10 +1,10 @@
 name: Slovak UD treebank
 description: ''
-category:
-  - other
 languages:
   - Slovakian
 task: POS
+tasks:
+  - part-of-speech-tagging
 URL: https://github.com/UniversalDependencies/UD_Slovak-SNK/blob/master/README.md
 license: CC BY-SA 4.0
 paper: '?'

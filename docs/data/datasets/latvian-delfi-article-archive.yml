@@ -1,11 +1,11 @@
 name: Latvian Delfi article archive
 description: ''
-category:
-  - category
 languages:
   - Latvian
   - Russian
 task: category prediction
+tasks:
+  - text-classification
 URL: https://www.clarin.si/repository/xmlui/handle/11356/1409
 license: '?'
 paper: '?'

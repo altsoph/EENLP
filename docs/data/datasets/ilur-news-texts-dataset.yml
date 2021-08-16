@@ -1,10 +1,10 @@
 name: iLur News Texts Dataset
 description: ''
-category:
-  - category
 languages:
   - Armenian
 task: category prediction
+tasks:
+  - text-classification
 URL: https://github.com/ispras-texterra/word-embeddings-eval-hy/tree/master/ilur-news-corpus
 license: ''
 paper: https://arxiv.org/abs/1906.03134

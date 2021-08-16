@@ -1,10 +1,11 @@
 name: The Hungarian forum corpus for Opinion Mining
 description: ''
-category:
-  - sentiment
 languages:
   - Hungarian
 task: opinion mining
+tasks:
+  - opinion mining
+  - sentiment-analysis
 URL: https://rgai.inf.u-szeged.hu/node/165
 license: '?'
 paper: http://www.inf.u-szeged.hu/~rfarkas/dmiipOM.pdf

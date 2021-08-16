@@ -1,10 +1,10 @@
 name: Ukrainian NER
 description: ''
-category:
-  - ner
 languages:
   - Ukrainian
 task: NER
+tasks:
+  - named-entity-recognition-ner
 URL: https://lang.org.ua/en/corpora/#anchor1
 license: CC-BY-SA 4.0
 paper: '?'

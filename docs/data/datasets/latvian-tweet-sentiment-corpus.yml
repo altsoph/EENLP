@@ -1,10 +1,10 @@
 name: latvian-tweet-sentiment-corpus
 description: ''
-category:
-  - sentiment
 languages:
   - Latvian
 task: sentiment
+tasks:
+  - sentiment-analysis
 URL: https://github.com/FnTm/latvian-tweet-sentiment-corpus
 license: MIT
 paper: '?'

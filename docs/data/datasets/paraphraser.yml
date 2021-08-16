@@ -1,10 +1,10 @@
 name: Paraphraser
 description: ''
-category:
-  - paraphrase
 languages:
   - Russian
 task: paraphrase detection
+tasks:
+  - paraphrase-identification
 URL: http://paraphraser.ru/
 license: '?'
 paper: '?'

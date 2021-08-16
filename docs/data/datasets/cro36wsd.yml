@@ -1,10 +1,10 @@
 name: Cro36WSD
 description: ''
-category:
-  - wsd
 languages:
   - Croatian
 task: WSD
+tasks:
+  - word-sense-disambiguation
 URL: https://takelab.fer.hr/data/cro36wsd/
 license: '?'
 paper: https://aclanthology.org/L16-1267.pdf

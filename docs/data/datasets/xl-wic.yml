@@ -1,12 +1,12 @@
 name: XL-WiC
 description: ''
-category:
-  - wsd
 languages:
   - Bulgarian
   - Croatian
   - Estonian
 task: WSD
+tasks:
+  - word-sense-disambiguation
 URL: https://pilehvar.github.io/xlwic/
 license: CC-BY-NC 4.0
 paper: https://arxiv.org/abs/2010.06478

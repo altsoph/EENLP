@@ -1,10 +1,10 @@
 name: SaRoCo
 description: ''
-category:
-  - other
 languages:
   - Romanian
 task: fake news
+tasks:
+  - fake news
 URL: https://github.com/MihaelaGaman/SaRoCo
 license: https://github.com/MihaelaGaman/SaRoCo/blob/master/LICENSE
 paper: https://arxiv.org/abs/2105.06456

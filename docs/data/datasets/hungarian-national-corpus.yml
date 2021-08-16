@@ -1,10 +1,10 @@
 name: Hungarian National Corpus
 description: ''
-category:
-  - other
 languages:
   - Hungarian
 task: automatically tagged corpus
+tasks:
+  - automatically tagged corpus
 URL: http://mnsz.nytud.hu/index_eng.html
 license: ''
 paper: http://www.lrec-conf.org/proceedings/lrec2014/pdf/681_Paper.pdf

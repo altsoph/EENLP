@@ -1,10 +1,10 @@
 name: pioNER
 description: ''
-category:
-  - ner
 languages:
   - Armenian
 task: NER
+tasks:
+  - named-entity-recognition-ner
 URL: https://github.com/ispras-texterra/pioner
 license: '?'
 paper: '?'

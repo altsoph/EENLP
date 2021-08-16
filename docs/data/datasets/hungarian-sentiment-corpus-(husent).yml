@@ -1,10 +1,10 @@
 name: Hungarian sentiment corpus (HuSent)
 description: ''
-category:
-  - sentiment
 languages:
   - Hungarian
 task: sentiment
+tasks:
+  - sentiment-analysis
 URL: https://rgai.inf.u-szeged.hu/node/363
 license: '-'
 paper: https://aclanthology.org/L16-1459/

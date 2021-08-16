@@ -1,10 +1,10 @@
 name: MAZSOLA
 description: ''
-category:
-  - other
 languages:
   - Hungarian
 task: syntactic tagging
+tasks:
+  - syntactic tagging
 URL: http://corpus.nytud.hu/isz/
 license: '?'
 paper: http://www.nytud.hu/oszt/korpusz/resources/sb_isz.pdf

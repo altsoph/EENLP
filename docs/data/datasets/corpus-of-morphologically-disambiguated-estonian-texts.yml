@@ -1,10 +1,10 @@
 name: Corpus of morphologically disambiguated Estonian texts
 description: ''
-category:
-  - other
 languages:
   - Estonian
 task: morphologic analysis
+tasks:
+  - morphologic analysis
 URL: https://metashare.ut.ee/repository/browse/corpus-of-morphologically-disambiguated-estonian-texts/4b43d8f8463411e2a6e4005056b40024fb0e855467c443a3840a72e0cfd381e4/
 license: CLARIN ACA - NC
 paper: '?'

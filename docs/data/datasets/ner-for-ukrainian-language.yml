@@ -1,10 +1,10 @@
 name: NER for ukrainian language
 description: ''
-category:
-  - ner
 languages:
   - Ukrainian
 task: NER
+tasks:
+  - named-entity-recognition-ner
 URL: https://github.com/nazarii-piontko/ner-ua
 license: '?'
 paper: '?'

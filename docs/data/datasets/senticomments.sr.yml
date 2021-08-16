@@ -1,10 +1,10 @@
 name: SentiComments.SR
 description: ''
-category:
-  - sentiment
 languages:
   - Serbian
 task: sentiment
+tasks:
+  - sentiment-analysis
 URL: https://github.com/vukbatanovic/SentiComments.SR
 license: CC BY-NC-SA 4.0
 paper: https://github.com/vukbatanovic/SentiComments.SR#references

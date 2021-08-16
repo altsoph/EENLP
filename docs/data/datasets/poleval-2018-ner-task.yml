@@ -1,10 +1,10 @@
 name: PolEval 2018 NER task
 description: ''
-category:
-  - ner
 languages:
   - Polish
 task: NER
+tasks:
+  - named-entity-recognition-ner
 URL: https://gonito.net/challenge/poleval-2018-ner
 license: '?'
 paper: '?'

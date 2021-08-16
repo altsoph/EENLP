@@ -1,10 +1,11 @@
 name: Slovene translation of SuperGLUE
 description: ''
-category:
-  - wsd
 languages:
   - Slovenian
 task: multiple semantic tasks
+tasks:
+  - multiple semantic tasks
+  - word-sense-disambiguation
 URL: https://www.clarin.si/repository/xmlui/handle/11356/1380
 license: CC-BY-4.0
 paper: '?'

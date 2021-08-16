@@ -1,13 +1,13 @@
 name: BSNLP
 description: ''
-category:
-  - ner
 languages:
   - Bulgarian
   - Czech
   - Polish
   - Russian
 task: NER
+tasks:
+  - named-entity-recognition-ner
 URL: http://bsnlp.cs.helsinki.fi/bsnlp-2019/shared_task.html
 license: '?'
 paper: '?'

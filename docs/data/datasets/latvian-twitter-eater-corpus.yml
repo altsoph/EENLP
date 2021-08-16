@@ -1,10 +1,11 @@
 name: Latvian Twitter Eater Corpus
 description: ''
-category:
-  - sentiment
 languages:
   - Latvian
 task: sentiment + some more
+tasks:
+  - sentiment + some more
+  - sentiment-analysis
 URL: https://github.com/Usprogis/Latvian-Twitter-Eater-Corpus
 license: MIT
 paper: https://arxiv.org/abs/2007.05194

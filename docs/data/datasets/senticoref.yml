@@ -1,10 +1,11 @@
 name: SentiCoref
 description: ''
-category:
-  - sentiment
 languages:
   - Slovenian
 task: NER + coref + sentiment
+tasks:
+  - NER + coref + sentiment
+  - sentiment-analysis
 URL: https://www.clarin.si/repository/xmlui/handle/11356/1285
 license: CC-BY-4.0
 paper: '?'

@@ -1,13 +1,14 @@
 name: XGLUE
 description: ''
-category:
-  - category
 languages:
   - Belarusian
   - Hungarian
   - Polish
   - Russian
 task: multiple tasks
+tasks:
+  - multiple tasks
+  - text-classification
 URL: https://microsoft.github.io/XGLUE/
 license: https://github.com/microsoft/XGLUE/blob/master/LICENSE
 paper: https://arxiv.org/abs/2004.01401

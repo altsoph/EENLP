@@ -1,10 +1,10 @@
 name: Slovak Wordnet
 description: ''
-category:
-  - other
 languages:
   - Slovakian
 task: wordnet
+tasks:
+  - wordnet
 URL: https://korpus.sk/WordNet_en.html
 license: CC BY-SA 3.0
 paper: '?'

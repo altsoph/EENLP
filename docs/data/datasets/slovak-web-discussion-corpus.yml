@@ -1,10 +1,12 @@
 name: Slovak Web Discussion Corpus
 description: ''
-category:
-  - ner
 languages:
   - Slovakian
 task: NER, category, spelling
+tasks:
+  - named-entity-recognition-ner
+  - spelling
+  - text-classification
 URL: https://nlp.kemt.fei.tuke.sk/language/webdiscussion
 license: '?'
 paper: https://www.researchgate.net/publication/290042999_Slovak_Web_Discussion_Corpus
