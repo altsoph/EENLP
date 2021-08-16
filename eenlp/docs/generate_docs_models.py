@@ -52,6 +52,8 @@ if __name__ == "__main__":
         df.append(yaml.safe_load(dataset.read_text()))
     df = pd.DataFrame(df)
 
+    df_o = df
+
     df = df.explode("languages")
 
     few_langs_models = [
@@ -84,7 +86,7 @@ if __name__ == "__main__":
         f.write("<tr><td></td>")
 
         f.write(
-            "".join(f"<td>{x}</td>" for x in df.loc[few_langs_models]["name"].unique())
+            "".join(f'<td align="center">{x}</td>' for x in df.loc[few_langs_models]["name"].unique())
         )
 
         f.write(
@@ -117,7 +119,7 @@ if __name__ == "__main__":
             f.write(
                 " / ".join(
                     sorted(
-                        f'<a href="#{x.name.lower().replace(" ", "-")}-{language}">{x.name}</a>'
+                        f'<a href="#{x.name.lower().replace(" ", "-")}-multilingual">{x.name}</a>'
                         for x in dff.itertuples()
                     )
                 )
@@ -126,7 +128,7 @@ if __name__ == "__main__":
 
             # few langs
             for i in few_langs_models:
-                f.write("<td>")
+                f.write('<td align="center">')
                 dff = df[(df.index == i) & (df["languages"] == language)]
                 if len(dff):
                     f.write(
@@ -135,7 +137,7 @@ if __name__ == "__main__":
                 f.write("</td>")
 
             for model_name in transformer_base_models:
-                f.write("<td>")
+                f.write('<td align="center">')
                 dff = df[
                     df.apply(
                         lambda x: x["languages"] == language
@@ -158,13 +160,26 @@ if __name__ == "__main__":
             f.write("\n")
         f.write("</tbody></table>\n\n")
 
-        for language in languages:
-            emoji_name = language["emoji_name"]
-            language = language["name"]
+        for language in ["Multilingual"] + languages:
+            if language == "Multilingual":
+                emoji_name = "earth_africa"
+            else:
+                emoji_name = language["emoji_name"]
+                language = language["name"]
 
             f.write(f"## :{emoji_name}: {language}\n\n")
 
-            dff = df[df["languages"] == language]
+            if language == "Multilingual":
+                dff = df_o[df_o["languages"].str.len() >= 10]
+            else:
+                # dff = df[
+                #     (df["languages"] == language)
+                #     & (df["category"] != "multilingual-global")
+                # ]
+                dff = df_o[
+                    (df_o["languages"].apply(lambda x: language in x))
+                    & (df_o["languages"].str.len() < 10)
+                ]
 
             f.write(
                 '<table width="100%"><thead><tr>'
@@ -226,5 +241,8 @@ if __name__ == "__main__":
                         f.write(f"<td>{row[column]}</td>")
                 f.write("</tr>\n")
             f.write("</tbody></table>\n\n")
+            if language != "Multilingual":
+                f.write("&nbsp;&nbsp;&nbsp;[+ multilingual](#earth_africa-multilingual)")
+            f.write("\n\n")
 
     mdformat.file(here("docs/models.md"), extensions={"gfm"})
