@@ -8,5 +8,6 @@ huggingface: https://huggingface.co/blinoff/roberta-base-russian-v0
 paper: ''
 citation: ''
 cased: ''
-pre-trained on: ''
+pre-trained on:
+  - ''
 comments: ''

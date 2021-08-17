@@ -8,5 +8,6 @@ huggingface: https://rusvectores.org/en/models/
 paper: ''
 citation: ''
 cased: ''
-pre-trained on: ''
+pre-trained on:
+  - ''
 comments: ''

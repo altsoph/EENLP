@@ -8,5 +8,6 @@ huggingface: https://huggingface.co/macedonizer/mk-roberta-base
 paper: '?'
 citation: '?'
 cased: cased
-pre-trained on: ''
+pre-trained on:
+  - ''
 comments: ''

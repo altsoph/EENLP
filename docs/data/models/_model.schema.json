@@ -41,7 +41,6 @@
           "Lithuanian",
           "Macedonian",
           "Moldovan",
-          "Moldovan",
           "Moldovian",
           "Montenegrin",
           "Polish",
@@ -49,7 +48,6 @@
           "Russian",
           "Serbian",
           "Slovak",
-          "Slovakian",
           "Slovakian",
           "Slovenian",
           "Ukrainian"
@@ -72,7 +70,10 @@
       "type": "string"
     },
     "pre-trained on": {
-      "type": "string"
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
     },
     "comments": {
       "type": "string"

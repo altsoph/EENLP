@@ -8,5 +8,7 @@ huggingface: https://huggingface.co/dbmdz/electra-base-ukrainian-cased-generator
 paper: '?'
 citation: '?'
 cased: '?'
-pre-trained on: wiki + oscar
+pre-trained on:
+  - wiki
+  - oscar
 comments: github https://github.com/stefan-it/ukrainian-electra

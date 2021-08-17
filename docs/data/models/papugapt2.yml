@@ -8,5 +8,6 @@ huggingface: https://huggingface.co/flax-community/papuGaPT2?text=Najsmaczniejsz
 paper: ''
 citation: ''
 cased: ''
-pre-trained on: ''
+pre-trained on:
+  - ''
 comments: ''

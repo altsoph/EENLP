@@ -19,5 +19,6 @@ huggingface: https://github.com/HIT-SCIR/ELMoForManyLangs
 paper: ''
 citation: https://github.com/HIT-SCIR/ELMoForManyLangs#citation
 cased: ''
-pre-trained on: ''
+pre-trained on:
+  - ''
 comments: ''

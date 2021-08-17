@@ -30,5 +30,7 @@ huggingface: https://fasttext.cc/docs/en/crawl-vectors.html
 paper: ''
 citation: ''
 cased: ''
-pre-trained on: cc + wiki
+pre-trained on:
+  - cc
+  - wiki
 comments: original fasttext

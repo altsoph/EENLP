@@ -8,5 +8,6 @@ huggingface: https://github.com/eleriaedmaa/embeddings
 paper: ''
 citation: ''
 cased: ''
-pre-trained on: ''
+pre-trained on:
+  - ''
 comments: ''

@@ -8,5 +8,6 @@ huggingface: http://docs.deeppavlov.ai/en/master/features/pretrained_vectors.htm
 paper: ''
 citation: ''
 cased: ''
-pre-trained on: ''
+pre-trained on:
+  - ''
 comments: ''

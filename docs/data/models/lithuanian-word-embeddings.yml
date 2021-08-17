@@ -8,5 +8,7 @@ huggingface: https://clarin.vdu.lt/xmlui/handle/20.500.11821/26
 paper: ''
 citation: ''
 cased: ''
-pre-trained on: Delfi.lt + StanfordNLP
+pre-trained on:
+  - Delfi.lt
+  - StanfordNLP
 comments: GloVe

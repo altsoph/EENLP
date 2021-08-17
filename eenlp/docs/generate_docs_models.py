@@ -6,6 +6,7 @@ from pyprojroot import here
 from eenlp.docs.languages import languages
 
 # TODO This code is a mess. Clean it up.
+from eenlp.docs.model_types import cases, corpora, types
 
 categories = [
     "multilingual-global",
@@ -86,7 +87,10 @@ if __name__ == "__main__":
         f.write("<tr><td></td>")
 
         f.write(
-            "".join(f'<td align="center">{x}</td>' for x in df.loc[few_langs_models]["name"].unique())
+            "".join(
+                f'<td align="center">{x}</td>'
+                for x in df.loc[few_langs_models]["name"].unique()
+            )
         )
 
         f.write(
@@ -160,6 +164,8 @@ if __name__ == "__main__":
             f.write("\n")
         f.write("</tbody></table>\n\n")
 
+        f.write("// TODO add legend\n\n")
+
         for language in ["Multilingual"] + languages:
             if language == "Multilingual":
                 emoji_name = "earth_africa"
@@ -188,7 +194,7 @@ if __name__ == "__main__":
                 "<th>type</th>"
                 "<th>cased</th>"
                 "<th>languages</th>"
-                "<th>pre-trained on</th>"
+                "<th>corpora</th>"
                 "<th>links</th>"
                 "</tr></thead><tbody>"
             )
@@ -213,36 +219,60 @@ if __name__ == "__main__":
                             )
                         f.write("</td>")
                     elif column == "links":
-                        f.write("<td><ul>")
-                        # if row["URL"] and row["URL"] != "?":
-                        #     f.write(
-                        #         f'<li title="url"><a href="{row["URL"]}">🌐</a></li>'
-                        #     )
+                        f.write("<td>")
                         if row["paper"] and row["paper"] != "?":
                             f.write(
-                                f'<li title="paper"><a href="{row["paper"]}">📄</a></li>'
+                                f'<div title="paper"><a href="{row["paper"]}">📄</a></div>'
                             )
                         if row["citation"] and row["citation"] != "?":
                             f.write(
-                                f'<li title="citation"><a href="{row["citation"]}">❞</a></li>'
+                                f'<div title="citation"><a href="{row["citation"]}">❞</a></div>'
                             )
-                        # if row["download link"] and row["download link"] != "?":
-                        #     f.write(
-                        #         f'<li title="download link"><a href="{row["download link"]}">⬇️</a></li>'
-                        #     )
                         if not pd.isna(row["huggingface"]):
                             f.write(
-                                f"<li>"
+                                f"<div>"
                                 f'<a title="huggingface model card" href="{row["huggingface"]}">🤗️</a> '
-                                f"</li>"
+                                f"</div>"
                             )
+                        f.write("</td>")
+                    elif column == "pre-trained on":
+                        f.write("<td><ul>")
+                        for x in sorted(row["pre-trained on"]):
+                            if x != "" and x != "?":
+                                if x in corpora:
+                                    f.write(
+                                        f'<li title="{x}">{corpora[x]["emoji"]}</li>'
+                                    )
+                                else:
+                                    f.write(f'<li title="{x}">{x}</li>')
                         f.write("</ul></td>")
+                    elif column == "type":
+                        if row["type"] in types:
+                            if "image" in types[row["type"]]:
+                                f.write(
+                                    f'<td align="center"><img width="21px" height="21px" title="{row["type"]}" src="{types[row["type"]]["image"]}"></td>'
+                                )
+                            else:
+                                f.write(
+                                    f'<td align="center"><div title="{row["type"]}">{types[row["type"]]["emoji"]}</div></td>'
+                                )
+                        else:
+                            f.write(f"<td>{row['type']}</td>")
+                    elif column == "cased":
+                        if row["cased"] in cases:
+                            f.write(
+                                f'<td><div title="{row["cased"]}">{cases[row["cased"]]["emoji"]}</div></td>'
+                            )
+                        else:
+                            f.write(f"<td>{row['cased']}</td>")
                     else:
                         f.write(f"<td>{row[column]}</td>")
                 f.write("</tr>\n")
             f.write("</tbody></table>\n\n")
             if language != "Multilingual":
-                f.write("&nbsp;&nbsp;&nbsp;[+ multilingual](#earth_africa-multilingual)")
+                f.write(
+                    "&nbsp;&nbsp;&nbsp;[+ multilingual](#earth_africa-multilingual)"
+                )
             f.write("\n\n")
 
     mdformat.file(here("docs/models.md"), extensions={"gfm"})

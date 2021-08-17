@@ -30,5 +30,7 @@ huggingface: https://huggingface.co/distilbert-base-multilingual-cased
 paper: https://arxiv.org/abs/1910.01108
 citation: https://huggingface.co/distilbert-base-multilingual-cased#bibtex-entry-and-citation-info
 cased: both
-pre-trained on: multilingual, wiki
+pre-trained on:
+  - multilingual
+  - wiki
 comments: ''

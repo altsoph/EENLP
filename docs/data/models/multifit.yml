@@ -30,5 +30,6 @@ huggingface: https://nlp.fast.ai/
 paper: https://aclanthology.org/D19-1572.pdf
 citation: ''
 cased: ''
-pre-trained on: ''
+pre-trained on:
+  - ''
 comments: multilingual ULMFiT

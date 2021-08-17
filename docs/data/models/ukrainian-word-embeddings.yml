@@ -8,5 +8,6 @@ huggingface: https://lang.org.ua/en/models/
 paper: ''
 citation: ''
 cased: ''
-pre-trained on: ''
+pre-trained on:
+  - ''
 comments: ''

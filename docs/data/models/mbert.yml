@@ -30,5 +30,7 @@ huggingface: https://huggingface.co/bert-base-multilingual-cased
 paper: https://arxiv.org/abs/1810.04805
 citation: https://arxiv.org/abs/1810.04805
 cased: both
-pre-trained on: multilingual, wiki
+pre-trained on:
+  - multilingual
+  - wiki
 comments: ''

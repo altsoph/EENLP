@@ -8,5 +8,6 @@ huggingface: https://github.com/essential-data/word2vec-sk
 paper: ''
 citation: ''
 cased: ''
-pre-trained on: ''
+pre-trained on:
+  - ''
 comments: ''

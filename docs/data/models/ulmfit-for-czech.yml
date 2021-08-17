@@ -8,5 +8,6 @@ huggingface: https://github.com/simecek/Czech-ULMFiT
 paper: ''
 citation: ''
 cased: ''
-pre-trained on: CSFD movie dataset
+pre-trained on:
+  - CSFD movie dataset
 comments: ''

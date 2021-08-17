@@ -9,5 +9,6 @@ huggingface: https://huggingface.co/anon-submission-mk/bert-base-macedonian-bulg
 paper: ''
 citation: ''
 cased: ''
-pre-trained on: ''
+pre-trained on:
+  - ''
 comments: ''

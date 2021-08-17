@@ -9,5 +9,6 @@ huggingface: https://wikipedia2vec.github.io/wikipedia2vec/pretrained/
 paper: ''
 citation: ''
 cased: ''
-pre-trained on: wiki
+pre-trained on:
+  - wiki
 comments: ''

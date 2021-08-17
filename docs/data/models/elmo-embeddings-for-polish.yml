@@ -8,5 +8,6 @@ huggingface: https://clarin-pl.eu/dspace/handle/11321/690
 paper: ''
 citation: ''
 cased: ''
-pre-trained on: KGR10
+pre-trained on:
+  - KGR10
 comments: ''

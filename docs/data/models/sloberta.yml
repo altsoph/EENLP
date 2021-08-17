@@ -8,5 +8,6 @@ huggingface: https://huggingface.co/EMBEDDIA/sloberta
 paper: '?'
 citation: '?'
 cased: cased
-pre-trained on: several Slovenian corpora
+pre-trained on:
+  - several Slovenian corpora
 comments: more details https://github.com/clarinsi/Slovene-BERT-Tool

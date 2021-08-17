@@ -8,5 +8,8 @@ huggingface: https://huggingface.co/dkleczek/bert-base-polish-cased-v1
 paper: '?'
 citation: '?'
 cased: both
-pre-trained on: cc + wiki + etc
+pre-trained on:
+  - cc
+  - wiki
+  - etc
 comments: usage examples https://huggingface.co/dkleczek/bert-base-polish-cased-v1#usage

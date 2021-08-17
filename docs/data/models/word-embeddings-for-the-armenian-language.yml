@@ -8,5 +8,6 @@ huggingface: https://github.com/ispras-texterra/word-embeddings-eval-hy
 paper: ''
 citation: ''
 cased: ''
-pre-trained on: ''
+pre-trained on:
+  - ''
 comments: ''

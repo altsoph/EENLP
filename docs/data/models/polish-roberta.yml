@@ -8,5 +8,6 @@ huggingface: --
 paper: https://arxiv.org/abs/2006.04229
 citation: https://github.com/sdadas/polish-roberta#polish-roberta
 cased: cased
-pre-trained on: '?'
+pre-trained on:
+  - '?'
 comments: github https://github.com/sdadas/polish-roberta

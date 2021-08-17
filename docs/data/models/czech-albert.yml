@@ -8,5 +8,6 @@ huggingface: --
 paper: https://is.muni.cz/th/t946b/?lang=en
 citation: '?'
 cased: '?'
-pre-trained on: '?'
+pre-trained on:
+  - '?'
 comments: 'github: https://github.com/zepzep/csalbert'

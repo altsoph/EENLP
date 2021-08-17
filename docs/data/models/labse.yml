@@ -30,5 +30,7 @@ huggingface: https://huggingface.co/setu4993/LaBSE
 paper: https://arxiv.org/abs/2007.01852
 citation: https://huggingface.co/setu4993/LaBSE
 cased: cased
-pre-trained on: multilingual, translation task
+pre-trained on:
+  - multilingual
+  - translation task
 comments: ''

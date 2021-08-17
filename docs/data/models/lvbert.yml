@@ -8,5 +8,7 @@ huggingface: '?'
 paper: https://pdfs.semanticscholar.org/d5f0/cf6f006f954316ce43aa945d6786808e8715.pdf
 citation: https://ebooks.iospress.nl/volumearticle/55531
 cased: '?'
-pre-trained on: wiki + LVK2018
+pre-trained on:
+  - wiki
+  - LVK2018
 comments: https://github.com/LUMII-AILab/LVBERT

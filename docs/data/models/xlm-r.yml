@@ -30,5 +30,7 @@ huggingface: https://huggingface.co/xlm-roberta-base
 paper: https://arxiv.org/abs/1911.02116
 citation: https://arxiv.org/abs/1911.02116
 cased: cased
-pre-trained on: multilingual, CommonCrawl
+pre-trained on:
+  - CommonCrawl
+  - multilingual
 comments: ''

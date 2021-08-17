@@ -8,5 +8,6 @@ huggingface: https://huggingface.co/LukasStankevicius/t5-base-lithuanian-news-su
 paper: ''
 citation: ''
 cased: ''
-pre-trained on: ''
+pre-trained on:
+  - ''
 comments: https://www.researchgate.net/publication/351448762_Generating_abstractive_summaries_of_Lithuanian_news_articles_using_a_transformer_model

@@ -8,5 +8,6 @@ huggingface: https://huggingface.co/dumitrescustefan/bert-base-romanian-cased-v1
 paper: https://arxiv.org/abs/2009.08712
 citation: https://github.com/dumitrescustefan/Romanian-Transformers#cite
 cased: both
-pre-trained on: '?'
+pre-trained on:
+  - '?'
 comments: github https://github.com/dumitrescustefan/Romanian-Transformers

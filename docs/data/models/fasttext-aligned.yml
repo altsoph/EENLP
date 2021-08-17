@@ -23,5 +23,6 @@ huggingface: https://fasttext.cc/docs/en/aligned-vectors.html
 paper: https://arxiv.org/abs/1804.07745
 citation: https://fasttext.cc/docs/en/aligned-vectors.html#references
 cased: ''
-pre-trained on: ''
+pre-trained on:
+  - ''
 comments: original fasttext aligned automaticaly

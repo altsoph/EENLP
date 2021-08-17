@@ -8,5 +8,6 @@ huggingface: ''
 paper: ''
 citation: ''
 cased: ''
-pre-trained on: ''
+pre-trained on:
+  - ''
 comments: https://github.com/mgrankin/ru_transformers

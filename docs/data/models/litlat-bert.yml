@@ -9,5 +9,6 @@ huggingface: https://huggingface.co/EMBEDDIA/litlat-bert
 paper: '?'
 citation: '?'
 cased: cased
-pre-trained on: '?'
+pre-trained on:
+  - '?'
 comments: ''
