@@ -2,7 +2,6 @@ name: Latvian UD Treebank
 description: ''
 languages:
   - Latvian
-task: POS
 tasks:
   - part-of-speech-tagging
 URL: https://github.com/UniversalDependencies/UD_Latvian-LVTB/blob/master/README.md

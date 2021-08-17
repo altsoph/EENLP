@@ -2,7 +2,6 @@ name: Hungarian Wordnet (HuWN) / Magyar WordNet
 description: ''
 languages:
   - Hungarian
-task: wordnet
 tasks:
   - wordnet
 URL: https://github.com/mmihaltz/huwn

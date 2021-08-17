@@ -2,7 +2,6 @@ name: Czech restaurant information dataset for NLG
 description: ''
 languages:
   - Czech
-task: category prediction
 tasks:
   - text-classification
 URL: https://github.com/UFAL-DSG/cs_restaurant_dataset

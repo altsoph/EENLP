@@ -2,7 +2,6 @@ name: Sentiment Analysis in Russian
 description: ''
 languages:
   - Russian
-task: sentiment
 tasks:
   - sentiment-analysis
 URL: https://www.kaggle.com/c/sentiment-analysis-in-russian

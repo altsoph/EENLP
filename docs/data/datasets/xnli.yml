@@ -2,7 +2,6 @@ name: XNLI
 description: ''
 languages:
   - Russian
-task: NLI
 tasks:
   - NLI
 URL: https://github.com/facebookresearch/XNLI

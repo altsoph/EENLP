@@ -2,7 +2,6 @@ name: Slovak Web Discussion Corpus
 description: ''
 languages:
   - Slovakian
-task: NER, category, spelling
 tasks:
   - named-entity-recognition-ner
   - spelling

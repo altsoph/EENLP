@@ -2,7 +2,6 @@ name: Lithuanian financial news dataset and bigrams
 description: ''
 languages:
   - Lithuanian
-task: sentiment
 tasks:
   - sentiment-analysis
 URL: https://www.kaggle.com/rokastrimaitis/lithuanian-financial-news-dataset-and-bigrams

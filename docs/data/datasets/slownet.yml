@@ -2,7 +2,6 @@ name: sloWNet
 description: ''
 languages:
   - Slovakian
-task: wordnet
 tasks:
   - wordnet
 URL: http://lojze.lugos.si/darja/research/slownet/

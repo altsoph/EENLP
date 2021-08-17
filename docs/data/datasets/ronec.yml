@@ -2,7 +2,6 @@ name: RONEC
 description: ''
 languages:
   - Romanian
-task: NER
 tasks:
   - named-entity-recognition-ner
 URL: https://github.com/dumitrescustefan/ronec

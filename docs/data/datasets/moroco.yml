@@ -3,7 +3,6 @@ description: ''
 languages:
   - Moldovan
   - Romanian
-task: multiple classification tasks
 tasks:
   - multiple classification tasks
   - text-classification

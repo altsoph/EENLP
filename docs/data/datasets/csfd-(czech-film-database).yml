@@ -2,7 +2,6 @@ name: "\u010CSFD (Czech Film Database)"
 description: ''
 languages:
   - Czech
-task: sentiment
 tasks:
   - sentiment-analysis
 URL: https://github.com/kysely/sentiment-analysis-czech

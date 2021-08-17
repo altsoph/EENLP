@@ -2,7 +2,6 @@ name: NKJP1M
 description: ''
 languages:
   - Polish
-task: morphosyntactic tagging
 tasks:
   - morphosyntactic tagging
 URL: http://clip.ipipan.waw.pl/NationalCorpusOfPolish

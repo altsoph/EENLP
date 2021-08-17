@@ -2,7 +2,6 @@ name: SentiNews 1.0
 description: ''
 languages:
   - Slovenian
-task: sentiment analysis
 tasks:
   - sentiment-analysis
 URL: https://github.com/19Joey85/Sentiment-annotated-news-corpus-and-sentiment-lexicon-in-Slovene

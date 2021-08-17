@@ -5,7 +5,6 @@ languages:
   - Hungarian
   - Polish
   - Russian
-task: multiple tasks
 tasks:
   - multiple tasks
   - text-classification

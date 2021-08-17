@@ -2,7 +2,6 @@ name: COPA-HR
 description: ''
 languages:
   - Croatian
-task: commonsense reasoning
 tasks:
   - commonsense reasoning
 URL: https://www.clarin.si/repository/xmlui/handle/11356/1240

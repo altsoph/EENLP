@@ -2,7 +2,6 @@ name: Armenian News Texts Dataset
 description: ''
 languages:
   - Armenian
-task: category prediction
 tasks:
   - text-classification
 URL: https://github.com/ispras-texterra/word-embeddings-eval-hy#news-texts-dataset

@@ -2,7 +2,6 @@ name: UD_Czech-CAC treebank
 description: ''
 languages:
   - Czech
-task: POS
 tasks:
   - part-of-speech-tagging
 URL: https://github.com/UniversalDependencies/UD_Czech-CAC/blob/master/README.md

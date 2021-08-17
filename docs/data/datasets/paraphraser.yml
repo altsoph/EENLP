@@ -2,7 +2,6 @@ name: Paraphraser
 description: ''
 languages:
   - Russian
-task: paraphrase detection
 tasks:
   - paraphrase-identification
 URL: http://paraphraser.ru/

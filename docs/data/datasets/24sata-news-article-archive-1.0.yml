@@ -2,7 +2,6 @@ name: 24sata news article archive 1.0
 description: ''
 languages:
   - Croatian
-task: category prediction
 tasks:
   - text-classification
 URL: https://www.clarin.si/repository/xmlui/handle/11356/1410

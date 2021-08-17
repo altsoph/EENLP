@@ -2,7 +2,6 @@ name: Albanian wordnet
 description: ''
 languages:
   - Albanian
-task: wordnet
 tasks:
   - wordnet
 URL: http://shachi.org/resources/4040

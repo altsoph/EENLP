@@ -6,7 +6,6 @@ languages:
   - Estonian
   - Hungarian
   - Slovenian
-task: WSD
 tasks:
   - word-sense-disambiguation
 URL: https://sapienzanlp.github.io/xl-wsd/

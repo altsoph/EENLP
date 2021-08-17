@@ -2,7 +2,6 @@ name: SentiComments.SR
 description: ''
 languages:
   - Serbian
-task: sentiment
 tasks:
   - sentiment-analysis
 URL: https://github.com/vukbatanovic/SentiComments.SR

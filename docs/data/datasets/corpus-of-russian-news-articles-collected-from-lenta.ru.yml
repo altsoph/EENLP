@@ -2,7 +2,6 @@ name: Corpus of Russian news articles collected from Lenta.Ru
 description: ''
 languages:
   - Russian
-task: category prediction
 tasks:
   - text-classification
 URL: https://github.com/yutkin/Lenta.Ru-News-Dataset

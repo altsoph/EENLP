@@ -2,7 +2,6 @@ name: PolEval 2018 NER task
 description: ''
 languages:
   - Polish
-task: NER
 tasks:
   - named-entity-recognition-ner
 URL: https://gonito.net/challenge/poleval-2018-ner

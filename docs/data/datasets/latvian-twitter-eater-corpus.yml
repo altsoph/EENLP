@@ -2,7 +2,6 @@ name: Latvian Twitter Eater Corpus
 description: ''
 languages:
   - Latvian
-task: sentiment + some more
 tasks:
   - sentiment + some more
   - sentiment-analysis

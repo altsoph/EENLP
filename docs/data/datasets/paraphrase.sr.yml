@@ -2,7 +2,6 @@ name: paraphrase.sr
 description: ''
 languages:
   - Serbian
-task: paraphrase detection
 tasks:
   - paraphrase-identification
 URL: https://vukbatanovic.github.io/paraphrase.sr/

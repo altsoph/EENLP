@@ -2,7 +2,6 @@ name: Szeged Corpus
 description: ''
 languages:
   - Hungarian
-task: syntax + morphology
 tasks:
   - syntax + morphology
 URL: http://metashare.nytud.hu/repository/browse/szeged-corpus/e2bf6a486c7811e2aa7c68b599c26a069a3f6f3a10d745e08d1db15344df55ea/

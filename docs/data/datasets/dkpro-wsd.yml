@@ -4,7 +4,6 @@ languages:
   - Czech
   - Estonian
   - Romanian
-task: WSD
 tasks:
   - word-sense-disambiguation
 URL: https://dkpro.github.io/dkpro-wsd/corpora/

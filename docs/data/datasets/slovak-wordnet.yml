@@ -2,7 +2,6 @@ name: Slovak Wordnet
 description: ''
 languages:
   - Slovakian
-task: wordnet
 tasks:
   - wordnet
 URL: https://korpus.sk/WordNet_en.html

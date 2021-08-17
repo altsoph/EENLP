@@ -2,7 +2,6 @@ name: Czech-PDT UD treebank
 description: ''
 languages:
   - Czech
-task: POS
 tasks:
   - part-of-speech-tagging
 URL: https://github.com/UniversalDependencies/UD_Czech-PDT/blob/master/README.md

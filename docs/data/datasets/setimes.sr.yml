@@ -2,7 +2,6 @@ name: SETimes.SR
 description: ''
 languages:
   - Serbian
-task: NER
 tasks:
   - named-entity-recognition-ner
 URL: https://reldi.spur.uzh.ch/blog/serbian-annotated-corpus-setimes-sr/

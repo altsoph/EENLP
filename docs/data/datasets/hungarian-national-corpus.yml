@@ -2,7 +2,6 @@ name: Hungarian National Corpus
 description: ''
 languages:
   - Hungarian
-task: automatically tagged corpus
 tasks:
   - automatically tagged corpus
 URL: http://mnsz.nytud.hu/index_eng.html

@@ -15,7 +15,6 @@ languages:
   - Romanian
   - Russian
   - Serbian
-task: paraphrase detection
 tasks:
   - paraphrase-identification
 URL: https://zenodo.org/record/3707949#.YPMTcpgzYuU
@@ -24,3 +23,4 @@ paper: '?'
 citation: '?'
 download link: https://huggingface.co/datasets/tapaco
 comments: ''
+huggingface: https://huggingface.co/datasets/tapaco

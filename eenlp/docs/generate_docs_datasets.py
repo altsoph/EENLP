@@ -1,11 +1,10 @@
-from typing import Dict, Optional, TypedDict
-
 import mdformat
 import pandas as pd
 import yaml
 from pyprojroot import here
 
-from eenlp.docs.generate_docs_models import languages
+from eenlp.docs.languages import languages
+from eenlp.docs.tasks import tasks
 
 categories = [
     "named-entity-recognition-ner",
@@ -16,85 +15,14 @@ categories = [
     "other",
 ]
 
-category_captions = {
-    "ner": "NER",
-    "sentiment": "sentiment",
-    "paraphrase": "paraphrase detection",
-    "wsd": "WSD",
-    "category": "category prediction",
-    "other": "other",
-}
-
 columns = [
     "name",
     "description",
-    "task",
     "category",
     "languages",
     "links",
 ]
 
-category_icons = {
-    "ner": "📛",
-    "sentiment": "😄",
-    "paraphrase": "💬",
-    "wsd": "🐁🖱",
-    "category": "📰",
-    "other": "🦦",
-}
-
-
-class Task(TypedDict):
-    name: str
-    display_name: str
-    paperswithcode: str
-    description: Optional[str]
-    emoji: str
-
-
-tasks: Dict[str, Task] = {
-    "named-entity-recognition-ner": {
-        "name": "named-entity-recognition-ner",
-        "display_name": "NER",
-        "paperswithcode": "https://paperswithcode.com/task/named-entity-recognition-ner",
-        "description": "",
-        "emoji": "📛",
-    },
-    "sentiment-analysis": {
-        "name": "sentiment-analysis",
-        "display_name": "sentiment",
-        "emoji": "😄",
-    },
-    "paraphrase-identification": {
-        "name": "paraphrase-identification",
-        "display_name": "paraphrase",
-        "emoji": "💬",
-    },
-    "word-sense-disambiguation": {
-        "name": "word-sense-disambiguation",
-        "display_name": "WSD",
-        "emoji": "🐁🖱",
-    },
-    "text-classification": {
-        "name": "text-classification",
-        "display_name": "category",
-        "emoji": "📰",
-    },
-    "part-of-speech-tagging": {
-        "name": "other",
-        "emoji": "🦦",
-        "display_name": "other",
-    },
-    "wordnet": {
-        "name": "other",
-        "emoji": "🦦",
-        "display_name": "other",
-    },
-    "other": {
-        "emoji": "🦦",
-        "display_name": "other",
-    },
-}
 
 if __name__ == "__main__":
     df = []
@@ -102,15 +30,19 @@ if __name__ == "__main__":
         df.append(yaml.safe_load(dataset.read_text()))
     df = pd.DataFrame(df)
 
-    # df = df.explode("category").explode("languages")
-
     with open(here("docs/datasets.md"), "w") as f:
         f.write("# Datasets\n\n")
 
-        f.write(
-            "| | NER<br>(named-entity recognition) | sentiment analysis | paraphrase detection | WSD<br>(word-sense disambiguation) | category prediction |\n"
-        )
-        f.write("| - | :-: | :-: | :-: | :-: | :-: |\n")
+        f.write("| | ")
+        for category in categories:
+            if category == "other":
+                f.write("other |")
+            else:
+                f.write(
+                    f" {tasks[category]['emoji']}<br>{tasks[category]['display_name']} |"
+                )
+        f.write("\n")
+        f.write("| - | :-: | :-: | :-: | :-: | :-: | :-: |\n")
         for i, language in enumerate(languages):
             emoji_name = language["emoji_name"]
             language = language["name"]
@@ -120,16 +52,45 @@ if __name__ == "__main__":
             )
             for category in categories:
                 if category == "other":
-                    continue
-                dff = df[
-                    (df["languages"].apply(lambda x: language in x))
-                    & (df["tasks"].apply(lambda x: category in x))
-                ]
+                    dff = df[
+                        df["languages"].apply(lambda x: language in x)
+                        & ~df["tasks"].apply(lambda x: any(y in categories for y in x))
+                    ]
+                else:
+                    dff = df[
+                        (df["languages"].apply(lambda x: language in x))
+                        & (df["tasks"].apply(lambda x: category in x))
+                    ]
                 if len(dff):
                     f.write(f" [{len(dff)}](#{language.lower()}-{category})")
                 f.write(" |")
             f.write("\n")
         f.write("\n")
+
+        f.write("## :world_map: Legend\n")
+        f.write(
+            "- **Links**\n"
+            "  - 🌐 URL\n"
+            "  - 📄 paper\n"
+            "  - ❞ citation\n"
+            "  - ⬇️ download link\n"
+            "  - 🤗️ huggingface datasets link\n"
+            "- **Tasks**\n"
+        )
+        for task in tasks.values():
+            f.write(f"  - **{task['emoji']} {task['display_name']}**\n")
+            if "paperswithcode" in task:
+                f.write(f"    - [Papers with Code]({task['paperswithcode']})")
+            if "paperswithcode" in task and "wikipedia" in task:
+                f.write(", ")
+            if "wikipedia" in task:
+                f.write(f"[Wikipedia]({task['wikipedia']})")
+            if "paperswithcode" in task or "wikipedia" in task:
+                f.write("\n")
+            if len(task["description"]):
+                f.write(f"    - {task['description']}\n")
+
+        f.write("# Languages\n")
 
         for language in languages:
             emoji_name = language["emoji_name"]
@@ -141,10 +102,9 @@ if __name__ == "__main__":
                 f'<table width="100%"><thead><tr>'
                 f'<th width="66%">name</th>'
                 f'<th width="33%">description</th>'
-                f"<th>task</th>"
-                f"<th>category</th>"
+                f"<th>tasks</th>"
                 f"<th>languages</th>"
-                f"<th>links</th>"
+                f"<th>&nbsp;links&nbsp;&nbsp;</th>"
                 f"</tr></thead><tbody>"
             )
             for category in categories:
@@ -152,7 +112,7 @@ if __name__ == "__main__":
                     dff = df[
                         df["languages"].apply(lambda x: language in x)
                         & ~df["tasks"].apply(lambda x: any(y in categories for y in x))
-                    ].sort_values("name")
+                    ].sort_values("name", key=lambda x: x.str.lower())
                 else:
                     dff = df[
                         (df["languages"].apply(lambda x: language in x))
@@ -163,7 +123,7 @@ if __name__ == "__main__":
                                 and [y for y in x if y in categories][0] == category
                             )
                         )
-                    ].sort_values("name")
+                    ].sort_values("name", key=lambda x: x.str.lower())
                 for i, (_, row) in enumerate(dff.iterrows()):
                     f.write("<tr>")
                     for column in columns:
@@ -173,14 +133,11 @@ if __name__ == "__main__":
                                 f.write(f' id="{language.lower()}-{category}"')
                             f.write(f'><a href="{row["URL"]}">{row[column]}</a></td>')
                         elif column == "category":
-                            # f.write(
-                            #     f'<td><ul><li title="{category}">{tasks[category]["emoji"]}</li></ul></td>'
-                            # )
                             f.write("<td><ul>")
                             for x in sorted(row["tasks"]):
                                 if x in tasks:
                                     f.write(
-                                        f'<li title="{tasks[x]["name"]}">{tasks[x]["emoji"]}</li>'
+                                        f'<li title="{tasks[x]["display_name"]}">{tasks[x]["emoji"]}</li>'
                                     )
                                 else:
                                     f.write(f'<li title="{x}">{x}</li>')
@@ -193,45 +150,35 @@ if __name__ == "__main__":
                                 )
                             f.write("</td>")
                         elif column == "links":
-                            f.write("<td><ul>")
+                            f.write("<td>")
                             if row["URL"] and row["URL"] != "?":
                                 f.write(
-                                    f'<li title="url"><a href="{row["URL"]}">🌐</a></li>'
+                                    f'<div title="url"><a href="{row["URL"]}">🌐</a></div>'
                                 )
                             if row["paper"] and row["paper"] != "?":
                                 f.write(
-                                    f'<li title="paper"><a href="{row["paper"]}">📄</a></li>'
+                                    f'<div title="paper"><a href="{row["paper"]}">📄</a></div>'
                                 )
                             if row["citation"] and row["citation"] != "?":
                                 f.write(
-                                    f'<li title="citation"><a href="{row["citation"]}">❞</a></li>'
+                                    f'<div title="citation"><a href="{row["citation"]}">❞</a></div>'
                                 )
                             if row["download link"] and row["download link"] != "?":
                                 f.write(
-                                    f'<li title="download link"><a href="{row["download link"]}">⬇️</a></li>'
+                                    f'<div title="download link"><a href="{row["download link"]}">⬇️</a></div>'
                                 )
-                            # if not pd.isna(row["huggingface"]):
-                            #     f.write(
-                            #         f"<li>"
-                            #         f'<a title="huggingface dataset" href="{row["huggingface"]}">🤗️</a> '
-                            #         f'<a title="preview" href="https://huggingface.co/datasets/viewer/?dataset={row["huggingface"].split("/")[-1]}">🤗️</a>'
-                            #         f"</li>"
-                            #     )
-                            f.write("</ul></td>")
+                            if not pd.isna(row["huggingface"]):
+                                f.write(
+                                    f"<div>"
+                                    f'<a title="huggingface dataset" href="{row["huggingface"]}">🤗️</a> '
+                                    f'<a title="preview" href="https://huggingface.co/datasets/viewer/?dataset={row["huggingface"].split("/")[-1]}">🤗️</a>'
+                                    f"</div>"
+                                )
+                            f.write("</td>")
                         else:
                             f.write(f"<td>{row[column]}</td>")
                     f.write("</tr>\n")
             f.write("</tbody></table>\n\n")
 
     f = here("docs/datasets.md")
-
-    f.write_text(
-        f.read_text()
-        .replace("named-entity-recognition-ner", "ner")
-        .replace("sentiment-analysis", "sentiment")
-        .replace("paraphrase-identification", "paraphrase")
-        .replace("word-sense-disambiguation", "wsd")
-        .replace("text-classification", "category")
-    )
-
     mdformat.file(f, extensions={"gfm"})

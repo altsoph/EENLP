@@ -2,7 +2,6 @@ name: NYTK NerKor corpus
 description: ''
 languages:
   - Hungarian
-task: NER
 tasks:
   - named-entity-recognition-ner
 URL: https://github.com/nytud/NYTK-NerKor

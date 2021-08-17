@@ -2,7 +2,6 @@ name: Slovene translation of SuperGLUE
 description: ''
 languages:
   - Slovenian
-task: multiple semantic tasks
 tasks:
   - multiple semantic tasks
   - word-sense-disambiguation

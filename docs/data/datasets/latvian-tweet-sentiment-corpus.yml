@@ -2,7 +2,6 @@ name: latvian-tweet-sentiment-corpus
 description: ''
 languages:
   - Latvian
-task: sentiment
 tasks:
   - sentiment-analysis
 URL: https://github.com/FnTm/latvian-tweet-sentiment-corpus

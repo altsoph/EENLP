@@ -2,7 +2,6 @@ name: ArmTDP
 description: ''
 languages:
   - Armenian
-task: POS, parse tree
 tasks:
   - parse tree
   - part-of-speech-tagging

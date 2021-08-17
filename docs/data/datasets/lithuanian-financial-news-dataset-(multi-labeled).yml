@@ -2,7 +2,6 @@ name: Lithuanian financial news dataset (multi-labeled)
 description: ''
 languages:
   - Lithuanian
-task: category prediction
 tasks:
   - text-classification
 URL: https://www.kaggle.com/pavelstefanovi/lithuanian-financial-news-dataset-multilabeled

@@ -2,7 +2,6 @@ name: Semantically disambiguated corpus of Estonian
 description: ''
 languages:
   - Estonian
-task: semantic, morphosyntactic tagging; lemmatization
 tasks:
   - morphosyntactic tagging; lemmatization
   - semantic

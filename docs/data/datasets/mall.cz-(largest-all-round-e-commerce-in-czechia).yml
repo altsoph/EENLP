@@ -2,7 +2,6 @@ name: MALL.CZ (largest all-round e-commerce in Czechia)
 description: ''
 languages:
   - Czech
-task: sentiment
 tasks:
   - sentiment-analysis
 URL: https://github.com/kysely/sentiment-analysis-czech

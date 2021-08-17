@@ -12,17 +12,25 @@
     "description": {
       "type": "string"
     },
-    "category": {
+    "tasks": {
       "type": "array",
-      "description": "Category of the dataset, currently only 6 are allowed. This may change in the future. See https://github.com/altsoph/EENLP/blob/main/docs/categories.md",
+      "description": "",
       "items": {
-        "enum": [
-          "ner",
-          "sentiment",
-          "paraphrase",
-          "wsd",
-          "category",
-          "other"
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "enum": [
+              "named-entity-recognition-ner",
+              "sentiment-analysis",
+              "paraphrase-identification",
+              "word-sense-disambiguation",
+              "text-classification",
+              "part-of-speech-tagging",
+              "wordnet"
+            ]
+          }
         ]
       }
     },
@@ -46,7 +54,6 @@
           "Lithuanian",
           "Macedonian",
           "Moldovan",
-          "Moldovan",
           "Moldovian",
           "Montenegrin",
           "Polish",
@@ -55,14 +62,10 @@
           "Serbian",
           "Slovak",
           "Slovakian",
-          "Slovakian",
           "Slovenian",
           "Ukrainian"
         ]
       }
-    },
-    "task": {
-      "type": "string"
     },
     "URL": {
       "type": "string"
@@ -88,8 +91,8 @@
   },
   "required": [
     "name",
-    "category",
-    "languages"
+    "languages",
+    "tasks"
   ],
   "additionalProperties": false
 }

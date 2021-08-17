@@ -2,7 +2,6 @@ name: Slovak Categorized News Corpus
 description: ''
 languages:
   - Slovakian
-task: POS, NER, category
 tasks:
   - named-entity-recognition-ner
   - part-of-speech-tagging

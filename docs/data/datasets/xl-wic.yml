@@ -4,7 +4,6 @@ languages:
   - Bulgarian
   - Croatian
   - Estonian
-task: WSD
 tasks:
   - word-sense-disambiguation
 URL: https://pilehvar.github.io/xlwic/

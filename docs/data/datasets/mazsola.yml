@@ -2,7 +2,6 @@ name: MAZSOLA
 description: ''
 languages:
   - Hungarian
-task: syntactic tagging
 tasks:
   - syntactic tagging
 URL: http://corpus.nytud.hu/isz/

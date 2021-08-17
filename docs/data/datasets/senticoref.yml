@@ -2,7 +2,6 @@ name: SentiCoref
 description: ''
 languages:
   - Slovenian
-task: NER + coref + sentiment
 tasks:
   - NER + coref + sentiment
   - sentiment-analysis

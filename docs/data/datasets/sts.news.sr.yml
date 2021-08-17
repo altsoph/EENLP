@@ -2,7 +2,6 @@ name: STS.news.sr
 description: ''
 languages:
   - Serbian
-task: paraphrase detection
 tasks:
   - paraphrase-identification
 URL: https://vukbatanovic.github.io/STS.news.sr/

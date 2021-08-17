@@ -2,7 +2,6 @@ name: ranlp-2019
 description: ''
 languages:
   - Bulgarian
-task: fake news
 tasks:
   - fake news
 URL: https://github.com/yoandinkov/ranlp-2019

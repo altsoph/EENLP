@@ -2,7 +2,6 @@ name: Polish Sport Texts Classification Challenge
 description: ''
 languages:
   - Polish
-task: category prediction
 tasks:
   - text-classification
 URL: https://gonito.net/challenge/sport-text-classification

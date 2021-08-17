@@ -2,7 +2,6 @@ name: UD_Czech-CLTT treebank
 description: ''
 languages:
   - Czech
-task: POS
 tasks:
   - part-of-speech-tagging
 URL: https://github.com/UniversalDependencies/UD_Czech-CLTT/blob/master/README.md

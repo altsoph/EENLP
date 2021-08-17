@@ -2,7 +2,6 @@ name: RO-STS
 description: ''
 languages:
   - Romanian
-task: paraphrase detection
 tasks:
   - paraphrase-identification
 URL: https://github.com/dumitrescustefan/RO-STS

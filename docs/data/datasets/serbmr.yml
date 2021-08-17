@@ -2,7 +2,6 @@ name: SerbMR
 description: ''
 languages:
   - Serbian
-task: sentiment
 tasks:
   - sentiment-analysis
 URL: http://vukbatanovic.github.io/SerbMR/

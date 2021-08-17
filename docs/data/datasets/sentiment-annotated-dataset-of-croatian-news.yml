@@ -2,7 +2,6 @@ name: Sentiment Annotated Dataset of Croatian News
 description: ''
 languages:
   - Croatian
-task: sentiment
 tasks:
   - sentiment-analysis
 URL: https://www.clarin.si/repository/xmlui/handle/11356/1342

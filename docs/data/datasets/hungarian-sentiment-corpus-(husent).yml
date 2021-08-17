@@ -2,7 +2,6 @@ name: Hungarian sentiment corpus (HuSent)
 description: ''
 languages:
   - Hungarian
-task: sentiment
 tasks:
   - sentiment-analysis
 URL: https://rgai.inf.u-szeged.hu/node/363

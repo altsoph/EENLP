@@ -2,7 +2,6 @@ name: Hungarian word sense disambiguated corpus
 description: ''
 languages:
   - Hungarian
-task: WSD
 tasks:
   - word-sense-disambiguation
 URL: https://rgai.inf.u-szeged.hu/node/161

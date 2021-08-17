@@ -2,7 +2,6 @@ name: jos1M 1.2
 description: ''
 languages:
   - Slovenian
-task: morphosyntactic tagging and lemmatisation
 tasks:
   - morphosyntactic tagging and lemmatisation
 URL: https://www.clarin.si/repository/xmlui/handle/11356/1213

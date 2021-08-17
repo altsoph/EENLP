@@ -2,7 +2,6 @@ name: RussianSuperGLUE
 description: ''
 languages:
   - Russian
-task: multiple semantic tasks
 tasks:
   - multiple semantic tasks
   - word-sense-disambiguation

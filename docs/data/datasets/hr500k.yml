@@ -2,7 +2,6 @@ name: hr500k
 description: ''
 languages:
   - Croatian
-task: NER
 tasks:
   - named-entity-recognition-ner
 URL: https://www.clarin.si/repository/xmlui/handle/11356/1183

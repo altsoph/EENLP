@@ -2,7 +2,6 @@ name: NLP-LT
 description: ''
 languages:
   - Lithuanian
-task: category prediction
 tasks:
   - text-classification
 URL: https://github.com/minven/nlp-lt

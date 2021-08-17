@@ -2,7 +2,6 @@ name: Romanian lexical sample @ Semeval 3
 description: ''
 languages:
   - Romanian
-task: WSD
 tasks:
   - word-sense-disambiguation
 URL: https://web.eecs.umich.edu/~mihalcea/senseval/senseval3/data.html

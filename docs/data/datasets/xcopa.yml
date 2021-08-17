@@ -2,7 +2,6 @@ name: XCOPA
 description: ''
 languages:
   - Estonian
-task: commonsense reasoning
 tasks:
   - commonsense reasoning
 URL: https://github.com/cambridgeltl/xcopa

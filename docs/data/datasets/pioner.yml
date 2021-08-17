@@ -2,7 +2,6 @@ name: pioNER
 description: ''
 languages:
   - Armenian
-task: NER
 tasks:
   - named-entity-recognition-ner
 URL: https://github.com/ispras-texterra/pioner

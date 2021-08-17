@@ -3,7 +3,6 @@ description: ''
 languages:
   - Bulgarian
   - Czech
-task: WSD
 tasks:
   - word-sense-disambiguation
 URL: http://b2find.eudat.eu/dataset/159a5572-715e-5b90-b597-bffa3e9580d9

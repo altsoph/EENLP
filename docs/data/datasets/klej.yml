@@ -2,7 +2,6 @@ name: KLEJ
 description: ''
 languages:
   - Polish
-task: multiple semantic tasks
 tasks:
   - multiple semantic tasks
   - named-entity-recognition-ner
