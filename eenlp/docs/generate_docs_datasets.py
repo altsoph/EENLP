@@ -3,8 +3,8 @@ import pandas as pd
 import yaml
 from pyprojroot import here
 
+from eenlp.docs.dataset_tasks import tasks
 from eenlp.docs.languages import languages
-from eenlp.docs.tasks import tasks
 
 categories = [
     "named-entity-recognition-ner",
