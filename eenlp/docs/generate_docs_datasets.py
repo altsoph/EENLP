@@ -21,6 +21,7 @@ columns = [
     "category",
     "languages",
     "links",
+    "edit",
 ]
 
 
@@ -28,6 +29,7 @@ if __name__ == "__main__":
     df = []
     for dataset in here("docs/data/datasets/").glob("*.yml"):
         df.append(yaml.safe_load(dataset.read_text()))
+        df[-1]["filename"] = dataset.name
     df = pd.DataFrame(df)
 
     with open(here("docs/datasets.md"), "w") as f:
@@ -105,6 +107,7 @@ if __name__ == "__main__":
                 f"<th>tasks</th>"
                 f"<th>languages</th>"
                 f"<th>&nbsp;links&nbsp;&nbsp;</th>"
+                f"<th>edit</th>"
                 f"</tr></thead><tbody>"
             )
             for category in categories:
@@ -175,6 +178,10 @@ if __name__ == "__main__":
                                     f"</div>"
                                 )
                             f.write("</td>")
+                        elif column == "edit":
+                            f.write(
+                                f'<td><a href="https://github.com/altsoph/EENLP/edit/resources_page/docs/data/datasets/{row["filename"]}">edit</a></td>'
+                            )
                         else:
                             f.write(f"<td>{row[column]}</td>")
                     f.write("</tr>\n")
