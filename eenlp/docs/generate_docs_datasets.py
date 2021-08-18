@@ -25,7 +25,7 @@ columns = [
 ]
 
 
-if __name__ == "__main__":
+def generate():
     df = []
     for dataset in here("docs/data/datasets/").glob("*.yml"):
         df.append(yaml.safe_load(dataset.read_text()))
@@ -189,3 +189,7 @@ if __name__ == "__main__":
 
     f = here("docs/datasets.md")
     mdformat.file(f, extensions={"gfm"})
+
+
+if __name__ == "__main__":
+    generate()

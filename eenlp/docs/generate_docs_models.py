@@ -47,7 +47,8 @@ transformer_base_models = [
     "ALBERT",
 ]
 
-if __name__ == "__main__":
+
+def generate():
     df = []
     for dataset in here("docs/data/models/").glob("*.yml"):
         df.append(yaml.safe_load(dataset.read_text()))
@@ -276,3 +277,7 @@ if __name__ == "__main__":
             f.write("\n\n")
 
     mdformat.file(here("docs/models.md"), extensions={"gfm"})
+
+
+if __name__ == "__main__":
+    generate()
