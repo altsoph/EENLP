@@ -1,0 +1,13 @@
+name: Russian fasttext from natasha project
+description: ''
+category: other
+languages:
+  - Russian
+type: static word embeddings
+huggingface: https://github.com/natasha/navec
+paper: ''
+citation: ''
+cased: ''
+pre-trained on:
+  - ''
+comments: ''

@@ -1,0 +1,13 @@
+name: The Hungarian forum corpus for Opinion Mining
+description: ''
+languages:
+  - Hungarian
+tasks:
+  - opinion mining
+  - sentiment-analysis
+URL: https://rgai.inf.u-szeged.hu/node/165
+license: '?'
+paper: http://www.inf.u-szeged.hu/~rfarkas/dmiipOM.pdf
+citation: https://rgai.inf.u-szeged.hu/node/165
+download link: https://rgai.inf.u-szeged.hu/sites/rgai.inf.u-szeged.hu/files/forum.zip
+comments: ''

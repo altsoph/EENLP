@@ -1,0 +1,14 @@
+name: XL-WiC
+description: ''
+languages:
+  - Bulgarian
+  - Croatian
+  - Estonian
+tasks:
+  - word-sense-disambiguation
+URL: https://pilehvar.github.io/xlwic/
+license: CC-BY-NC 4.0
+paper: https://arxiv.org/abs/2010.06478
+citation: https://arxiv.org/abs/2010.06478
+download link: https://pilehvar.github.io/xlwic/
+comments: ''

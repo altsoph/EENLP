@@ -1,0 +1,13 @@
+name: Word Embeddings for Polish
+description: ''
+category: other
+languages:
+  - Polish
+type: static word embeddings
+huggingface: https://clarin-pl.eu/dspace/handle/11321/442
+paper: ''
+citation: ''
+cased: ''
+pre-trained on:
+  - ''
+comments: ''

@@ -1,0 +1,13 @@
+name: Ekspress news article archive
+description: ''
+languages:
+  - Estonian
+  - Russian
+tasks:
+  - text-classification
+URL: https://www.clarin.si/repository/xmlui/handle/11356/1408
+license: '?'
+paper: '?'
+citation: '?'
+download link: https://www.clarin.si/repository/xmlui/handle/11356/1408
+comments: ''

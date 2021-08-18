@@ -1,0 +1,13 @@
+name: RoBERT
+description: ''
+category: single-language
+languages:
+  - Romanian
+type: BERT
+huggingface: https://huggingface.co/readerbench/RoBERT-base
+paper: https://aclanthology.org/2020.coling-main.581/
+citation: https://huggingface.co/readerbench/RoBERT-base#bibtex-entry-and-citation-info
+cased: ''
+pre-trained on:
+  - ''
+comments: ''

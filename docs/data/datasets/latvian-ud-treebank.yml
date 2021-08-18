@@ -1,0 +1,12 @@
+name: Latvian UD Treebank
+description: ''
+languages:
+  - Latvian
+tasks:
+  - part-of-speech-tagging
+URL: https://github.com/UniversalDependencies/UD_Latvian-LVTB/blob/master/README.md
+license: CC BY-SA 4.0
+paper: https://www.researchgate.net/publication/327520269_Deriving_Enhanced_Universal_Dependencies_from_a_Hybrid_Dependency-Constituency_Treebank
+citation: http://www.ailab.lv/en/publications/408/
+download link: https://github.com/UniversalDependencies/UD_Latvian-LVTB
+comments: ''

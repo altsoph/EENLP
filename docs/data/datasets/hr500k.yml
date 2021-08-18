@@ -1,0 +1,12 @@
+name: hr500k
+description: ''
+languages:
+  - Croatian
+tasks:
+  - named-entity-recognition-ner
+URL: https://www.clarin.si/repository/xmlui/handle/11356/1183
+license: CC-BY-SA 4.0
+paper: https://aclanthology.org/L16-1676.pdf
+citation: http://www.lrec-conf.org/proceedings/lrec2016/summaries/340.html
+download link: https://www.clarin.si/repository/xmlui/handle/11356/1183
+comments: https://github.com/reldi-data/hr500k

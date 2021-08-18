@@ -1,0 +1,12 @@
+name: MAZSOLA
+description: ''
+languages:
+  - Hungarian
+tasks:
+  - syntactic tagging
+URL: http://corpus.nytud.hu/isz/
+license: '?'
+paper: http://www.nytud.hu/oszt/korpusz/resources/sb_isz.pdf
+citation: http://corpus.nytud.hu/isz/
+download link: http://corpus.nytud.hu/isz/s/mazsola_adatbazis.txt.zip
+comments: only after registration here http://mnsz.nytud.hu/regisztracio_eng.html

@@ -1,0 +1,14 @@
+name: LitLat BERT
+description: ''
+category: multilingual-local
+languages:
+  - Latvian
+  - Lithuanian
+type: XLM-RoBERTa
+huggingface: https://huggingface.co/EMBEDDIA/litlat-bert
+paper: '?'
+citation: '?'
+cased: cased
+pre-trained on:
+  - '?'
+comments: ''

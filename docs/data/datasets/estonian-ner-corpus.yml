@@ -1,0 +1,12 @@
+name: Estonian NER corpus
+description: ''
+languages:
+  - Estonian
+tasks:
+  - named-entity-recognition-ner
+URL: https://metashare.ut.ee/repository/browse/estonian-ner-corpus/88d030c0acde11e2a6e4005056b40024f1def472ed254e77a8952e1003d9f81e/
+license: CC - BY - NC
+paper: '?'
+citation: '?'
+download link: https://metashare.ut.ee/repository/download/88d030c0acde11e2a6e4005056b40024f1def472ed254e77a8952e1003d9f81e/
+comments: ''

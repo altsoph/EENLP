@@ -1,0 +1,14 @@
+name: CroSloEngual
+description: ''
+category: multilingual-local
+languages:
+  - Croatian
+  - Slovenian
+type: BERT
+huggingface: https://huggingface.co/EMBEDDIA/crosloengual-bert
+paper: https://arxiv.org/abs/2006.07890
+citation: https://arxiv.org/abs/2006.07890
+cased: cased (?)
+pre-trained on:
+  - '?'
+comments: project site http://embeddia.eu/

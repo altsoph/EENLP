@@ -1,0 +1,12 @@
+name: Slovak Wordnet
+description: ''
+languages:
+  - Slovakian
+tasks:
+  - wordnet
+URL: https://korpus.sk/WordNet_en.html
+license: CC BY-SA 3.0
+paper: '?'
+citation: '?'
+download link: https://korpus.sk/WordNet_en.html
+comments: ''

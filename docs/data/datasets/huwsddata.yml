@@ -1,0 +1,12 @@
+name: huWSDdata
+description: ''
+languages:
+  - Hungarian
+tasks:
+  - word-sense-disambiguation
+URL: https://github.com/begab/huWSDdata
+license: '?'
+paper: http://www.inf.u-szeged.hu/~berendg/docs/publ/mszny_wsd.pdf
+citation: http://www.inf.u-szeged.hu/~berendg/docs/publ/mszny_wsd.pdf
+download link: https://github.com/begab/huWSDdata/blob/master/hun_wsd.txt
+comments: ''

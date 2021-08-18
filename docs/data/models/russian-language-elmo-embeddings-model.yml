@@ -1,0 +1,13 @@
+name: Russian language ELMo embeddings model
+description: ''
+category: other
+languages:
+  - Russian
+type: ELMo
+huggingface: http://docs.deeppavlov.ai/en/master/features/pretrained_vectors.html#elmo
+paper: ''
+citation: ''
+cased: ''
+pre-trained on:
+  - ''
+comments: ''

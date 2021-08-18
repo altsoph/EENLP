@@ -1,0 +1,12 @@
+name: STS.news.sr
+description: ''
+languages:
+  - Serbian
+tasks:
+  - paraphrase-identification
+URL: https://vukbatanovic.github.io/STS.news.sr/
+license: CC BY-NC-SA 4.0
+paper: http://www.lrec-conf.org/proceedings/lrec2018/pdf/442.pdf
+citation: https://vukbatanovic.github.io/STS.news.sr/
+download link: https://github.com/vukbatanovic/STS.news.sr
+comments: (subset of paraphrase.sr?)

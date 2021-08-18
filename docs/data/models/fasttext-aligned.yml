@@ -1,0 +1,28 @@
+name: fasttext aligned
+description: ''
+category: other
+languages:
+  - Albanian
+  - Bosnian
+  - Bulgarian
+  - Croatian
+  - Czech
+  - Estonian
+  - Hungarian
+  - Latvian
+  - Lithuanian
+  - Macedonian
+  - Polish
+  - Romanian
+  - Russian
+  - Slovakian
+  - Slovenian
+  - Ukrainian
+type: static word embeddings
+huggingface: https://fasttext.cc/docs/en/aligned-vectors.html
+paper: https://arxiv.org/abs/1804.07745
+citation: https://fasttext.cc/docs/en/aligned-vectors.html#references
+cased: ''
+pre-trained on:
+  - ''
+comments: original fasttext aligned automaticaly

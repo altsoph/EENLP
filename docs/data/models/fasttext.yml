@@ -1,0 +1,36 @@
+name: fasttext
+description: ''
+category: other
+languages:
+  - Albanian
+  - Armenian
+  - Belarusian
+  - Bosnian
+  - Bulgarian
+  - Croatian
+  - Czech
+  - Estonian
+  - Georgian
+  - Hungarian
+  - Kazakh
+  - Latvian
+  - Lithuanian
+  - Macedonian
+  - Moldovan
+  - Montenegrin
+  - Polish
+  - Romanian
+  - Russian
+  - Serbian
+  - Slovakian
+  - Slovenian
+  - Ukrainian
+type: static word embeddings
+huggingface: https://fasttext.cc/docs/en/crawl-vectors.html
+paper: ''
+citation: ''
+cased: ''
+pre-trained on:
+  - cc
+  - wiki
+comments: original fasttext

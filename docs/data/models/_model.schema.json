@@ -1,0 +1,88 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://raw.githubusercontent.com/altsoph/EENLP/main/docs/data/models/_model.schema.json",
+  "title": "Model",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Name of the model."
+    },
+    "description": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "multilingual-global",
+        "multilingual-local",
+        "single-language",
+        "other"
+      ]
+    },
+    "languages": {
+      "type": "array",
+      "description": "Languages.",
+      "items": {
+        "enum": [
+          "Albanian",
+          "Armenian",
+          "Belarusian",
+          "Bosnian",
+          "Bulgarian",
+          "Croatian",
+          "Czech",
+          "Estonian",
+          "Georgian",
+          "Hungarian",
+          "Kazakh",
+          "Latvian",
+          "Lithuanian",
+          "Macedonian",
+          "Moldovan",
+          "Moldovian",
+          "Montenegrin",
+          "Polish",
+          "Romanian",
+          "Russian",
+          "Serbian",
+          "Slovak",
+          "Slovakian",
+          "Slovenian",
+          "Ukrainian"
+        ]
+      }
+    },
+    "type": {
+      "type": "string"
+    },
+    "huggingface": {
+      "type": "string"
+    },
+    "paper": {
+      "type": "string"
+    },
+    "citation": {
+      "type": "string"
+    },
+    "cased": {
+      "type": "string"
+    },
+    "pre-trained on": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "comments": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "name",
+    "category",
+    "languages"
+  ],
+  "additionalProperties": false
+}

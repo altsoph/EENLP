@@ -1,0 +1,14 @@
+name: Slovak Web Discussion Corpus
+description: ''
+languages:
+  - Slovakian
+tasks:
+  - named-entity-recognition-ner
+  - spelling
+  - text-classification
+URL: https://nlp.kemt.fei.tuke.sk/language/webdiscussion
+license: '?'
+paper: https://www.researchgate.net/publication/290042999_Slovak_Web_Discussion_Corpus
+citation: ''
+download link: https://link.springer.com/chapter/10.1007/978-3-319-10888-9_45
+comments: ''

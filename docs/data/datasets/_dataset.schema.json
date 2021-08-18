@@ -1,0 +1,98 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://raw.githubusercontent.com/altsoph/EENLP/main/docs/data/datasets/_dataset.schema.json",
+  "title": "Dataset",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Name of the dataset."
+    },
+    "description": {
+      "type": "string"
+    },
+    "tasks": {
+      "type": "array",
+      "description": "",
+      "items": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "enum": [
+              "named-entity-recognition-ner",
+              "sentiment-analysis",
+              "paraphrase-identification",
+              "word-sense-disambiguation",
+              "text-classification",
+              "part-of-speech-tagging",
+              "wordnet"
+            ]
+          }
+        ]
+      }
+    },
+    "languages": {
+      "type": "array",
+      "description": "Languages.",
+      "items": {
+        "enum": [
+          "Albanian",
+          "Armenian",
+          "Belarusian",
+          "Bosnian",
+          "Bulgarian",
+          "Croatian",
+          "Czech",
+          "Estonian",
+          "Georgian",
+          "Hungarian",
+          "Kazakh",
+          "Latvian",
+          "Lithuanian",
+          "Macedonian",
+          "Moldovan",
+          "Moldovian",
+          "Montenegrin",
+          "Polish",
+          "Romanian",
+          "Russian",
+          "Serbian",
+          "Slovak",
+          "Slovakian",
+          "Slovenian",
+          "Ukrainian"
+        ]
+      }
+    },
+    "URL": {
+      "type": "string"
+    },
+    "license": {
+      "type": "string"
+    },
+    "paper": {
+      "type": "string"
+    },
+    "citation": {
+      "type": "string"
+    },
+    "download link": {
+      "type": "string"
+    },
+    "comments": {
+      "type": "string"
+    },
+    "huggingface": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "name",
+    "languages",
+    "tasks"
+  ],
+  "additionalProperties": false
+}

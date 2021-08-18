@@ -1,0 +1,12 @@
+name: Czech-PDT UD treebank
+description: ''
+languages:
+  - Czech
+tasks:
+  - part-of-speech-tagging
+URL: https://github.com/UniversalDependencies/UD_Czech-PDT/blob/master/README.md
+license: CC BY-NC-SA 3.0
+paper: https://aclanthology.org/C12-1015/
+citation: https://aclanthology.org/C12-1015/
+download link: https://github.com/UniversalDependencies/UD_Czech-PDT
+comments: ''

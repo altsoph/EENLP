@@ -1,0 +1,12 @@
+name: RuSentiment
+description: ''
+languages:
+  - Russian
+tasks:
+  - sentiment-analysis
+URL: https://text-machine.cs.uml.edu/projects/rusentiment/
+license: '?'
+paper: '?'
+citation: '?'
+download link: ''
+comments: ''

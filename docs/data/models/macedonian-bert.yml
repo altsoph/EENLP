@@ -1,0 +1,13 @@
+name: Macedonian BERT
+description: ''
+category: single-language
+languages:
+  - Macedonian
+type: BERT
+huggingface: https://huggingface.co/anon-submission-mk/bert-base-macedonian-cased
+paper: ''
+citation: ''
+cased: ''
+pre-trained on:
+  - ''
+comments: ''

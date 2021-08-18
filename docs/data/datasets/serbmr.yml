@@ -1,0 +1,12 @@
+name: SerbMR
+description: ''
+languages:
+  - Serbian
+tasks:
+  - sentiment-analysis
+URL: http://vukbatanovic.github.io/SerbMR/
+license: CC BY-NC-SA 4.0
+paper: http://www.lrec-conf.org/proceedings/lrec2016/pdf/284_Paper.pdf
+citation: '?'
+download link: https://github.com/vukbatanovic/SerbMR
+comments: ''

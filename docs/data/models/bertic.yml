@@ -1,0 +1,16 @@
+name: "BERTi\u0107"
+description: ''
+category: multilingual-local
+languages:
+  - Bosnian
+  - Croatian
+  - Montenegrin
+  - Serbian
+type: BERT/Electra(?)
+huggingface: https://huggingface.co/classla/bcms-bertic
+paper: https://arxiv.org/abs/2104.09243
+citation: https://huggingface.co/classla/bcms-bertic
+cased: cased
+pre-trained on:
+  - web crawled texts
+comments: ''

@@ -1,0 +1,13 @@
+name: EstBERT
+description: ''
+category: single-language
+languages:
+  - Estonian
+type: BERT
+huggingface: https://huggingface.co/tartuNLP/EstBERT
+paper: https://arxiv.org/abs/2011.04784
+citation: https://arxiv.org/abs/2011.04784
+cased: cased
+pre-trained on:
+  - Estonian National Corpus 2017
+comments: ''

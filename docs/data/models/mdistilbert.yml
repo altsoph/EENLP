@@ -1,0 +1,36 @@
+name: mDistilBERT
+description: ''
+category: multilingual-global
+languages:
+  - Albanian
+  - Armenian
+  - Belarusian
+  - Bosnian
+  - Bulgarian
+  - Croatian
+  - Czech
+  - Estonian
+  - Georgian
+  - Hungarian
+  - Kazakh
+  - Latvian
+  - Lithuanian
+  - Macedonian
+  - Moldovan
+  - Montenegrin
+  - Polish
+  - Romanian
+  - Russian
+  - Serbian
+  - Slovakian
+  - Slovenian
+  - Ukrainian
+type: DistilBERT
+huggingface: https://huggingface.co/distilbert-base-multilingual-cased
+paper: https://arxiv.org/abs/1910.01108
+citation: https://huggingface.co/distilbert-base-multilingual-cased#bibtex-entry-and-citation-info
+cased: both
+pre-trained on:
+  - multilingual
+  - wiki
+comments: ''

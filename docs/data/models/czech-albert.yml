@@ -1,0 +1,13 @@
+name: Czech ALBERT
+description: ''
+category: single-language
+languages:
+  - Czech
+type: ALBERT
+huggingface: --
+paper: https://is.muni.cz/th/t946b/?lang=en
+citation: '?'
+cased: '?'
+pre-trained on:
+  - '?'
+comments: 'github: https://github.com/zepzep/csalbert'

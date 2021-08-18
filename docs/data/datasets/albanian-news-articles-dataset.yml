@@ -1,0 +1,12 @@
+name: Albanian News Articles Dataset
+description: ''
+languages:
+  - Albanian
+tasks:
+  - text-classification
+URL: https://www.kaggle.com/gentrexha/kosovo-news-articles-dataset
+license: CC-BY-4.0
+paper: '?'
+citation: '?'
+download link: https://www.kaggle.com/gentrexha/kosovo-news-articles-dataset
+comments: ''

@@ -1,0 +1,36 @@
+name: LaBSE
+description: ''
+category: multilingual-global
+languages:
+  - Albanian
+  - Armenian
+  - Belarusian
+  - Bosnian
+  - Bulgarian
+  - Croatian
+  - Czech
+  - Estonian
+  - Georgian
+  - Hungarian
+  - Kazakh
+  - Latvian
+  - Lithuanian
+  - Macedonian
+  - Moldovan
+  - Montenegrin
+  - Polish
+  - Romanian
+  - Russian
+  - Serbian
+  - Slovakian
+  - Slovenian
+  - Ukrainian
+type: BERT
+huggingface: https://huggingface.co/setu4993/LaBSE
+paper: https://arxiv.org/abs/2007.01852
+citation: https://huggingface.co/setu4993/LaBSE
+cased: cased
+pre-trained on:
+  - multilingual
+  - translation task
+comments: ''

@@ -1,0 +1,14 @@
+name: wikipedia2vec
+description: ''
+category: other
+languages:
+  - Polish
+  - Russian
+type: static word embeddings
+huggingface: https://wikipedia2vec.github.io/wikipedia2vec/pretrained/
+paper: ''
+citation: ''
+cased: ''
+pre-trained on:
+  - wiki
+comments: ''

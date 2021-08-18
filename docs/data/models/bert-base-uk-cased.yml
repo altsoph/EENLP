@@ -1,0 +1,13 @@
+name: bert-base-uk-cased
+description: ''
+category: other
+languages:
+  - Ukrainian
+type: DistilBERT
+huggingface: https://huggingface.co/Geotrend/bert-base-uk-cased
+paper: https://aclanthology.org/2020.sustainlp-1.16.pdf
+citation: https://aclanthology.org/2020.sustainlp-1.16.pdf
+cased: cased
+pre-trained on:
+  - mBERT distilled to Ukrainian
+comments: ''

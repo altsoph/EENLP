@@ -1,0 +1,13 @@
+name: MK-RoBERTa
+description: ''
+category: single-language
+languages:
+  - Macedonian
+type: RoBERTa
+huggingface: https://huggingface.co/macedonizer/mk-roberta-base
+paper: '?'
+citation: '?'
+cased: cased
+pre-trained on:
+  - ''
+comments: ''

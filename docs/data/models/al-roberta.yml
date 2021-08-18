@@ -1,0 +1,13 @@
+name: AL-RoBERTa
+description: ''
+category: single-language
+languages:
+  - Albanian
+type: RoBERTa
+huggingface: https://huggingface.co/macedonizer/al-roberta-base
+paper: '?'
+citation: '?'
+cased: cased
+pre-trained on:
+  - ''
+comments: ''

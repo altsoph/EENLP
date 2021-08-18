@@ -1,0 +1,12 @@
+name: XNLI
+description: ''
+languages:
+  - Russian
+tasks:
+  - NLI
+URL: https://github.com/facebookresearch/XNLI
+license: '?'
+paper: '?'
+citation: '?'
+download link: ''
+comments: ''

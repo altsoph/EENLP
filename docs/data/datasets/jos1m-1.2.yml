@@ -1,0 +1,12 @@
+name: jos1M 1.2
+description: ''
+languages:
+  - Slovenian
+tasks:
+  - morphosyntactic tagging and lemmatisation
+URL: https://www.clarin.si/repository/xmlui/handle/11356/1213
+license: CC BY-NC 4.0
+paper: http://www.lrec-conf.org/proceedings/lrec2010/pdf/139_Paper.pdf
+citation: http://www.lrec-conf.org/proceedings/lrec2010/summaries/139.html
+download link: https://www.clarin.si/repository/xmlui/bitstream/handle/11356/1213/jos1M-en.TEI.zip?sequence=1&isAllowed=y
+comments: ''

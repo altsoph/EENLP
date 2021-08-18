@@ -1,0 +1,13 @@
+name: Belarusian UD treebank
+description: ''
+languages:
+  - Belarusian
+tasks:
+  - named-entity-recognition-ner
+  - part-of-speech-tagging
+URL: https://github.com/UniversalDependencies/UD_Belarusian-HSE
+license: CC BY-SA 4.0
+paper: '?'
+citation: '?'
+download link: https://github.com/UniversalDependencies/UD_Belarusian-HSE
+comments: not very big dataset

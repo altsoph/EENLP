@@ -1,0 +1,13 @@
+name: Polish Word embeddings
+description: ''
+category: other
+languages:
+  - Polish
+type: static word embeddings
+huggingface: https://github.com/sdadas/polish-nlp-resources#word-embeddings-and-language-models
+paper: ''
+citation: ''
+cased: ''
+pre-trained on:
+  - ''
+comments: ''

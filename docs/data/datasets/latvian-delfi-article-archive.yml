@@ -1,0 +1,13 @@
+name: Latvian Delfi article archive
+description: ''
+languages:
+  - Latvian
+  - Russian
+tasks:
+  - text-classification
+URL: https://www.clarin.si/repository/xmlui/handle/11356/1409
+license: '?'
+paper: '?'
+citation: '?'
+download link: https://www.clarin.si/repository/xmlui/handle/11356/1409
+comments: ''

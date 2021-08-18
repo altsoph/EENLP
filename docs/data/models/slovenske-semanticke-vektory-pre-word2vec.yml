@@ -1,0 +1,13 @@
+name: "Slovensk\xE9 s\xE9mantick\xE9 vektory pre word2vec"
+description: ''
+category: other
+languages:
+  - Slovenian
+type: static word embeddings
+huggingface: https://github.com/essential-data/word2vec-sk
+paper: ''
+citation: ''
+cased: ''
+pre-trained on:
+  - ''
+comments: ''

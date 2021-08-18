@@ -1,0 +1,14 @@
+name: Ukrainian Electra
+description: ''
+category: single-language
+languages:
+  - Ukrainian
+type: Electra
+huggingface: https://huggingface.co/dbmdz/electra-base-ukrainian-cased-generator
+paper: '?'
+citation: '?'
+cased: '?'
+pre-trained on:
+  - wiki
+  - oscar
+comments: github https://github.com/stefan-it/ukrainian-electra

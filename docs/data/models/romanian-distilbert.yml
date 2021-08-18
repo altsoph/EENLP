@@ -1,0 +1,13 @@
+name: Romanian DistilBERT
+description: ''
+category: single-language
+languages:
+  - Romanian
+type: DistilBERT
+huggingface: https://huggingface.co/racai/distilbert-base-romanian-cased
+paper: '?'
+citation: https://github.com/racai-ai/Romanian-DistilBERT#citation
+cased: cased
+pre-trained on:
+  - '?'
+comments: github https://github.com/racai-ai/Romanian-DistilBERT

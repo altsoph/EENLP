@@ -1,0 +1,13 @@
+name: Polish ELMo
+description: ''
+category: other
+languages:
+  - Polish
+type: ELMo
+huggingface: https://github.com/sdadas/polish-nlp-resources#elmo
+paper: ''
+citation: ''
+cased: ''
+pre-trained on:
+  - ''
+comments: ''

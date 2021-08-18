@@ -9,4 +9,8 @@ fuzzywuzzy==0.18.0
 pycountry==20.7.3
 tqdm==4.61.2
 pytest==6.2.3
-setuptools==51.1.2
+setuptools==57.4.0
+PyYAML==5.4.1
+jsonschema==3.2.0
+mdformat==0.7.8
+mdformat-gfm==0.3.2

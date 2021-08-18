@@ -1,0 +1,13 @@
+name: Romanian static embeddings
+description: ''
+category: other
+languages:
+  - Romanian
+type: static word embeddings
+huggingface: https://github.com/senisioi/ro_resources
+paper: ''
+citation: ''
+cased: ''
+pre-trained on:
+  - ''
+comments: ''

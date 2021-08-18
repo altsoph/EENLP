@@ -1,0 +1,13 @@
+name: mk-gpt2
+description: ''
+category: other
+languages:
+  - Macedonian
+type: GPT2
+huggingface: https://huggingface.co/macedonizer/mk-gpt2
+paper: '?'
+citation: '?'
+cased: cased
+pre-trained on:
+  - ''
+comments: ''

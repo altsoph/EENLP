@@ -1,0 +1,13 @@
+name: SloBERTa
+description: ''
+category: single-language
+languages:
+  - Slovenian
+type: RoBERTa
+huggingface: https://huggingface.co/EMBEDDIA/sloberta
+paper: '?'
+citation: '?'
+cased: cased
+pre-trained on:
+  - several Slovenian corpora
+comments: more details https://github.com/clarinsi/Slovene-BERT-Tool

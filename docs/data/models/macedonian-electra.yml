@@ -1,0 +1,13 @@
+name: Macedonian Electra
+description: ''
+category: single-language
+languages:
+  - Macedonian
+type: Electra
+huggingface: https://huggingface.co/anon-submission-mk/electra-base-macedonian-cased-generator
+paper: ''
+citation: ''
+cased: ''
+pre-trained on:
+  - ''
+comments: ''

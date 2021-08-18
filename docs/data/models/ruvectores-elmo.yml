@@ -1,0 +1,13 @@
+name: RuVectores ELMo
+description: ''
+category: other
+languages:
+  - Russian
+type: ELMo
+huggingface: https://rusvectores.org/en/models/
+paper: ''
+citation: ''
+cased: ''
+pre-trained on:
+  - ''
+comments: ''

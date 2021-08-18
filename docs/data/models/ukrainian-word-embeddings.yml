@@ -1,0 +1,13 @@
+name: Ukrainian word embeddings
+description: ''
+category: other
+languages:
+  - Ukrainian
+type: static word embeddings
+huggingface: https://lang.org.ua/en/models/
+paper: ''
+citation: ''
+cased: ''
+pre-trained on:
+  - ''
+comments: ''
