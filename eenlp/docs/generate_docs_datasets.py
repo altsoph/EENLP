@@ -180,7 +180,7 @@ def generate():
                             f.write("</td>")
                         elif column == "edit":
                             f.write(
-                                f'<td><a href="https://github.com/altsoph/EENLP/edit/resources_page/docs/data/datasets/{row["filename"]}">edit</a></td>'
+                                f'<td><a href="https://github.com/altsoph/EENLP/edit/main/docs/data/datasets/{row["filename"]}">edit</a></td>'
                             )
                         else:
                             f.write(f"<td>{row[column]}</td>")
