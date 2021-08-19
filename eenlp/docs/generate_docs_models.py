@@ -4,23 +4,7 @@ import yaml
 from pyprojroot import here
 
 from eenlp.docs.languages import languages
-
-# TODO This code is a mess. Clean it up.
 from eenlp.docs.model_types import cases, corpora, types
-
-categories = [
-    "multilingual-global",
-    "multilingual-local",
-    "single-language",
-    "other",
-]
-
-category_captions = {
-    "multilingual-global": "multilingual",
-    "multilingual-local": "several languages",
-    "single-language": "single language models",
-    "other": "other",
-}
 
 columns = [
     "name",
@@ -30,16 +14,37 @@ columns = [
     "languages",
     "pre-trained on",
     "links",
-    # "huggingface",
-    # "type",
-    # "paper",
-    # "citation",
-    # "cased",
-    # "pre-trained on",
-    # "comments",
 ]
 
-transformer_base_models = [
+# Columns for the index table on the top.
+# There is filtering for *both* the number of languages and these categories, so that e.g. static word embeddings won't
+# show up in the index table.
+# currently:
+#   - single == 1
+#   - 1 < few < 10
+#   - 10 <= multi
+
+multilang_models = [
+    "BERT",
+    "RoBERTa",
+    "DistilBERT",
+    "Electra",
+    "ALBERT",
+    "mBERT",
+    "XLM-RoBERTa",
+]
+
+few_language_models = [
+    "BERT",
+    "RoBERTa",
+    "DistilBERT",
+    "Electra",
+    "ALBERT",
+    "XLM-RoBERTa",
+    "BERT/Electra(?)",
+]
+
+single_language_models = [
     "BERT",
     "RoBERTa",
     "DistilBERT",
@@ -64,18 +69,7 @@ def generate():
         if 1 < x[1] < 10
     ]
     few_langs_models = [
-        x
-        for x in few_langs_models
-        if df.loc[x].iloc[0]["type"]
-        in [
-            "BERT",
-            "RoBERTa",
-            "DistilBERT",
-            "Electra",
-            "ALBERT",
-            "XLM-RoBERTa",
-            "BERT/Electra(?)",
-        ]
+        x for x in few_langs_models if df.loc[x].iloc[0]["type"] in few_language_models
     ]
 
     with open(here("docs/models.md"), "w") as f:
@@ -115,8 +109,7 @@ def generate():
                     df.apply(
                         lambda x: x["languages"] == language
                         and 10 <= len(df[df.index == x.name])
-                        and x["type"]
-                        in transformer_base_models + ["mBERT", "XLM-RoBERTa"],
+                        and x["type"] in multilang_models,
                         axis=1,
                     )
                 )
@@ -141,7 +134,7 @@ def generate():
                     )
                 f.write("</td>")
 
-            for model_name in transformer_base_models:
+            for model_name in single_language_models:
                 f.write('<td align="center">')
                 dff = df[
                     df.apply(
@@ -179,10 +172,6 @@ def generate():
             if language == "Multilingual":
                 dff = df_o[df_o["languages"].str.len() >= 10]
             else:
-                # dff = df[
-                #     (df["languages"] == language)
-                #     & (df["category"] != "multilingual-global")
-                # ]
                 dff = df_o[
                     (df_o["languages"].apply(lambda x: language in x))
                     & (df_o["languages"].str.len() < 10)
@@ -206,9 +195,6 @@ def generate():
                         f.write(
                             f' id="{row["name"].lower().replace(" ", "-")}-{language}"'
                         )
-                        # if row["URL"] and row["URL"] != "?":
-                        #     f.write(f'><a href="{row["URL"]}">{row[column]}</a></td>')
-                        # else:
                         f.write(f">{row[column]}</td>")
                     elif column == "languages":
                         f.write("<td>")
