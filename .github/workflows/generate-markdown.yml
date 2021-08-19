@@ -2,12 +2,16 @@ name: Generate markdown
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main,
+      - resources_page
     paths:
       - docs/data/datasets/*.yml
       - docs/data/models/*.yml
   pull_request:
-    branches: [ main ]
+    branches:
+      - main
+      - resources_page
   workflow_dispatch:
 
 jobs:

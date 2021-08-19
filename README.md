@@ -47,4 +47,10 @@ We hope that arranging and publishing these resources could be helpful for the N
 
 ## Contribution
 
-// TODO
+See the [contributing guidelines](CONTRIBUTING.md).
+
+## Development
+
+This is mostly internal documentation for us.
+
+See [developing this repository](docs/developer.md).
