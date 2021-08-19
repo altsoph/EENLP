@@ -13,6 +13,7 @@ languages:
   - Slovenian
 tasks:
   - sentiment-analysis
+  - text-classification
 URL: https://www.clarin.si/repository/xmlui/handle/11356/1054
 license: CC BY-NC-SA 4.0
 paper: https://arxiv.org/abs/1602.07563
