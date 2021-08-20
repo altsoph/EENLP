@@ -42,16 +42,9 @@ cases: Dict[str, Common] = {
     },
 }
 
-# TODO use aliases
 corpora: Dict[str, Common] = {
-    "cc": {
-        "emoji": "🕷",
-    },
     "common crawl": {
         "emoji": "🕷",
-    },
-    "wiki": {
-        "emoji": "🌐",
     },
     "wikipedia": {
         "emoji": "🌐",

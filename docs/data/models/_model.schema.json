@@ -46,7 +46,22 @@
       }
     },
     "type": {
-      "type": "string"
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "enum": [
+            "BERT",
+            "RoBERTa",
+            "ELMo",
+            "GPT2",
+            "DistilBERT",
+            "Electra",
+            "static word embeddings"
+          ]
+        }
+      ]
     },
     "huggingface": {
       "type": [
@@ -69,7 +84,10 @@
     "cased": {
       "anyOf": [
         {
-          "type": "string"
+          "type": [
+            "string",
+            "null"
+          ]
         },
         {
           "enum": [
@@ -82,13 +100,19 @@
     },
     "pre-trained on": {
       "description": "",
-      "types": [
+      "oneOf": [
         {
           "type": "array",
           "items": {
             "anyOf": [
               {
                 "type": "string"
+              },
+              {
+                "enum": [
+                  "wikipedia",
+                  "common crawl"
+                ]
               }
             ]
           }

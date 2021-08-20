@@ -1,10 +1,12 @@
+from typing import Dict
+
 import mdformat
 import pandas as pd
 import yaml
 from pyprojroot import here
 
 from eenlp.docs.languages import languages
-from eenlp.docs.model_types import cases, corpora, types
+from eenlp.docs.model_types import Common, cases, corpora, types
 
 columns = [
     "name",
@@ -14,6 +16,7 @@ columns = [
     "languages",
     "pre-trained on",
     "links",
+    "edit",
 ]
 
 # Columns for the index table on the top.
@@ -53,10 +56,23 @@ single_language_models = [
 ]
 
 
+def image_or_emoji(name: str, base_type: Dict[str, Common]) -> str:
+    item = base_type[name]
+    if "image" in item:
+        return f'<img width="21px" height="21px" title="{name}" src="{item["image"]}">'
+    else:
+        return item["emoji"]
+
+
 def generate():
     df = []
     for dataset in here("docs/data/models/").glob("*.yml"):
-        df.append(yaml.safe_load(dataset.read_text()))
+        df.append(
+            {
+                **yaml.safe_load(dataset.read_text()),
+                "filename": dataset.name,
+            }
+        )
     df = pd.DataFrame(df)
 
     df_o = df
@@ -158,7 +174,28 @@ def generate():
             f.write("\n")
         f.write("</tbody></table>\n\n")
 
-        f.write("// TODO add legend\n\n")
+        f.write("## :world_map: Legend\n")
+        f.write("- **Type**\n")
+        for item_name in types:
+            f.write(
+                f'  - <b id="{item_name}">{image_or_emoji(item_name, types)} {item_name}</b>\n'
+            )
+        f.write("- **Cased**\n")
+        for item_name in cases:
+            f.write(
+                f'  - <b id="{item_name}">{image_or_emoji(item_name, cases)} {item_name}</b>\n'
+            )
+        f.write("- **Pre-training corpora**\n")
+        for item_name in corpora:
+            f.write(
+                f'  - <b id="{item_name}">{image_or_emoji(item_name, corpora)} {item_name}</b>\n'
+            )
+        f.write(
+            "- **Links**\n"
+            "  - 📄 paper\n"
+            "  - ❞ citation\n"
+            "  - 🤗️ huggingface model card\n"
+        )
 
         for language in ["Multilingual"] + languages:
             if language == "Multilingual":
@@ -186,6 +223,7 @@ def generate():
                 "<th>languages</th>"
                 "<th>corpora</th>"
                 "<th>links</th>"
+                "<th>edit</th>"
                 "</tr></thead><tbody>\n"
             )
             for _, row in sorted(dff.iterrows(), key=lambda x: x[1]["name"].lower()):
@@ -202,8 +240,9 @@ def generate():
                         for x in sorted(
                             df[(df["name"] == row["name"])]["languages"].unique()
                         ):
+                            y = next(y for y in languages if y["name"] == x)
                             f.write(
-                                f'<span title="{x}">:{next(y["emoji_name"] for y in languages if y["name"] == x)}:</span> '
+                                f'<span title="{x}"><a href="#{y["emoji_name"]}-{y["name"]}">:{y["emoji_name"]}:</a></span> '
                             )
                         f.write("</td>")
                     elif column == "links":
@@ -230,30 +269,29 @@ def generate():
                                 if x != "" and x != "?":
                                     if x in corpora:
                                         f.write(
-                                            f'<li title="{x}">{corpora[x]["emoji"]}</li>'
+                                            f'<li title="{x}"><a href="#{x}">{image_or_emoji(x, corpora)}</a></li>'
                                         )
                                     else:
                                         f.write(f'<li title="{x}">{x}</li>')
                         f.write("</ul></td>")
                     elif column == "type":
                         if row["type"] in types:
-                            if "image" in types[row["type"]]:
-                                f.write(
-                                    f'<td align="center"><img width="21px" height="21px" title="{row["type"]}" src="{types[row["type"]]["image"]}"></td>'
-                                )
-                            else:
-                                f.write(
-                                    f'<td align="center"><div title="{row["type"]}">{types[row["type"]]["emoji"]}</div></td>'
-                                )
+                            f.write(
+                                f'<td align="center"><div title="{row["type"]}"><a href="#{row["type"]}">{image_or_emoji(row["type"], types)}</a></div></td>'
+                            )
                         else:
                             f.write(f"<td>{row['type']}</td>")
                     elif column == "cased":
                         if row["cased"] in cases:
                             f.write(
-                                f'<td><div title="{row["cased"]}">{cases[row["cased"]]["emoji"]}</div></td>'
+                                f'<td><div title="{row["cased"]}"><a href="#{row["cased"]}">{image_or_emoji(row["cased"], cases)}</a></div></td>'
                             )
                         else:
                             f.write(f"<td>{row['cased']}</td>")
+                    elif column == "edit":
+                        f.write(
+                            f'<td><a href="https://github.com/altsoph/EENLP/edit/main/docs/data/models/{row["filename"]}">edit</a></td>'
+                        )
                     else:
                         f.write(f"<td>{row[column]}</td>")
                 f.write("</tr>\n")

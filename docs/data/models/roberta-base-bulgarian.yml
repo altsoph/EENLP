@@ -9,6 +9,6 @@ citation: '?'
 cased: '?'
 pre-trained on:
   - news
-  - wiki
+  - wikipedia
   - oscar
 comments: smaller version https://huggingface.co/iarfmoose/roberta-small-bulgarian

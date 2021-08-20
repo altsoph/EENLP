@@ -28,8 +28,12 @@ columns = [
 def generate():
     df = []
     for dataset in here("docs/data/datasets/").glob("*.yml"):
-        df.append(yaml.safe_load(dataset.read_text()))
-        df[-1]["filename"] = dataset.name
+        df.append(
+            {
+                **yaml.safe_load(dataset.read_text()),
+                "filename": dataset.name,
+            }
+        )
     df = pd.DataFrame(df)
 
     with open(here("docs/datasets.md"), "w") as f:
@@ -153,8 +157,9 @@ def generate():
                         elif column == "languages":
                             f.write("<td>")
                             for x in sorted(row["languages"]):
+                                y = next(y for y in languages if y["name"] == x)
                                 f.write(
-                                    f'<span title="{x}">:{next(y["emoji_name"] for y in languages if y["name"] == x)}:</span> '
+                                    f'<span title="{x}"><a href="#{y["emoji_name"]}-{y["name"]}">:{y["emoji_name"]}:</a></span> '
                                 )
                             f.write("</td>")
                         elif column == "links":

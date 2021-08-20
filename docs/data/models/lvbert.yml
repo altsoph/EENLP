@@ -8,6 +8,6 @@ paper: https://pdfs.semanticscholar.org/d5f0/cf6f006f954316ce43aa945d6786808e871
 citation: https://ebooks.iospress.nl/volumearticle/55531
 cased: '?'
 pre-trained on:
-  - wiki
+  - wikipedia
   - LVK2018
 comments: https://github.com/LUMII-AILab/LVBERT

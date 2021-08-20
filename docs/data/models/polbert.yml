@@ -8,7 +8,7 @@ paper: '?'
 citation: '?'
 cased: both
 pre-trained on:
-  - cc
-  - wiki
+  - common crawl
+  - wikipedia
   - etc
 comments: usage examples https://huggingface.co/dkleczek/bert-base-polish-cased-v1#usage

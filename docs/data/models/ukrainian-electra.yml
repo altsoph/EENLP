@@ -8,6 +8,6 @@ paper: '?'
 citation: '?'
 cased: '?'
 pre-trained on:
-  - wiki
+  - wikipedia
   - oscar
 comments: github https://github.com/stefan-it/ukrainian-electra

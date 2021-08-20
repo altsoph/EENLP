@@ -30,6 +30,6 @@ paper: ''
 citation: ''
 cased: ''
 pre-trained on:
-  - cc
-  - wiki
+  - common crawl
+  - wikipedia
 comments: original fasttext
