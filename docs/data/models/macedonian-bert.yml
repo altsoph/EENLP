@@ -1,6 +1,5 @@
 name: Macedonian BERT
 description: ''
-category: single-language
 languages:
   - Macedonian
 type: BERT
@@ -9,5 +8,4 @@ paper: ''
 citation: ''
 cased: ''
 pre-trained on:
-  - ''
 comments: ''

@@ -186,9 +186,10 @@ def generate():
                 "<th>languages</th>"
                 "<th>corpora</th>"
                 "<th>links</th>"
-                "</tr></thead><tbody>"
+                "</tr></thead><tbody>\n"
             )
-            for _, row in sorted(dff.iterrows(), key=lambda x: x[1]["name"]):
+            for _, row in sorted(dff.iterrows(), key=lambda x: x[1]["name"].lower()):
+                f.write("<tr>")
                 for column in columns:
                     if column == "name":
                         f.write(f"<td")
@@ -224,14 +225,15 @@ def generate():
                         f.write("</td>")
                     elif column == "pre-trained on":
                         f.write("<td><ul>")
-                        for x in sorted(row["pre-trained on"]):
-                            if x != "" and x != "?":
-                                if x in corpora:
-                                    f.write(
-                                        f'<li title="{x}">{corpora[x]["emoji"]}</li>'
-                                    )
-                                else:
-                                    f.write(f'<li title="{x}">{x}</li>')
+                        if isinstance(row["pre-trained on"], list):
+                            for x in sorted(row["pre-trained on"]):
+                                if x != "" and x != "?":
+                                    if x in corpora:
+                                        f.write(
+                                            f'<li title="{x}">{corpora[x]["emoji"]}</li>'
+                                        )
+                                    else:
+                                        f.write(f'<li title="{x}">{x}</li>')
                         f.write("</ul></td>")
                     elif column == "type":
                         if row["type"] in types:

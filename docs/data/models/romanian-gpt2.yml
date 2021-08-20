@@ -1,6 +1,5 @@
 name: Romanian GPT2
 description: ''
-category: other
 languages:
   - Romanian
 type: GPT2
@@ -9,5 +8,4 @@ paper: ''
 citation: ''
 cased: ''
 pre-trained on:
-  - ''
 comments: ''

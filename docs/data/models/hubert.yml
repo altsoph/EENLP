@@ -1,6 +1,5 @@
 name: huBERT
 description: ''
-category: single-language
 languages:
   - Hungarian
 type: BERT

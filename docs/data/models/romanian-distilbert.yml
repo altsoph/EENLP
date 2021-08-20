@@ -1,6 +1,5 @@
 name: Romanian DistilBERT
 description: ''
-category: single-language
 languages:
   - Romanian
 type: DistilBERT

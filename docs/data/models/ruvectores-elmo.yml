@@ -1,6 +1,5 @@
 name: RuVectores ELMo
 description: ''
-category: other
 languages:
   - Russian
 type: ELMo
@@ -9,5 +8,4 @@ paper: ''
 citation: ''
 cased: ''
 pre-trained on:
-  - ''
 comments: ''

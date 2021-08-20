@@ -1,6 +1,5 @@
 name: ru_transformers
 description: ''
-category: other
 languages:
   - Russian
 type: GPT2
@@ -9,5 +8,4 @@ paper: ''
 citation: ''
 cased: ''
 pre-trained on:
-  - ''
 comments: https://github.com/mgrankin/ru_transformers

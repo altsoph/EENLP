@@ -1,6 +1,5 @@
 name: Romanian BERT
 description: ''
-category: single-language
 languages:
   - Romanian
 type: BERT

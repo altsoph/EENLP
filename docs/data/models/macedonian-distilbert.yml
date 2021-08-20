@@ -1,6 +1,5 @@
 name: Macedonian DistilBERT
 description: ''
-category: single-language
 languages:
   - Macedonian
 type: DistilBERT
@@ -9,5 +8,4 @@ paper: ''
 citation: ''
 cased: ''
 pre-trained on:
-  - ''
 comments: ''

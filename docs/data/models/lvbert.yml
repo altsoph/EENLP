@@ -1,6 +1,5 @@
 name: LVBERT
 description: ''
-category: single-language
 languages:
   - Latvian
 type: BERT

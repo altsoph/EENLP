@@ -1,6 +1,5 @@
 name: Polish RoBERTa
 description: ''
-category: single-language
 languages:
   - Polish
 type: RoBERTa

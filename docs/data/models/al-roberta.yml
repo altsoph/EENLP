@@ -1,6 +1,5 @@
 name: AL-RoBERTa
 description: ''
-category: single-language
 languages:
   - Albanian
 type: RoBERTa
@@ -9,5 +8,4 @@ paper: '?'
 citation: '?'
 cased: cased
 pre-trained on:
-  - ''
 comments: ''

@@ -1,6 +1,5 @@
 name: fasttext aligned supervised
 description: ''
-category: other
 languages:
   - Bulgarian
   - Croatian

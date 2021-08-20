@@ -12,15 +12,6 @@
     "description": {
       "type": "string"
     },
-    "category": {
-      "type": "string",
-      "enum": [
-        "multilingual-global",
-        "multilingual-local",
-        "single-language",
-        "other"
-      ]
-    },
     "languages": {
       "type": "array",
       "description": "Languages.",
@@ -58,30 +49,65 @@
       "type": "string"
     },
     "huggingface": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "paper": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "citation": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "cased": {
-      "type": "string"
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "enum": [
+            "uncased",
+            "cased",
+            "both"
+          ]
+        }
+      ]
     },
     "pre-trained on": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
+      "description": "",
+      "types": [
+        {
+          "type": "array",
+          "items": {
+            "anyOf": [
+              {
+                "type": "string"
+              }
+            ]
+          }
+        },
+        {
+          "type": "null"
+        }
+      ]
     },
     "comments": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     }
   },
   "required": [
     "name",
-    "category",
+    "type",
     "languages"
   ],
   "additionalProperties": false

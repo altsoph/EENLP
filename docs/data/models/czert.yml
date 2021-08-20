@@ -1,6 +1,5 @@
 name: CZERT
 description: ''
-category: single-language
 languages:
   - Czech
 type: BERT

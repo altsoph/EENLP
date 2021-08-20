@@ -1,6 +1,5 @@
 name: ukr-roberta-base
 description: ''
-category: single-language
 languages:
   - Ukrainian
 type: RoBERTa

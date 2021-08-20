@@ -1,6 +1,5 @@
 name: Polbert
 description: ''
-category: single-language
 languages:
   - Polish
 type: BERT

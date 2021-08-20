@@ -1,6 +1,5 @@
 name: mk-gpt2
 description: ''
-category: other
 languages:
   - Macedonian
 type: GPT2
@@ -9,5 +8,4 @@ paper: '?'
 citation: '?'
 cased: cased
 pre-trained on:
-  - ''
 comments: ''

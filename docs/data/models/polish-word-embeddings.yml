@@ -1,6 +1,5 @@
 name: Polish Word embeddings
 description: ''
-category: other
 languages:
   - Polish
 type: static word embeddings
@@ -9,5 +8,4 @@ paper: ''
 citation: ''
 cased: ''
 pre-trained on:
-  - ''
 comments: ''

@@ -1,6 +1,5 @@
 name: RoBERTa-base-bulgarian
 description: ''
-category: single-language
 languages:
   - Bulgarian
 type: RoBERTa

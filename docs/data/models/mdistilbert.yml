@@ -1,6 +1,5 @@
 name: mDistilBERT
 description: ''
-category: multilingual-global
 languages:
   - Albanian
   - Armenian

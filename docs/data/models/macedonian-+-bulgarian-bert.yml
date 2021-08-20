@@ -1,6 +1,5 @@
 name: Macedonian + Bulgarian BERT
 description: ''
-category: other
 languages:
   - Bulgarian
   - Macedonian
@@ -10,5 +9,4 @@ paper: ''
 citation: ''
 cased: ''
 pre-trained on:
-  - ''
 comments: ''

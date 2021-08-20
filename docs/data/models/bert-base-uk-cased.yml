@@ -1,6 +1,5 @@
 name: bert-base-uk-cased
 description: ''
-category: other
 languages:
   - Ukrainian
 type: DistilBERT
