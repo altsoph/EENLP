@@ -8,13 +8,13 @@ class Common(TypedDict):
 
 types: Dict[str, Common] = {
     "BERT": {
-        "image": "/docs/images/icons/bert.png",
+        "image": "/docs/images/icons/bert.jpg",
     },
     "RoBERTa": {
         "emoji": "🤖",
     },
     "ELMo": {
-        "emoji": "🔥",
+        "image": "/docs/images/icons/elmo.jpg",
     },
     "GPT2": {
         "emoji": "🦄",
