@@ -79,8 +79,10 @@ def generate():
             "  - 🤗️ huggingface datasets link\n"
             "- **Tasks**\n"
         )
-        for task in tasks.values():
-            f.write(f"  - **{task['emoji']} {task['display_name']}**\n")
+        for task_name, task in tasks.items():
+            f.write(
+                f'  - <b id="{task_name}">{task["emoji"]} {task["display_name"]}</b>\n'
+            )
             if "paperswithcode" in task:
                 f.write(f"    - [Papers with Code]({task['paperswithcode']})")
             if "paperswithcode" in task and "wikipedia" in task:
@@ -134,13 +136,16 @@ def generate():
                             f.write(f"<td")
                             if i == 0:
                                 f.write(f' id="{language.lower()}-{category}"')
-                            f.write(f'><a href="{row["URL"]}">{row[column]}</a></td>')
+                            f.write(f'><a href="{row["URL"]}">{row[column]}')
+                            if not pd.isna(row["full name"]):
+                                f.write(f" ({row['full name']})")
+                            f.write(f"</a></td>")
                         elif column == "category":
                             f.write("<td><ul>")
                             for x in sorted(row["tasks"]):
                                 if x in tasks:
                                     f.write(
-                                        f'<li title="{tasks[x]["display_name"]}">{tasks[x]["emoji"]}</li>'
+                                        f'<li title="{tasks[x]["display_name"]}"><a href="#{x}">{tasks[x]["emoji"]}</a></li>'
                                     )
                                 else:
                                     f.write(f'<li title="{x}">{x}</li>')

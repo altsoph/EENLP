@@ -9,8 +9,18 @@
       "type": "string",
       "description": "Name of the dataset."
     },
+    "full name": {
+      "description": "Optional, name without abbreviations, etc. Similar to the field with the same name on https://paperswithcode.com/datasets.",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
     "description": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "tasks": {
       "type": "array",
@@ -68,25 +78,46 @@
       }
     },
     "URL": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "license": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "paper": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "citation": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "download link": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "comments": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "huggingface": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     }
   },
   "required": [
