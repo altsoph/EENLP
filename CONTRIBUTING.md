@@ -4,6 +4,7 @@
 
 - tldr
   - Edit the yml files in `docs/data`.
+  - There's json schema in the same folder, GitHub actions will update the pages.
 
 Currently, we have these collections (edit these):
 
