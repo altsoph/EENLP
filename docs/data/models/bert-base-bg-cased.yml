@@ -1,6 +1,5 @@
 name: bert-base-bg-cased
 description: ''
-category: other
 languages:
   - Bulgarian
 type: DistilBERT

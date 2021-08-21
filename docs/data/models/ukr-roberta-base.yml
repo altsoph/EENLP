@@ -1,6 +1,5 @@
 name: ukr-roberta-base
 description: ''
-category: single-language
 languages:
   - Ukrainian
 type: RoBERTa
@@ -9,6 +8,6 @@ paper: '?'
 citation: '?'
 cased: '?'
 pre-trained on:
-  - wiki
+  - wikipedia
   - oscar
 comments: 'github: https://github.com/youscan/language-models + descr: https://youscan.io/blog/ukrainian-language-model/'

@@ -28,8 +28,12 @@ columns = [
 def generate():
     df = []
     for dataset in here("docs/data/datasets/").glob("*.yml"):
-        df.append(yaml.safe_load(dataset.read_text()))
-        df[-1]["filename"] = dataset.name
+        df.append(
+            {
+                **yaml.safe_load(dataset.read_text()),
+                "filename": dataset.name,
+            }
+        )
     df = pd.DataFrame(df)
 
     with open(here("docs/datasets.md"), "w") as f:
@@ -79,8 +83,10 @@ def generate():
             "  - 🤗️ huggingface datasets link\n"
             "- **Tasks**\n"
         )
-        for task in tasks.values():
-            f.write(f"  - **{task['emoji']} {task['display_name']}**\n")
+        for task_name, task in tasks.items():
+            f.write(
+                f'  - <b id="{task_name}">{task["emoji"]} {task["display_name"]}</b>\n'
+            )
             if "paperswithcode" in task:
                 f.write(f"    - [Papers with Code]({task['paperswithcode']})")
             if "paperswithcode" in task and "wikipedia" in task:
@@ -134,13 +140,16 @@ def generate():
                             f.write(f"<td")
                             if i == 0:
                                 f.write(f' id="{language.lower()}-{category}"')
-                            f.write(f'><a href="{row["URL"]}">{row[column]}</a></td>')
+                            f.write(f'><a href="{row["URL"]}">{row[column]}')
+                            if not pd.isna(row["full name"]):
+                                f.write(f" ({row['full name']})")
+                            f.write(f"</a></td>")
                         elif column == "category":
                             f.write("<td><ul>")
                             for x in sorted(row["tasks"]):
                                 if x in tasks:
                                     f.write(
-                                        f'<li title="{tasks[x]["display_name"]}">{tasks[x]["emoji"]}</li>'
+                                        f'<li title="{tasks[x]["display_name"]}"><a href="#{x}">{tasks[x]["emoji"]}</a></li>'
                                     )
                                 else:
                                     f.write(f'<li title="{x}">{x}</li>')
@@ -148,8 +157,9 @@ def generate():
                         elif column == "languages":
                             f.write("<td>")
                             for x in sorted(row["languages"]):
+                                y = next(y for y in languages if y["name"] == x)
                                 f.write(
-                                    f'<span title="{x}">:{next(y["emoji_name"] for y in languages if y["name"] == x)}:</span> '
+                                    f'<span title="{x}"><a href="#{y["emoji_name"]}-{y["name"]}">:{y["emoji_name"]}:</a></span> '
                                 )
                             f.write("</td>")
                         elif column == "links":

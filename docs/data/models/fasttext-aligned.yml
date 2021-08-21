@@ -1,6 +1,5 @@
 name: fasttext aligned
 description: ''
-category: other
 languages:
   - Albanian
   - Bosnian
@@ -24,5 +23,4 @@ paper: https://arxiv.org/abs/1804.07745
 citation: https://fasttext.cc/docs/en/aligned-vectors.html#references
 cased: ''
 pre-trained on:
-  - ''
 comments: original fasttext aligned automaticaly

@@ -1,6 +1,5 @@
 name: FinEst
 description: ''
-category: multilingual-local
 languages:
   - Estonian
 type: BERT

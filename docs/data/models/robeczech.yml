@@ -1,6 +1,5 @@
 name: RobeCzech
 description: ''
-category: single-language
 languages:
   - Czech
 type: RoBERTa

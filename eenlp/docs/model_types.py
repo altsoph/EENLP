@@ -8,13 +8,13 @@ class Common(TypedDict):
 
 types: Dict[str, Common] = {
     "BERT": {
-        "image": "/docs/images/icons/bert.png",
+        "image": "/docs/images/icons/bert.jpg",
     },
     "RoBERTa": {
         "emoji": "🤖",
     },
     "ELMo": {
-        "emoji": "🔥",
+        "image": "/docs/images/icons/elmo.jpg",
     },
     "GPT2": {
         "emoji": "🦄",
@@ -42,16 +42,9 @@ cases: Dict[str, Common] = {
     },
 }
 
-# TODO use aliases
 corpora: Dict[str, Common] = {
-    "cc": {
-        "emoji": "🕷",
-    },
     "common crawl": {
         "emoji": "🕷",
-    },
-    "wiki": {
-        "emoji": "🌐",
     },
     "wikipedia": {
         "emoji": "🌐",

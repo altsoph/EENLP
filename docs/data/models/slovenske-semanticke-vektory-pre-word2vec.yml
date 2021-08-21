@@ -1,6 +1,5 @@
 name: "Slovensk\xE9 s\xE9mantick\xE9 vektory pre word2vec"
 description: ''
-category: other
 languages:
   - Slovenian
 type: static word embeddings
@@ -9,5 +8,4 @@ paper: ''
 citation: ''
 cased: ''
 pre-trained on:
-  - ''
 comments: ''

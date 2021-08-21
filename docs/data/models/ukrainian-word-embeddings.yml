@@ -1,6 +1,5 @@
 name: Ukrainian word embeddings
 description: ''
-category: other
 languages:
   - Ukrainian
 type: static word embeddings
@@ -9,5 +8,4 @@ paper: ''
 citation: ''
 cased: ''
 pre-trained on:
-  - ''
 comments: ''

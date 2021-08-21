@@ -24,30 +24,33 @@ We hope that arranging and publishing these resources could be helpful for the N
 
 ## <a title='Albanian' href='docs/models.md#albania-albanian'>:albania:</a> <a title='Armenian' href='docs/models.md#armenia-armenian'>:armenia:</a> <a title='Belarusian' href='docs/models.md#belarus-belarusian'>:belarus:</a> <a title='Bosnian' href='docs/models.md#bosnia_herzegovina-bosnian'>:bosnia_herzegovina:</a> <a title='Bulgarian' href='docs/models.md#bulgaria-bulgarian'>:bulgaria:</a> <a title='Croatian' href='docs/models.md#croatia-croatian'>:croatia:</a> <a title='Czech' href='docs/models.md#czech_republic-czech'>:czech_republic:</a> <a title='Estonian' href='docs/models.md#estonia-estonian'>:estonia:</a> <a title='Georgian' href='docs/models.md#georgia-georgian'>:georgia:</a> <a title='Hungarian' href='docs/models.md#hungary-hungarian'>:hungary:</a> <a title='Kazakh' href='docs/models.md#kazakhstan-kazakh'>:kazakhstan:</a> <a title='Latvian' href='docs/models.md#latvia-latvian'>:latvia:</a> <a title='Lithuanian' href='docs/models.md#lithuania-lithuanian'>:lithuania:</a> <a title='Macedonian' href='docs/models.md#macedonia-macedonian'>:macedonia:</a> <a title='Moldovan' href='docs/models.md#moldova-moldovan'>:moldova:</a> <a title='Montenegrin' href='docs/models.md#montenegro-montenegrin'>:montenegro:</a> <a title='Polish' href='docs/models.md#poland-polish'>:poland:</a> <a title='Romanian' href='docs/models.md#romania-romanian'>:romania:</a> <a title='Russian' href='docs/models.md#ru-russian'>:ru:</a> <a title='Serbian' href='docs/models.md#serbia-serbian'>:serbia:</a> <a title='Slovakian' href='docs/models.md#slovakia-slovakian'>:slovakia:</a> <a title='Slovenian' href='docs/models.md#slovenia-slovenian'>:slovenia:</a> <a title='Ukrainian' href='docs/models.md#ukraine-ukrainian'>:ukraine:</a>
 
-## Citation
-
-```
-// TODO
-```
-
 ## Details
 
 - <span id="footnote-1"></span>What counts as Eastern European language?
-    - It's hard to exactly define, so we just took an initial set of languages. (We
-      used [this list](https://www.languagescientific.com/translation-and-localization-of-eastern-european-languages/)
-      as a starting point.) // TODO this sentence makes little sense, rewrite
+    - It's hard to exactly define. We took our initial list
+      from [here](https://www.languagescientific.com/translation-and-localization-of-eastern-european-languages/).
 
 - The collection seems to miss entire categories.
     - We were focusing on datasets and models especially suitable for the evaluation part of the project (e.g.
       cross-lingual transfer learning and sequence classification), but that doesn't mean this collection should be
       limited. Feel free to contribute.
 
-- A super relevant resource that I know of / that I am the author of is missing.
-    - Feel free to contribute. // TODO extend
-
 ## Contribution
 
-See the [contributing guidelines](CONTRIBUTING.md).
+Feel free to contribute. The details are in our [contributing guidelines](CONTRIBUTING.md).
+
+## Citation
+
+```
+@misc{tikhonov2021eenlp,
+      title={EENLP: Cross-lingual Eastern European NLP Index}, 
+      author={Alexey Tikhonov and Alex Malkhasov and Andrey Manoshin and George Dima and Réka Cserháti and Md. Sadek Hossain Asif and Matt Sárdi},
+      year={2021},
+      eprint={2108.02605},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+```
 
 ## Development
 

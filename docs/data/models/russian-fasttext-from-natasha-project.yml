@@ -1,6 +1,5 @@
 name: Russian fasttext from natasha project
 description: ''
-category: other
 languages:
   - Russian
 type: static word embeddings
@@ -9,5 +8,4 @@ paper: ''
 citation: ''
 cased: ''
 pre-trained on:
-  - ''
 comments: ''

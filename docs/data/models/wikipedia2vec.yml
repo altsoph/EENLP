@@ -1,6 +1,5 @@
 name: wikipedia2vec
 description: ''
-category: other
 languages:
   - Polish
   - Russian
@@ -10,5 +9,5 @@ paper: ''
 citation: ''
 cased: ''
 pre-trained on:
-  - wiki
+  - wikipedia
 comments: ''

@@ -1,6 +1,5 @@
 name: EstBERT
 description: ''
-category: single-language
 languages:
   - Estonian
 type: BERT

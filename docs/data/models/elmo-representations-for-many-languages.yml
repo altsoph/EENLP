@@ -1,6 +1,5 @@
 name: ELMo Representations for Many Languages
 description: ''
-category: other
 languages:
   - Bulgarian
   - Croatian
@@ -20,5 +19,4 @@ paper: ''
 citation: https://github.com/HIT-SCIR/ELMoForManyLangs#citation
 cased: ''
 pre-trained on:
-  - ''
 comments: ''

@@ -1,6 +1,5 @@
 name: Macedonian Electra
 description: ''
-category: single-language
 languages:
   - Macedonian
 type: Electra
@@ -9,5 +8,4 @@ paper: ''
 citation: ''
 cased: ''
 pre-trained on:
-  - ''
 comments: ''

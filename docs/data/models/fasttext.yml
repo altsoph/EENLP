@@ -1,6 +1,5 @@
 name: fasttext
 description: ''
-category: other
 languages:
   - Albanian
   - Armenian
@@ -31,6 +30,6 @@ paper: ''
 citation: ''
 cased: ''
 pre-trained on:
-  - cc
-  - wiki
+  - common crawl
+  - wikipedia
 comments: original fasttext

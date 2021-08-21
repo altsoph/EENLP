@@ -1,6 +1,5 @@
 name: ULMFIT - Serbian
 description: ''
-category: other
 languages:
   - Serbian
 type: ULMFiT
@@ -9,5 +8,5 @@ paper: ''
 citation: ''
 cased: ''
 pre-trained on:
-  - wiki
+  - wikipedia
 comments: unfinished?

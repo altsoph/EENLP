@@ -1,6 +1,5 @@
 name: ELMo Embeddings for Polish
 description: ''
-category: other
 languages:
   - Polish
 type: ELMo

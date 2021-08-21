@@ -1,6 +1,5 @@
 name: mDistilBERT
 description: ''
-category: multilingual-global
 languages:
   - Albanian
   - Armenian
@@ -32,5 +31,5 @@ citation: https://huggingface.co/distilbert-base-multilingual-cased#bibtex-entry
 cased: both
 pre-trained on:
   - multilingual
-  - wiki
+  - wikipedia
 comments: ''

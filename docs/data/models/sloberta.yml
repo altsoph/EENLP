@@ -1,6 +1,5 @@
 name: SloBERTa
 description: ''
-category: single-language
 languages:
   - Slovenian
 type: RoBERTa

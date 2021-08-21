@@ -1,6 +1,5 @@
 name: Lithuanian Word embeddings
 description: ''
-category: other
 languages:
   - Lithuanian
 type: static word embeddings

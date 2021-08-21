@@ -1,6 +1,5 @@
 name: fasttext aligned supervised
 description: ''
-category: other
 languages:
   - Bulgarian
   - Croatian
@@ -19,5 +18,5 @@ paper: ''
 citation: https://github.com/facebookresearch/MUSE#word-translation-without-parallel-data
 cased: ''
 pre-trained on:
-  - wiki
+  - wikipedia
 comments: original fasttext aligned supervised

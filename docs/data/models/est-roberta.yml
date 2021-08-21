@@ -1,6 +1,5 @@
 name: est-roberta
 description: ''
-category: single-language
 languages:
   - Estonian
 type: RoBERTa

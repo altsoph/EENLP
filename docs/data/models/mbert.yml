@@ -1,6 +1,5 @@
 name: mBERT
 description: ''
-category: multilingual-global
 languages:
   - Albanian
   - Armenian
@@ -32,5 +31,5 @@ citation: https://arxiv.org/abs/1810.04805
 cased: both
 pre-trained on:
   - multilingual
-  - wiki
+  - wikipedia
 comments: ''

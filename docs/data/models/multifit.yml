@@ -1,6 +1,5 @@
 name: MultiFiT
 description: ''
-category: other
 languages:
   - Albanian
   - Armenian
@@ -31,5 +30,4 @@ paper: https://aclanthology.org/D19-1572.pdf
 citation: ''
 cased: ''
 pre-trained on:
-  - ''
 comments: multilingual ULMFiT

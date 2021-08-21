@@ -1,6 +1,5 @@
 name: Polish ELMo
 description: ''
-category: other
 languages:
   - Polish
 type: ELMo
@@ -9,5 +8,4 @@ paper: ''
 citation: ''
 cased: ''
 pre-trained on:
-  - ''
 comments: ''

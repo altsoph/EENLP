@@ -1,6 +1,5 @@
 name: RuBERT
 description: ''
-category: single-language
 languages:
   - Russian
 type: BERT

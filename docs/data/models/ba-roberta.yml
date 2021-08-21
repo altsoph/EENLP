@@ -1,6 +1,5 @@
 name: BA-RoBERTa
 description: ''
-category: single-language
 languages:
   - Bosnian
 type: RoBERTa
@@ -9,5 +8,4 @@ paper: '?'
 citation: '?'
 cased: cased
 pre-trained on:
-  - ''
 comments: ''

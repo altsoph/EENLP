@@ -1,6 +1,5 @@
 name: Pretrained word and multi-sense embeddings for Estonian
 description: ''
-category: other
 languages:
   - Estonian
 type: static word embeddings
@@ -9,5 +8,4 @@ paper: ''
 citation: ''
 cased: ''
 pre-trained on:
-  - ''
 comments: ''

@@ -1,6 +1,5 @@
 name: Russian RoBERTa
 description: ''
-category: single-language
 languages:
   - Russian
 type: RoBERTa
@@ -9,5 +8,4 @@ paper: ''
 citation: ''
 cased: ''
 pre-trained on:
-  - ''
 comments: ''

@@ -1,6 +1,5 @@
 name: ELMo embeddings models for seven languages
 description: ''
-category: other
 languages:
   - Croatian
   - Estonian

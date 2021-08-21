@@ -1,6 +1,5 @@
 name: Word Embeddings for the Armenian Language
 description: ''
-category: other
 languages:
   - Armenian
 type: static word embeddings
@@ -9,5 +8,4 @@ paper: ''
 citation: ''
 cased: ''
 pre-trained on:
-  - ''
 comments: ''

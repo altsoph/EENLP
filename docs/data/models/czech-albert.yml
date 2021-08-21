@@ -1,6 +1,5 @@
 name: Czech ALBERT
 description: ''
-category: single-language
 languages:
   - Czech
 type: ALBERT
