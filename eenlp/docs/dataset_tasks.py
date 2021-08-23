@@ -13,9 +13,7 @@ tasks: Dict[str, Task] = {
     "named-entity-recognition-ner": {
         "display_name": "Named-entity recognition",
         "emoji": ":name_badge:",
-        "description": "A named entity is a real-world object, such as a person, location, organization, product, "
-        "etc. Examples of named entities include Barack Obama, New York City, Volkswagen Golf, or anything else that "
-        "can be named. Believe it or not, this emoji (:name_badge:) is a name badge.",
+        "description": "",
         "paperswithcode": "https://paperswithcode.com/task/named-entity-recognition-ner",
         "wikipedia": "https://en.wikipedia.org/wiki/Named-entity_recognition",
     },
