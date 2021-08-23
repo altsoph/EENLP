@@ -20,8 +20,6 @@ There are 2 options to create a pull request, the first being easier.
 
 ### Contribute directly on GitHub
 
-// TODO add screenshots
-
 - You need to have a GitHub account and be logged in.
 - Go to one of the aforementioned folders (datasets or models).
 - Either click "Add file" in the top right, or open a file to edit and click the "pencil" icon on the top right. When
