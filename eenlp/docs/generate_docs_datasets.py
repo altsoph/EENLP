@@ -57,7 +57,7 @@ def generate():
                 continue
 
             f.write(
-                f"| **[:{emoji_name}:&nbsp;{language}](#{emoji_name}-{language.lower().replace('/', '')})** |"
+                f"| **[{language}](#{emoji_name}-{language.lower().replace('/', '')})** |"
             )
             for category in categories:
                 if category == "other":

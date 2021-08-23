@@ -5,7 +5,7 @@ import pandas as pd
 import yaml
 from pyprojroot import here
 
-from eenlp.docs.languages import languages
+from eenlp.docs.languages import Language, languages
 from eenlp.docs.model_types import Common, cases, corpora, types
 
 columns = [
@@ -64,6 +64,19 @@ def image_or_emoji(name: str, base_type: Dict[str, Common]) -> str:
         return item["emoji"]
 
 
+def is_language_empty(df: pd.DataFrame, language: Language) -> bool:
+    return not len(
+        df[
+            df.apply(
+                lambda x: x["languages"] == language["name"]
+                and len(df[df.index == x.name]) < 10
+                and x["type"] not in multilang_models,
+                axis=1,
+            )
+        ]
+    )
+
+
 def generate():
     df = []
     for dataset in here("docs/data/models/").glob("*.yml"):
@@ -91,9 +104,37 @@ def generate():
     with open(here("docs/models.md"), "w") as f:
         f.write("# Models\n\n")
 
+        # multilang
+
         f.write("<table><thead>")
         f.write(
-            f'<tr><td rowspan="2"></td><td align="center" width="100">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;multilingual&nbsp;(transformers)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td align="center" colspan="{len(few_langs_models)}">several languages (transformers)</td><td align="center" colspan="5">single-language models</td></tr>'
+            f'<tr><td align="center"><td width="100%" align="center">multilingual (transformers)</td></tr></thead><tbody>\n'
+        )
+        f.write(
+            f'<tr><td><a href="#earth_africa-multilingual"><b>Multilingual</b></a></td><td align="center">'
+        )
+        dff = df_o[
+            (
+                df_o.apply(
+                    lambda x: 10 <= len(x["languages"])
+                    and x["type"] in multilang_models,
+                    axis=1,
+                )
+            )
+        ]
+        f.write(
+            " / ".join(
+                sorted(
+                    f'<a href="#{x.name.lower().replace(" ", "-")}-multilingual">{x.name}</a>'
+                    for x in dff.itertuples()
+                )
+            )
+        )
+        f.write("</td></tr></tbody></table>\n\n")
+
+        f.write("<table><thead>")
+        f.write(
+            f'<tr><td align="center"><td width="100%" align="center" colspan="{len(few_langs_models)}">several languages (transformers)</td></tr>'
         )
         f.write("<tr><td></td>")
 
@@ -103,56 +144,19 @@ def generate():
                 for x in df.loc[few_langs_models]["name"].unique()
             )
         )
-
-        f.write(
-            '<td align="center">BERT</td><td align="center">RoBERTa</td><td align="center">DistilBERT</td><td align="center">Electra</td><td align="center">ALBERT</td>'
-        )
         f.write("</tr></thead><tbody>\n")
 
         for i, language in enumerate(languages):
+            if is_language_empty(df, language):
+                continue
+
             emoji_name = language["emoji_name"]
             language = language["name"]
 
-            if not len(
-                df[
-                    df.apply(
-                        lambda x: x["languages"] == language
-                        and len(df[df.index == x.name]) < 10
-                        and x["type"] not in multilang_models,
-                        axis=1,
-                    )
-                ]
-            ):
-                continue
-
             f.write(
-                f'<tr><td><a href="#{emoji_name}-{language.lower().replace("/", "")}"><b>:{emoji_name}:&nbsp;{language}</b></a></td>'
+                f'<tr><td><a href="#{emoji_name}-{language.lower().replace("/", "")}"><b>{language}</b></a></td>'
             )
 
-            # multilang
-
-            f.write("<td>")
-            dff = df[
-                (
-                    df.apply(
-                        lambda x: x["languages"] == language
-                        and 10 <= len(df[df.index == x.name])
-                        and x["type"] in multilang_models,
-                        axis=1,
-                    )
-                )
-            ]
-            f.write(
-                " / ".join(
-                    sorted(
-                        f'<a href="#{x.name.lower().replace(" ", "-")}-multilingual">{x.name}</a>'
-                        for x in dff.itertuples()
-                    )
-                )
-            )
-            f.write("</td>")
-
-            # few langs
             for i in few_langs_models:
                 f.write('<td align="center">')
                 dff = df[(df.index == i) & (df["languages"] == language)]
@@ -161,6 +165,32 @@ def generate():
                         f'<a href="#{dff["name"].item().lower().replace(" ", "-")}-{language}">{dff["name"].item()}</a>'
                     )
                 f.write("</td>")
+            f.write("</tr>\n")
+        f.write("</tbody></table>\n\n")
+
+        # single lang
+
+        f.write("<table><thead>")
+        f.write(
+            f'<tr><td></td><td width="100%" align="center" colspan="5">single-language models</td></tr>'
+        )
+        f.write("<tr><td></td>")
+
+        f.write(
+            '<td align="center">BERT</td><td align="center">RoBERTa</td><td align="center">DistilBERT</td><td align="center">Electra</td><td align="center">ALBERT</td>'
+        )
+        f.write("</tr></thead><tbody>\n")
+
+        for i, language in enumerate(languages):
+            if is_language_empty(df, language):
+                continue
+
+            emoji_name = language["emoji_name"]
+            language = language["name"]
+
+            f.write(
+                f'<tr><td><a href="#{emoji_name}-{language.lower().replace("/", "")}"><b>{language}</b></a></td>'
+            )
 
             for model_name in single_language_models:
                 f.write('<td align="center">')
@@ -182,8 +212,7 @@ def generate():
                         )
                     )
                 f.write("</td>")
-
-            f.write("\n")
+            f.write("</tr>\n")
         f.write("</tbody></table>\n\n")
 
         f.write("## :world_map: Legend\n")
@@ -215,20 +244,10 @@ def generate():
             if language == "Multilingual":
                 emoji_name = "earth_africa"
             else:
+                if is_language_empty(df, language):
+                    continue
                 emoji_name = language["emoji_name"]
                 language = language["name"]
-
-                if not len(
-                    df[
-                        df.apply(
-                            lambda x: x["languages"] == language
-                            and len(df[df.index == x.name]) < 10
-                            and x["type"] not in multilang_models,
-                            axis=1,
-                        )
-                    ]
-                ):
-                    continue
 
             f.write(f"## :{emoji_name}: {language}\n\n")
 
