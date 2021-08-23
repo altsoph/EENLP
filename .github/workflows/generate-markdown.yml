@@ -3,7 +3,7 @@ name: Generate markdown
 on:
   push:
     branches:
-      - main,
+      - main
       - resources_page
     paths:
       - docs/data/datasets/*.yml
