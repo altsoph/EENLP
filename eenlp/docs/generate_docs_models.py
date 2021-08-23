@@ -10,7 +10,7 @@ from eenlp.docs.model_types import Common, cases, corpora, types
 
 columns = [
     "name",
-    "description",
+    # "description",
     "type",
     "cased",
     "languages",
@@ -113,6 +113,18 @@ def generate():
             emoji_name = language["emoji_name"]
             language = language["name"]
 
+            if not len(
+                df[
+                    df.apply(
+                        lambda x: x["languages"] == language
+                        and len(df[df.index == x.name]) < 10
+                        and x["type"] not in multilang_models,
+                        axis=1,
+                    )
+                ]
+            ):
+                continue
+
             f.write(
                 f'<tr><td><a href="#{emoji_name}-{language.lower().replace("/", "")}"><b>:{emoji_name}:&nbsp;{language}</b></a></td>'
             )
@@ -206,6 +218,18 @@ def generate():
                 emoji_name = language["emoji_name"]
                 language = language["name"]
 
+                if not len(
+                    df[
+                        df.apply(
+                            lambda x: x["languages"] == language
+                            and len(df[df.index == x.name]) < 10
+                            and x["type"] not in multilang_models,
+                            axis=1,
+                        )
+                    ]
+                ):
+                    continue
+
             f.write(f"## :{emoji_name}: {language}\n\n")
 
             if language == "Multilingual":
@@ -219,7 +243,7 @@ def generate():
             f.write(
                 '<table width="100%"><thead><tr>'
                 '<th width="66%">name</th>'
-                '<th width="33%">description</th>'
+                # '<th width="33%">description</th>'
                 "<th>type</th>"
                 "<th>cased</th>"
                 "<th>languages</th>"
@@ -248,16 +272,31 @@ def generate():
                             )
                         f.write("</td>")
                     elif column == "links":
+                        links_used = set()
                         f.write("<td>")
-                        if row["paper"] and row["paper"] != "?":
+                        if (
+                            row["paper"]
+                            and row["paper"] != "?"
+                            and row["paper"] not in links_used
+                        ):
+                            links_used.add(row["paper"])
                             f.write(
                                 f'<div title="paper"><a href="{row["paper"]}">📄</a></div>'
                             )
-                        if row["citation"] and row["citation"] != "?":
+                        if (
+                            row["citation"]
+                            and row["citation"] != "?"
+                            and row["citation"] not in links_used
+                        ):
+                            links_used.add(row["citation"])
                             f.write(
                                 f'<div title="citation"><a href="{row["citation"]}">❞</a></div>'
                             )
-                        if not pd.isna(row["huggingface"]):
+                        if (
+                            not pd.isna(row["huggingface"])
+                            and row["huggingface"] not in links_used
+                        ):
+                            links_used.add(row["huggingface"])
                             f.write(
                                 f"<div>"
                                 f'<a title="huggingface model card" href="{row["huggingface"]}">🤗️</a> '
