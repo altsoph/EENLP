@@ -31,11 +31,11 @@ types: Dict[str, Common] = {
 }
 
 cases: Dict[str, Common] = {
-    "cased": {
-        "emoji": "🔠",
-    },
     "uncased": {
         "emoji": "🔡",
+    },
+    "cased": {
+        "emoji": "🔠",
     },
     "both": {
         "emoji": "🔡🔠",

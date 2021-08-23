@@ -37,8 +37,8 @@
   - <b id="Electra">⚡️ Electra</b>
   - <b id="static word embeddings">🧤 static word embeddings</b>
 - **Cased**
-  - <b id="cased">🔠 cased</b>
   - <b id="uncased">🔡 uncased</b>
+  - <b id="cased">🔠 cased</b>
   - <b id="both">🔡🔠 both</b>
 - **Pre-training corpora**
   - <b id="common crawl">🕷 common crawl</b>
@@ -49,6 +49,8 @@
   - 📄 paper
   - ❞ citation
   - 🤗️ huggingface model card
+
+# Languages
 
 ## :earth_africa: Multilingual
 

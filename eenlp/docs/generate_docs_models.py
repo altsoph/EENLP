@@ -197,6 +197,8 @@ def generate():
             "  - 🤗️ huggingface model card\n"
         )
 
+        f.write("# Languages\n")
+
         for language in ["Multilingual"] + languages:
             if language == "Multilingual":
                 emoji_name = "earth_africa"
