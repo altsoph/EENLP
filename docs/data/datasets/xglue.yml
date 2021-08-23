@@ -8,8 +8,8 @@ languages:
 tasks:
   - multiple tasks
   - text-classification
+  - named-entity-recognition-ner
   - NLI
-  - NER
   - POS
 URL: https://microsoft.github.io/XGLUE/
 license: https://github.com/microsoft/XGLUE/blob/master/LICENSE
