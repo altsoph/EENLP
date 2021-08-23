@@ -6,8 +6,8 @@ languages:
 tasks:
   - word-sense-disambiguation
 URL: http://b2find.eudat.eu/dataset/159a5572-715e-5b90-b597-bffa3e9580d9
-license: '?'
+license: CC BY-NC-SA 3.0
 paper: https://aclanthology.org/L16-1483.pdf
 citation: https://aclanthology.org/L16-1483.pdf
-download link: http://qtleap.eu/resources/
+download link: '?'
 comments: ''
