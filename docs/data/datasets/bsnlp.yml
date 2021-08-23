@@ -9,7 +9,7 @@ tasks:
   - named-entity-recognition-ner
 URL: http://bsnlp.cs.helsinki.fi/bsnlp-2019/shared_task.html
 license: '?'
-paper: '?'
-citation: http://bsnlp.cs.helsinki.fi/bsnlp-2019/shared_task.html
-download link: 'need to ask for access: http://bsnlp.cs.helsinki.fi/bsnlp-2019/shared_task.html'
+paper: https://aclanthology.org/W19-3709/
+citation: https://aclanthology.org/W19-3709/
+download link: '?'
 comments: ''
