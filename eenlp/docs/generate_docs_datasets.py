@@ -17,7 +17,7 @@ categories = [
 
 columns = [
     "name",
-    "description",
+    # "description",
     "category",
     "languages",
     "links",
@@ -52,6 +52,9 @@ def generate():
         for i, language in enumerate(languages):
             emoji_name = language["emoji_name"]
             language = language["name"]
+
+            if not len(df[df["languages"].apply(lambda x: language in x)]):
+                continue
 
             f.write(
                 f"| **[:{emoji_name}:&nbsp;{language}](#{emoji_name}-{language.lower().replace('/', '')})** |"
@@ -104,12 +107,15 @@ def generate():
             emoji_name = language["emoji_name"]
             language = language["name"]
 
+            if not len(df[df["languages"].apply(lambda x: language in x)]):
+                continue
+
             f.write(f"## :{emoji_name}: {language}\n\n")
 
             f.write(
                 f'<table width="100%"><thead><tr>'
                 f'<th width="66%">name</th>'
-                f'<th width="33%">description</th>'
+                # f'<th width="33%">description</th>'
                 f"<th>tasks</th>"
                 f"<th>languages</th>"
                 f"<th>&nbsp;links&nbsp;&nbsp;</th>"
@@ -163,24 +169,49 @@ def generate():
                                 )
                             f.write("</td>")
                         elif column == "links":
+                            links_used = set()
                             f.write("<td>")
-                            if row["URL"] and row["URL"] != "?":
+                            if (
+                                row["URL"]
+                                and row["URL"] != "?"
+                                and row["URL"] not in links_used
+                            ):
+                                links_used.add(row["URL"])
                                 f.write(
                                     f'<div title="url"><a href="{row["URL"]}">🌐</a></div>'
                                 )
-                            if row["paper"] and row["paper"] != "?":
+                            if (
+                                row["paper"]
+                                and row["paper"] != "?"
+                                and row["paper"] not in links_used
+                            ):
+                                links_used.add(row["paper"])
                                 f.write(
                                     f'<div title="paper"><a href="{row["paper"]}">📄</a></div>'
                                 )
-                            if row["citation"] and row["citation"] != "?":
+                            if (
+                                row["citation"]
+                                and row["citation"] != "?"
+                                and row["citation"] not in links_used
+                            ):
+                                links_used.add(row["citation"])
                                 f.write(
                                     f'<div title="citation"><a href="{row["citation"]}">❞</a></div>'
                                 )
-                            if row["download link"] and row["download link"] != "?":
+                            if (
+                                row["download link"]
+                                and row["download link"] != "?"
+                                and row["download link"] not in links_used
+                            ):
+                                links_used.add(row["download link"])
                                 f.write(
                                     f'<div title="download link"><a href="{row["download link"]}">⬇️</a></div>'
                                 )
-                            if not pd.isna(row["huggingface"]):
+                            if (
+                                not pd.isna(row["huggingface"])
+                                and row["huggingface"] not in links_used
+                            ):
+                                links_used.add(row["huggingface"])
                                 f.write(
                                     f"<div>"
                                     f'<a title="huggingface dataset" href="{row["huggingface"]}">🤗️</a> '
