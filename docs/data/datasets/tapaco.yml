@@ -19,9 +19,9 @@ languages:
 tasks:
   - paraphrase-identification
 URL: https://zenodo.org/record/3707949#.YPMTcpgzYuU
-license: '?'
-paper: '?'
-citation: '?'
-download link: https://huggingface.co/datasets/tapaco
+license: CC BY 2.0
+paper: https://aclanthology.org/2020.lrec-1.848/
+citation: https://aclanthology.org/2020.lrec-1.848/
+download link: https://zenodo.org/record/3707949/files/tapaco_v1.0.zip?download=1
 comments: ''
 huggingface: https://huggingface.co/datasets/tapaco
