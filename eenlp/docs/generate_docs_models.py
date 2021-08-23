@@ -126,7 +126,7 @@ def generate():
                 continue
 
             f.write(
-                f'<tr><td><a href="#{emoji_name}-{language.lower().replace("/", "")}"><b>:{emoji_name}:&nbsp;{language}</b></a></td>'
+                f'<tr><td><a href="#{emoji_name}-{language.lower().replace("/", "")}"><b>{language}</b></a></td>'
             )
 
             # multilang
