@@ -5,8 +5,8 @@ languages:
 tasks:
   - syntax + morphology
 URL: http://metashare.nytud.hu/repository/browse/szeged-corpus/e2bf6a486c7811e2aa7c68b599c26a069a3f6f3a10d745e08d1db15344df55ea/
-license: MS - NC - No ReD
+license: 'MS - NC - No ReD. You need to register here: http://metashare.nytud.hu/repository/download/e2bf6a486c7811e2aa7c68b599c26a069a3f6f3a10d745e08d1db15344df55ea/'
 paper: https://www.researchgate.net/profile/Zoltan-Alexin/publication/252066444_K%27ezzel_annot%27alt_magyar_nyelvi_korpusz_a_Szeged_Korpusz/links/56ec19f708aed740cbb611a1/Kezzel-annotalt-magyar-nyelvi-korpusz-a-Szeged-Korpusz.pdf
 citation: https://www.sed.inf.u-szeged.hu/biblio/export/bibtex/586
-download link: 'ask for access: http://metashare.nytud.hu/repository/download/e2bf6a486c7811e2aa7c68b599c26a069a3f6f3a10d745e08d1db15344df55ea/'
+download link: ''
 comments: ''
