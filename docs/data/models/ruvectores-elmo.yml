@@ -3,7 +3,8 @@ description: ''
 languages:
   - Russian
 type: ELMo
-huggingface: https://rusvectores.org/en/models/
+URL: https://rusvectores.org/en/models/
+license: CC BY 4.0
 paper: ''
 citation: ''
 cased: ''
