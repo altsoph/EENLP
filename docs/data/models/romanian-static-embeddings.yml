@@ -3,7 +3,7 @@ description: ''
 languages:
   - Romanian
 type: static word embeddings
-huggingface: https://github.com/senisioi/ro_resources
+URL: https://github.com/senisioi/ro_resources
 paper: ''
 citation: ''
 cased: ''
