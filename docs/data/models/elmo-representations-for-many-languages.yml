@@ -15,6 +15,7 @@ languages:
   - Ukrainian
 type: ELMo
 huggingface: https://github.com/HIT-SCIR/ELMoForManyLangs
+url: https://github.com/HIT-SCIR/ELMoForManyLangs/
 paper: ''
 citation: https://github.com/HIT-SCIR/ELMoForManyLangs#citation
 cased: ''
