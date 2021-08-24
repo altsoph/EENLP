@@ -1,7 +1,7 @@
 # Models
 
 <table><thead><tr><td align="center"><td width="100%" align="center"><b>multilingual (transformers)</b></td></tr></thead><tbody>
-<tr><td><a href="#earth_africa-multilingual"><b>Multilingual</b></a></td><td align="center"><a href="#labse-multilingual">LaBSE</a> / <a href="#mbert-multilingual">mBERT</a> / <a href="#mdistilbert-multilingual">mDistilBERT</a> / <a href="#xlm-r-multilingual">XLM-R</a></td></tr></tbody></table>
+<tr><td><a href="#earth_africa-multilingual"><b>Multilingual</b></a></td><td align="center"><a href="#elmo-representations-for-many-languages-multilingual">ELMo Representations for Many Languages</a> / <a href="#fasttext-aligned-multilingual">fasttext aligned</a> / <a href="#fasttext-aligned-supervised-multilingual">fasttext aligned supervised</a> / <a href="#fasttext-original-multilingual">fasttext original</a> / <a href="#labse-multilingual">LaBSE</a> / <a href="#mbert-multilingual">mBERT</a> / <a href="#mdistilbert-multilingual">mDistilBERT</a> / <a href="#multifit-multilingual">MultiFiT</a> / <a href="#subs2vec-multilingual">subs2vec</a> / <a href="#xlm-r-multilingual">XLM-R</a></td></tr></tbody></table>
 
 <table><thead><tr><td align="center"><td width="100%" align="center" colspan="5"><b>several languages (transformers)</b></td></tr><tr><td></td><td align="center"><b>Macedonian + Bulgarian BERT</b></td><td align="center"><b>BERTić</b></td><td align="center"><b>SlavicBERT</b></td><td align="center"><b>CroSloEngual</b></td><td align="center"><b>LitLat BERT</b></td></tr></thead><tbody>
 <tr><td><a href="#albania-albanian"><b>Albanian</b></a></td><td align="center"></td><td align="center"></td><td align="center"></td><td align="center"></td><td align="center"></td></tr>

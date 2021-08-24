@@ -27,15 +27,15 @@ columns = [
 #   - 1 < few < 10
 #   - 10 <= multi
 
-multilang_models = [
-    "BERT",
-    "RoBERTa",
-    "DistilBERT",
-    "Electra",
-    "ALBERT",
-    "mBERT",
-    "XLM-RoBERTa",
-]
+# multilang_models = [
+#     "BERT",
+#     "RoBERTa",
+#     "DistilBERT",
+#     "Electra",
+#     "ALBERT",
+#     "mBERT",
+#     "XLM-RoBERTa",
+# ]
 
 few_language_models = [
     "BERT",
@@ -115,8 +115,8 @@ def generate():
         dff = df_o[
             (
                 df_o.apply(
-                    lambda x: 10 <= len(x["languages"])
-                    and x["type"] in multilang_models,
+                    lambda x: 10 <= len(x["languages"]),
+                    # and x["type"] in multilang_models,
                     axis=1,
                 )
             )
