@@ -3,9 +3,9 @@ description: ''
 languages:
   - Lithuanian
 type: static word embeddings
-huggingface: https://clarin.vdu.lt/xmlui/handle/20.500.11821/26
+URL: https://clarin.vdu.lt/xmlui/handle/20.500.11821/26
 paper: ''
-citation: ''
+citation: http://hdl.handle.net/20.500.11821/26
 cased: ''
 pre-trained on:
   - Delfi.lt
