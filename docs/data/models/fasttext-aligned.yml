@@ -18,7 +18,8 @@ languages:
   - Slovenian
   - Ukrainian
 type: static word embeddings
-huggingface: https://fasttext.cc/docs/en/aligned-vectors.html
+URL: https://fasttext.cc/docs/en/aligned-vectors.html
+license: CC BY-SA 3.0
 paper: https://arxiv.org/abs/1804.07745
 citation: https://fasttext.cc/docs/en/aligned-vectors.html#references
 cased: ''
