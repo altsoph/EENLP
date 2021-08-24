@@ -3,7 +3,7 @@ description: ''
 languages:
   - Russian
 type: static word embeddings
-huggingface: https://github.com/natasha/navec
+URL: https://github.com/natasha/navec
 paper: ''
 citation: ''
 cased: ''
