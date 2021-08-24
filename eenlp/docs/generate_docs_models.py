@@ -69,8 +69,7 @@ def is_language_empty(df: pd.DataFrame, language: Language) -> bool:
         df[
             df.apply(
                 lambda x: x["languages"] == language["name"]
-                and len(df[df.index == x.name]) < 10
-                and x["type"] not in multilang_models,
+                and len(df[df.index == x.name]) < 10,
                 axis=1,
             )
         ]
