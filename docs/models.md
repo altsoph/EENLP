@@ -98,7 +98,7 @@
 ## :armenia: Armenian
 
 <table width="100%"><thead><tr><th width="66%">name</th><th>type</th><th>cased</th><th>languages</th><th>corpora</th><th>links</th><th>edit</th></tr></thead><tbody>
-<tr><td id="word-embeddings-for-the-armenian-language-Armenian">Word Embeddings for the Armenian Language</td><td align="center"><div title="static word embeddings"><a href="#static word embeddings">🧤</a></div></td><td></td><td><span title="Armenian"><a href="#armenia-Armenian">:armenia:</a></span> </td><td><ul></ul></td><td><div><a title="huggingface model card" href="https://github.com/ispras-texterra/word-embeddings-eval-hy">🤗️</a> </div></td><td><a href="https://github.com/altsoph/EENLP/edit/main/docs/data/models/word-embeddings-for-the-armenian-language.yml">edit</a></td></tr>
+<tr><td id="word-embeddings-for-the-armenian-language-Armenian">Word Embeddings for the Armenian Language</td><td align="center"><div title="static word embeddings"><a href="#static word embeddings">🧤</a></div></td><td></td><td><span title="Armenian"><a href="#armenia-Armenian">:armenia:</a></span> </td><td><ul><li title="EANC corpus">EANC corpus</li><li title="web">web</li><li title="wiki">wiki</li></ul></td><td><div title="paper"><a href="https://arxiv.org/abs/1906.03134">📄</a></div><div title="url"><a href="https://github.com/ispras-texterra/word-embeddings-eval-hy">🌐</a></div></td><td><a href="https://github.com/altsoph/EENLP/edit/main/docs/data/models/word-embeddings-for-the-armenian-language.yml">edit</a></td></tr>
 </tbody></table>
 
 &#160;  [+ multilingual](#earth_africa-multilingual)
