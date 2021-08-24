@@ -14,7 +14,7 @@ We hope this broad index of NLP resources for Eastern European languages could h
 * to understand cross-cultural and cross-linguistic differences;
 * to decrease the digital divide.
 
-## Resources enumeration stage
+## Resources enumeration
 First, we focused on indexing existing Eastern European language resources – both datasets and models. We were able to collect 92 relevant datasets and at least 45 relevant Transformer-based models.
 
 As the result of this stage, we made a comprehensive list of Eastern European NLP resources and published it in our github repository. We believe it would be a small but valuable step in building the generalized NLP field of Eastern Europe.
