@@ -7,10 +7,10 @@
 This repo contains a curated meta-index of NLP datasets and models for Eastern European languages. It originally started as a summer school project at EEML 2021 (Eastern European Machine Learning Summer School) (hence the scope), self-organized by a group of participants. You can read more details about this initial summer school project [here](https://github.com/altsoph/EENLP/blob/main/REPORT.md). 
 
 We hope this broad index of NLP resources for Eastern European languages could help:
-* to facilitate the synergy of Eastern European NLP research communities;
-* to highlight the underrepresented languages of Eastern Europe;
-* to understand cross-cultural and cross-linguistic differences;
-* to decrease the digital divide.
+* facilitate the synergy of Eastern European NLP research communities;
+* highlight the underrepresented languages of Eastern Europe;
+* understand cross-cultural and cross-linguistic differences;
+* decrease the digital language divide.
 
 Initially, EENLP is biased towards datasets for semantic NLP tasks such as sentiment analysis, NLI, word sense disambiguation, etc.
 However, we plan to expand and improve this index further, so feel free to [contribute new relevant resources](CONTRIBUTING.md). 
