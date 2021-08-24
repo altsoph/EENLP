@@ -3,7 +3,8 @@ description: ''
 languages:
   - Polish
 type: static word embeddings
-huggingface: https://github.com/sdadas/polish-nlp-resources#word-embeddings-and-language-models
+URL: https://github.com/sdadas/polish-nlp-resources#word-embeddings-and-language-models
+license: GPL-3.0
 paper: ''
 citation: ''
 cased: ''
