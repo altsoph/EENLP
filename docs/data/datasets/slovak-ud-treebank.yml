@@ -4,9 +4,9 @@ languages:
   - Slovakian
 tasks:
   - part-of-speech-tagging
-URL: https://github.com/UniversalDependencies/UD_Slovak-SNK/blob/master/README.md
+URL: https://github.com/UniversalDependencies/UD_Slovak-SNK
 license: CC BY-SA 4.0
-paper: '?'
-citation: https://lindat.mff.cuni.cz/repository/xmlui/handle/11234/1-1822
-download link: https://github.com/UniversalDependencies/UD_Slovak-SNK
+paper: https://github.com/UniversalDependencies/UD_Slovak-SNK#references
+citation: ''
+download link: ''
 comments: ''
