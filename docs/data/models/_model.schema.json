@@ -127,6 +127,12 @@
         "string",
         "null"
       ]
+    },
+    "URL": {
+      "type": [
+        "string",
+        "null"
+      ]
     }
   },
   "required": [

@@ -235,6 +235,7 @@ def generate():
             "  - 📄 paper\n"
             "  - ❞ citation\n"
             "  - 🤗️ huggingface model card\n"
+            "  - 🌐 URL\n"
         )
 
         f.write("# Languages\n")
@@ -319,6 +320,16 @@ def generate():
                                 f"<div>"
                                 f'<a title="huggingface model card" href="{row["huggingface"]}">🤗️</a> '
                                 f"</div>"
+                            )
+                        if (
+                            not pd.isna(row["URL"])
+                            and row["URL"]
+                            and row["URL"] != "?"
+                            and row["URL"] not in links_used
+                        ):
+                            links_used.add(row["URL"])
+                            f.write(
+                                f'<div title="url"><a href="{row["URL"]}">🌐</a></div>'
                             )
                         f.write("</td>")
                     elif column == "pre-trained on":
