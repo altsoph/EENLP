@@ -4,6 +4,7 @@ languages:
   - Estonian
 type: BERT
 huggingface: https://huggingface.co/EMBEDDIA/finest-bert
+URL: http://embeddia.eu/
 paper: https://arxiv.org/abs/2006.07890
 citation: https://arxiv.org/abs/2006.07890
 cased: cased (?)
