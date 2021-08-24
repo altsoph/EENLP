@@ -7,8 +7,9 @@ languages:
   - Serbian
 type: BERT/Electra(?)
 huggingface: https://huggingface.co/classla/bcms-bertic
+license: apache-2.0
 paper: https://arxiv.org/abs/2104.09243
-citation: https://huggingface.co/classla/bcms-bertic
+citation: https://arxiv.org/abs/2104.09243
 cased: cased
 pre-trained on:
   - web crawled texts
