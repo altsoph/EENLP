@@ -3,7 +3,8 @@ description: ''
 languages:
   - Slovenian
 type: static word embeddings
-huggingface: https://github.com/essential-data/word2vec-sk
+URL: https://github.com/essential-data/word2vec-sk
+license: apache-2.0
 paper: ''
 citation: ''
 cased: ''
