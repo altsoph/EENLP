@@ -19,8 +19,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-        with:
-          fetch-depth: 100
       - name: Set up Python 3.9
         uses: actions/setup-python@v2
         with:
@@ -38,3 +36,4 @@ jobs:
         with:
           commit_message: "docs: :robot: automatically generate markdown"
           branch: ${{ github.head_ref }}
+          skip_fetch: false
