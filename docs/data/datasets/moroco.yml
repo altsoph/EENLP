@@ -1,4 +1,4 @@
-name: MOROCO
+name: 'MOROCO: The Moldavian and Romanian Dialectal Corpus'
 description: ''
 languages:
   - Moldovan
@@ -8,7 +8,7 @@ tasks:
   - text-classification
 URL: https://github.com/butnaruandrei/MOROCO
 license: CC BY-NC-SA 4.0
-paper: https://arxiv.org/pdf/1901.06543.pdf
+paper: https://arxiv.org/abs/1901.06543
 citation: https://arxiv.org/abs/1901.06543
 download link: https://github.com/butnaruandrei/MOROCO/archive/refs/heads/master.zip
 comments: ''
