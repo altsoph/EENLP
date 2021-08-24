@@ -1,9 +1,9 @@
 # Models
 
-<table><thead><tr><td align="center"><td width="100%" align="center">multilingual (transformers)</td></tr></thead><tbody>
+<table><thead><tr><td align="center"><td width="100%" align="center"><b>multilingual (transformers)</b></td></tr></thead><tbody>
 <tr><td><a href="#earth_africa-multilingual"><b>Multilingual</b></a></td><td align="center"><a href="#labse-multilingual">LaBSE</a> / <a href="#mbert-multilingual">mBERT</a> / <a href="#mdistilbert-multilingual">mDistilBERT</a> / <a href="#xlm-r-multilingual">XLM-R</a></td></tr></tbody></table>
 
-<table><thead><tr><td align="center"><td width="100%" align="center" colspan="5">several languages (transformers)</td></tr><tr><td></td><td align="center">Macedonian + Bulgarian BERT</td><td align="center">BERTić</td><td align="center">SlavicBERT</td><td align="center">CroSloEngual</td><td align="center">LitLat BERT</td></tr></thead><tbody>
+<table><thead><tr><td align="center"><td width="100%" align="center" colspan="5"><b>several languages (transformers)</b></td></tr><tr><td></td><td align="center"><b>Macedonian + Bulgarian BERT</b></td><td align="center"><b>BERTić</b></td><td align="center"><b>SlavicBERT</b></td><td align="center"><b>CroSloEngual</b></td><td align="center"><b>LitLat BERT</b></td></tr></thead><tbody>
 <tr><td><a href="#albania-albanian"><b>Albanian</b></a></td><td align="center"></td><td align="center"></td><td align="center"></td><td align="center"></td><td align="center"></td></tr>
 <tr><td><a href="#armenia-armenian"><b>Armenian</b></a></td><td align="center"></td><td align="center"></td><td align="center"></td><td align="center"></td><td align="center"></td></tr>
 <tr><td><a href="#bosnia_herzegovina-bosnian"><b>Bosnian</b></a></td><td align="center"></td><td align="center"><a href="#bertić-Bosnian">BERTić</a></td><td align="center"></td><td align="center"></td><td align="center"></td></tr>
@@ -24,7 +24,7 @@
 <tr><td><a href="#ukraine-ukrainian"><b>Ukrainian</b></a></td><td align="center"></td><td align="center"></td><td align="center"></td><td align="center"></td><td align="center"></td></tr>
 </tbody></table>
 
-<table><thead><tr><td></td><td width="100%" align="center" colspan="5">single-language models</td></tr><tr><td></td><td align="center">BERT</td><td align="center">RoBERTa</td><td align="center">DistilBERT</td><td align="center">Electra</td><td align="center">ALBERT</td></tr></thead><tbody>
+<table><thead><tr><td></td><td width="100%" align="center" colspan="5"><b>single-language models</b></td></tr><tr><td></td><td align="center">BERT</td><td align="center"><b>RoBERTa</b></td><td align="center"><b>DistilBERT</b></td><td align="center"><b>Electra</b></td><td align="center"><b>ALBERT</b></td></tr></thead><tbody>
 <tr><td><a href="#albania-albanian"><b>Albanian</b></a></td><td align="center"></td><td align="center"><a href="#al-roberta-Albanian">AL-RoBERTa</a></td><td align="center"></td><td align="center"></td><td align="center"></td></tr>
 <tr><td><a href="#armenia-armenian"><b>Armenian</b></a></td><td align="center"></td><td align="center"></td><td align="center"></td><td align="center"></td><td align="center"></td></tr>
 <tr><td><a href="#bosnia_herzegovina-bosnian"><b>Bosnian</b></a></td><td align="center"></td><td align="center"><a href="#ba-roberta-Bosnian">BA-RoBERTa</a></td><td align="center"></td><td align="center"></td><td align="center"></td></tr>

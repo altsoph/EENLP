@@ -107,7 +107,7 @@ def generate():
 
         f.write("<table><thead>")
         f.write(
-            f'<tr><td align="center"><td width="100%" align="center">multilingual (transformers)</td></tr></thead><tbody>\n'
+            f'<tr><td align="center"><td width="100%" align="center"><b>multilingual (transformers)</b></td></tr></thead><tbody>\n'
         )
         f.write(
             f'<tr><td><a href="#earth_africa-multilingual"><b>Multilingual</b></a></td><td align="center">'
@@ -133,13 +133,13 @@ def generate():
 
         f.write("<table><thead>")
         f.write(
-            f'<tr><td align="center"><td width="100%" align="center" colspan="{len(few_langs_models)}">several languages (transformers)</td></tr>'
+            f'<tr><td align="center"><td width="100%" align="center" colspan="{len(few_langs_models)}"><b>several languages (transformers)</b></td></tr>'
         )
         f.write("<tr><td></td>")
 
         f.write(
             "".join(
-                f'<td align="center">{x}</td>'
+                f'<td align="center"><b>{x}</b></td>'
                 for x in df.loc[few_langs_models]["name"].unique()
             )
         )
@@ -171,12 +171,12 @@ def generate():
 
         f.write("<table><thead>")
         f.write(
-            f'<tr><td></td><td width="100%" align="center" colspan="5">single-language models</td></tr>'
+            f'<tr><td></td><td width="100%" align="center" colspan="5"><b>single-language models</b></td></tr>'
         )
         f.write("<tr><td></td>")
 
         f.write(
-            '<td align="center">BERT</td><td align="center">RoBERTa</td><td align="center">DistilBERT</td><td align="center">Electra</td><td align="center">ALBERT</td>'
+            '<td align="center">BERT</td><td align="center"><b>RoBERTa</b></td><td align="center"><b>DistilBERT</b></td><td align="center"><b>Electra</b></td><td align="center"><b>ALBERT</b></td>'
         )
         f.write("</tr></thead><tbody>\n")
 
