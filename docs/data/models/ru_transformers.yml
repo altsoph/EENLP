@@ -3,7 +3,8 @@ description: ''
 languages:
   - Russian
 type: GPT2
-huggingface: ''
+URL: https://github.com/mgrankin/ru_transformers
+license: apache-2.0
 paper: ''
 citation: ''
 cased: ''
