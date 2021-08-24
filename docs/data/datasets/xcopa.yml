@@ -1,4 +1,4 @@
-name: XCOPA
+name: XCOPA: A Multilingual Dataset for Causal Commonsense Reasoning
 description: ''
 languages:
   - Estonian
@@ -7,6 +7,6 @@ tasks:
 URL: https://github.com/cambridgeltl/xcopa
 license: CC-BY-4.0
 paper: https://ducdauge.github.io/files/xcopa.pdf
-citation: https://github.com/cambridgeltl/xcopa
-download link: it is in HF datasets + here https://github.com/cambridgeltl/xcopa
+citation: https://github.com/cambridgeltl/xcopa#cite
+download link: 
 comments: ''
