@@ -5,8 +5,8 @@ languages:
 tasks:
   - automatically tagged corpus
 URL: http://mnsz.nytud.hu/index_eng.html
-license: ''
-paper: http://www.lrec-conf.org/proceedings/lrec2014/pdf/681_Paper.pdf
-citation: ''
-download link: 'need a registration: http://mnsz.nytud.hu/regisztracio_eng.html'
+license: 'Custom, you have to register.'
+paper: https://aclanthology.org/L14-1536/
+citation: https://aclanthology.org/L14-1536/
+download link: ''
 comments: ''
