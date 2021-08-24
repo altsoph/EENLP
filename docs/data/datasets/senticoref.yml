@@ -1,4 +1,4 @@
-name: SentiCoref
+name: 'SentiCoref: Slovene corpus for aspect-based sentiment analysis'
 description: ''
 languages:
   - Slovenian
