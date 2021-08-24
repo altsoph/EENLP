@@ -4,6 +4,7 @@ languages:
   - Albanian
 type: RoBERTa
 huggingface: https://huggingface.co/macedonizer/al-roberta-base
+license: apache-2.0
 paper: '?'
 citation: '?'
 cased: cased
