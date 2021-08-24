@@ -3,7 +3,7 @@ description: ''
 languages:
   - Russian
 type: static word embeddings
-huggingface: http://docs.deeppavlov.ai/en/master/features/pretrained_vectors.html#fasttext
+URL: http://docs.deeppavlov.ai/en/master/features/pretrained_vectors.html#fasttext
 paper: ''
 citation: ''
 cased: ''
