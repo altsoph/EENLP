@@ -3,7 +3,7 @@ description: ''
 languages:
   - Polish
 type: ELMo
-huggingface: https://github.com/sdadas/polish-nlp-resources#elmo
+URL: https://github.com/sdadas/polish-nlp-resources#elmo
 license: GPL-3.0
 paper: ''
 citation: ''
