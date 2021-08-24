@@ -14,7 +14,7 @@ languages:
   - Ukrainian
 type: static word embeddings
 huggingface: https://github.com/facebookresearch/MUSE#multilingual-word-embeddings
-license: CC BY-SA 3.0
+license: CC BY-NC 4.0
 paper: https://arxiv.org/abs/1710.04087
 citation: https://arxiv.org/abs/1710.04087
 cased: ''
