@@ -1,4 +1,4 @@
-name: Ukrainian NER
+name: Ukrainian NER annotation corpus
 description: ''
 languages:
   - Ukrainian
@@ -8,5 +8,5 @@ URL: https://lang.org.ua/en/corpora/#anchor1
 license: CC-BY-SA 4.0
 paper: '?'
 citation: '?'
-download link: https://lang.org.ua/en/corpora/#anchor1
+download link: ''
 comments: ''
