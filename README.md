@@ -12,7 +12,7 @@ We hope this broad index of NLP resources for Eastern European languages could h
 * understand cross-cultural and cross-linguistic differences;
 * decrease the digital language divide.
 
-Initially, EENLP wss biased towards datasets for semantic NLP tasks such as sentiment analysis, NLI, word sense disambiguation, etc.
+Initially, EENLP was biased towards datasets for semantic NLP tasks such as sentiment analysis, NLI, word sense disambiguation, etc.
 However, we are expanding and improving this index further, so feel free to [contribute new relevant resources](CONTRIBUTING.md). 
 We are also happy to hear your feedback and suggestions via issues or at altsoph@gmail.com.
 
@@ -47,7 +47,7 @@ Feel free to contribute. The details are in our [contributing guidelines](CONTRI
 ```
 ## Licensing
 
-This index is licensed under Apache-2.0 License. However, please, note what each resource has individual licensing properties.
+This index is licensed under Apache-2.0 License. However, please, note that each resource has individual licensing properties.
 
 ## Development
 
