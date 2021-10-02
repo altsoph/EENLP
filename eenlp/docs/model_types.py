@@ -28,17 +28,20 @@ types: Dict[str, Common] = {
     "static word embeddings": {
         "emoji": "🧤",
     },
+    "adapter": {
+        "emoji": "🔌",
+    },
 }
 
 cases: Dict[str, Common] = {
     "uncased": {
-        "emoji": "🔡",
+        "emoji": "⬇️",
     },
     "cased": {
-        "emoji": "🔠",
+        "emoji": "⬆️️️",
     },
     "both": {
-        "emoji": "🔡🔠",
+        "emoji": "⬇️⬆️",
     },
 }
 
@@ -47,7 +50,7 @@ corpora: Dict[str, Common] = {
         "emoji": "🕷",
     },
     "wikipedia": {
-        "emoji": "🌐",
+        "image": "/docs/images/icons/wikipedia.png",
     },
     "news": {
         "emoji": "📰",

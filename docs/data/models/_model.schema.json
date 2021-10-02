@@ -58,7 +58,8 @@
             "GPT2",
             "DistilBERT",
             "Electra",
-            "static word embeddings"
+            "static word embeddings",
+            "adapter"
           ]
         }
       ]
@@ -129,6 +130,12 @@
       ]
     },
     "URL": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "license": {
       "type": [
         "string",
         "null"

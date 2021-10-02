@@ -38,7 +38,7 @@ def generate():
 
     with open(here("docs/datasets.md"), "w") as f:
         f.write("# Datasets\n\n")
-
+        f.write(f"total: {len(df)}\n\n")
         f.write("| | ")
         for category in categories:
             if category == "other":

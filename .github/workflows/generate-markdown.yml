@@ -37,3 +37,4 @@ jobs:
           commit_message: "docs: :robot: automatically generate markdown"
           branch: ${{ github.head_ref }}
           skip_fetch: false
+        if: github.event_name != 'pull_request'
