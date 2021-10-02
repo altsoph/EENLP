@@ -8,9 +8,12 @@ languages:
 tasks:
   - multiple tasks
   - text-classification
+  - named-entity-recognition-ner
+  - NLI
+  - POS
 URL: https://microsoft.github.io/XGLUE/
 license: https://github.com/microsoft/XGLUE/blob/master/LICENSE
 paper: https://arxiv.org/abs/2004.01401
-citation: https://microsoft.github.io/XGLUE/
+citation: https://arxiv.org/abs/2004.01401
 download link: https://xglue.blob.core.windows.net/xglue/xglue_full_dataset.tar.gz
 comments: ''

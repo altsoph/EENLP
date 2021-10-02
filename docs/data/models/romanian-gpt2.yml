@@ -3,7 +3,7 @@ description: ''
 languages:
   - Romanian
 type: GPT2
-huggingface: https://huggingface.co/mihaitensor/romanian-gpt2
+huggingface: https://huggingface.co/mihaitensor/gpt2-large-romanian-cased-v1
 paper: ''
 citation: ''
 cased: ''

@@ -1,4 +1,4 @@
-name: fasttext
+name: fasttext original
 description: ''
 languages:
   - Albanian
@@ -25,9 +25,10 @@ languages:
   - Slovenian
   - Ukrainian
 type: static word embeddings
-huggingface: https://fasttext.cc/docs/en/crawl-vectors.html
-paper: ''
-citation: ''
+URL: https://fasttext.cc/docs/en/crawl-vectors.html
+license: CC BY-SA 3.0
+paper: https://arxiv.org/abs/1802.06893
+citation: https://arxiv.org/abs/1802.06893
 cased: ''
 pre-trained on:
   - common crawl

@@ -4,7 +4,7 @@ languages:
   - Polish
   - Russian
 type: static word embeddings
-huggingface: https://wikipedia2vec.github.io/wikipedia2vec/pretrained/
+URL: https://wikipedia2vec.github.io/wikipedia2vec/pretrained/
 paper: ''
 citation: ''
 cased: ''

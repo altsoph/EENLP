@@ -3,7 +3,7 @@ name: Generate markdown
 on:
   push:
     branches:
-      - main,
+      - main
       - resources_page
     paths:
       - docs/data/datasets/*.yml
@@ -36,3 +36,4 @@ jobs:
         with:
           commit_message: "docs: :robot: automatically generate markdown"
           branch: ${{ github.head_ref }}
+          skip_fetch: false

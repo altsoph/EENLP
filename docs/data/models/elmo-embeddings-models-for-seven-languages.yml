@@ -7,7 +7,7 @@ languages:
   - Lithuanian
   - Slovenian
 type: ELMo
-huggingface: --
+URL: https://www.clarin.si/repository/xmlui/handle/11356/1277
 paper: https://arxiv.org/abs/1911.10049
 citation: https://arxiv.org/abs/1911.10049
 cased: '?'

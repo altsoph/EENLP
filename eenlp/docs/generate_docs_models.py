@@ -27,15 +27,15 @@ columns = [
 #   - 1 < few < 10
 #   - 10 <= multi
 
-multilang_models = [
-    "BERT",
-    "RoBERTa",
-    "DistilBERT",
-    "Electra",
-    "ALBERT",
-    "mBERT",
-    "XLM-RoBERTa",
-]
+# multilang_models = [
+#     "BERT",
+#     "RoBERTa",
+#     "DistilBERT",
+#     "Electra",
+#     "ALBERT",
+#     "mBERT",
+#     "XLM-RoBERTa",
+# ]
 
 few_language_models = [
     "BERT",
@@ -69,8 +69,7 @@ def is_language_empty(df: pd.DataFrame, language: Language) -> bool:
         df[
             df.apply(
                 lambda x: x["languages"] == language["name"]
-                and len(df[df.index == x.name]) < 10
-                and x["type"] not in multilang_models,
+                and len(df[df.index == x.name]) < 10,
                 axis=1,
             )
         ]
@@ -108,7 +107,7 @@ def generate():
 
         f.write("<table><thead>")
         f.write(
-            f'<tr><td align="center"><td width="100%" align="center">multilingual (transformers)</td></tr></thead><tbody>\n'
+            f'<tr><td align="center"><td width="100%" align="center"><b>multilingual (transformers)</b></td></tr></thead><tbody>\n'
         )
         f.write(
             f'<tr><td><a href="#earth_africa-multilingual"><b>Multilingual</b></a></td><td align="center">'
@@ -116,8 +115,8 @@ def generate():
         dff = df_o[
             (
                 df_o.apply(
-                    lambda x: 10 <= len(x["languages"])
-                    and x["type"] in multilang_models,
+                    lambda x: 10 <= len(x["languages"]),
+                    # and x["type"] in multilang_models,
                     axis=1,
                 )
             )
@@ -134,13 +133,13 @@ def generate():
 
         f.write("<table><thead>")
         f.write(
-            f'<tr><td align="center"><td width="100%" align="center" colspan="{len(few_langs_models)}">several languages (transformers)</td></tr>'
+            f'<tr><td align="center"><td width="100%" align="center" colspan="{len(few_langs_models)}"><b>several languages (transformers)</b></td></tr>'
         )
         f.write("<tr><td></td>")
 
         f.write(
             "".join(
-                f'<td align="center">{x}</td>'
+                f'<td align="center"><b>{x}</b></td>'
                 for x in df.loc[few_langs_models]["name"].unique()
             )
         )
@@ -172,12 +171,12 @@ def generate():
 
         f.write("<table><thead>")
         f.write(
-            f'<tr><td></td><td width="100%" align="center" colspan="5">single-language models</td></tr>'
+            f'<tr><td></td><td width="100%" align="center" colspan="5"><b>single-language models</b></td></tr>'
         )
         f.write("<tr><td></td>")
 
         f.write(
-            '<td align="center">BERT</td><td align="center">RoBERTa</td><td align="center">DistilBERT</td><td align="center">Electra</td><td align="center">ALBERT</td>'
+            '<td align="center">BERT</td><td align="center"><b>RoBERTa</b></td><td align="center"><b>DistilBERT</b></td><td align="center"><b>Electra</b></td><td align="center"><b>ALBERT</b></td>'
         )
         f.write("</tr></thead><tbody>\n")
 
@@ -236,6 +235,7 @@ def generate():
             "  - 📄 paper\n"
             "  - ❞ citation\n"
             "  - 🤗️ huggingface model card\n"
+            "  - 🌐 URL\n"
         )
 
         f.write("# Languages\n")
@@ -320,6 +320,16 @@ def generate():
                                 f"<div>"
                                 f'<a title="huggingface model card" href="{row["huggingface"]}">🤗️</a> '
                                 f"</div>"
+                            )
+                        if (
+                            not pd.isna(row["URL"])
+                            and row["URL"]
+                            and row["URL"] != "?"
+                            and row["URL"] not in links_used
+                        ):
+                            links_used.add(row["URL"])
+                            f.write(
+                                f'<div title="url"><a href="{row["URL"]}">🌐</a></div>'
                             )
                         f.write("</td>")
                     elif column == "pre-trained on":

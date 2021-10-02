@@ -3,10 +3,11 @@ description: ''
 languages:
   - Czech
 type: ULMFiT
-huggingface: https://github.com/simecek/Czech-ULMFiT
+URL: https://github.com/simecek/Czech-ULMFiT
 paper: ''
 citation: ''
 cased: ''
+license: apache-2.0
 pre-trained on:
   - CSFD movie dataset
 comments: ''

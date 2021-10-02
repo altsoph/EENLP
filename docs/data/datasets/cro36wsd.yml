@@ -5,7 +5,7 @@ languages:
 tasks:
   - word-sense-disambiguation
 URL: https://takelab.fer.hr/data/cro36wsd/
-license: '?'
+license: CC BY-SA 3.0
 paper: https://aclanthology.org/L16-1267.pdf
 citation: https://aclanthology.org/L16-1267.pdf
 download link: https://takelab.fer.hr/data/cro36wsd/

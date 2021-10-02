@@ -4,6 +4,7 @@ languages:
   - Macedonian
 type: RoBERTa
 huggingface: https://huggingface.co/macedonizer/mk-roberta-base
+license: apache-2.0
 paper: '?'
 citation: '?'
 cased: cased

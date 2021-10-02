@@ -3,7 +3,8 @@ description: ''
 languages:
   - Russian
 type: GPT2
-huggingface: ''
+URL: https://github.com/sberbank-ai/ru-gpts
+license: apache-2.0
 paper: ''
 citation: ''
 cased: ''

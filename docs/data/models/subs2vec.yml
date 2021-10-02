@@ -21,10 +21,12 @@ languages:
   - Slovenian
   - Ukrainian
 type: static word embeddings
-huggingface: https://github.com/jvparidon/subs2vec/
+license: MIT
+URL: https://github.com/jvparidon/subs2vec/
 paper: https://link.springer.com/article/10.3758/s13428-020-01406-3
 citation: ''
 cased: ''
 pre-trained on:
   - subtitles
+  - wiki
 comments: ''

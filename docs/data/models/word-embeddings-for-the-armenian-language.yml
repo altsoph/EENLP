@@ -3,9 +3,12 @@ description: ''
 languages:
   - Armenian
 type: static word embeddings
-huggingface: https://github.com/ispras-texterra/word-embeddings-eval-hy
-paper: ''
+URL: https://github.com/ispras-texterra/word-embeddings-eval-hy
+paper: https://arxiv.org/abs/1906.03134
 citation: ''
 cased: ''
 pre-trained on:
-comments: ''
+  - wiki
+  - EANC corpus
+  - web
+comments: GloVE, CBOW, fasttext

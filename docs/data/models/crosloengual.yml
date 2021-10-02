@@ -4,6 +4,8 @@ languages:
   - Croatian
   - Slovenian
 type: BERT
+license: CC BY 4.0
+URL: http://embeddia.eu/
 huggingface: https://huggingface.co/EMBEDDIA/crosloengual-bert
 paper: https://arxiv.org/abs/2006.07890
 citation: https://arxiv.org/abs/2006.07890

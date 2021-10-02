@@ -6,8 +6,8 @@ languages:
 tasks:
   - text-classification
 URL: https://www.clarin.si/repository/xmlui/handle/11356/1408
-license: '?'
+license: 'CC BY-NC-ND 4.0'
 paper: '?'
-citation: '?'
-download link: https://www.clarin.si/repository/xmlui/handle/11356/1408
+citation: http://hdl.handle.net/11356/1408
+download link: ''
 comments: ''

@@ -3,7 +3,7 @@ description: ''
 languages:
   - Czech
 type: BERT
-huggingface: --
+huggingface: https://github.com/kiv-air/Czert
 paper: https://arxiv.org/abs/2103.13031
 citation: https://github.com/kiv-air/Czert#how-should-i-cite-czert
 cased: ''

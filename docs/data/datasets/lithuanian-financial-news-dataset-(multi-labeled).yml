@@ -5,8 +5,8 @@ languages:
 tasks:
   - text-classification
 URL: https://www.kaggle.com/pavelstefanovi/lithuanian-financial-news-dataset-multilabeled
-license: '?'
-paper: '?'
-citation: '?'
-download link: https://www.kaggle.com/pavelstefanovi/lithuanian-financial-news-dataset-multilabeled
+license: ''
+paper: ''
+citation: ''
+download link: ''
 comments: ''

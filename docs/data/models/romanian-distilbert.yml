@@ -4,6 +4,7 @@ languages:
   - Romanian
 type: DistilBERT
 huggingface: https://huggingface.co/racai/distilbert-base-romanian-cased
+URL: https://github.com/racai-ai/Romanian-DistilBERT
 paper: '?'
 citation: https://github.com/racai-ai/Romanian-DistilBERT#citation
 cased: cased

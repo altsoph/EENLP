@@ -3,7 +3,7 @@ description: ''
 languages:
   - Ukrainian
 type: static word embeddings
-huggingface: https://lang.org.ua/en/models/
+URL: https://lang.org.ua/en/models/
 paper: ''
 citation: ''
 cased: ''

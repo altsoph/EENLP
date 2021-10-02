@@ -6,7 +6,7 @@ tasks:
   - named-entity-recognition-ner
 URL: https://github.com/ispras-texterra/pioner
 license: '?'
-paper: '?'
-citation: '?'
+paper: https://arxiv.org/abs/1810.08699
+citation: https://arxiv.org/abs/1810.08699
 download link: https://github.com/ispras-texterra/pioner
 comments: ''

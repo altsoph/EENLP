@@ -14,8 +14,8 @@ languages:
   - Slovenian
   - Ukrainian
 type: ELMo
-huggingface: https://github.com/HIT-SCIR/ELMoForManyLangs
-paper: ''
+URL: https://github.com/HIT-SCIR/ELMoForManyLangs
+paper: https://arxiv.org/abs/1807.03121
 citation: https://github.com/HIT-SCIR/ELMoForManyLangs#citation
 cased: ''
 pre-trained on:

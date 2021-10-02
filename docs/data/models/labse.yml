@@ -27,7 +27,7 @@ languages:
 type: BERT
 huggingface: https://huggingface.co/setu4993/LaBSE
 paper: https://arxiv.org/abs/2007.01852
-citation: https://huggingface.co/setu4993/LaBSE
+citation: https://arxiv.org/abs/2007.01852
 cased: cased
 pre-trained on:
   - multilingual

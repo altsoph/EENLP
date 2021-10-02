@@ -2,9 +2,10 @@ name: Lithuanian T5 summaries
 description: ''
 languages:
   - Lithuanian
-type: T5 summaries
+type: T5
 huggingface: https://huggingface.co/LukasStankevicius/t5-base-lithuanian-news-summaries-175
-paper: ''
+license: apache-2.0
+paper: https://www.researchgate.net/publication/351448762_Generating_abstractive_summaries_of_Lithuanian_news_articles_using_a_transformer_model
 citation: ''
 cased: ''
 pre-trained on:

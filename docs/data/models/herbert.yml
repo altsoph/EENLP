@@ -4,6 +4,7 @@ languages:
   - Polish
 type: BERT
 huggingface: https://huggingface.co/allegro/herbert-base-cased
+license: CC BY 4.0
 paper: https://aclanthology.org/2021.bsnlp-1.1/
 citation: https://aclanthology.org/2021.bsnlp-1.1/
 cased: cased

@@ -3,7 +3,7 @@ description: ''
 languages:
   - Estonian
 type: static word embeddings
-huggingface: https://github.com/eleriaedmaa/embeddings
+URL: https://github.com/eleriaedmaa/embeddings
 paper: ''
 citation: ''
 cased: ''
