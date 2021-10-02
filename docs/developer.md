@@ -8,7 +8,7 @@ You can use any other environment manager as well, we use a standard requirement
 
 ```bash
 cd <project dir>
-conda create -n eenlp "python==3.8.*"
+conda create -n eenlp python=3.8
 conda activate eenlp
 python -m pip install -r requirements.txt
 # this makes the current project importable (as eenlp)
