@@ -1,5 +1,7 @@
 # Models
 
+total: 66
+
 <table><thead><tr><td align="center"><td width="100%" align="center"><b>multilingual (transformers)</b></td></tr></thead><tbody>
 <tr><td><a href="#earth_africa-multilingual"><b>Multilingual</b></a></td><td align="center"><a href="#elmo-representations-for-many-languages-multilingual">ELMo Representations for Many Languages</a> / <a href="#fasttext-aligned-multilingual">fasttext aligned</a> / <a href="#fasttext-aligned-supervised-multilingual">fasttext aligned supervised</a> / <a href="#fasttext-original-multilingual">fasttext original</a> / <a href="#labse-multilingual">LaBSE</a> / <a href="#mbert-multilingual">mBERT</a> / <a href="#mdistilbert-multilingual">mDistilBERT</a> / <a href="#multilingual-ulmfit-multilingual">multilingual ULMFiT</a> / <a href="#subs2vec-multilingual">subs2vec</a> / <a href="#xlm-roberta-multilingual">XLM-RoBERTa</a></td></tr></tbody></table>
 

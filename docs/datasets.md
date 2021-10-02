@@ -1,5 +1,7 @@
 # Datasets
 
+total: 90
+
 |                                            |   :name_badge:<br>Named-entity recognition    |    :smile:<br>Sentiment analysis    | :speech_balloon::speech_balloon:<br>Paraphrase identification | :mouse2::computer_mouse:<br>Word-sense disambiguation |  :newspaper:<br>Text classification  |         other          |
 | ------------------------------------------ | :-------------------------------------------: | :---------------------------------: | :-----------------------------------------------------------: | :---------------------------------------------------: | :----------------------------------: | :--------------------: |
 | **[Albanian](#albania-albanian)**          |                                               |  [1](#albanian-sentiment-analysis)  |                                                               |                                                       |  [1](#albanian-text-classification)  |  [1](#albanian-other)  |

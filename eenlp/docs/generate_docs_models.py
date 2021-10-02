@@ -102,6 +102,7 @@ def generate():
 
     with open(here("docs/models.md"), "w") as f:
         f.write("# Models\n\n")
+        f.write(f"total: {len(df_o)}\n\n")
 
         # multilang
 
