@@ -47,7 +47,7 @@ corpora: Dict[str, Common] = {
         "emoji": "🕷",
     },
     "wikipedia": {
-        "emoji": "🌐",
+        "image": "/docs/images/icons/wikipedia.png",
     },
     "news": {
         "emoji": "📰",
