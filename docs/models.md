@@ -55,6 +55,7 @@
   - <b id="DistilBERT">💧 DistilBERT</b>
   - <b id="Electra">⚡️ Electra</b>
   - <b id="static word embeddings">🧤 static word embeddings</b>
+  - <b id="adapter">🔌 adapter</b>
 - **Cased**
   - <b id="uncased">⬇️ uncased</b>
   - <b id="cased">⬆️️️ cased</b>

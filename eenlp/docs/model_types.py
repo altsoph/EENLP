@@ -28,6 +28,9 @@ types: Dict[str, Common] = {
     "static word embeddings": {
         "emoji": "🧤",
     },
+    "adapter": {
+        "emoji": "🔌",
+    },
 }
 
 cases: Dict[str, Common] = {
