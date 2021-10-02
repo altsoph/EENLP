@@ -6,7 +6,7 @@ import yaml
 from pyprojroot import here
 
 from eenlp.docs.languages import Language, languages
-from eenlp.docs.model_types import Common, cases, corpora, types
+from eenlp.docs.model_types import Common, cases, types
 
 columns = [
     "name",
@@ -225,11 +225,11 @@ def generate():
             f.write(
                 f'  - <b id="{item_name}">{image_or_emoji(item_name, cases)} {item_name}</b>\n'
             )
-        f.write("- **Pre-training corpora**\n")
-        for item_name in corpora:
-            f.write(
-                f'  - <b id="{item_name}">{image_or_emoji(item_name, corpora)} {item_name}</b>\n'
-            )
+        # f.write("- **Pre-training corpora**\n")
+        # for item_name in corpora:
+        #     f.write(
+        #         f'  - <b id="{item_name}">{image_or_emoji(item_name, corpora)} {item_name}</b>\n'
+        #     )
         f.write(
             "- **Links**\n"
             "  - 📄 paper\n"
@@ -266,7 +266,7 @@ def generate():
                 "<th>type</th>"
                 "<th>cased</th>"
                 "<th>languages</th>"
-                "<th>corpora</th>"
+                # "<th>corpora</th>"
                 "<th>links</th>"
                 "<th>edit</th>"
                 "</tr></thead><tbody>\n"
@@ -333,17 +333,18 @@ def generate():
                             )
                         f.write("</td>")
                     elif column == "pre-trained on":
-                        f.write("<td><ul>")
-                        if isinstance(row["pre-trained on"], list):
-                            for x in sorted(row["pre-trained on"]):
-                                if x != "" and x != "?":
-                                    if x in corpora:
-                                        f.write(
-                                            f'<li title="{x}"><a href="#{x}">{image_or_emoji(x, corpora)}</a></li>'
-                                        )
-                                    else:
-                                        f.write(f'<li title="{x}">{x}</li>')
-                        f.write("</ul></td>")
+                        # f.write("<td><ul>")
+                        # if isinstance(row["pre-trained on"], list):
+                        #     for x in sorted(row["pre-trained on"]):
+                        #         if x != "" and x != "?":
+                        #             if x in corpora:
+                        #                 f.write(
+                        #                     f'<li title="{x}"><a href="#{x}">{image_or_emoji(x, corpora)}</a></li>'
+                        #                 )
+                        #             else:
+                        #                 f.write(f'<li title="{x}">{x}</li>')
+                        # f.write("</ul></td>")
+                        pass
                     elif column == "type":
                         if row["type"] in types:
                             f.write(
