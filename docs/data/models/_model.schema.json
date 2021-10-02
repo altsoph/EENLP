@@ -134,6 +134,12 @@
         "string",
         "null"
       ]
+    },
+    "license": {
+      "type": [
+        "string",
+        "null"
+      ]
     }
   },
   "required": [
