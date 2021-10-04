@@ -1,0 +1,11 @@
+name: Ukrainian word embeddings
+description: ''
+languages:
+  - Ukrainian
+type: static word embeddings
+URL: https://lang.org.ua/en/models/
+paper: ''
+citation: ''
+cased: ''
+pre-trained on:
+comments: ''

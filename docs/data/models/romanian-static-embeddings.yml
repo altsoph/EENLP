@@ -1,0 +1,11 @@
+name: Romanian static embeddings
+description: ''
+languages:
+  - Romanian
+type: static word embeddings
+URL: https://github.com/senisioi/ro_resources
+paper: ''
+citation: ''
+cased: ''
+pre-trained on:
+comments: ''

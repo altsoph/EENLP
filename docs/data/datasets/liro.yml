@@ -1,0 +1,14 @@
+name: 'LiRo: a benchmark for Romanian language tasks'
+description: ''
+languages:
+  - Romanian
+tasks:
+  - multiple semantic tasks
+  - named-entity-recognition-ner
+  - sentiment-analysis
+URL: https://lirobenchmark.github.io/
+license: multiple
+paper: https://openreview.net/forum?id=JH61CD7afTv
+citation: ''
+download link: https://lirobenchmark.github.io/datasets
+comments: ''

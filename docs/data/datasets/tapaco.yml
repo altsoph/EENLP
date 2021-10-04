@@ -1,0 +1,27 @@
+name: TaPaCo
+full name: Tatoeba Paraphrase Corpus
+description: ''
+languages:
+  - Armenian
+  - Belarusian
+  - Bulgarian
+  - Croatian
+  - Czech
+  - Estonian
+  - Hungarian
+  - Lithuanian
+  - Macedonian
+  - Moldovan
+  - Polish
+  - Romanian
+  - Russian
+  - Serbian
+tasks:
+  - paraphrase-identification
+URL: https://zenodo.org/record/3707949#.YPMTcpgzYuU
+license: CC BY 2.0
+paper: https://aclanthology.org/2020.lrec-1.848/
+citation: https://aclanthology.org/2020.lrec-1.848/
+download link: https://zenodo.org/record/3707949/files/tapaco_v1.0.zip?download=1
+comments: ''
+huggingface: https://huggingface.co/datasets/tapaco

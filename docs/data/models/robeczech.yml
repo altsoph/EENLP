@@ -1,0 +1,13 @@
+name: RobeCzech
+description: ''
+languages:
+  - Czech
+type: RoBERTa
+license: CC BY-NC 4.0
+huggingface: https://huggingface.co/ufal/robeczech-base
+paper: https://arxiv.org/abs/2105.11314
+citation: https://arxiv.org/abs/2105.11314
+cased: cased
+pre-trained on:
+  - '?'
+comments: ''

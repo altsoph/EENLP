@@ -1,0 +1,12 @@
+name: Hungarian National Corpus
+description: ''
+languages:
+  - Hungarian
+tasks:
+  - automatically tagged corpus
+URL: http://mnsz.nytud.hu/index_eng.html
+license: 'Custom, you have to register.'
+paper: https://aclanthology.org/L14-1536/
+citation: https://aclanthology.org/L14-1536/
+download link: ''
+comments: ''

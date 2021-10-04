@@ -1,0 +1,12 @@
+name: Sentiment Annotated Dataset of Croatian News
+description: ''
+languages:
+  - Croatian
+tasks:
+  - sentiment-analysis
+URL: https://www.clarin.si/repository/xmlui/handle/11356/1342
+license: CC-BY-SA 4.0
+paper: https://www.mdpi.com/2076-3417/10/17/5993
+citation: https://www.mdpi.com/2076-3417/10/17/5993
+download link: https://www.clarin.si/repository/xmlui/handle/11356/1342
+comments: ''

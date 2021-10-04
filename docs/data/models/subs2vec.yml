@@ -1,0 +1,32 @@
+name: subs2vec
+description: ''
+languages:
+  - Albanian
+  - Armenian
+  - Bosnian
+  - Bulgarian
+  - Croatian
+  - Czech
+  - Estonian
+  - Georgian
+  - Hungarian
+  - Latvian
+  - Lithuanian
+  - Macedonian
+  - Polish
+  - Romanian
+  - Russian
+  - Serbian
+  - Slovakian
+  - Slovenian
+  - Ukrainian
+type: static word embeddings
+license: MIT
+URL: https://github.com/jvparidon/subs2vec/
+paper: https://link.springer.com/article/10.3758/s13428-020-01406-3
+citation: ''
+cased: ''
+pre-trained on:
+  - subtitles
+  - wiki
+comments: ''

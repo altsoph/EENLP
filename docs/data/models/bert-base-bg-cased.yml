@@ -1,0 +1,13 @@
+name: bert-base-bg-cased
+description: ''
+languages:
+  - Bulgarian
+type: DistilBERT
+huggingface: https://huggingface.co/Geotrend/bert-base-bg-cased
+paper: https://aclanthology.org/2020.sustainlp-1.16.pdf
+license: apache-2.0
+citation: https://huggingface.co/Geotrend/bert-base-bg-cased#how-to-cite
+cased: cased
+pre-trained on:
+  - mBERT distilled to Bulgarian
+comments: ''

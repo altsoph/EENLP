@@ -1,0 +1,36 @@
+name: fasttext original
+description: ''
+languages:
+  - Albanian
+  - Armenian
+  - Belarusian
+  - Bosnian
+  - Bulgarian
+  - Croatian
+  - Czech
+  - Estonian
+  - Georgian
+  - Hungarian
+  - Kazakh
+  - Latvian
+  - Lithuanian
+  - Macedonian
+  - Moldovan
+  - Montenegrin
+  - Polish
+  - Romanian
+  - Russian
+  - Serbian
+  - Slovakian
+  - Slovenian
+  - Ukrainian
+type: static word embeddings
+URL: https://fasttext.cc/docs/en/crawl-vectors.html
+license: CC BY-SA 3.0
+paper: https://arxiv.org/abs/1802.06893
+citation: https://arxiv.org/abs/1802.06893
+cased: ''
+pre-trained on:
+  - common crawl
+  - wikipedia
+comments: original fasttext

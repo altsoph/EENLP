@@ -1,0 +1,12 @@
+name: Slovak UD treebank
+description: ''
+languages:
+  - Slovakian
+tasks:
+  - part-of-speech-tagging
+URL: https://github.com/UniversalDependencies/UD_Slovak-SNK
+license: CC BY-SA 4.0
+paper: https://github.com/UniversalDependencies/UD_Slovak-SNK#references
+citation: ''
+download link: ''
+comments: ''

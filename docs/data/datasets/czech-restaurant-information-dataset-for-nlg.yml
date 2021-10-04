@@ -1,0 +1,12 @@
+name: Czech restaurant information dataset for NLG
+description: ''
+languages:
+  - Czech
+tasks:
+  - text-classification
+URL: https://github.com/UFAL-DSG/cs_restaurant_dataset
+license: CC-BY-SA 4.0
+paper: https://arxiv.org/abs/1910.05298
+citation: https://aclanthology.org/W19-8670/
+download link: https://github.com/UFAL-DSG/cs_restaurant_dataset
+comments: intent detection for restaurant reservation, translated from English

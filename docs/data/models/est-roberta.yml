@@ -1,0 +1,13 @@
+name: est-roberta
+description: ''
+languages:
+  - Estonian
+type: RoBERTa
+huggingface: https://huggingface.co/EMBEDDIA/est-roberta
+license: CC BY-SA 4.0
+paper: '?'
+citation: '?'
+cased: cased
+pre-trained on:
+  - '?'
+comments: ''

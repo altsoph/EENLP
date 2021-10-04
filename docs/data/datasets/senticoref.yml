@@ -1,0 +1,14 @@
+name: 'SentiCoref: Slovene corpus for aspect-based sentiment analysis'
+description: ''
+languages:
+  - Slovenian
+tasks:
+  - coreference resolution
+  - NER
+  - sentiment-analysis
+URL: https://www.clarin.si/repository/xmlui/handle/11356/1285
+license: CC-BY-4.0
+paper: '?'
+citation: '?'
+download link: https://www.clarin.si/repository/xmlui/handle/11356/1285
+comments: ''

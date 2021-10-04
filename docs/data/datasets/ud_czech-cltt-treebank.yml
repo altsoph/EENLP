@@ -1,0 +1,12 @@
+name: UD_Czech-CLTT treebank
+description: ''
+languages:
+  - Czech
+tasks:
+  - part-of-speech-tagging
+URL: https://github.com/UniversalDependencies/UD_Czech-CLTT
+license: CC BY-SA 4.0
+paper: https://aclanthology.org/L18-1713/
+citation: https://aclanthology.org/L18-1713/
+download link: https://github.com/UniversalDependencies/UD_Czech-CLTT
+comments: ''

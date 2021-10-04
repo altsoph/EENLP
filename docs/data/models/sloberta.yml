@@ -1,0 +1,14 @@
+name: SloBERTa
+description: ''
+languages:
+  - Slovenian
+type: RoBERTa
+huggingface: https://huggingface.co/EMBEDDIA/sloberta
+URL: https://github.com/clarinsi/Slovene-BERT-Tool
+license: CC BY-SA 4.0
+paper: '?'
+citation: '?'
+cased: cased
+pre-trained on:
+  - several Slovenian corpora
+comments: more details https://github.com/clarinsi/Slovene-BERT-Tool

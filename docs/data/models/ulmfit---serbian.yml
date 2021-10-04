@@ -1,0 +1,12 @@
+name: ULMFIT - Serbian
+description: ''
+languages:
+  - Serbian
+type: ULMFiT
+URL: https://forums.fast.ai/t/ulmfit-serbian/40316
+paper: ''
+citation: ''
+cased: ''
+pre-trained on:
+  - wikipedia
+comments: unfinished?

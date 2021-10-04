@@ -1,0 +1,12 @@
+name: 'XCOPA: A Multilingual Dataset for Causal Commonsense Reasoning'
+description: ''
+languages:
+  - Estonian
+tasks:
+  - commonsense reasoning
+URL: https://github.com/cambridgeltl/xcopa
+license: CC-BY-4.0
+paper: https://ducdauge.github.io/files/xcopa.pdf
+citation: https://github.com/cambridgeltl/xcopa#cite
+download link: ''
+comments: ''

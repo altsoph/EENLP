@@ -1,0 +1,6 @@
+{
+    "yaml.schemas": {
+        "./docs/data/datasets/_dataset.schema.json": "docs/data/datasets/*.yml",
+        "./docs/data/models/_model.schema.json": "docs/data/models/*.yml"
+    }
+}

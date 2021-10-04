@@ -1,0 +1,12 @@
+name: 'Romanian lexical sample @ Senseval 3'
+description: ''
+languages:
+  - Romanian
+tasks:
+  - word-sense-disambiguation
+URL: https://web.eecs.umich.edu/~mihalcea/senseval/senseval3/data.html
+license: '?'
+paper: '?'
+citation: '?'
+download link: ''
+comments: ''

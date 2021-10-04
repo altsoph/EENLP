@@ -1,0 +1,12 @@
+name: iLur News Texts Dataset
+description: ''
+languages:
+  - Armenian
+tasks:
+  - text-classification
+URL: https://github.com/ispras-texterra/word-embeddings-eval-hy/tree/master/ilur-news-corpus
+license: ''
+paper: https://arxiv.org/abs/1906.03134
+citation: https://arxiv.org/abs/1906.03134
+download link: ''
+comments: ''

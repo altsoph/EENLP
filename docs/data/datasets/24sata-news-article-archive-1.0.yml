@@ -1,0 +1,12 @@
+name: 24sata news article archive 1.0
+description: ''
+languages:
+  - Croatian
+tasks:
+  - text-classification
+URL: https://www.clarin.si/repository/xmlui/handle/11356/1410
+license: CC BY-NC-ND 4.0
+paper: https://aclanthology.org/2021.hackashop-1.14/
+citation: https://aclanthology.org/2021.hackashop-1.14/
+download link: https://www.clarin.si/repository/xmlui/handle/11356/1410
+comments: ''

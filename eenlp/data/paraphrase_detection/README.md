@@ -30,15 +30,3 @@
     - split
         - E.g. "train", "test".
 
-## Setup
-
-The following is a possible way to set up this project, using Anaconda or Miniconda environment manager.
-
-```bash
-cd <project dir>
-conda create -n eenlp "python==3.8.*"
-conda activate eenlp
-python -m pip install -r requirements.txt
-# this makes the current project importable (as eenlp)
-python -m pip install -e .
-```

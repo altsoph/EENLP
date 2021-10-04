@@ -1,0 +1,15 @@
+name: KLEJ
+description: ''
+languages:
+  - Polish
+tasks:
+  - multiple semantic tasks
+  - named-entity-recognition-ner
+  - paraphrase-identification
+  - sentiment-analysis
+URL: https://klejbenchmark.com/
+license: multiple
+paper: https://arxiv.org/abs/2005.00630
+citation: https://arxiv.org/abs/2005.00630
+download link: ''
+comments: ''

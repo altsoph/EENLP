@@ -1,0 +1,12 @@
+name: ru-gpts
+description: ''
+languages:
+  - Russian
+type: GPT2
+URL: https://github.com/sberbank-ai/ru-gpts
+license: apache-2.0
+paper: ''
+citation: ''
+cased: ''
+pre-trained on:
+comments: https://github.com/sberbank-ai/ru-gpts

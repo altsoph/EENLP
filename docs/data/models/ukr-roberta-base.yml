@@ -1,0 +1,14 @@
+name: ukr-roberta-base
+description: ''
+languages:
+  - Ukrainian
+type: RoBERTa
+huggingface: https://huggingface.co/youscan/ukr-roberta-base
+URL: https://github.com/youscan/language-models
+paper: '?'
+citation: '?'
+cased: '?'
+pre-trained on:
+  - wikipedia
+  - oscar
+comments: 'github: https://github.com/youscan/language-models + descr: https://youscan.io/blog/ukrainian-language-model/'

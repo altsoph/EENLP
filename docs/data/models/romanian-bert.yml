@@ -1,0 +1,14 @@
+name: Romanian BERT
+description: ''
+languages:
+  - Romanian
+type: BERT
+huggingface: https://huggingface.co/dumitrescustefan/bert-base-romanian-cased-v1
+URL: https://github.com/dumitrescustefan/Romanian-Transformers
+license: MIT
+paper: https://arxiv.org/abs/2009.08712
+citation: https://github.com/dumitrescustefan/Romanian-Transformers#cite
+cased: both
+pre-trained on:
+  - '?'
+comments: github https://github.com/dumitrescustefan/Romanian-Transformers

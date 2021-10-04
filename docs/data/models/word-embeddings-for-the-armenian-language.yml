@@ -1,0 +1,14 @@
+name: Word Embeddings for the Armenian Language
+description: ''
+languages:
+  - Armenian
+type: static word embeddings
+URL: https://github.com/ispras-texterra/word-embeddings-eval-hy
+paper: https://arxiv.org/abs/1906.03134
+citation: ''
+cased: ''
+pre-trained on:
+  - wiki
+  - EANC corpus
+  - web
+comments: GloVE, CBOW, fasttext

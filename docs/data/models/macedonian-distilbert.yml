@@ -1,0 +1,11 @@
+name: Macedonian DistilBERT
+description: ''
+languages:
+  - Macedonian
+type: DistilBERT
+huggingface: https://huggingface.co/anon-submission-mk/distilbert-base-macedonian-cased
+paper: ''
+citation: ''
+cased: ''
+pre-trained on:
+comments: ''

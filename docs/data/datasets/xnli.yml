@@ -1,0 +1,12 @@
+name: 'XNLI: The Cross-Lingual NLI Corpus'
+description: ''
+languages:
+  - Russian
+tasks:
+  - NLI
+URL: https://github.com/facebookresearch/XNLI
+license: 'CC BY-NC 4.0'
+paper: '?'
+citation: '?'
+download link: ''
+comments: ''

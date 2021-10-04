@@ -1,0 +1,13 @@
+name: Polish RoBERTa
+description: ''
+languages:
+  - Polish
+type: RoBERTa
+license: GPL-3.0
+URL: https://github.com/sdadas/polish-roberta
+paper: https://arxiv.org/abs/2006.04229
+citation: https://github.com/sdadas/polish-roberta#polish-roberta
+cased: cased
+pre-trained on:
+  - '?'
+comments: github https://github.com/sdadas/polish-roberta

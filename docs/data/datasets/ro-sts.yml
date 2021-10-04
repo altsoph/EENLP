@@ -1,0 +1,12 @@
+name: 'RO-STS: Romanian Semantic Textual Similarity Dataset'
+description: ''
+languages:
+  - Romanian
+tasks:
+  - paraphrase-identification
+URL: https://github.com/dumitrescustefan/RO-STS
+license: CC BY-SA 4.0
+paper: '?'
+citation: '?'
+download link: ''
+comments: ''

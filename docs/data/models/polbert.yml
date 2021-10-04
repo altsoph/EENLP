@@ -1,0 +1,14 @@
+name: Polbert
+description: ''
+languages:
+  - Polish
+type: BERT
+huggingface: https://huggingface.co/dkleczek/bert-base-polish-cased-v1
+paper: '?'
+citation: '?'
+cased: both
+pre-trained on:
+  - common crawl
+  - wikipedia
+  - etc
+comments: usage examples https://huggingface.co/dkleczek/bert-base-polish-cased-v1#usage

@@ -1,0 +1,12 @@
+name: 'paraphrase.sr: The Serbian Paraphrase Corpus'
+description: ''
+languages:
+  - Serbian
+tasks:
+  - paraphrase-identification
+URL: https://vukbatanovic.github.io/paraphrase.sr/
+license: CC BY-NC-SA 4.0
+paper: https://www.sciencedirect.com/science/article/abs/pii/S0167923613000614
+citation: ''
+download link: ''
+comments: ''

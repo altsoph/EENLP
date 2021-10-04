@@ -1,0 +1,13 @@
+name: Semantically disambiguated corpus of Estonian
+description: ''
+languages:
+  - Estonian
+tasks:
+  - morphosyntactic tagging; lemmatization
+  - semantic
+URL: https://metashare.ut.ee/repository/browse/semantically-disambiguated-corpus-of-estonian/4e82a472463411e2a6e4005056b400241e1c4a126b5242f49d64822b1984fbe8/
+license: CLARIN ACA - NC
+paper: '?'
+citation: https://doi.org/10.15155/1-00-0000-0000-0000-00081L
+download link: https://metashare.ut.ee/repository/download/4e82a472463411e2a6e4005056b400241e1c4a126b5242f49d64822b1984fbe8/
+comments: ''

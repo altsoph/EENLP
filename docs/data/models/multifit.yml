@@ -1,0 +1,33 @@
+name: multilingual ULMFiT
+description: ''
+languages:
+  - Albanian
+  - Armenian
+  - Belarusian
+  - Bosnian
+  - Bulgarian
+  - Croatian
+  - Czech
+  - Estonian
+  - Georgian
+  - Hungarian
+  - Kazakh
+  - Latvian
+  - Lithuanian
+  - Macedonian
+  - Moldovan
+  - Montenegrin
+  - Polish
+  - Romanian
+  - Russian
+  - Serbian
+  - Slovakian
+  - Slovenian
+  - Ukrainian
+type: ULMFiT
+URL: https://nlp.fast.ai/
+paper: https://aclanthology.org/D19-1572.pdf
+citation: ''
+cased: ''
+pre-trained on:
+comments: multilingual ULMFiT

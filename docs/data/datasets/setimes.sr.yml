@@ -1,0 +1,12 @@
+name: 'SETimes.SR: Serbian annotated news corpus'
+description: ''
+languages:
+  - Serbian
+tasks:
+  - named-entity-recognition-ner
+URL: https://reldi.spur.uzh.ch/blog/serbian-annotated-corpus-setimes-sr/
+license: CC-BY-SA 4.0
+paper: https://www.aclweb.org/old_anthology/W/W17/W17-1407.pdf
+citation: ''
+download link: ''
+comments: ''

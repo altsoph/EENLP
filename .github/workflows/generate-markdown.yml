@@ -1,0 +1,40 @@
+name: Generate markdown
+
+on:
+  push:
+    branches:
+      - main
+      - resources_page
+    paths:
+      - docs/data/datasets/*.yml
+      - docs/data/models/*.yml
+  pull_request:
+    branches:
+      - main
+      - resources_page
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python 3.9
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          python -m pip install -e .
+      - name: Generate markdown
+        run: |
+          python eenlp/docs/generate_docs.py
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "docs: :robot: automatically generate markdown"
+          branch: ${{ github.head_ref }}
+          skip_fetch: false
+        if: github.event_name != 'pull_request'

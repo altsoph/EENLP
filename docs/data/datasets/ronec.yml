@@ -1,0 +1,12 @@
+name: 'RONEC: the Romanian Named Entity Corpus'
+description: ''
+languages:
+  - Romanian
+tasks:
+  - named-entity-recognition-ner
+URL: https://github.com/dumitrescustefan/ronec
+license: MIT
+paper: https://arxiv.org/abs/1909.01247
+citation: https://github.com/dumitrescustefan/ronec#cite
+download link: https://github.com/dumitrescustefan/ronec
+comments: ''

@@ -1,0 +1,12 @@
+name: UD_Czech-CAC treebank
+description: ''
+languages:
+  - Czech
+tasks:
+  - part-of-speech-tagging
+URL: https://github.com/UniversalDependencies/UD_Czech-CAC
+license: CC BY-SA 4.0
+paper: https://ufal.mff.cuni.cz/pbml/89/pbml89.pdf
+citation: https://lindat.mff.cuni.cz/repository/xmlui/handle/11372/LRT-1061
+download link: https://github.com/UniversalDependencies/UD_Czech-CAC
+comments: ''

@@ -1,0 +1,12 @@
+name: Hungarian sentiment corpus (HuSent)
+description: ''
+languages:
+  - Hungarian
+tasks:
+  - sentiment-analysis
+URL: https://rgai.inf.u-szeged.hu/node/363
+license: ''
+paper: https://aclanthology.org/L16-1459/
+citation: https://aclanthology.org/L16-1459/
+download link: https://rgai.inf.u-szeged.hu/sites/rgai.inf.u-szeged.hu/files/divany_UJ.zip
+comments: ''

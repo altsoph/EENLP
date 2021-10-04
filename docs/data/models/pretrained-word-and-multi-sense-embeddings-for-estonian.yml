@@ -1,0 +1,11 @@
+name: Pretrained word and multi-sense embeddings for Estonian
+description: ''
+languages:
+  - Estonian
+type: static word embeddings
+URL: https://github.com/eleriaedmaa/embeddings
+paper: ''
+citation: ''
+cased: ''
+pre-trained on:
+comments: ''

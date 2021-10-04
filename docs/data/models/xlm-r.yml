@@ -1,0 +1,35 @@
+name: XLM-RoBERTa
+description: ''
+languages:
+  - Albanian
+  - Armenian
+  - Belarusian
+  - Bosnian
+  - Bulgarian
+  - Croatian
+  - Czech
+  - Estonian
+  - Georgian
+  - Hungarian
+  - Kazakh
+  - Latvian
+  - Lithuanian
+  - Macedonian
+  - Moldovan
+  - Montenegrin
+  - Polish
+  - Romanian
+  - Russian
+  - Serbian
+  - Slovakian
+  - Slovenian
+  - Ukrainian
+type: XLM-RoBERTa
+huggingface: https://huggingface.co/xlm-roberta-base
+paper: https://arxiv.org/abs/1911.02116
+citation: https://arxiv.org/abs/1911.02116
+cased: cased
+pre-trained on:
+  - CommonCrawl
+  - multilingual
+comments: ''

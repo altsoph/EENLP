@@ -1,0 +1,12 @@
+name: Czech Facebook dataset
+description: ''
+languages:
+  - Czech
+tasks:
+  - sentiment-analysis
+URL: https://github.com/kysely/sentiment-analysis-czech
+license: CC BY-NC-SA 3.0
+paper: https://aclanthology.org/W13-1609/
+citation: https://aclanthology.org/W13-1609/
+download link: http://liks.fav.zcu.cz/sentiment/
+comments: ''

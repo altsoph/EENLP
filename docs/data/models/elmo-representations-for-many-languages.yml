@@ -1,0 +1,22 @@
+name: ELMo Representations for Many Languages
+description: ''
+languages:
+  - Bulgarian
+  - Croatian
+  - Czech
+  - Estonian
+  - Hungarian
+  - Latvian
+  - Polish
+  - Romanian
+  - Russian
+  - Slovakian
+  - Slovenian
+  - Ukrainian
+type: ELMo
+URL: https://github.com/HIT-SCIR/ELMoForManyLangs
+paper: https://arxiv.org/abs/1807.03121
+citation: https://github.com/HIT-SCIR/ELMoForManyLangs#citation
+cased: ''
+pre-trained on:
+comments: ''

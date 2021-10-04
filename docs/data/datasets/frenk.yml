@@ -1,0 +1,13 @@
+name: FRENK
+description: ''
+languages:
+  - Croatian
+  - Slovenian
+tasks:
+  - offensive comments
+URL: https://www.clarin.si/repository/xmlui/handle/11356/1433
+license: https://clarin.si/repository/xmlui/page/licence-aca-id-by-nc-inf-nored-1.0
+paper: https://arxiv.org/pdf/1906.02045.pdf
+citation: https://arxiv.org/pdf/1906.02045.pdf
+download link: https://www.clarin.si/repository/xmlui/handle/11356/1433
+comments: http://nl.ijs.si/frenk/

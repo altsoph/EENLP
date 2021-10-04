@@ -1,0 +1,13 @@
+name: Czech ALBERT
+description: ''
+languages:
+  - Czech
+type: ALBERT
+license: apache-2.0
+URL: https://github.com/zepzep/csalbert
+paper: https://is.muni.cz/th/t946b/?lang=en
+citation: '?'
+cased: '?'
+pre-trained on:
+  - '?'
+comments: 'github: https://github.com/zepzep/csalbert'

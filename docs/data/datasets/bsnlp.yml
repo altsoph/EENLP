@@ -1,0 +1,15 @@
+name: BSNLP
+description: ''
+languages:
+  - Bulgarian
+  - Czech
+  - Polish
+  - Russian
+tasks:
+  - named-entity-recognition-ner
+URL: http://bsnlp.cs.helsinki.fi/bsnlp-2019/shared_task.html
+license: '?'
+paper: https://aclanthology.org/W19-3709/
+citation: https://aclanthology.org/W19-3709/
+download link: '?'
+comments: ''

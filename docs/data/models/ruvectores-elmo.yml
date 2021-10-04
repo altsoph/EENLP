@@ -1,0 +1,12 @@
+name: RuVectores ELMo
+description: ''
+languages:
+  - Russian
+type: ELMo
+URL: https://rusvectores.org/en/models/
+license: CC BY 4.0
+paper: ''
+citation: ''
+cased: ''
+pre-trained on:
+comments: ''

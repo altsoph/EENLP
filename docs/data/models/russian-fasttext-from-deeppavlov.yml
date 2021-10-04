@@ -1,0 +1,11 @@
+name: Russian fasttext from DeepPavlov
+description: ''
+languages:
+  - Russian
+type: static word embeddings
+URL: http://docs.deeppavlov.ai/en/master/features/pretrained_vectors.html#fasttext
+paper: ''
+citation: ''
+cased: ''
+pre-trained on:
+comments: ''

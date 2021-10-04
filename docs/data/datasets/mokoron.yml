@@ -1,0 +1,12 @@
+name: mokoron
+description: ''
+languages:
+  - Russian
+tasks:
+  - sentiment-analysis
+URL: http://study.mokoron.com/
+license: '?'
+paper: https://www.elibrary.ru/item.asp?id=20399632
+citation: ''
+download link: ''
+comments: ''

@@ -1,0 +1,12 @@
+name: EstQA Question Answering dataset
+description: ''
+languages:
+  - Estonian
+tasks:
+  - question answering
+URL: https://metashare.ut.ee/repository/browse/estqa-question-answering-dataset/dabdfdeaa74911eba6e4fa163e9d45471d05c5c43d8e46788aac3c1694c0e4ac/
+license: CC BY
+paper: '?'
+citation: https://doi.org/10.15155/9-00-0000-0000-0000-00222L
+download link: https://metashare.ut.ee/repository/browse/estqa-question-answering-dataset/dabdfdeaa74911eba6e4fa163e9d45471d05c5c43d8e46788aac3c1694c0e4ac/
+comments: ''

@@ -1,0 +1,12 @@
+name: Czech WordNet 1.9 PDT
+description: ''
+languages:
+  - Czech
+tasks:
+  - wordnet
+URL: https://lindat.mff.cuni.cz/repository/xmlui/handle/11858/00-097C-0000-0001-4880-3
+license: CC BY-NC-SA 3.0
+paper: '?'
+citation: '?'
+download link: https://lindat.mff.cuni.cz/repository/xmlui/handle/11858/00-097C-0000-0001-4880-3
+comments: ''

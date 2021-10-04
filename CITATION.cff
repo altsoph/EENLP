@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: " "
+title: "EENLP: Cross-lingual Eastern European NLP Index"
+date-released: "2021-08-05"
+authors:
+  - given-names: Alexey
+    family-names: Tikhonov
+  - given-names: Alex
+    family-names: Malkhasov
+  - given-names: Andrey
+    family-names: Manoshin
+  - given-names: George
+    family-names: Dima
+  - given-names: Réka
+    family-names: Cserháti
+  - given-names: Md.Sadek Hossain
+    family-names: Asif
+  - given-names: Matt
+    family-names: Sárdi
+identifiers:
+  - type: other
+    value: "arXiv:2108.02605"
+    description: The ArXiv preprint of the paper
