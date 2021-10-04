@@ -1,0 +1,98 @@
+$schema: http://json-schema.org/draft-07/schema
+$id: >-
+  https://raw.githubusercontent.com/altsoph/EENLP/main/docs/data/datasets/_dataset.schema.json
+title: Dataset
+description: ''
+type: object
+properties:
+  name:
+    type: string
+    description: Name of the dataset.
+  full name:
+    description: >-
+      Optional, name without abbreviations, etc. Similar to the field with the
+      same name on https://paperswithcode.com/datasets.
+    type:
+      - string
+      - 'null'
+  description:
+    type:
+      - string
+      - 'null'
+  tasks:
+    type: array
+    description: ''
+    items:
+      anyOf:
+        - type: string
+        - enum:
+            - named-entity-recognition-ner
+            - sentiment-analysis
+            - paraphrase-identification
+            - word-sense-disambiguation
+            - text-classification
+            - part-of-speech-tagging
+            - wordnet
+  languages:
+    type: array
+    description: Languages.
+    items:
+      enum:
+        - Albanian
+        - Armenian
+        - Belarusian
+        - Bosnian
+        - Bulgarian
+        - Croatian
+        - Czech
+        - Estonian
+        - Georgian
+        - Hungarian
+        - Kazakh
+        - Latvian
+        - Lithuanian
+        - Macedonian
+        - Moldovan
+        - Moldovian
+        - Montenegrin
+        - Polish
+        - Romanian
+        - Russian
+        - Serbian
+        - Slovak
+        - Slovakian
+        - Slovenian
+        - Ukrainian
+  URL:
+    type:
+      - string
+      - 'null'
+  license:
+    type:
+      - string
+      - 'null'
+  paper:
+    type:
+      - string
+      - 'null'
+  citation:
+    type:
+      - string
+      - 'null'
+  download link:
+    type:
+      - string
+      - 'null'
+  comments:
+    type:
+      - string
+      - 'null'
+  huggingface:
+    type:
+      - string
+      - 'null'
+required:
+  - name
+  - languages
+  - tasks
+additionalProperties: false
