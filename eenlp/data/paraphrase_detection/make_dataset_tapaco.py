@@ -2,9 +2,11 @@ import numpy as np
 import pandas as pd
 import pycountry
 from datasets import load_dataset
-from fuzzywuzzy import process
 from pyprojroot import here
+from rapidfuzz import process
 from tqdm.auto import tqdm
+
+DATASET_ONLY_FIRST_N = 20_000
 
 
 def make_dataset():
@@ -19,6 +21,7 @@ def make_dataset():
         "be",  # Belarusian
         "bg",  # Bulgarian
         "cs",  # Czech
+        "en",  # English
         "et",  # Estonian
         "hr",  # Croatian
         "hu",  # Hungarian
@@ -50,6 +53,9 @@ def make_dataset():
     np.random.seed(0)
     for language, df_language in tqdm(df.groupby("language"), "language", position=0):
         language_name = pycountry.languages.get(alpha_2=language).name
+
+        df_language = df_language[:DATASET_ONLY_FIRST_N]
+
         for paraphrase_set_id, df_set in tqdm(
             df_language.groupby("paraphrase_set_id"), "paraphrase_set_id", position=1
         ):
@@ -81,18 +87,17 @@ def make_dataset():
                 )
 
                 # similar negative
+                similar_negatives = process.extract(
+                    row.paraphrase,
+                    df_negatives["paraphrase"],
+                    limit=10,
+                )
                 result.append(
                     {
                         "sentence1": row.paraphrase,
-                        # Fuzzywuzzy run time seems to grow exponentially, so we take a random sample, and look for
-                        # similar sentences only in the smaller sample.
-                        # Probably it would be worth investigating a faster alternative method.
-                        "sentence2": process.extractOne(
-                            row.paraphrase,
-                            df_negatives["paraphrase"].sample(
-                                np.min([256, len(df_negatives)])
-                            ),
-                        )[0],
+                        "sentence2": np.random.choice(
+                            np.array(similar_negatives)[:, 0]
+                        ),
                         "label": 0,
                         "lang": language_name,
                     }
