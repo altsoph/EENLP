@@ -1,3 +1,6 @@
+import traceback
+import warnings
+
 import numpy as np
 import pandas as pd
 import pycountry
@@ -6,7 +9,8 @@ from pyprojroot import here
 from rapidfuzz import process
 from tqdm.auto import tqdm
 
-DATASET_ONLY_FIRST_N = 20_000
+# DATASET_ONLY_FIRST_N = 20_000
+DATASET_ONLY_FIRST_N = 10_000
 
 
 def make_dataset():
@@ -52,66 +56,79 @@ def make_dataset():
     result = []
     np.random.seed(0)
     for language, df_language in tqdm(df.groupby("language"), "language", position=0):
-        language_name = pycountry.languages.get(alpha_2=language).name
+        try:
+            language_name = pycountry.languages.get(alpha_2=language).name
 
-        df_language = df_language[:DATASET_ONLY_FIRST_N]
+            df_language = df_language[:DATASET_ONLY_FIRST_N]
 
-        for paraphrase_set_id, df_set in tqdm(
-            df_language.groupby("paraphrase_set_id"), "paraphrase_set_id", position=1
-        ):
-            df_negatives = df_language[
-                df_language["paraphrase_set_id"] != paraphrase_set_id
-            ]
-            for row in df_set.itertuples():
-                result.append(
-                    {
-                        "sentence1": row.paraphrase,
-                        "sentence2": np.random.choice(
-                            df_set[df_set.index != row.Index]["paraphrase"]
-                        ),
-                        "label": 1,
-                        "lang": language_name,
-                    }
-                )
+            for paraphrase_set_id, df_set in tqdm(
+                df_language.groupby("paraphrase_set_id"),
+                "paraphrase_set_id",
+                position=1,
+            ):
+                if len(df_set) <= 1:
+                    continue
 
-                # TODO this can sample the same pair twice, consider fixing it
-                result.append(
-                    {
-                        "sentence1": row.paraphrase,
-                        "sentence2": np.random.choice(
-                            df_set[df_set.index != row.Index]["paraphrase"]
-                        ),
-                        "label": 1,
-                        "lang": language_name,
-                    }
-                )
+                df_negatives = df_language[
+                    df_language["paraphrase_set_id"] != paraphrase_set_id
+                ]
 
-                # similar negative
-                similar_negatives = process.extract(
-                    row.paraphrase,
-                    df_negatives["paraphrase"],
-                    limit=10,
-                )
-                result.append(
-                    {
-                        "sentence1": row.paraphrase,
-                        "sentence2": np.random.choice(
-                            np.array(similar_negatives)[:, 0]
-                        ),
-                        "label": 0,
-                        "lang": language_name,
-                    }
-                )
+                for row in df_set.itertuples():
+                    result.append(
+                        {
+                            "sentence1": row.paraphrase,
+                            "sentence2": np.random.choice(
+                                df_set[df_set.index != row.Index]["paraphrase"]
+                            ),
+                            "label": 1,
+                            "lang": language_name,
+                        }
+                    )
 
-                # random negative
-                result.append(
-                    {
-                        "sentence1": row.paraphrase,
-                        "sentence2": np.random.choice(df_negatives["paraphrase"]),
-                        "label": 0,
-                        "lang": language_name,
-                    }
-                )
+                    # TODO this can sample the same pair twice, consider fixing it
+                    result.append(
+                        {
+                            "sentence1": row.paraphrase,
+                            "sentence2": np.random.choice(
+                                df_set[df_set.index != row.Index]["paraphrase"]
+                            ),
+                            "label": 1,
+                            "lang": language_name,
+                        }
+                    )
+
+                    # similar negative
+                    similar_negatives = process.extract(
+                        row.paraphrase,
+                        df_negatives["paraphrase"],
+                        limit=10,
+                    )
+                    result.append(
+                        {
+                            "sentence1": row.paraphrase,
+                            "sentence2": np.random.choice(
+                                np.array(similar_negatives)[:, 0]
+                            ),
+                            "label": 0,
+                            "lang": language_name,
+                        }
+                    )
+
+                    # random negative
+                    result.append(
+                        {
+                            "sentence1": row.paraphrase,
+                            "sentence2": np.random.choice(df_negatives["paraphrase"]),
+                            "label": 0,
+                            "lang": language_name,
+                        }
+                    )
+        except KeyboardInterrupt:
+            raise
+        except:
+            warnings.warn(traceback.format_exc())
+            continue
+
     result = pd.DataFrame(result)
     result["source"] = dataset_name
     result["split"] = "train"
