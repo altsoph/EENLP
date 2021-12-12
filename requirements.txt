@@ -5,7 +5,6 @@ transformers==4.5.0
 torch==1.9.0
 datasets==1.10.2
 pyprojroot==0.2.0
-fuzzywuzzy==0.18.0
 pycountry==20.7.3
 tqdm==4.61.2
 pytest==6.2.3
@@ -14,3 +13,4 @@ PyYAML==5.4.1
 jsonschema==3.2.0
 mdformat==0.7.8
 mdformat-gfm==0.3.2
+rapidfuzz==1.7.1
