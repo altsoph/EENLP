@@ -12,6 +12,9 @@ def make_dataset():
         names=["label", "sentence1", "sentence2"],
     )
 
+    # fix data, remove this non-printing character
+    df["label"] = df["label"].str.replace("\ufeff", "").astype(int)
+
     result = pd.DataFrame()
     result["sentence1"] = df["sentence1"]
     result["sentence2"] = df["sentence2"]
