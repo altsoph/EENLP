@@ -26,3 +26,7 @@ def make_dataset():
     )
     output_path.parent.mkdir(parents=True, exist_ok=True)
     result.to_json(output_path, orient="records", lines=True)
+
+
+if __name__ == "__main__":
+    make_dataset()
