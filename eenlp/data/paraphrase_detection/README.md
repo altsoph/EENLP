@@ -4,19 +4,23 @@
 
 - [x] tapaco
     - https://huggingface.co/datasets/tapaco
-    - license: cc-by-2.0
+    - :page_facing_up: [TaPaCo: A Corpus of Sentential Paraphrases for 73 Languages](https://aclanthology.org/2020.lrec-1.848/)
+    - :balance_scale: cc-by-2.0
 - [x] arpa
     - https://github.com/ivannikov-lab/arpa-paraphrase-corpus
-    - license: apache 2.0
+    - :page_facing_up: [ARPA: Armenian Paraphrase Detection Corpus and Models](https://arxiv.org/abs/2009.12615)
+    - :balance_scale: apache 2.0
 - [x] klej_cdsc_r
     - https://klejbenchmark.com/tasks/
-    - license: GNU GPL v3
+    - :page_facing_up: [KLEJ: Comprehensive Benchmark for Polish Language Understanding](https://arxiv.org/abs/2005.00630)
+    - :balance_scale: GNU GPL v3
 - [x] ro_sts
     - https://github.com/dumitrescustefan/RO-STS
-    - license: CC BY-SA 4.0
+    - :balance_scale: CC BY-SA 4.0
 - [x] paraphrase_sr
     - https://github.com/vukbatanovic/paraphrase.sr
-    - license: CC BY-NC-SA 4.0
+    - :page_facing_up: [Semantic similarity of short texts in languages with a deficient natural language processing support](https://www.sciencedirect.com/science/article/abs/pii/S0167923613000614)
+    - :balance_scale: CC BY-NC-SA 4.0
 
 ## Columns
 
