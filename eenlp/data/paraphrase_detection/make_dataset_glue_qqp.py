@@ -9,7 +9,9 @@ def make_dataset():
     dataset = load_dataset("glue", "qqp")
 
     for split in ["train", "test"]:
-        df = dataset[split].to_pandas()
+        # glue_qqp doesn't have labels for 'test' split, so we use 'validation' split instead
+        split_source = "validation" if split == "test" else split
+        df = dataset[split_source].to_pandas()
 
         result = pd.DataFrame()
         result["sentence1"] = df["question1"]
