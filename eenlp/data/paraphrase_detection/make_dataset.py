@@ -15,7 +15,6 @@ dataset_names = [
     "klej_cdsc_r",
     "paraphrase_sr",
     "ro_sts",
-    "tapaco",
 ]
 
 
