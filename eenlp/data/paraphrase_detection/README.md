@@ -2,10 +2,6 @@
 
 ## Datasets
 
-- [x] tapaco
-    - https://huggingface.co/datasets/tapaco
-    - :page_facing_up: [TaPaCo: A Corpus of Sentential Paraphrases for 73 Languages](https://aclanthology.org/2020.lrec-1.848/)
-    - :balance_scale: cc-by-2.0
 - [x] arpa
     - https://github.com/ivannikov-lab/arpa-paraphrase-corpus
     - :page_facing_up: [ARPA: Armenian Paraphrase Detection Corpus and Models](https://arxiv.org/abs/2009.12615)
@@ -52,8 +48,6 @@ python eenlp/data/paraphrase_detection/make_dataset.py
 
 This script generates every paraphrase detection dataset by running the corresponding scripts, then aggregates all of
 them into `data/processed/paraphrase_detection/`.
-
-The script for the tapaco dataset is slow, it can take ~30 mins to run.
 
 ### Construction details
 
@@ -133,19 +127,3 @@ See [make_dataset_ro_sts.py](make_dataset_ro_sts.py)
 Labels mean the same as in [Glue_stsb](#Glue_stsb).
 
 Transcription rule, "4" and "5": paraphrases, <4: not paraphrases.
-
-#### Tapaco
-
-See [make_dataset_tapaco.py](make_dataset_tapaco.py)
-
-TaPaCo doesn't have a "pairs of examples" format (like in GLUE), but a "sets of paraphrases" kind of format (
-similar to WordNet synsets).
-
-We need to generate example pairs somehow.  
-As of the current version of the code, 50% of the generated examples are true paraphrases (label = 1),  
-25% are chosen from the most similar non-paraphrases (by fuzzywuzzy library Levenshtein distance) (label = 0),  
-and 25% is random negative examples (label = 0).
-
-To put it differently, the script processes the dataset, and for every sentence, it samples 2 positive examples (from
-the same paraphrase set), one similar negative, and one random negative examples, and insert these to the output in this
-order.
