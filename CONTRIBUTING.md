@@ -37,8 +37,8 @@ There are 2 options to create a pull request, the first being easier.
 - You can use this free online service to validate your changes against the schema:
     - [https://jsonschemalint.com/#!/version/draft-07/markup/yaml](https://jsonschemalint.com/#!/version/draft-07/markup/yaml)
     - Copy one of these schemas to the textarea on the left, and copy the content of the proposed file to the right.
-        - [_dataset.schema.yml](docs/data/datasets/_dataset.schema.yml)
-        - [_model.schema.yml](docs/data/models/_model.schema.yml)
+        - [_dataset.schema.yaml](docs/data/datasets/_dataset.schema.yaml)
+        - [_model.schema.yaml](docs/data/models/_model.schema.yaml)
     - ![](docs/images/contributing/validate.png)
     - If the message under the right panel says "Document validates against the schema" then you're good to go.
 - Click "Propose changes" at the bottom of the page.
